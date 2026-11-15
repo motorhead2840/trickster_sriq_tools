@@ -1,0 +1,134 @@
+{
+  "experiment": "observable_only_cv_mmse",
+  "configuration": {
+    "seeds": [
+      108,
+      109,
+      110
+    ],
+    "shots": 20000,
+    "signal_variance": 1.0,
+    "noise_variance": 1.0,
+    "efficiency": 0.8,
+    "coupling": 1.0,
+    "reference_squeezing": 0.7,
+    "vacuum_convention": "hbar=2, VACUUM_VAR=1"
+  },
+  "per_seed": [
+    {
+      "seed": 108,
+      "shots": 20000,
+      "oracle_paired_mse": 3.864490391186748e-33,
+      "mmse_two_mode_sample_mse": 0.6148440388801731,
+      "mmse_two_mode_analytic_mse": 0.6126759441137769,
+      "mmse_sample_standard_error": 0.006138735464077485,
+      "mmse_within_5sigma": true,
+      "single_mode_mse": 0.6978561014330157,
+      "moving_average_mse": 1.089700906050545,
+      "median_filter_mse": 1.2317281846096921,
+      "analytic_coherent_two_mode_mse": 0.6435643564356436,
+      "analytic_squeezed_signal_mse": 0.5127067844620878,
+      "analytic_squeezed_reference_mse": 0.6126759441137769,
+      "weights": [
+        0.43304145914126124,
+        -0.28935075345920414
+      ]
+    },
+    {
+      "seed": 109,
+      "shots": 20000,
+      "oracle_paired_mse": 3.724147159326469e-33,
+      "mmse_two_mode_sample_mse": 0.610509030237706,
+      "mmse_two_mode_analytic_mse": 0.6126759441137769,
+      "mmse_sample_standard_error": 0.0061536542944413,
+      "mmse_within_5sigma": true,
+      "single_mode_mse": 0.6918188254553377,
+      "moving_average_mse": 1.0893874216321877,
+      "median_filter_mse": 1.2384547871763345,
+      "analytic_coherent_two_mode_mse": 0.6435643564356436,
+      "analytic_squeezed_signal_mse": 0.5127067844620878,
+      "analytic_squeezed_reference_mse": 0.6126759441137769,
+      "weights": [
+        0.43304145914126124,
+        -0.28935075345920414
+      ]
+    },
+    {
+      "seed": 110,
+      "shots": 20000,
+      "oracle_paired_mse": 3.89786805010744e-33,
+      "mmse_two_mode_sample_mse": 0.6158215208877831,
+      "mmse_two_mode_analytic_mse": 0.6126759441137769,
+      "mmse_sample_standard_error": 0.006125303311382179,
+      "mmse_within_5sigma": true,
+      "single_mode_mse": 0.6936226803035137,
+      "moving_average_mse": 1.0853447267287948,
+      "median_filter_mse": 1.2355070625085445,
+      "analytic_coherent_two_mode_mse": 0.6435643564356436,
+      "analytic_squeezed_signal_mse": 0.5127067844620878,
+      "analytic_squeezed_reference_mse": 0.6126759441137769,
+      "weights": [
+        0.43304145914126124,
+        -0.28935075345920414
+      ]
+    }
+  ],
+  "aggregate": {
+    "mean_mmse_sample_mse": 0.6137248633352207,
+    "mean_moving_average_mse": 1.0881443514705091,
+    "mean_median_filter_mse": 1.2352300114315238,
+    "mean_single_mode_mse": 0.6944325357306224,
+    "mmse_beats_moving_average": true,
+    "mmse_beats_median": true
+  },
+  "conjectures": [
+    {
+      "conjecture_id": "C1",
+      "statement": "Yoga\u2013Buddhi with known \u03be equals the MMSE estimator only when the antithesis is physically available; the observable-only Gaussian MMSE from (y_A, y_B) is the correct physical replacement.",
+      "pass_criterion": "Oracle paired projection MSE is ~0 when \u03be is supplied; observable-only MMSE matches analytic Wiener MSE within 5\u03c3 sampling error and never receives s or n at inference.",
+      "status": "confirmed",
+      "artifact_paths": [
+        "docs/benchmark-results/braket-live/e1_e4_hybrid/cv-observable-a100/observable_only_summary.json"
+      ],
+      "notes": "Oracle identity verified; MMSE is observable-only Wiener filter."
+    },
+    {
+      "conjecture_id": "C2",
+      "statement": "Under the protocol Gaussian model, squeezed-reference MSE ordering matches the closed form across independent seeds.",
+      "pass_criterion": "For default (Vs=Vn=k=1, \u03b7=0.8, r=0.7), sample ordering agrees with analytic ordering on \u22653 seeds; |analytic-sample| \u2264 5\u03c3 SE.",
+      "status": "confirmed",
+      "artifact_paths": [
+        "docs/benchmark-results/braket-live/e1_e4_hybrid/cv-observable-a100/observable_only_summary.json"
+      ],
+      "notes": "Analytic MSE ordering checked against mse_optimal closed forms."
+    },
+    {
+      "conjecture_id": "C3",
+      "statement": "An axiomatic stability coefficient \u039e_SNR (or purity/Fisher proxy) remains in (0, 1] on all foundation sweep points; legacy Equation-11 \u039e need not.",
+      "pass_criterion": "Over the Week-2 spike grid, min(\u039e_SNR) > 0 and max(\u039e_SNR) \u2264 1; legacy \u039e is reported without clipping.",
+      "status": "open",
+      "artifact_paths": [],
+      "notes": ""
+    },
+    {
+      "conjecture_id": "C4",
+      "statement": "Circuit-B Branch W (worked-example thresholding) yields a macro marker that does not collapse during the noise spike the way legacy \u039e does; damping corresponds to a CPTP attenuator on covariances.",
+      "pass_criterion": "Branch W keeps \u039e_SNR in (0,1] through spikes; attenuator_channel preserves physical covariances; if neither branch satisfies a stated contraction inequality, status becomes refuted/open with counterexamples.",
+      "status": "open",
+      "artifact_paths": [],
+      "notes": ""
+    }
+  ],
+  "limitations": [
+    "Classical Monte Carlo of an ideal Gaussian optical model.",
+    "MMSE coefficients use known model parameters (parameter oracle), not unknown calibration.",
+    "Moving-average/median baselines see only y_A; MMSE also uses y_B \u2014 equal-mode resource note applies.",
+    "Oracle paired projection is not deployable."
+  ],
+  "provenance": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "script_sha256": "3679f70e5a810bbc41af34bceadbed8b74f1411fed29a00e705e951125df290a"
+  },
+  "equal_resource_note": "MMSE uses two optical modes (signal+reference). Moving-average/median baselines use y_A only. Prefer single_mode_mse for same-mode comparisons; two-mode MMSE vs coherent two-mode analytic is the physics-aligned contest."
+}

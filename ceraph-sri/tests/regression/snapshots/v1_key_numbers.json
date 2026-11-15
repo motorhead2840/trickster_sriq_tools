@@ -1,0 +1,17 @@
+{
+  "gauge_rms_amp_ungauged": 0.020681824440142074,
+  "gauge_rms_kappa": 0.016751904699360852,
+  "gauge_rms_kappa_hat_scaled": 0.016751904699360838,
+  "gauge_rms_kappa_true_scaled": 0.01675190469936083,
+  "gauge_rms_phase_ungauged": 0.8173189276617004,
+  "size": "small",
+  "source": "experiments/unveiling/v1/reference_results.json",
+  "theoretical_xi": 0.8005150067502287,
+  "xi_after_mean": {
+    "expander": 0.9998067650139448,
+    "ring": 0.9998023418510412,
+    "svd": 0.9998155997224375,
+    "torus": 0.9998079147126469
+  },
+  "xi_theory": 0.8005150067502287
+}

@@ -1,0 +1,70 @@
+{
+  "source_document": "sri-provisional-patent-dissertation-5.pdf",
+  "source_equations": {
+    "xi": "1 - Var(logits) / (E(logits) + epsilon)",
+    "circuit_a": "lambda_0 * exp(-kappa * (1 - Xi))",
+    "circuit_b": "lambda_max * sigmoid(alpha * (Var(gradient) / (sigma_sat^2 * epsilon) - theta_crit))",
+    "chi_v3": "circuit_a + circuit_b",
+    "logit_rescaling": "logits_raw * exp(-chi_v3)",
+    "projection": "0.5 * ((v + xi_noise) + (v - xi_noise))"
+  },
+  "configuration": {
+    "seed": 108,
+    "dimension": 16384,
+    "cycles": 25,
+    "baseline_noise_std": 0.5,
+    "spike_noise_std": 15.0,
+    "spike_start": 10,
+    "spike_end": 20,
+    "lambda_0": 1.0,
+    "kappa": 4.0,
+    "lambda_max": 50.0,
+    "alpha": 10.0,
+    "theta_crit": 5.0,
+    "sigma_sat": 1.0,
+    "epsilon": 1e-07,
+    "repeats": 10
+  },
+  "runtime": {
+    "timestamp_utc": "2026-11-07T07:27:42.903075+00:00",
+    "jax_version": "0.11.1",
+    "jaxlib_version": "0.11.1",
+    "default_backend": "gpu",
+    "devices": [
+      {
+        "platform": "gpu",
+        "device_kind": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+        "device_id": 0
+      }
+    ],
+    "gpu_devices_used": [
+      "NVIDIA RTX PRO 6000 Blackwell Server Edition"
+    ],
+    "array_dtype": "float32"
+  },
+  "measurement": {
+    "timing_scope": "JIT compilation excluded; full batched kernel synchronized to host",
+    "repeat_count": 10,
+    "execution_ms_each_repeat": [
+      0.1868799990916159,
+      0.09914999827742577,
+      0.09925000267685391,
+      0.10074999954667874,
+      0.08836000051815063,
+      0.08298999819089659,
+      0.07831000039004721,
+      0.0867000017024111,
+      0.07455000013578683,
+      0.08932000127970241
+    ],
+    "execution_ms_median": 0.08884000089892652,
+    "known_noise_projection_mse_max": 1.3304895379873116e-13,
+    "note": "Synthetic known-signal experiment. Exact injected noise is available to the paired-state projector. Not blind denoising, factuality validation, or a hardware-independent performance claim."
+  },
+  "provenance": {
+    "script_sha256": "46b83aafe349dd7d91ba8625715f98f413c3ddf7d1c410220c1e4b99c82a6ebd",
+    "generated_result": true,
+    "source_equations_only": true
+  },
+  "telemetry_csv": "sri_gpu_telemetry.csv"
+}

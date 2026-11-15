@@ -1,0 +1,485 @@
+{
+  "suite": "labelled-exam",
+  "machine": "one-board",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "model_present": false,
+  "passed": 17,
+  "asked": 18,
+  "misses": [
+    "V1"
+  ],
+  "burn": {
+    "elapsed_s": 300.0,
+    "jobs": 41186,
+    "jobs_per_s": 137.28391742259728,
+    "length": 16777216,
+    "passes": 40,
+    "block": 1024,
+    "source": "Melbourne daily minimums, seed-11 contamination, tiled",
+    "mean_power_w": 314.53054999999995,
+    "peak_power_w": 326.608,
+    "start_c": 32.0,
+    "peak_c": 44.0,
+    "min_clock_mhz": 2302.0,
+    "max_clock_mhz": 2317.0,
+    "mean_occupancy_pct": 98.55,
+    "finite": true
+  },
+  "series": {
+    "name": "Daily minimum temperature, Melbourne",
+    "n": 3650,
+    "first_c": 20.7,
+    "url": "https://raw.githubusercontent.com/jbrownlee/Datasets/master/daily-min-temperatures.csv"
+  },
+  "exam": [
+    {
+      "id": "B1",
+      "label": 128,
+      "python": 128,
+      "julia": 128,
+      "passed": true
+    },
+    {
+      "id": "B2",
+      "label": 256,
+      "python": 256,
+      "julia": 256,
+      "passed": true
+    },
+    {
+      "id": "B3",
+      "label": 512,
+      "python": 512,
+      "julia": 512,
+      "passed": true
+    },
+    {
+      "id": "B4",
+      "label": 1024,
+      "python": 1024,
+      "julia": 1024,
+      "passed": true
+    },
+    {
+      "id": "G1",
+      "label": false,
+      "python": false,
+      "julia": false,
+      "passed": true
+    },
+    {
+      "id": "G2",
+      "label": true,
+      "python": true,
+      "julia": true,
+      "passed": true
+    },
+    {
+      "id": "G3",
+      "label": true,
+      "python": true,
+      "julia": true,
+      "passed": true
+    },
+    {
+      "id": "S1",
+      "label": 0.0,
+      "got": 0.0,
+      "passed": true
+    },
+    {
+      "id": "J1",
+      "label": 0.0,
+      "got": 0.0,
+      "passed": true
+    },
+    {
+      "id": "R0",
+      "got": 4.76837158203125e-07,
+      "block": 256,
+      "passed": true
+    },
+    {
+      "id": "F0",
+      "passed": true
+    },
+    {
+      "id": "F1",
+      "passed": true
+    },
+    {
+      "id": "F2",
+      "passed": true
+    },
+    {
+      "id": "V1",
+      "passed": false,
+      "remaining": [
+        0.5149548649787903,
+        0.5176690816879272,
+        0.5095068216323853
+      ]
+    },
+    {
+      "id": "D1",
+      "got": 0.0,
+      "passed": true
+    },
+    {
+      "id": "C1",
+      "got": 9.5367431640625e-07,
+      "passed": true
+    },
+    {
+      "id": "T1",
+      "chosen": 256,
+      "times_ms": {
+        "128": 0.015744000673294067,
+        "256": 0.01196799986064434,
+        "512": 0.013055999763309956,
+        "1024": 0.011552000418305397
+      },
+      "passed": true
+    },
+    {
+      "id": "E1",
+      "triton_ms": 7.377632141113281,
+      "eager_ms": 17.1342716217041,
+      "passed": true
+    }
+  ],
+  "synthetic_seed_11": {
+    "offset_0": {
+      "identity": 6.909578800201416,
+      "moving_average": 1.675011157989502,
+      "raw": 0.7735443115234375,
+      "flux": 1.472352147102356,
+      "flux_variance_remaining": 0.11660587787628174
+    },
+    "offset_5": {
+      "identity": 6.909578800201416,
+      "moving_average": 1.675011157989502,
+      "raw": 18.170852661132812,
+      "flux": 1.4723522663116455,
+      "flux_variance_remaining": 0.11660587787628174
+    }
+  },
+  "melbourne": [
+    {
+      "seed": 11,
+      "offset_0": {
+        "identity": 7.23558235168457,
+        "moving_average": 5.8973565101623535,
+        "raw": 135.7728271484375,
+        "flux": 5.818975925445557,
+        "flux_variance_remaining": 0.5149548649787903
+      },
+      "offset_5": {
+        "identity": 7.23558235168457,
+        "moving_average": 5.8973565101623535,
+        "raw": 266.6606750488281,
+        "flux": 5.818975925445557,
+        "flux_variance_remaining": 0.5149548053741455
+      }
+    },
+    {
+      "seed": 22,
+      "offset_0": {
+        "identity": 6.774043083190918,
+        "moving_average": 5.954981327056885,
+        "raw": 134.71810913085938,
+        "flux": 5.874037265777588,
+        "flux_variance_remaining": 0.5176690816879272
+      },
+      "offset_5": {
+        "identity": 6.774043083190918,
+        "moving_average": 5.954981327056885,
+        "raw": 264.7745056152344,
+        "flux": 5.874037265777588,
+        "flux_variance_remaining": 0.5176690816879272
+      }
+    },
+    {
+      "seed": 33,
+      "offset_0": {
+        "identity": 6.7373247146606445,
+        "moving_average": 5.893266677856445,
+        "raw": 135.3837432861328,
+        "flux": 5.819851875305176,
+        "flux_variance_remaining": 0.5095068216323853
+      },
+      "offset_5": {
+        "identity": 6.7373247146606445,
+        "moving_average": 5.893266677856445,
+        "raw": 266.1190185546875,
+        "flux": 5.819851875305176,
+        "flux_variance_remaining": 0.5095068216323853
+      }
+    }
+  ],
+  "large_glitch_screen": {
+    "rule": "z-scored window variance > 4",
+    "spike": "+8 on 15 percent of a length-64 window",
+    "tp": 24,
+    "fp": 0,
+    "fn": 0,
+    "tn": 24,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "latency": [
+    {
+      "length": 256,
+      "block": 256,
+      "triton_ms": 0.017216000705957413,
+      "moving_avg_ms": 0.009535999968647957
+    },
+    {
+      "length": 8192,
+      "block": 256,
+      "triton_ms": 0.012927999719977379,
+      "moving_avg_ms": 0.009375999681651592
+    },
+    {
+      "length": 10000,
+      "block": 256,
+      "triton_ms": 0.012000000104308128,
+      "moving_avg_ms": 0.009151999838650227
+    },
+    {
+      "length": 65536,
+      "block": 256,
+      "triton_ms": 0.01119999960064888,
+      "moving_avg_ms": 0.009696000255644321
+    },
+    {
+      "length": 262144,
+      "block": 256,
+      "triton_ms": 0.011935999616980553,
+      "moving_avg_ms": 0.009216000325977802
+    },
+    {
+      "length": 1048576,
+      "block": 256,
+      "triton_ms": 0.01235199999064207,
+      "moving_avg_ms": 0.014944000169634819
+    }
+  ],
+  "roofline": [
+    {
+      "nodes": 10240,
+      "block": 256,
+      "median_ms": 0.012128000147640705,
+      "GBps_12byte": 10.131925998030615,
+      "GBps_16byte": 13.50923466404082,
+      "percent_of_1597_16byte": 0.8459132538535267
+    },
+    {
+      "nodes": 1048576,
+      "block": 256,
+      "median_ms": 0.013024000450968742,
+      "GBps_12byte": 966.1326446793901,
+      "GBps_16byte": 1288.17685957252,
+      "percent_of_1597_16byte": 80.66229552739637
+    },
+    {
+      "nodes": 10485760,
+      "block": 256,
+      "median_ms": 0.12326399981975555,
+      "GBps_12byte": 1020.8099703400452,
+      "GBps_16byte": 1361.0799604533936,
+      "percent_of_1597_16byte": 85.22729871342477
+    },
+    {
+      "nodes": 50000000,
+      "block": 256,
+      "median_ms": 0.5482879877090454,
+      "GBps_12byte": 1094.3154208193162,
+      "GBps_16byte": 1459.0872277590881,
+      "percent_of_1597_16byte": 91.36425972192163
+    }
+  ],
+  "burn_samples": [
+    {
+      "elapsed_s": 0.0,
+      "jobs": 1,
+      "power_w": 111.467,
+      "limit_w": 600.0,
+      "temp_c": 32.0,
+      "clock_mhz": 2317.0,
+      "occupancy_pct": 90.0
+    },
+    {
+      "elapsed_s": 15.0,
+      "jobs": 2084,
+      "power_w": 321.05,
+      "limit_w": 600.0,
+      "temp_c": 38.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 30.0,
+      "jobs": 4142,
+      "power_w": 322.822,
+      "limit_w": 600.0,
+      "temp_c": 40.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 45.0,
+      "jobs": 6200,
+      "power_w": 323.996,
+      "limit_w": 600.0,
+      "temp_c": 41.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 60.0,
+      "jobs": 8258,
+      "power_w": 324.579,
+      "limit_w": 600.0,
+      "temp_c": 42.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 75.0,
+      "jobs": 10316,
+      "power_w": 325.131,
+      "limit_w": 600.0,
+      "temp_c": 42.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 90.0,
+      "jobs": 12374,
+      "power_w": 325.385,
+      "limit_w": 600.0,
+      "temp_c": 43.0,
+      "clock_mhz": 2302.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 105.0,
+      "jobs": 14433,
+      "power_w": 325.577,
+      "limit_w": 600.0,
+      "temp_c": 43.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 120.0,
+      "jobs": 16492,
+      "power_w": 325.974,
+      "limit_w": 600.0,
+      "temp_c": 43.0,
+      "clock_mhz": 2302.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 135.0,
+      "jobs": 18551,
+      "power_w": 326.368,
+      "limit_w": 600.0,
+      "temp_c": 43.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 150.0,
+      "jobs": 20610,
+      "power_w": 326.413,
+      "limit_w": 600.0,
+      "temp_c": 44.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 165.0,
+      "jobs": 22669,
+      "power_w": 326.608,
+      "limit_w": 600.0,
+      "temp_c": 44.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 180.0,
+      "jobs": 24727,
+      "power_w": 326.433,
+      "limit_w": 600.0,
+      "temp_c": 43.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 195.0,
+      "jobs": 26786,
+      "power_w": 325.827,
+      "limit_w": 600.0,
+      "temp_c": 43.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 210.1,
+      "jobs": 28845,
+      "power_w": 325.921,
+      "limit_w": 600.0,
+      "temp_c": 43.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 225.1,
+      "jobs": 30903,
+      "power_w": 325.514,
+      "limit_w": 600.0,
+      "temp_c": 43.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 240.1,
+      "jobs": 32962,
+      "power_w": 325.428,
+      "limit_w": 600.0,
+      "temp_c": 43.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 255.1,
+      "jobs": 35021,
+      "power_w": 325.419,
+      "limit_w": 600.0,
+      "temp_c": 43.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 270.1,
+      "jobs": 37079,
+      "power_w": 325.4,
+      "limit_w": 600.0,
+      "temp_c": 42.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    },
+    {
+      "elapsed_s": 285.1,
+      "jobs": 39137,
+      "power_w": 325.299,
+      "limit_w": 600.0,
+      "temp_c": 42.0,
+      "clock_mhz": 2310.0,
+      "occupancy_pct": 99.0
+    }
+  ]
+}

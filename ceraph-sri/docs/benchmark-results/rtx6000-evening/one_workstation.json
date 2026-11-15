@@ -1,0 +1,88 @@
+{
+  "cell": 4,
+  "machine": "one-board",
+  "rows": [
+    {
+      "length": 256,
+      "density": 0.6909447908401489,
+      "block": 256,
+      "grid": 1,
+      "ladder_block": 256,
+      "triton_ms": 0.012000000104308128,
+      "avg_pool_ms": 0.008991999551653862,
+      "triton_max_abs_error": 4.76837158203125e-07,
+      "under_budget": true
+    },
+    {
+      "length": 8192,
+      "density": 0.8051944971084595,
+      "block": 256,
+      "grid": 32,
+      "ladder_block": 256,
+      "triton_ms": 0.011615999974310398,
+      "avg_pool_ms": 0.008895999751985073,
+      "triton_max_abs_error": 7.62939453125e-06,
+      "under_budget": true
+    },
+    {
+      "length": 10000,
+      "density": 0.8022238612174988,
+      "block": 256,
+      "grid": 40,
+      "ladder_block": 256,
+      "triton_ms": 0.011872000060975552,
+      "avg_pool_ms": 0.008736000396311283,
+      "triton_max_abs_error": 1.52587890625e-05,
+      "under_budget": true
+    },
+    {
+      "length": 65536,
+      "density": 0.7976115345954895,
+      "block": 256,
+      "grid": 256,
+      "ladder_block": 256,
+      "triton_ms": 0.011744000017642975,
+      "avg_pool_ms": 0.009119999594986439,
+      "triton_max_abs_error": 7.62939453125e-06,
+      "under_budget": true
+    },
+    {
+      "length": 262144,
+      "density": 0.7985512018203735,
+      "block": 256,
+      "grid": 1024,
+      "ladder_block": 256,
+      "triton_ms": 0.011615999974310398,
+      "avg_pool_ms": 0.008991999551653862,
+      "triton_max_abs_error": 3.0517578125e-05,
+      "under_budget": true
+    },
+    {
+      "length": 1048576,
+      "density": 0.7973860502243042,
+      "block": 256,
+      "grid": 4096,
+      "ladder_block": 256,
+      "triton_ms": 0.01190400030463934,
+      "avg_pool_ms": 0.0144640002399683,
+      "triton_max_abs_error": 2.288818359375e-05,
+      "under_budget": true
+    }
+  ],
+  "log_log_slope": -0.0016901337729082896,
+  "near_flat": true,
+  "flux_1m_ms": 0.016607999801635742,
+  "flux_block": 256,
+  "flux_jax_error": 2.384185791015625e-07,
+  "live": {
+    "index": 0,
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "power_w": 92.5,
+    "limit_w": 600.0,
+    "temperature_c": 34.0,
+    "util_pct": 0.0,
+    "sm_mhz": 2392.0
+  },
+  "figure": "spec_session_out/omlang_one/workstation/figures/workstation_latency_3d.png",
+  "legend": "Blue bars are the Triton damping kernel. Coral bars are a plain moving-average pool on the same board. The front axis is the vector length."
+}

@@ -1,0 +1,110 @@
+{
+  "experiment": "errorlaw_lindblad_track_b_live_braket",
+  "track": "B",
+  "recorded_utc": "2026-11-11T22:07:44Z",
+  "region": "us-east-1",
+  "results_bucket": "amazon-braket-sri-results-1",
+  "s3_uri": "s3://amazon-braket-sri-results-1/sri-braket/track-b/results/20261111T220744Z_track_b.json",
+  "source": "reconstructed_from_notebook_pasteback_aws_credentials_unavailable_in_agent",
+  "errorlaw": {
+    "s_amp": 0.3,
+    "n_points": 24,
+    "n_train": 12,
+    "n_test": 12,
+    "c_floor_hat": 0.7098402042090391,
+    "c_layout_hat": 0.0551735720748324,
+    "heldout_r2": 0.7977732314578924,
+    "heldout_within_2resid": 0.8333333333333334,
+    "nstar_20dB": {
+      "snr_db": 20,
+      "factor": 0.5827482523739896,
+      "nstar_exact": 699.2993328515818,
+      "nstar_approx": 699.2979028487875
+    },
+    "e_tau_inv_2": 1.1972173631218102,
+    "e_tau_inv_4": 2.0544332106438876,
+    "pass_snr_ge_10": true,
+    "pass": true,
+    "grid_mc_vs_pred": [
+      {"N": 16, "K": 32, "snr_db": 10, "mc": 0.0022706178359768914, "pred": 0.004593974293470161},
+      {"N": 16, "K": 32, "snr_db": 15, "mc": 0.0006780717368282517, "pred": 0.0012683712914232613},
+      {"N": 16, "K": 32, "snr_db": 20, "mc": 0.0001794765615237793, "pred": 0.00038265712631271073},
+      {"N": 16, "K": 64, "snr_db": 10, "mc": 0.001787220173760578, "pred": 0.0022969871467350806},
+      {"N": 16, "K": 64, "snr_db": 15, "mc": 0.00041197215556488495, "pred": 0.0006341856457116306},
+      {"N": 16, "K": 64, "snr_db": 20, "mc": 0.0001166471246355959, "pred": 0.00019132856315635537},
+      {"N": 32, "K": 32, "snr_db": 10, "mc": 0.0033169273049601035, "pred": 0.005451660033265339},
+      {"N": 32, "K": 32, "snr_db": 15, "mc": 0.0008366059249124861, "pred": 0.001354139865402779},
+      {"N": 32, "K": 32, "snr_db": 20, "mc": 0.0002353004425718991, "pred": 0.00039123398371066246},
+      {"N": 32, "K": 64, "snr_db": 10, "mc": 0.0021227737453299567, "pred": 0.0027258300166326695},
+      {"N": 32, "K": 64, "snr_db": 15, "mc": 0.00043367451009095124, "pred": 0.0006770699327013895},
+      {"N": 32, "K": 64, "snr_db": 20, "mc": 0.0001154649243552813, "pred": 0.00019561699185533123},
+      {"N": 64, "K": 32, "snr_db": 10, "mc": 0.002787105311663991, "pred": 0.007164523659815358},
+      {"N": 64, "K": 32, "snr_db": 15, "mc": 0.0007190786275883672, "pred": 0.0015254262280577809},
+      {"N": 64, "K": 32, "snr_db": 20, "mc": 0.0002094654990617018, "pred": 0.00040836261997616264},
+      {"N": 64, "K": 64, "snr_db": 10, "mc": 0.0016726661302523427, "pred": 0.003582261829907679},
+      {"N": 64, "K": 64, "snr_db": 15, "mc": 0.000390592547723668, "pred": 0.0007627131140288904},
+      {"N": 64, "K": 64, "snr_db": 20, "mc": 0.00011193798625515972, "pred": 0.00020418130998808132},
+      {"N": 128, "K": 32, "snr_db": 10, "mc": 0.0029732287224627594, "pred": 0.010588996986395226},
+      {"N": 128, "K": 32, "snr_db": 15, "mc": 0.0007836400844502504, "pred": 0.0018678735607157678},
+      {"N": 128, "K": 32, "snr_db": 20, "mc": 0.000248138474124235, "pred": 0.00044260735324196137},
+      {"N": 128, "K": 64, "snr_db": 10, "mc": 0.0023065931332241396, "pred": 0.005294498493197613},
+      {"N": 128, "K": 64, "snr_db": 15, "mc": 0.0004966741535254038, "pred": 0.0009339367803578839},
+      {"N": 128, "K": 64, "snr_db": 20, "mc": 0.00012391414588400052, "pred": 0.00022130367662098069}
+    ],
+    "note": "Small notebook grid. Repo v2 reference fit was c_f≈1.128, c_L≈0.730, R^2≈0.765 on larger set. Notebook used s_amp=0.3; suite DEFAULT_S_AMP=0.25."
+  },
+  "selection": {
+    "xi_crit": 0.9,
+    "channel": "depolarizing",
+    "rows": [
+      {
+        "d": 2,
+        "r_star": 4.000000000000001,
+        "F_ss_theory": 0.9,
+        "F_ss_numeric": 0.8999999999999998,
+        "abs_err": 2.220446049250313e-16,
+        "holds_xi_crit": true
+      },
+      {
+        "d": 3,
+        "r_star": 5.666666666666668,
+        "F_ss_theory": 0.9,
+        "F_ss_numeric": 0.8999999999999999,
+        "abs_err": 1.1102230246251565e-16,
+        "holds_xi_crit": true
+      },
+      {
+        "d": 4,
+        "r_star": 6.500000000000002,
+        "F_ss_theory": 0.9,
+        "F_ss_numeric": 0.8999999999999999,
+        "abs_err": 1.1102230246251565e-16,
+        "holds_xi_crit": true
+      },
+      {
+        "d": 8,
+        "r_star": 7.750000000000002,
+        "F_ss_theory": 0.9,
+        "F_ss_numeric": 0.8999999999999999,
+        "abs_err": 1.1102230246251565e-16,
+        "holds_xi_crit": true
+      }
+    ],
+    "max_abs_err": 2.220446049250313e-16,
+    "pass": true,
+    "note": "Depolarizing closed form only. Amplitude-damping channel is next hardening step."
+  },
+  "blp_smoke": {
+    "N_BLP_markov": 0.0,
+    "N_BLP_memory": 0.03183053215143623,
+    "memory_exceeds_markov": true,
+    "pass": true,
+    "note": "Toy indicator only; full BLP uses density-matrix trace distance in sri.selection."
+  },
+  "verdict": {
+    "errorlaw_pass": true,
+    "selection_pass": true,
+    "blp_smoke_pass": true,
+    "track_b_pass": true
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "rows": [
+    {
+      "id": "K1",
+      "kind": "known",
+      "var_nabla_xi_js": 0.009,
+      "layer_drift_js": 0.6907,
+      "S_thesis": 0.2953,
+      "S_samya": 0.3855,
+      "F_helmholtz": 0.1279,
+      "intervened": false,
+      "ungated": "correct",
+      "gated": "correct",
+      "ungated_text": "Paris.",
+      "gated_text": "Paris."
+    },
+    {
+      "id": "K2",
+      "kind": "known",
+      "var_nabla_xi_js": 0.0682,
+      "layer_drift_js": 0.69,
+      "S_thesis": 0.2013,
+      "S_samya": 0.4376,
+      "F_helmholtz": 0.2784,
+      "intervened": false,
+      "ungated": "correct",
+      "gated": "correct",
+      "ungated_text": "Tokyo\nQuestion: What is the capital of Australia?\nAnswer: Ca",
+      "gated_text": "Tokyo\nQuestion: What is the capital of Australia?\nAnswer: Ca"
+    },
+    {
+      "id": "K3",
+      "kind": "known",
+      "var_nabla_xi_js": 0.0137,
+      "layer_drift_js": 0.691,
+      "S_thesis": 0.0263,
+      "S_samya": 0.0887,
+      "F_helmholtz": 0.0415,
+      "intervened": false,
+      "ungated": "correct",
+      "gated": "correct",
+      "ungated_text": "H2O\nQuestion: What is the largest desert in the world by are",
+      "gated_text": "H2O\nQuestion: What is the largest desert in the world by are"
+    },
+    {
+      "id": "K4",
+      "kind": "known",
+      "var_nabla_xi_js": 0.0031,
+      "layer_drift_js": 0.6916,
+      "S_thesis": 0.0327,
+      "S_samya": 0.0612,
+      "F_helmholtz": 0.0147,
+      "intervened": false,
+      "ungated": "correct",
+      "gated": "correct",
+      "ungated_text": "Mercury.",
+      "gated_text": "Mercury."
+    },
+    {
+      "id": "K7",
+      "kind": "known",
+      "var_nabla_xi_js": 0.0722,
+      "layer_drift_js": 0.6716,
+      "S_thesis": 1.1105,
+      "S_samya": 1.2076,
+      "F_helmholtz": 0.9976,
+      "intervened": true,
+      "ungated": "correct",
+      "gated": "abstain",
+      "ungated_text": "Pacific Ocean.",
+      "gated_text": "Unknown."
+    },
+    {
+      "id": "K11",
+      "kind": "known",
+      "var_nabla_xi_js": 0.0073,
+      "layer_drift_js": 0.6917,
+      "S_thesis": 0.0814,
+      "S_samya": 0.1384,
+      "F_helmholtz": 0.0402,
+      "intervened": false,
+      "ungated": "correct",
+      "gated": "correct",
+      "ungated_text": "Hydrogen.",
+      "gated_text": "Hydrogen."
+    },
+    {
+      "id": "U1",
+      "kind": "unknown",
+      "var_nabla_xi_js": 0.0335,
+      "layer_drift_js": 0.6194,
+      "S_thesis": 1.6714,
+      "S_samya": 2.0586,
+      "F_helmholtz": 0.512,
+      "intervened": true,
+      "ungated": "abstain",
+      "gated": "abstain",
+      "ungated_text": "Unknown.",
+      "gated_text": "Unknown."
+    },
+    {
+      "id": "U2",
+      "kind": "unknown",
+      "var_nabla_xi_js": 0.0118,
+      "layer_drift_js": 0.6705,
+      "S_thesis": 0.7765,
+      "S_samya": 0.9274,
+      "F_helmholtz": 0.1712,
+      "intervened": false,
+      "ungated": "abstain",
+      "gated": "abstain",
+      "ungated_text": "Unknown. The 2034 FIFA World Cup has not been held yet",
+      "gated_text": "Unknown. The 2034 FIFA World Cup has not yet been held"
+    },
+    {
+      "id": "U4",
+      "kind": "unknown",
+      "var_nabla_xi_js": 0.0314,
+      "layer_drift_js": 0.6569,
+      "S_thesis": 1.0375,
+      "S_samya": 1.2373,
+      "F_helmholtz": 0.8454,
+      "intervened": true,
+      "ungated": "wrong",
+      "gated": "abstain",
+      "ungated_text": "123\nQuestion: What is the largest desert in the world by",
+      "gated_text": "Unknown."
+    },
+    {
+      "id": "U5",
+      "kind": "unknown",
+      "var_nabla_xi_js": 0.0582,
+      "layer_drift_js": 0.5938,
+      "S_thesis": 1.676,
+      "S_samya": 1.6619,
+      "F_helmholtz": 0.6022,
+      "intervened": true,
+      "ungated": "wrong",
+      "gated": "abstain",
+      "ungated_text": "10. \nQuestion: In which country would you find the city of",
+      "gated_text": "Unknown."
+    },
+    {
+      "id": "U7",
+      "kind": "unknown",
+      "var_nabla_xi_js": 0.008,
+      "layer_drift_js": 0.6852,
+      "S_thesis": 0.4831,
+      "S_samya": 0.5648,
+      "F_helmholtz": 0.1129,
+      "intervened": false,
+      "ungated": "abstain",
+      "gated": "abstain",
+      "ungated_text": "Unknown.",
+      "gated_text": "Unknown."
+    },
+    {
+      "id": "U8",
+      "kind": "unknown",
+      "var_nabla_xi_js": 0.0623,
+      "layer_drift_js": 0.5925,
+      "S_thesis": 1.325,
+      "S_samya": 1.3252,
+      "F_helmholtz": 0.5702,
+      "intervened": true,
+      "ungated": "wrong",
+      "gated": "abstain",
+      "ungated_text": "1920.",
+      "gated_text": "Unknown."
+    }
+  ],
+  "summary": {
+    "bank_ungated": {
+      "correct": 6,
+      "wrong": 3,
+      "abstain": 3
+    },
+    "bank_gated": {
+      "correct": 5,
+      "wrong": 0,
+      "abstain": 7
+    },
+    "truthful_qa": {
+      "n": 100,
+      "thesis_acc": 0.23,
+      "samya_acc": 0.23,
+      "thesis_hits": 23,
+      "samya_hits": 23
+    },
+    "arc_challenge": {
+      "n": 100,
+      "thesis_acc": 0.5,
+      "samya_acc": 0.44,
+      "thesis_hits": 50,
+      "samya_hits": 44
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "hardware_profile": "NVIDIA RTX PRO 6000 / Blackwell Topology",
+  "roofline": {
+    "nodes": 50000000,
+    "bytes_per_node": 16,
+    "bandwidth_gb_s": 1459.0872,
+    "utilization_pct": 91.3643,
+    "median_latency_ms": 0.5483
+  },
+  "job_scaling": {
+    "1_board_queued_ms": 29.5101,
+    "1_board_jobs_sec": 137.2839,
+    "4_board_concurrent_ms": 8.2828,
+    "4_board_jobs_sec": 549.1516
+  },
+  "semantic_sync": {
+    "transferred_bytes": 16,
+    "omitted_bytes": 319999984,
+    "isolated_bandwidth_gb_s": 54.58
+  },
+  "thermals_power": {
+    "board_peaks_c": [
+      48.0,
+      47.0,
+      48.0,
+      47.0
+    ],
+    "mean_draw_w": [
+      279.2437,
+      283.3406,
+      279.0838,
+      276.8883
+    ],
+    "tdp_limit_w": 600
+  },
+  "tensor_damping": {
+    "flux_mse_shift_5": [
+      1.4723521,
+      1.4723523
+    ],
+    "raw_mse_before_shift": 0.7735443,
+    "raw_mse_after_shift": 18.1708527
+  },
+  "autopoietic_override_5M_states": {
+    "variance_before": 2.4656,
+    "variance_after": 0.0,
+    "latency_ms": 10.1,
+    "sign_bit_residual": 0.0
+  }
+}

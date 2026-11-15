@@ -1,0 +1,69 @@
+{
+  "experiment": "braket_sphota_yoga_buddhi_elaborate",
+  "provenance": {
+    "host": "SageMaker Notebook ml.g4dn.xlarge",
+    "gpu": "Tesla T4",
+    "jax_default_backend": "gpu",
+    "jax_devices": ["cuda:0"],
+    "julia_available": false,
+    "braket_sdk": "present",
+    "repo_head_reported": "ad599d5",
+    "recorded_utc_note": "2026-11-12 pasteback from Hari notebook Cell 2",
+    "confirming_rerun": {
+      "note": "Second Cell 2 run after CUDA JAX reinstall; same verdict",
+      "pass_all": true,
+      "c5_status": "confirmed",
+      "jax_devices": ["cuda:0"],
+      "wall_seconds": 0.25340164799990816,
+      "W_raw_mean_sq_reported": 1.28233
+    }
+  },
+  "verdict": {
+    "pass_all": true,
+    "pass_core": true,
+    "pass_lemma_z1": true,
+    "pass_colab_oracle_fixture": true,
+    "c5_status": "confirmed",
+    "failed_checks": []
+  },
+  "theory_hooks": {
+    "lemma_z1_status": "supported",
+    "colab_oracle_regression": "supported",
+    "proposed_next_lemmas": [
+      {
+        "id": "Z2",
+        "question": "unveil→Z1 vs select→Z1 composition order",
+        "needs_from_this_run": "stable Z1 grid + antithesis distance diagnostics"
+      },
+      {
+        "id": "Z1b_distance",
+        "question": "Formalize E[‖Ĉ_S(Y)+y_A‖²] as a non-involution witness on raw Y (empirical mean_sq≈1.28233)",
+        "status": "metric_emitted",
+        "empirical_mean_sq_obs_anti_plus_ya": 1.28233
+      }
+    ],
+    "do_not_promote": [
+      "Landauer circumvention",
+      "hardware MSB XOR O(0)",
+      "NVIDIA DeepSeek TFLOPS as SREE",
+      "cuTile CUPTI geomean without Blackwell run"
+    ]
+  },
+  "sphota_backends_summary": {
+    "numpy": {"ok": true},
+    "jax": {"ok": true, "devices": ["cuda:0"], "matches_numpy_obs": true},
+    "julia": {"ok": false, "reason": "julia_unavailable_or_disabled"},
+    "tile_ref": {"ok": true, "mirror_nonneg": true},
+    "cutile_rs": {"ok": false, "perf_status": "not_run"}
+  },
+  "c5_status": "confirmed",
+  "wall_seconds": 0.07074647800004641,
+  "s3_uris": {
+    "bucket": "amazon-braket-sri-results-1",
+    "uploaded_utc": "20261112T055721Z",
+    "elaborate_summary.json": "s3://amazon-braket-sri-results-1/sri-braket/sphota-yoga-buddhi-elaborate/results/20261112T055721Z_elaborate_summary.json",
+    "pasteback.json": "s3://amazon-braket-sri-results-1/sri-braket/sphota-yoga-buddhi-elaborate/results/20261112T055721Z_pasteback.json",
+    "theory_hooks.json": "s3://amazon-braket-sri-results-1/sri-braket/sphota-yoga-buddhi-elaborate/results/20261112T055721Z_theory_hooks.json",
+    "hybrid_job_spec.json": "s3://amazon-braket-sri-results-1/sri-braket/sphota-yoga-buddhi-elaborate/results/20261112T055721Z_hybrid_job_spec.json"
+  }
+}

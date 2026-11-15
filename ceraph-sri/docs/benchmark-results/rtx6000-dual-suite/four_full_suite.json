@@ -1,0 +1,1047 @@
+{
+  "summary": {
+    "suite": "independent",
+    "cell": "four_full",
+    "elapsed_s": 600.2,
+    "jobs_total": 329404,
+    "jobs_per_s": 548.8284303548762,
+    "queued_ms": 44.33923200031131,
+    "together_ms": 8.338915000422276,
+    "boards": [
+      {
+        "device": 0,
+        "drift": 3.4862003326416016,
+        "finite": true,
+        "mean_power_w": 277.44680000000005,
+        "peak_power_w": 291.308,
+        "peak_temp_c": 48.0,
+        "mean_occupancy_pct": 95.95,
+        "min_clock_mhz": 2340.0,
+        "max_clock_mhz": 2422.0
+      },
+      {
+        "device": 1,
+        "drift": 3.702704668045044,
+        "finite": true,
+        "mean_power_w": 281.67465,
+        "peak_power_w": 302.187,
+        "peak_temp_c": 47.0,
+        "mean_occupancy_pct": 95.25,
+        "min_clock_mhz": 2280.0,
+        "max_clock_mhz": 2422.0
+      },
+      {
+        "device": 2,
+        "drift": 3.702704668045044,
+        "finite": true,
+        "mean_power_w": 276.575,
+        "peak_power_w": 293.093,
+        "peak_temp_c": 48.0,
+        "mean_occupancy_pct": 94.25,
+        "min_clock_mhz": 2347.0,
+        "max_clock_mhz": 2422.0
+      },
+      {
+        "device": 3,
+        "drift": 3.702704668045044,
+        "finite": true,
+        "mean_power_w": 273.13929999999993,
+        "peak_power_w": 292.605,
+        "peak_temp_c": 47.0,
+        "mean_occupancy_pct": 93.5,
+        "min_clock_mhz": 2362.0,
+        "max_clock_mhz": 2422.0
+      }
+    ]
+  },
+  "certify": [
+    {
+      "device": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "density": 0.7927381992340088,
+      "julia_block": 256,
+      "python_block": 256,
+      "grid": 64,
+      "sign_xor_error": 0.0,
+      "jvp_error": 0.0,
+      "triton_error": 4.76837158203125e-07,
+      "stability_index": 3.603260642304207e-05,
+      "would_launch": false,
+      "spiky_block": 1024
+    },
+    {
+      "device": 1,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "density": 0.7927381992340088,
+      "julia_block": 256,
+      "python_block": 256,
+      "grid": 64,
+      "sign_xor_error": 0.0,
+      "jvp_error": 0.0,
+      "triton_error": 4.76837158203125e-07,
+      "stability_index": 3.603260642304207e-05,
+      "would_launch": false,
+      "spiky_block": 1024
+    },
+    {
+      "device": 2,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "density": 0.7927381992340088,
+      "julia_block": 256,
+      "python_block": 256,
+      "grid": 64,
+      "sign_xor_error": 0.0,
+      "jvp_error": 0.0,
+      "triton_error": 4.76837158203125e-07,
+      "stability_index": 3.603260642304207e-05,
+      "would_launch": false,
+      "spiky_block": 1024
+    },
+    {
+      "device": 3,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "density": 0.7927381992340088,
+      "julia_block": 256,
+      "python_block": 256,
+      "grid": 64,
+      "sign_xor_error": 0.0,
+      "jvp_error": 0.0,
+      "triton_error": 4.76837158203125e-07,
+      "stability_index": 3.603260642304207e-05,
+      "would_launch": false,
+      "spiky_block": 1024
+    }
+  ],
+  "quality": [
+    {
+      "offset": 0.0,
+      "identity": 6.90957890520672,
+      "moving_average": 1.675011171028009,
+      "raw": 0.7735443353494624,
+      "flux": 1.472352151734814,
+      "flux_variance_remaining": 0.11660588273684425
+    },
+    {
+      "offset": 5.0,
+      "identity": 6.90957890520672,
+      "moving_average": 1.675011171028009,
+      "raw": 18.17085199652528,
+      "flux": 1.472352151734814,
+      "flux_variance_remaining": 0.11660588273684425
+    }
+  ],
+  "latency": [
+    {
+      "length": 256,
+      "block": 256,
+      "triton_ms": 0.014720000326633453,
+      "moving_avg_ms": 0.010432000271975994
+    },
+    {
+      "length": 8192,
+      "block": 256,
+      "triton_ms": 0.018432000651955605,
+      "moving_avg_ms": 0.013887999579310417
+    },
+    {
+      "length": 10000,
+      "block": 256,
+      "triton_ms": 0.016287999227643013,
+      "moving_avg_ms": 0.010048000141978264
+    },
+    {
+      "length": 65536,
+      "block": 256,
+      "triton_ms": 0.012671999633312225,
+      "moving_avg_ms": 0.009727999567985535
+    },
+    {
+      "length": 262144,
+      "block": 256,
+      "triton_ms": 0.012575999833643436,
+      "moving_avg_ms": 0.009696000255644321
+    },
+    {
+      "length": 1048576,
+      "block": 256,
+      "triton_ms": 0.012864000163972378,
+      "moving_avg_ms": 0.015936000272631645
+    }
+  ],
+  "roofline": [
+    {
+      "nodes": 10240,
+      "median_ms": 0.01414399966597557,
+      "bandwidth_GBps": 8.687783010600379,
+      "percent_of_1597": 0.5440064502567551,
+      "pre_variance": 1.0096923112869263,
+      "post_variance": 0.4357869327068329
+    },
+    {
+      "nodes": 1048576,
+      "median_ms": 0.013055999763309956,
+      "bandwidth_GBps": 963.7647233542828,
+      "percent_of_1597": 60.34844855067519,
+      "pre_variance": 1.0000922679901123,
+      "post_variance": 0.43230459094047546
+    },
+    {
+      "nodes": 10485760,
+      "median_ms": 0.1327359974384308,
+      "bandwidth_GBps": 947.9653027684933,
+      "percent_of_1597": 59.359129791389684,
+      "pre_variance": 0.9998129606246948,
+      "post_variance": 0.43232449889183044
+    },
+    {
+      "nodes": 50000000,
+      "median_ms": 0.5460159778594971,
+      "bandwidth_GBps": 1098.86894217296,
+      "percent_of_1597": 68.8083244942367,
+      "pre_variance": 0.9999666213989258,
+      "post_variance": 0.43240073323249817
+    }
+  ],
+  "samples": [
+    {
+      "elapsed_min": 0.0,
+      "cumulative_jobs": 4,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 107.426,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 82.09566666666667,
+          "temp_c": 35.0,
+          "clock_mhz": 2340.0,
+          "occupancy_pct": 50.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 89.627,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 85.06216666666666,
+          "temp_c": 33.0,
+          "clock_mhz": 2295.0,
+          "occupancy_pct": 24.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 85.466,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 85.75566666666667,
+          "temp_c": 33.0,
+          "clock_mhz": 2347.0,
+          "occupancy_pct": 4.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 85.245,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 85.7925,
+          "temp_c": 33.0,
+          "clock_mhz": 2362.0,
+          "occupancy_pct": 0.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 0.5,
+      "cumulative_jobs": 16568,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 291.308,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.448666666666675,
+          "temp_c": 44.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 302.187,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 49.6355,
+          "temp_c": 44.0,
+          "clock_mhz": 2280.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 293.093,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.15116666666666,
+          "temp_c": 44.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 292.605,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.232499999999995,
+          "temp_c": 44.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 1.0,
+      "cumulative_jobs": 33032,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 285.431,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.42816666666668,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 296.026,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 50.66233333333333,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 285.027,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.49550000000001,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 283.809,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.6985,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 1.5,
+      "cumulative_jobs": 49500,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 285.219,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.463499999999996,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 87.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 290.214,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.63100000000001,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 285.693,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.3845,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 283.131,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.81150000000001,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 2.0,
+      "cumulative_jobs": 65968,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 286.707,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.215500000000006,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 290.606,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.565666666666665,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.084,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.31933333333334,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 277.18,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 53.803333333333335,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 2.5,
+      "cumulative_jobs": 82436,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 287.138,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.143666666666675,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 290.924,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.512666666666675,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.37,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.271666666666675,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 285.424,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.42933333333334,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 3.0,
+      "cumulative_jobs": 98904,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 281.488,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 53.08533333333334,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 290.855,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.52416666666666,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.405,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.26583333333335,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 279.236,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 53.46066666666667,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 3.501,
+      "cumulative_jobs": 115372,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 287.091,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.1515,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 290.965,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.50583333333334,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.412,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.26466666666667,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 285.423,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.4295,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 4.001,
+      "cumulative_jobs": 131840,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 284.135,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.64416666666667,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 290.956,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.50733333333333,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.425,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.2625,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 285.418,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.43033333333334,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 4.501,
+      "cumulative_jobs": 148308,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 287.149,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.14183333333333,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 291.093,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.4845,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.421,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.26316666666666,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 278.831,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 53.528166666666664,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 5.001,
+      "cumulative_jobs": 164776,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 287.218,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.130333333333326,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 291.111,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.481500000000004,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.597,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.23383333333334,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 285.633,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.39450000000001,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 5.501,
+      "cumulative_jobs": 181244,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 283.856,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.690666666666665,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 291.01,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.498333333333335,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.47,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.254999999999995,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 276.997,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 53.83383333333334,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 6.001,
+      "cumulative_jobs": 197712,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 287.184,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.135999999999996,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 291.029,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.49516666666667,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.373,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.271166666666666,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 285.486,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.419,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 6.501,
+      "cumulative_jobs": 214180,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 284.766,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.539,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 290.914,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.514333333333326,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.27,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.288333333333334,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 278.877,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 53.52049999999999,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 7.001,
+      "cumulative_jobs": 230648,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 287.108,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.148666666666664,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 291.032,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.49466666666667,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.32,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.279999999999994,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 285.429,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.428500000000014,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 7.501,
+      "cumulative_jobs": 247116,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 287.147,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.14216666666667,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 290.931,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.5115,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.284,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.286,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 282.077,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.987166666666674,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 8.001,
+      "cumulative_jobs": 263584,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 287.189,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.13516666666666,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 290.96,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.506666666666675,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.455,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.2575,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 285.468,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.42199999999999,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 8.501,
+      "cumulative_jobs": 280052,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 287.144,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.14266666666667,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 291.02,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.49666666666667,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.413,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.264500000000005,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 279.238,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 53.46033333333333,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 9.001,
+      "cumulative_jobs": 296520,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 286.961,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.173166666666674,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 290.973,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.5045,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.377,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.2705,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 285.37,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.43833333333333,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_min": 9.502,
+      "cumulative_jobs": 312988,
+      "boards": [
+        {
+          "gpu_id": 0,
+          "power_w": 287.271,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.1215,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 1,
+          "power_w": 291.06,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 51.489999999999995,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 2,
+          "power_w": 286.545,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 52.24249999999999,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "gpu_id": 3,
+          "power_w": 281.909,
+          "limit_w": 600.0,
+          "tdp_headroom_pct": 53.015166666666666,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 70.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "mse_cube": [
+    {
+      "eta": 0.4,
+      "reference_r": 0.0,
+      "sample_mse": 0.7871661782095907,
+      "analytic_mse": 0.7627118644067796,
+      "resid_std": 0.8872048663130466
+    },
+    {
+      "eta": 0.4,
+      "reference_r": 0.4,
+      "sample_mse": 0.6898737016806714,
+      "analytic_mse": 0.7596696798105278,
+      "resid_std": 0.8303269329772345
+    },
+    {
+      "eta": 0.4,
+      "reference_r": 0.7,
+      "sample_mse": 0.7078236212975333,
+      "analytic_mse": 0.7582154223028742,
+      "resid_std": 0.8409689932206517
+    },
+    {
+      "eta": 0.4,
+      "reference_r": 1.0,
+      "sample_mse": 0.8101470555977188,
+      "analytic_mse": 0.7573134585350549,
+      "resid_std": 0.9000389107444029
+    },
+    {
+      "eta": 0.6,
+      "reference_r": 0.0,
+      "sample_mse": 0.6956184322541417,
+      "analytic_mse": 0.6962025316455696,
+      "resid_std": 0.8338497589688579
+    },
+    {
+      "eta": 0.6,
+      "reference_r": 0.4,
+      "sample_mse": 0.6887077998386713,
+      "analytic_mse": 0.6869204014900202,
+      "resid_std": 0.8297017249693996
+    },
+    {
+      "eta": 0.6,
+      "reference_r": 0.7,
+      "sample_mse": 0.6663038024849894,
+      "analytic_mse": 0.6819337959336318,
+      "resid_std": 0.8162281408514298
+    },
+    {
+      "eta": 0.6,
+      "reference_r": 1.0,
+      "sample_mse": 0.6850884225989988,
+      "analytic_mse": 0.6786351826907373,
+      "resid_std": 0.8276209656045644
+    },
+    {
+      "eta": 0.8,
+      "reference_r": 0.0,
+      "sample_mse": 0.5958873157767923,
+      "analytic_mse": 0.6435643564356436,
+      "resid_std": 0.7716014360489568
+    },
+    {
+      "eta": 0.8,
+      "reference_r": 0.4,
+      "sample_mse": 0.653037702243146,
+      "analytic_mse": 0.6242766040376874,
+      "resid_std": 0.8074517046279921
+    },
+    {
+      "eta": 0.8,
+      "reference_r": 0.7,
+      "sample_mse": 0.612160327509164,
+      "analytic_mse": 0.6126759441137769,
+      "resid_std": 0.7823696784279692
+    },
+    {
+      "eta": 0.8,
+      "reference_r": 1.0,
+      "sample_mse": 0.6335130570217586,
+      "analytic_mse": 0.6044543323716719,
+      "resid_std": 0.7958109945281412
+    },
+    {
+      "eta": 1.0,
+      "reference_r": 0.0,
+      "sample_mse": 0.5660565461719457,
+      "analytic_mse": 0.6,
+      "resid_std": 0.7522847071532867
+    },
+    {
+      "eta": 1.0,
+      "reference_r": 0.4,
+      "sample_mse": 0.5655321479429231,
+      "analytic_mse": 0.5671043493544874,
+      "resid_std": 0.7519922969483473
+    },
+    {
+      "eta": 1.0,
+      "reference_r": 0.7,
+      "sample_mse": 0.5567491233380139,
+      "analytic_mse": 0.5450028804529243,
+      "resid_std": 0.7461529043467594
+    },
+    {
+      "eta": 1.0,
+      "reference_r": 1.0,
+      "sample_mse": 0.541112798999476,
+      "analytic_mse": 0.5281244709469294,
+      "resid_std": 0.7355431461590065
+    }
+  ],
+  "scaling_fits": {
+    "projector": {
+      "slope": 0.947179796626127,
+      "intercept": -15.06435046218135,
+      "r2": 0.9999512274928745,
+      "interpretation": "consistent_with_O(N)_software"
+    },
+    "damping": {
+      "slope": 0.8833032789081063,
+      "intercept": -15.523632042690073,
+      "r2": 0.999382046160192,
+      "interpretation": "consistent_with_O(N)_software"
+    },
+    "omega_integrate": {
+      "slope": 1.9748964096111703,
+      "intercept": -16.004722423111502,
+      "r2": 0.9999538425898592,
+      "interpretation": "superlinear_or_memory_bound"
+    },
+    "simulate": {
+      "slope": 0.902239364114448,
+      "intercept": -11.04066902798422,
+      "r2": 0.9993458095926286,
+      "interpretation": "consistent_with_O(N)_software"
+    }
+  },
+  "landauer": {
+    "formula": "Q_min = k_B * T * ln(2) per erased bit",
+    "k_B": 1.380649e-23,
+    "rows": [
+      {
+        "temperature_kelvin": 1.0,
+        "kT_ln2_joules": 9.569929616929079e-24,
+        "hypothetical_erasures": [
+          {
+            "bits": 1,
+            "ideal_lower_bound_joules": 9.569929616929079e-24,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 1024,
+            "ideal_lower_bound_joules": 9.799607927735377e-21,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 16384,
+            "ideal_lower_bound_joules": 1.5679372684376603e-19,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          }
+        ]
+      },
+      {
+        "temperature_kelvin": 77.0,
+        "kT_ln2_joules": 7.368845805035391e-22,
+        "hypothetical_erasures": [
+          {
+            "bits": 1,
+            "ideal_lower_bound_joules": 7.368845805035391e-22,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 1024,
+            "ideal_lower_bound_joules": 7.54569810435624e-19,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 16384,
+            "ideal_lower_bound_joules": 1.2073116966969984e-17,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          }
+        ]
+      },
+      {
+        "temperature_kelvin": 300.0,
+        "kT_ln2_joules": 2.870978885078724e-21,
+        "hypothetical_erasures": [
+          {
+            "bits": 1,
+            "ideal_lower_bound_joules": 2.870978885078724e-21,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 1024,
+            "ideal_lower_bound_joules": 2.9398823783206133e-18,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 16384,
+            "ideal_lower_bound_joules": 4.703811805312981e-17,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          }
+        ]
+      },
+      {
+        "temperature_kelvin": 350.0,
+        "kT_ln2_joules": 3.349475365925178e-21,
+        "hypothetical_erasures": [
+          {
+            "bits": 1,
+            "ideal_lower_bound_joules": 3.349475365925178e-21,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 1024,
+            "ideal_lower_bound_joules": 3.4298627747073822e-18,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 16384,
+            "ideal_lower_bound_joules": 5.4877804395318116e-17,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          }
+        ]
+      }
+    ],
+    "disclaimer": "Theory check only. Does not measure silicon energy, does not prove Landauer circumvention, and does not equate float32 variance collapse with thermodynamics.",
+    "circumvention_claim": "not_validated"
+  },
+  "devices": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "platform": "Linux-6.12.113+-x86_64-with-glibc2.39",
+    "jax_default_backend": "cpu",
+    "jax_devices": [
+      "cpu:0"
+    ],
+    "nvidia_smi": null,
+    "nvidia_smi_error": "[Errno 2] No such file or directory: 'nvidia-smi'"
+  }
+}

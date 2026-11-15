@@ -1,0 +1,131 @@
+{
+  "cell": 3,
+  "machine": "four-board",
+  "idle": [
+    {
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 85.73,
+      "limit_w": 600.0,
+      "temperature_c": 33.0,
+      "util_pct": 0.0,
+      "sm_mhz": 2340.0
+    },
+    {
+      "index": 1,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 83.98,
+      "limit_w": 600.0,
+      "temperature_c": 32.0,
+      "util_pct": 0.0,
+      "sm_mhz": 2295.0
+    },
+    {
+      "index": 2,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 85.58,
+      "limit_w": 600.0,
+      "temperature_c": 33.0,
+      "util_pct": 0.0,
+      "sm_mhz": 2340.0
+    },
+    {
+      "index": 3,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 85.31,
+      "limit_w": 600.0,
+      "temperature_c": 33.0,
+      "util_pct": 0.0,
+      "sm_mhz": 2362.0
+    }
+  ],
+  "raw_stack": [
+    {
+      "device": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "density": 0.7927381992340088,
+      "block": 256,
+      "grid": 64,
+      "ladder_block": 256,
+      "schedule_matches": true,
+      "triton_max_abs_error": 7.62939453125e-06,
+      "jax_max_abs_error": 0.0,
+      "jvp_max_abs_error": 0.0,
+      "sign_xor_error": 0.0
+    },
+    {
+      "device": 1,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "density": 0.7927381992340088,
+      "block": 256,
+      "grid": 64,
+      "ladder_block": 256,
+      "schedule_matches": true,
+      "triton_max_abs_error": 7.62939453125e-06,
+      "jax_max_abs_error": 0.0,
+      "jvp_max_abs_error": 0.0,
+      "sign_xor_error": 0.0
+    },
+    {
+      "device": 2,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "density": 0.7927381992340088,
+      "block": 256,
+      "grid": 64,
+      "ladder_block": 256,
+      "schedule_matches": true,
+      "triton_max_abs_error": 7.62939453125e-06,
+      "jax_max_abs_error": 0.0,
+      "jvp_max_abs_error": 0.0,
+      "sign_xor_error": 0.0
+    },
+    {
+      "device": 3,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "density": 0.7927381992340088,
+      "block": 256,
+      "grid": 64,
+      "ladder_block": 256,
+      "schedule_matches": true,
+      "triton_max_abs_error": 7.62939453125e-06,
+      "jax_max_abs_error": 0.0,
+      "jvp_max_abs_error": 0.0,
+      "sign_xor_error": 0.0
+    }
+  ],
+  "quality": [
+    {
+      "offset": 0.0,
+      "identity_mse": 6.90957890520672,
+      "moving_average_mse": 1.675011171028009,
+      "raw_mse": 0.7735443353494624,
+      "flux_mse": 1.472352151734814,
+      "raw": "SUPPORTED",
+      "flux": "SUPPORTED",
+      "flux_variance_remaining": 0.11660588273684425,
+      "triton_flux_max_abs_error": 2.384185791015625e-07,
+      "block": 1024,
+      "grid": 8,
+      "density": 7.056066455041329,
+      "ladder_block": 1024
+    },
+    {
+      "offset": 5.0,
+      "identity_mse": 6.90957890520672,
+      "moving_average_mse": 1.675011171028009,
+      "raw_mse": 18.17085199652528,
+      "flux_mse": 1.472352151734814,
+      "raw": "NOT_MET",
+      "flux": "SUPPORTED",
+      "flux_variance_remaining": 0.11660588273684425,
+      "triton_flux_max_abs_error": 4.76837158203125e-07,
+      "block": 1024,
+      "grid": 8,
+      "density": 7.056066455041329,
+      "ladder_block": 1024
+    }
+  ],
+  "stack_real": true,
+  "legend": "Blue is offset 0. Gold is offset 5. Each board also ran the raw Triton kernel, the JAX derivative, and the sign-bit negation.",
+  "figure": "spec_session_out/omlang_four/validation/figures/quality_mse_3d.png"
+}

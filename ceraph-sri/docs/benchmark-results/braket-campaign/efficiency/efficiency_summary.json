@@ -1,0 +1,277 @@
+{
+  "experiment": "braket_efficiency_suite",
+  "phase": "S3",
+  "configuration": {
+    "dimensions": [
+      1024,
+      4096,
+      16384,
+      65536
+    ],
+    "shots": 20000,
+    "seeds": [
+      108,
+      109,
+      110
+    ],
+    "sensing": {
+      "signal_variance": 1.0,
+      "noise_variance": 1.0,
+      "coupling": 1.0,
+      "efficiency": 0.8,
+      "reference_r": 0.7
+    },
+    "instance_usd_per_hour": 0.096
+  },
+  "rows": [
+    {
+      "dimension": 1024,
+      "shots": 20000,
+      "seeds": [
+        108,
+        109,
+        110
+      ],
+      "mean_wall_time_s": 0.0015578733333351618,
+      "mean_samples_per_s": 13132179.375389054,
+      "mean_sample_mse": 0.6137248633352207,
+      "analytic_mse": 0.6126759441137769,
+      "mse_stable_within_5sigma": true,
+      "local_cpu": {
+        "platform": "Linux-6.12.113+-x86_64-with-glibc2.39",
+        "mean_wall_time_s": 0.0015578733333351618
+      },
+      "hybrid_instance_estimate": {
+        "estimated_instance_cost_usd": 4.154328888893765e-08,
+        "instance_usd_per_hour": 0.096,
+        "instance_profile": "ml.m5.large",
+        "note": "Cost estimate assumes Hybrid Job classical instance time only; no quantum-task charges in this suite."
+      },
+      "per_seed": [
+        {
+          "dimension": 1024,
+          "shots": 20000,
+          "wall_time_s": 0.0019048130000101082,
+          "samples_per_s": 10499718.344999675,
+          "sample_mse": 0.6148440388801731,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse_standard_error": 0.006138735464077485,
+          "within_5sigma": true,
+          "workspace_bytes": 8192
+        },
+        {
+          "dimension": 1024,
+          "shots": 20000,
+          "wall_time_s": 0.0013996600000041326,
+          "samples_per_s": 14289184.51619747,
+          "sample_mse": 0.610509030237706,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse_standard_error": 0.0061536542944413,
+          "within_5sigma": true,
+          "workspace_bytes": 8192
+        },
+        {
+          "dimension": 1024,
+          "shots": 20000,
+          "wall_time_s": 0.0013691469999912442,
+          "samples_per_s": 14607635.264970016,
+          "sample_mse": 0.6158215208877831,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse_standard_error": 0.006125303311382179,
+          "within_5sigma": true,
+          "workspace_bytes": 8192
+        }
+      ]
+    },
+    {
+      "dimension": 4096,
+      "shots": 20000,
+      "seeds": [
+        108,
+        109,
+        110
+      ],
+      "mean_wall_time_s": 0.0013435696666685242,
+      "mean_samples_per_s": 14978198.036874423,
+      "mean_sample_mse": 0.6137248633352207,
+      "analytic_mse": 0.6126759441137769,
+      "mse_stable_within_5sigma": true,
+      "local_cpu": {
+        "platform": "Linux-6.12.113+-x86_64-with-glibc2.39",
+        "mean_wall_time_s": 0.0013435696666685242
+      },
+      "hybrid_instance_estimate": {
+        "estimated_instance_cost_usd": 3.5828524444493976e-08,
+        "instance_usd_per_hour": 0.096,
+        "instance_profile": "ml.m5.large",
+        "note": "Cost estimate assumes Hybrid Job classical instance time only; no quantum-task charges in this suite."
+      },
+      "per_seed": [
+        {
+          "dimension": 4096,
+          "shots": 20000,
+          "wall_time_s": 0.0014635830000315764,
+          "samples_per_s": 13665094.497249903,
+          "sample_mse": 0.6148440388801731,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse_standard_error": 0.006138735464077485,
+          "within_5sigma": true,
+          "workspace_bytes": 32768
+        },
+        {
+          "dimension": 4096,
+          "shots": 20000,
+          "wall_time_s": 0.0012087439999959315,
+          "samples_per_s": 16546100.745953914,
+          "sample_mse": 0.610509030237706,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse_standard_error": 0.0061536542944413,
+          "within_5sigma": true,
+          "workspace_bytes": 32768
+        },
+        {
+          "dimension": 4096,
+          "shots": 20000,
+          "wall_time_s": 0.0013583819999780644,
+          "samples_per_s": 14723398.86741945,
+          "sample_mse": 0.6158215208877831,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse_standard_error": 0.006125303311382179,
+          "within_5sigma": true,
+          "workspace_bytes": 32768
+        }
+      ]
+    },
+    {
+      "dimension": 16384,
+      "shots": 20000,
+      "seeds": [
+        108,
+        109,
+        110
+      ],
+      "mean_wall_time_s": 0.0013794909999849854,
+      "mean_samples_per_s": 14569051.15789561,
+      "mean_sample_mse": 0.6137248633352207,
+      "analytic_mse": 0.6126759441137769,
+      "mse_stable_within_5sigma": true,
+      "local_cpu": {
+        "platform": "Linux-6.12.113+-x86_64-with-glibc2.39",
+        "mean_wall_time_s": 0.0013794909999849854
+      },
+      "hybrid_instance_estimate": {
+        "estimated_instance_cost_usd": 3.678642666626628e-08,
+        "instance_usd_per_hour": 0.096,
+        "instance_profile": "ml.m5.large",
+        "note": "Cost estimate assumes Hybrid Job classical instance time only; no quantum-task charges in this suite."
+      },
+      "per_seed": [
+        {
+          "dimension": 16384,
+          "shots": 20000,
+          "wall_time_s": 0.0012532269999496748,
+          "samples_per_s": 15958800.760598943,
+          "sample_mse": 0.6148440388801731,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse_standard_error": 0.006138735464077485,
+          "within_5sigma": true,
+          "workspace_bytes": 131072
+        },
+        {
+          "dimension": 16384,
+          "shots": 20000,
+          "wall_time_s": 0.0014823860000205968,
+          "samples_per_s": 13491762.60415446,
+          "sample_mse": 0.610509030237706,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse_standard_error": 0.0061536542944413,
+          "within_5sigma": true,
+          "workspace_bytes": 131072
+        },
+        {
+          "dimension": 16384,
+          "shots": 20000,
+          "wall_time_s": 0.0014028599999846847,
+          "samples_per_s": 14256590.108933425,
+          "sample_mse": 0.6158215208877831,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse_standard_error": 0.006125303311382179,
+          "within_5sigma": true,
+          "workspace_bytes": 131072
+        }
+      ]
+    },
+    {
+      "dimension": 65536,
+      "shots": 20000,
+      "seeds": [
+        108,
+        109,
+        110
+      ],
+      "mean_wall_time_s": 0.0012350889999955446,
+      "mean_samples_per_s": 16216179.221504137,
+      "mean_sample_mse": 0.6137248633352207,
+      "analytic_mse": 0.6126759441137769,
+      "mse_stable_within_5sigma": true,
+      "local_cpu": {
+        "platform": "Linux-6.12.113+-x86_64-with-glibc2.39",
+        "mean_wall_time_s": 0.0012350889999955446
+      },
+      "hybrid_instance_estimate": {
+        "estimated_instance_cost_usd": 3.293570666654785e-08,
+        "instance_usd_per_hour": 0.096,
+        "instance_profile": "ml.m5.large",
+        "note": "Cost estimate assumes Hybrid Job classical instance time only; no quantum-task charges in this suite."
+      },
+      "per_seed": [
+        {
+          "dimension": 65536,
+          "shots": 20000,
+          "wall_time_s": 0.0012961770000288197,
+          "samples_per_s": 15429991.428296685,
+          "sample_mse": 0.6148440388801731,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse_standard_error": 0.006138735464077485,
+          "within_5sigma": true,
+          "workspace_bytes": 524288
+        },
+        {
+          "dimension": 65536,
+          "shots": 20000,
+          "wall_time_s": 0.0012264509999795337,
+          "samples_per_s": 16307214.882888716,
+          "sample_mse": 0.610509030237706,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse_standard_error": 0.0061536542944413,
+          "within_5sigma": true,
+          "workspace_bytes": 524288
+        },
+        {
+          "dimension": 65536,
+          "shots": 20000,
+          "wall_time_s": 0.0011826389999782805,
+          "samples_per_s": 16911331.353327014,
+          "sample_mse": 0.6158215208877831,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse_standard_error": 0.006125303311382179,
+          "within_5sigma": true,
+          "workspace_bytes": 524288
+        }
+      ]
+    }
+  ],
+  "aggregate": {
+    "accuracy_ok_across_n": true,
+    "total_estimated_hybrid_instance_cost_usd": 1.4709394666624575e-07,
+    "cost_per_accurate_lock_usd": 1.4709394666624575e-07,
+    "scaling_note": "Wall time grows with Monte Carlo length and workspace size; this software path is O(N) in vector work \u2014 not a constant-time claim."
+  },
+  "pass": true,
+  "disclaimer": "Efficiency = reproducible timing + cost-normalized Hybrid instance estimate. Does not prove hardware-native O(1) or thermodynamic advantage.",
+  "provenance": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "script_sha256": "1413bd95270538fcb107c86b5fc8e94f11eacdfe22d975ee10425a1192da053f"
+  }
+}

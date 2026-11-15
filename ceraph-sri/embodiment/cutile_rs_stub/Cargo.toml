@@ -1,0 +1,15 @@
+[package]
+name = "sri-cutile-rs-stub"
+version = "0.1.0"
+edition = "2021"
+description = "CPU mirror of Yoga–Buddhi tile ops; stand-in until cuTile Rust + Blackwell land"
+license = "Apache-2.0"
+publish = false
+
+[lib]
+name = "sri_cutile_rs_stub"
+path = "src/lib.rs"
+
+[[bin]]
+name = "sri_cutile_rs_stub_check"
+path = "src/main.rs"

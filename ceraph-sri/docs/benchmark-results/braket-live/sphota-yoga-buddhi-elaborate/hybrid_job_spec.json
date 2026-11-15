@@ -1,0 +1,72 @@
+{
+  "plan": {
+    "job_name": "sphota-yb-elaborate",
+    "device_arn": "arn:aws:braket:::device/quantum-simulator/amazon/sv1",
+    "shots": 2048,
+    "task": "sphota_yoga_buddhi",
+    "parameters": {
+      "suite": "braket_sphota_yoga_buddhi_elaborate",
+      "seeds": [
+        108,
+        109,
+        110,
+        111
+      ],
+      "n_samples": 8192,
+      "oracle_dimensions": [
+        256,
+        1024,
+        4096,
+        16384
+      ],
+      "encoding": "classical_hybrid_container",
+      "note": "Elaborate Yoga\u2013Buddhi / Lemma Z1 + Colab oracle regression. Not a photonic QPU MMSE claim."
+    },
+    "cost_cap_usd": 25.0,
+    "region": "us-east-1",
+    "submit": false,
+    "s3_bucket": null,
+    "s3_prefix": "sri-braket/sphota-yoga-buddhi-elaborate"
+  },
+  "estimate_usd": 0.075,
+  "dry_run": {
+    "status": "dry_run_ok",
+    "submit_requested": false,
+    "estimated_cost_usd": 0.075,
+    "within_cost_cap": true,
+    "plan": {
+      "job_name": "sphota-yb-elaborate",
+      "device_arn": "arn:aws:braket:::device/quantum-simulator/amazon/sv1",
+      "shots": 2048,
+      "task": "sphota_yoga_buddhi",
+      "parameters": {
+        "suite": "braket_sphota_yoga_buddhi_elaborate",
+        "seeds": [
+          108,
+          109,
+          110,
+          111
+        ],
+        "n_samples": 8192,
+        "oracle_dimensions": [
+          256,
+          1024,
+          4096,
+          16384
+        ],
+        "encoding": "classical_hybrid_container",
+        "note": "Elaborate Yoga\u2013Buddhi / Lemma Z1 + Colab oracle regression. Not a photonic QPU MMSE claim."
+      },
+      "cost_cap_usd": 25.0,
+      "region": "us-east-1",
+      "submit": false,
+      "s3_bucket": null,
+      "s3_prefix": "sri-braket/sphota-yoga-buddhi-elaborate"
+    }
+  },
+  "credentials_available": false,
+  "submit_requested": false,
+  "submit_executed": false,
+  "notebook_hint": "On Braket notebook: clone/sync repo, PYTHONPATH=., run this module, upload elaborate_summary.json to S3, paste verdict + theory_hooks.",
+  "note": "Dry-run / local elaborate only unless BRAKET_SUBMIT=1"
+}

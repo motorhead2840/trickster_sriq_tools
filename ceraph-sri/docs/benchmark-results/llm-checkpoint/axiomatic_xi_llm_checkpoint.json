@@ -1,0 +1,22 @@
+{
+  "experiment": "axiomatic_xi_llm_checkpoint",
+  "legacy_truthfulqa": {
+    "skipped": true,
+    "reason": "Install missing dependencies: torch, transformers and datasets"
+  },
+  "synthetic_smoke": {
+    "skipped": false,
+    "mode": "synthetic_smoke",
+    "n": 100,
+    "accuracy": 0.18,
+    "confidence_auroc": 0.5210027100271003,
+    "xi_snr_auroc": 0.8658536585365854,
+    "note": "Synthetic only; replace with legacy TruthfulQA run on Colab A100 once."
+  },
+  "policy": "single pass; do not iterate hyperparameters to chase AUROC",
+  "provenance": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "script_sha256": "5b822ff0eb5d77be16d3d2985070391b924f082298b717c8d4cced2af8ee5e54"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "verdict": {
+    "pass_all": true,
+    "pass_core": true,
+    "pass_lemma_z1": true,
+    "pass_colab_oracle_fixture": true,
+    "c5_status": "confirmed",
+    "failed_checks": []
+  },
+  "devices": {
+    "jax_default_backend": "cpu",
+    "jax_devices": [
+      "cpu:0"
+    ],
+    "julia_available": false,
+    "braket_sdk": "present"
+  },
+  "theory_hooks": {
+    "lemma_z1_status": "supported",
+    "colab_oracle_regression": "supported",
+    "proposed_next_lemmas": [
+      {
+        "id": "Z2",
+        "question": "unveil\u2192Z1 vs select\u2192Z1 composition order",
+        "needs_from_this_run": "stable Z1 grid + antithesis distance diagnostics"
+      },
+      {
+        "id": "Z1b_distance",
+        "question": "Formalize E[\u2016\u0108_S(Y)+y_A\u2016\u00b2] as a non-involution witness on raw Y (empirical mean_sq\u22481.28233)",
+        "status": "metric_emitted"
+      }
+    ],
+    "do_not_promote": [
+      "Landauer circumvention",
+      "hardware MSB XOR O(0)",
+      "NVIDIA DeepSeek TFLOPS as SREE",
+      "cuTile CUPTI geomean without Blackwell run"
+    ],
+    "framework_files_to_update_after_pasteback": [
+      "docs/architecture-axioms.md",
+      "docs/yoga-buddhi-projector.md",
+      "docs/theoretical-framework.md",
+      "docs/conjecture-registry.md"
+    ]
+  },
+  "c5_status": "confirmed",
+  "wall_seconds": 2.6746628430009878
+}

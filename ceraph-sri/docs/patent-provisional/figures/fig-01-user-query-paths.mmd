@@ -1,0 +1,13 @@
+flowchart LR
+  U100["100 User sends a query"] --> P102["102 AI begins processing"]
+  P102 --> A112["112 Prior: finish full answer"]
+  A112 --> A114["114 Prior: external filter"]
+  A114 --> A116["116 Prior: emit / block / rewrite"]
+  P102 --> B122["122 SRI: scores before Softmax"]
+  B122 --> B124["124 SRI: in-process stability"]
+  B124 --> B126["126 SRI: next token"]
+  B126 --> B128{"128 More tokens?"}
+  B128 -->|Yes| B122
+  B128 -->|No| B130["130 Assemble answer"]
+  A116 --> U136["136 Present to user"]
+  B130 --> U136

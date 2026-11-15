@@ -1,0 +1,1092 @@
+{
+  "experiment": "braket_sphota_yoga_buddhi_elaborate",
+  "recorded_utc": "2026-11-12T05:25:16Z",
+  "wall_seconds": 2.6746628430009878,
+  "devices": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "platform": "Linux-6.12.113+-x86_64-with-glibc2.39",
+    "jax_available": true,
+    "jax_default_backend": "cpu",
+    "jax_devices": [
+      "cpu:0"
+    ],
+    "julia_available": false,
+    "braket_sdk": "present",
+    "rustc": "rustc 1.83.0 (90b35a623 2024-11-26)",
+    "cutile_stub_path": "/workspace/embodiment/cutile_rs_stub"
+  },
+  "configuration": {
+    "seeds": [
+      108,
+      109,
+      110,
+      111
+    ],
+    "n_samples": 8192,
+    "oracle_dimensions": [
+      256,
+      1024,
+      4096,
+      16384
+    ],
+    "prefer_jax": true,
+    "prefer_julia": true,
+    "promote_c5": true,
+    "reference_lock": "docs/benchmark-results/e1_colab_lock.json",
+    "config_grid": [
+      "default_r07",
+      "coherent",
+      "sq_signal",
+      "low_eta",
+      "strong_noise",
+      "weak_signal"
+    ]
+  },
+  "checks": {
+    "colab_oracle_samya_fixture": {
+      "name": "colab_oracle_samya_fixture",
+      "source": "Untitled10 known-baseline / dissertation Samya",
+      "pass": true,
+      "rows": [
+        {
+          "seed": 108,
+          "n": 256,
+          "residual_var": 4.5552757083065286e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 108,
+          "n": 1024,
+          "residual_var": 5.385294879200406e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 108,
+          "n": 4096,
+          "residual_var": 4.9708985289346995e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 108,
+          "n": 16384,
+          "residual_var": 5.330860666350246e-34,
+          "residual_max_abs": 4.440892098500626e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 109,
+          "n": 256,
+          "residual_var": 6.690024410925522e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 109,
+          "n": 1024,
+          "residual_var": 4.991342827742553e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 109,
+          "n": 4096,
+          "residual_var": 4.584502858276754e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 109,
+          "n": 16384,
+          "residual_var": 4.641109217352476e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 110,
+          "n": 256,
+          "residual_var": 4.484676453170259e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 110,
+          "n": 1024,
+          "residual_var": 3.6195922628997414e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 110,
+          "n": 4096,
+          "residual_var": 5.379838662861488e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 110,
+          "n": 16384,
+          "residual_var": 5.327043728113701e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 111,
+          "n": 256,
+          "residual_var": 1.9974383978404e-34,
+          "residual_max_abs": 1.1102230246251565e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 111,
+          "n": 1024,
+          "residual_var": 5.500966897171579e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 111,
+          "n": 4096,
+          "residual_var": 5.659207999367237e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        },
+        {
+          "seed": 111,
+          "n": 16384,
+          "residual_var": 5.2298713545690115e-34,
+          "residual_max_abs": 2.220446049250313e-16,
+          "package_oracle_ok": true,
+          "paired_projection_ok": true,
+          "latent_involution": true,
+          "pass": true
+        }
+      ],
+      "note": "Proves oracle chart only. Does not prove blind antithesis or hardware O(0)."
+    },
+    "lemma_z1_config_seed_grid": {
+      "name": "lemma_z1_config_seed_grid",
+      "pass": true,
+      "n_samples": 8192,
+      "n_configs": 6,
+      "n_seeds": 4,
+      "rows": [
+        {
+          "config": "default_r07",
+          "seed": 108,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse": 0.6071833560138673,
+          "se_5sigma": 0.06115126489256019,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.5695057560773875,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.43304145914126124,
+            -0.28935075345920414
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 127.44861910431129,
+          "observable_antithesis_norm": 68.49130744046096,
+          "latent_noise_proxy_norm": 80.89469805397805,
+          "pass": true
+        },
+        {
+          "config": "default_r07",
+          "seed": 109,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse": 0.5981721587512198,
+          "se_5sigma": 0.06115126489256019,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.5487773549463522,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.43304145914126124,
+            -0.28935075345920414
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 126.03833229023361,
+          "observable_antithesis_norm": 68.08112658952331,
+          "latent_noise_proxy_norm": 80.68683110563376,
+          "pass": true
+        },
+        {
+          "config": "default_r07",
+          "seed": 110,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse": 0.6204547505296827,
+          "se_5sigma": 0.06115126489256019,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.5431852848452694,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.43304145914126124,
+            -0.28935075345920414
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 128.417096620004,
+          "observable_antithesis_norm": 67.28720029662031,
+          "latent_noise_proxy_norm": 80.30601719620861,
+          "pass": true
+        },
+        {
+          "config": "default_r07",
+          "seed": 111,
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse": 0.5928162772811439,
+          "se_5sigma": 0.06115126489256019,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.5299538992789632,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.43304145914126124,
+            -0.28935075345920414
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 126.79090211202039,
+          "observable_antithesis_norm": 68.73709838728195,
+          "latent_noise_proxy_norm": 81.31532054966394,
+          "pass": true
+        },
+        {
+          "config": "coherent",
+          "seed": 108,
+          "analytic_mse": 0.6435643564356436,
+          "sample_mse": 0.6385828795882719,
+          "se_5sigma": 0.06267379919231017,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.449170469198516,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.3985071643068932,
+            -0.1771142952475081
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 127.44861910431129,
+          "observable_antithesis_norm": 60.85573721795007,
+          "latent_noise_proxy_norm": 80.89469805397805,
+          "pass": true
+        },
+        {
+          "config": "coherent",
+          "seed": 109,
+          "analytic_mse": 0.6435643564356436,
+          "sample_mse": 0.6256902111872289,
+          "se_5sigma": 0.06267379919231017,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 2.220446049250313e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.4259973979473857,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.3985071643068932,
+            -0.1771142952475081
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 126.03833229023361,
+          "observable_antithesis_norm": 60.266246011869946,
+          "latent_noise_proxy_norm": 80.68683110563376,
+          "pass": true
+        },
+        {
+          "config": "coherent",
+          "seed": 110,
+          "analytic_mse": 0.6435643564356436,
+          "sample_mse": 0.6529709088617437,
+          "se_5sigma": 0.06267379919231017,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.4205790239401384,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.3985071643068932,
+            -0.1771142952475081
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 128.417096620004,
+          "observable_antithesis_norm": 59.45088240997411,
+          "latent_noise_proxy_norm": 80.30601719620861,
+          "pass": true
+        },
+        {
+          "config": "coherent",
+          "seed": 111,
+          "analytic_mse": 0.6435643564356436,
+          "sample_mse": 0.6216649637061162,
+          "se_5sigma": 0.06267379919231017,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.408416721879325,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.3985071643068932,
+            -0.1771142952475081
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 126.79090211202039,
+          "observable_antithesis_norm": 60.66709754549078,
+          "latent_noise_proxy_norm": 81.31532054966394,
+          "pass": true
+        },
+        {
+          "config": "sq_signal",
+          "seed": 108,
+          "analytic_mse": 0.5127067844620878,
+          "sample_mse": 0.5101380946531212,
+          "se_5sigma": 0.05594027055715641,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.9712568667855854,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.544810377458614,
+            -0.2421379455371618
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 127.44861910431129,
+          "observable_antithesis_norm": 54.33686172286469,
+          "latent_noise_proxy_norm": 80.89469805397805,
+          "pass": true
+        },
+        {
+          "config": "sq_signal",
+          "seed": 109,
+          "analytic_mse": 0.5127067844620878,
+          "sample_mse": 0.4944004191034933,
+          "se_5sigma": 0.05594027055715641,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.951397110644234,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.544810377458614,
+            -0.2421379455371618
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 126.03833229023361,
+          "observable_antithesis_norm": 54.50983581772611,
+          "latent_noise_proxy_norm": 80.68683110563376,
+          "pass": true
+        },
+        {
+          "config": "sq_signal",
+          "seed": 110,
+          "analytic_mse": 0.5127067844620878,
+          "sample_mse": 0.5212038079576511,
+          "se_5sigma": 0.05594027055715641,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.9492827417241851,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.544810377458614,
+            -0.2421379455371618
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 128.417096620004,
+          "observable_antithesis_norm": 54.404089870387786,
+          "latent_noise_proxy_norm": 80.30601719620861,
+          "pass": true
+        },
+        {
+          "config": "sq_signal",
+          "seed": 111,
+          "analytic_mse": 0.5127067844620878,
+          "sample_mse": 0.49594644035056906,
+          "se_5sigma": 0.05594027055715641,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.9253553509303685,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.544810377458614,
+            -0.2421379455371618
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 126.79090211202039,
+          "observable_antithesis_norm": 55.14004811756351,
+          "latent_noise_proxy_norm": 81.31532054966394,
+          "pass": true
+        },
+        {
+          "config": "low_eta",
+          "seed": 108,
+          "analytic_mse": 0.7186967369335197,
+          "sample_mse": 0.7121470600855436,
+          "se_5sigma": 0.06623123706764242,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 2.220446049250313e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.1455763213961911,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.39782288976842306,
+            -0.17707799670059698
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 127.44861910431129,
+          "observable_antithesis_norm": 49.622438576226116,
+          "latent_noise_proxy_norm": 63.95287412054031,
+          "pass": true
+        },
+        {
+          "config": "low_eta",
+          "seed": 109,
+          "analytic_mse": 0.7186967369335197,
+          "sample_mse": 0.7013167738442203,
+          "se_5sigma": 0.06623123706764242,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 2.220446049250313e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.125859907459537,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.39782288976842306,
+            -0.17707799670059698
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 126.03833229023361,
+          "observable_antithesis_norm": 49.07491669744062,
+          "latent_noise_proxy_norm": 63.78854086878119,
+          "pass": true
+        },
+        {
+          "config": "low_eta",
+          "seed": 110,
+          "analytic_mse": 0.7186967369335197,
+          "sample_mse": 0.7283683226860924,
+          "se_5sigma": 0.06623123706764242,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.118563734369415,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.39782288976842306,
+            -0.17707799670059698
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 128.417096620004,
+          "observable_antithesis_norm": 48.384552495719625,
+          "latent_noise_proxy_norm": 63.48748103916705,
+          "pass": true
+        },
+        {
+          "config": "low_eta",
+          "seed": 111,
+          "analytic_mse": 0.7186967369335197,
+          "sample_mse": 0.6941566158819357,
+          "se_5sigma": 0.06623123706764242,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 2.220446049250313e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.1111507106933405,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.39782288976842306,
+            -0.17707799670059698
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 126.79090211202039,
+          "observable_antithesis_norm": 49.305069223890534,
+          "latent_noise_proxy_norm": 64.28540540090826,
+          "pass": true
+        },
+        {
+          "config": "strong_noise",
+          "seed": 108,
+          "analytic_mse": 0.622330693043332,
+          "sample_mse": 0.6162617076569429,
+          "se_5sigma": 0.06163120239705742,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.5254246489680956,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.4222471216851718,
+            -0.3382581392060427
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 156.1645343154193,
+          "observable_antithesis_norm": 104.57042821226048,
+          "latent_noise_proxy_norm": 114.40237911201217,
+          "pass": true
+        },
+        {
+          "config": "strong_noise",
+          "seed": 109,
+          "analytic_mse": 0.622330693043332,
+          "sample_mse": 0.6067930340181557,
+          "se_5sigma": 0.06163120239705742,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.5094534989146537,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.4222471216851718,
+            -0.3382581392060427
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 154.59627558153022,
+          "observable_antithesis_norm": 104.0527371938692,
+          "latent_noise_proxy_norm": 114.10841085449458,
+          "pass": true
+        },
+        {
+          "config": "strong_noise",
+          "seed": 110,
+          "analytic_mse": 0.622330693043332,
+          "sample_mse": 0.6298045916412014,
+          "se_5sigma": 0.06163120239705742,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.5081902451370628,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.4222471216851718,
+            -0.3382581392060427
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 156.94121229108245,
+          "observable_antithesis_norm": 102.95008163475767,
+          "latent_noise_proxy_norm": 113.56985865904521,
+          "pass": true
+        },
+        {
+          "config": "strong_noise",
+          "seed": 111,
+          "analytic_mse": 0.622330693043332,
+          "sample_mse": 0.6027495979193818,
+          "se_5sigma": 0.06163120239705742,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 4.440892098500626e-16,
+          "mean_sq_obs_anti_plus_ya": 1.4929308016260499,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.4222471216851718,
+            -0.3382581392060427
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 155.8236259777663,
+          "observable_antithesis_norm": 105.07709867240825,
+          "latent_noise_proxy_norm": 114.99722915005037,
+          "pass": true
+        },
+        {
+          "config": "weak_signal",
+          "seed": 108,
+          "analytic_mse": 0.21588087936696815,
+          "sample_mse": 0.21375991185202042,
+          "se_5sigma": 0.036299205505837595,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 3.3306690738754696e-16,
+          "oracle_samya_max_abs_err": 2.220446049250313e-16,
+          "mean_sq_obs_anti_plus_ya": 0.138374068949982,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.1525853461359498,
+            -0.10195486815240078
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 100.86713271071147,
+          "observable_antithesis_norm": 102.29520052848285,
+          "latent_noise_proxy_norm": 80.89469805397805,
+          "pass": true
+        },
+        {
+          "config": "weak_signal",
+          "seed": 109,
+          "analytic_mse": 0.21588087936696815,
+          "sample_mse": 0.210802310015973,
+          "se_5sigma": 0.036299205505837595,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 3.3306690738754696e-16,
+          "oracle_samya_max_abs_err": 2.220446049250313e-16,
+          "mean_sq_obs_anti_plus_ya": 0.1364105798583306,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.1525853461359498,
+            -0.10195486815240078
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 100.00138891974943,
+          "observable_antithesis_norm": 100.72852872709278,
+          "latent_noise_proxy_norm": 80.68683110563376,
+          "pass": true
+        },
+        {
+          "config": "weak_signal",
+          "seed": 110,
+          "analytic_mse": 0.21588087936696815,
+          "sample_mse": 0.21828328850828954,
+          "se_5sigma": 0.036299205505837595,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 4.440892098500626e-16,
+          "oracle_samya_max_abs_err": 2.220446049250313e-16,
+          "mean_sq_obs_anti_plus_ya": 0.13615217500619858,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.1525853461359498,
+            -0.10195486815240078
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 101.07408140355538,
+          "observable_antithesis_norm": 99.71956012035871,
+          "latent_noise_proxy_norm": 80.30601719620861,
+          "pass": true
+        },
+        {
+          "config": "weak_signal",
+          "seed": 111,
+          "analytic_mse": 0.21588087936696815,
+          "sample_mse": 0.20873742349369623,
+          "se_5sigma": 0.036299205505837595,
+          "mse_within_5sigma": true,
+          "algebra_max_abs_err": 3.3306690738754696e-16,
+          "oracle_samya_max_abs_err": 2.220446049250313e-16,
+          "mean_sq_obs_anti_plus_ya": 0.13486477462345708,
+          "raw_y_falsely_involution": false,
+          "weights": [
+            0.1525853461359498,
+            -0.10195486815240078
+          ],
+          "latent_proxy_note": "latent_antithesis_proxy is v-\u03be chart; not used by estimator",
+          "latent_antithesis_proxy_norm": 100.90389085527066,
+          "observable_antithesis_norm": 100.46239146522177,
+          "latent_noise_proxy_norm": 81.31532054966394,
+          "pass": true
+        }
+      ]
+    },
+    "mirror_and_softwalls": {
+      "name": "mirror_and_softwalls",
+      "pass": true,
+      "mirror_nonneg": true,
+      "softwalls": {
+        "claims_landauer_circumvention": false,
+        "claims_hardware_O0_msb_flip": false,
+        "claims_helmholtz_equals_u_min": false,
+        "claims_nvidia_deepseek_tflops_as_ours": false,
+        "claims_cutile_geomean_as_ours": false,
+        "hybrid_is_photonic_qpu": false
+      },
+      "note": "Mirror is A5 channel; softwalls must stay false in this artifact."
+    },
+    "sphota_crystallize": {
+      "oracle_samya_max_abs_err": 2.220446049250313e-16,
+      "latent_involution": true,
+      "observable_equals_mmse_max_abs": 4.440892098500626e-16,
+      "sample_mse": 0.6071833560138673,
+      "analytic_mse": 0.6126759441137769,
+      "mse_within_5sigma": true,
+      "mirror_nonneg": true,
+      "backends": {
+        "numpy": {
+          "ok": true,
+          "oracle_err": 2.220446049250313e-16,
+          "obs_err": 4.440892098500626e-16
+        },
+        "jax": {
+          "ok": true,
+          "devices": [
+            "cpu:0"
+          ],
+          "oracle_err": 2.220446049250313e-16,
+          "obs_err": 4.440892098500626e-16,
+          "matches_numpy_obs": true
+        },
+        "julia": {
+          "ok": false,
+          "reason": "julia_unavailable_or_disabled"
+        },
+        "tile_ref": {
+          "ok": true,
+          "analysis": {
+            "source": "sri.omlang.tile_ref",
+            "methodology": "nvidia-cutile-python-to-rust-agentic",
+            "operators": [
+              {
+                "name": "oracle_samya_tile",
+                "dtype": [
+                  "f32",
+                  "f64"
+                ],
+                "kind": "elementwise_binary",
+                "tolerance_abs": 1e-06
+              },
+              {
+                "name": "observable_upsilon_tile",
+                "dtype": [
+                  "f32",
+                  "f64"
+                ],
+                "kind": "elementwise_binary_weighted",
+                "tolerance_rel": 1e-10,
+                "forbids_inputs": [
+                  "clean_s",
+                  "oracle_n"
+                ]
+              },
+              {
+                "name": "mirror_abs2_tile",
+                "dtype": [
+                  "f32",
+                  "f64"
+                ],
+                "kind": "elementwise_binary",
+                "tolerance_abs": 1e-12
+              }
+            ],
+            "perf_gate": {
+              "metric": "cupti_device_time_geomean",
+              "threshold_vs_reference": 0.95,
+              "status": "not_run"
+            }
+          },
+          "oracle_err": 2.220446049250313e-16,
+          "obs_err": 4.440892098500626e-16,
+          "mirror_nonneg": true,
+          "cutile_rs_status": "stub_only",
+          "embodiment": "embodiment/cutile_rs_stub"
+        },
+        "cutile_rs": {
+          "ok": false,
+          "reason": "cuda_tile_not_bound; see embodiment/cutile_rs_stub + docs/cuda-tile-rust-embodiment.md",
+          "perf_status": "not_run"
+        }
+      },
+      "pass_lemma_z1": true,
+      "notes": "Sphota hybrid: NumPy+tile_ref required; JAX/Julia optional; cuTile Rust scaffold only. pass_lemma_z1 is algebra+MSE only \u2014 C5 promotion via suite runner.",
+      "wall_seconds": 0.2459485110011883,
+      "name": "sphota_crystallize",
+      "pass": true
+    },
+    "sree_te_moe_plan": {
+      "name": "sree_te_moe_plan",
+      "pass": true,
+      "plan": {
+        "product": "SREE.ai Mentor / SREE.edu",
+        "methodology": "nvidia-transformer-engine-jax-dropless-moe",
+        "container_hint": "ghcr.io/nvidia/jax:maxtext-2026-09-10 or newer",
+        "maxtext_flags": {
+          "te_moe_block": true,
+          "te_gmm_quantization": "te_mxfp8",
+          "ragged_buffer_factor": 2.0,
+          "te_ep_overflow_check_every_n_steps": 20,
+          "sparse_matmul": true,
+          "prefuse_moe_weights": true,
+          "capacity_factor": 1.0,
+          "megablox": false,
+          "attention": "cudnn_flash_te",
+          "model_name": "sree-mentor-moe-smoke",
+          "max_target_length": 2048,
+          "per_device_batch_size": 1,
+          "steps": 5,
+          "notes": "Local / single-node smoke; replace model_name with real Mentor backbone."
+        },
+        "witness_attach": {
+          "gate": "stability_coefficient / \u039e on pre-softmax logits",
+          "projector": "Yoga\u2013Buddhi observable (Lemma Z1) or abstain",
+          "must_run_before": "softmax",
+          "status": "scaffold"
+        },
+        "pairing": {
+          "cutile_yoga_buddhi": "docs/cuda-tile-rust-embodiment.md",
+          "skill": "skills/sri-sree-mentor-te-moe/SKILL.md"
+        },
+        "honesty": {
+          "do_not_claim_nvidia_deepseek_tflops": true,
+          "dropless_does_not_imply_zero_hallucination": true,
+          "perf_status": "not_run"
+        },
+        "pass_criteria": [
+          "smoke_loss_finite",
+          "no_capacity_token_drop_counters",
+          "witness_hook_callable",
+          "perf_delta_vs_own_baseline_only"
+        ]
+      },
+      "status": "CONFIG_OK"
+    },
+    "cutile_rs_stub": {
+      "name": "cutile_rs_stub",
+      "pass": true,
+      "status": "KERNEL_OK",
+      "test_returncode": 0,
+      "run_returncode": 0,
+      "stdout_tail": "oracle_ok=true obs_ok=true mirror_ok=true\n<VALIDATOR_OUTPUT>\nVERDICT: KERNEL_OK\n</VALIDATOR_OUTPUT>\n"
+    },
+    "compare_e1_colab_lock": {
+      "name": "compare_e1_colab_lock",
+      "pass": true,
+      "reference": "docs/benchmark-results/e1_colab_lock.json",
+      "reference_mean_mmse_sample_mse": 0.6137248633352207,
+      "elaborate_mean_sample_mse_default_r07": 0.6046566356439784,
+      "delta": 0.00906822769124227,
+      "tol": 0.15,
+      "note": "Loose continuity check vs prior E1 lock; not a C1 re-proof."
+    }
+  },
+  "conjectures": [
+    {
+      "conjecture_id": "C1",
+      "status": "confirmed",
+      "notes": "prior foundation lock (context)",
+      "statement": "Yoga\u2013Buddhi with known \u03be equals the MMSE estimator only when the antithesis is physically available; the observable-only Gaussian MMSE from (y_A, y_B) is the correct physical replacement.",
+      "pass_criterion": "Oracle paired projection MSE is ~0 when \u03be is supplied; observable-only MMSE matches analytic Wiener MSE within 5\u03c3 sampling error and never receives s or n at inference.",
+      "artifact_paths": []
+    },
+    {
+      "conjecture_id": "C2",
+      "status": "confirmed",
+      "notes": "prior foundation lock (context)",
+      "statement": "Under the protocol Gaussian model, squeezed-reference MSE ordering matches the closed form across independent seeds.",
+      "pass_criterion": "For default (Vs=Vn=k=1, \u03b7=0.8, r=0.7), sample ordering agrees with analytic ordering on \u22653 seeds; |analytic-sample| \u2264 5\u03c3 SE.",
+      "artifact_paths": []
+    },
+    {
+      "conjecture_id": "C3",
+      "status": "confirmed",
+      "notes": "prior foundation lock (context)",
+      "statement": "An axiomatic stability coefficient \u039e_SNR (or purity/Fisher proxy) remains in (0, 1] on all foundation sweep points; legacy Equation-11 \u039e need not.",
+      "pass_criterion": "Over the Week-2 spike grid, min(\u039e_SNR) > 0 and max(\u039e_SNR) \u2264 1; legacy \u039e is reported without clipping.",
+      "artifact_paths": []
+    },
+    {
+      "conjecture_id": "C4",
+      "status": "confirmed",
+      "notes": "prior foundation lock (context)",
+      "statement": "Circuit-B Branch W (worked-example thresholding) yields a macro marker that does not collapse during the noise spike the way legacy \u039e does; damping corresponds to a CPTP attenuator on covariances.",
+      "pass_criterion": "Branch W keeps \u039e_SNR in (0,1] through spikes; attenuator_channel preserves physical covariances; if neither branch satisfies a stated contraction inequality, status becomes refuted/open with counterexamples.",
+      "artifact_paths": []
+    },
+    {
+      "conjecture_id": "C5",
+      "status": "confirmed",
+      "notes": "elaborate Braket suite: z1=True, oracle_fixture=True, sphota=True",
+      "statement": "Lemma Z1 (Observable Antithesis, P1): under the Gaussian dual-mode model with known parameters, there exists an observable map \u0108_S(y_A,y_B)=(2w_A-1)y_A+2w_B y_B such that \u03a5\u0302=\u00bd(y_A+\u0108_S) equals the MMSE estimator \u015d. Involution \u0108_S\u00b2=I is required only in the latent (v,\u03be) chart (oracle path), not on raw Y.",
+      "pass_criterion": "Algebraic identity \u03a5\u0302\u2261\u015d in code on a fixed seed grid (relative tolerance 1e-10); sample MSE matches analytic MMSE within the same 5\u03c3 rule as C1; estimator never receives s or n. Status stays open until a runner records the result \u2014 unit tests may verify the algebra without promoting the registry artifact.",
+      "artifact_paths": [
+        "docs/benchmark-results/braket-live/sphota-yoga-buddhi-elaborate/elaborate_summary.json"
+      ]
+    }
+  ],
+  "hybrid": {
+    "plan": {
+      "job_name": "sphota-yb-elaborate",
+      "device_arn": "arn:aws:braket:::device/quantum-simulator/amazon/sv1",
+      "shots": 2048,
+      "task": "sphota_yoga_buddhi",
+      "parameters": {
+        "suite": "braket_sphota_yoga_buddhi_elaborate",
+        "seeds": [
+          108,
+          109,
+          110,
+          111
+        ],
+        "n_samples": 8192,
+        "oracle_dimensions": [
+          256,
+          1024,
+          4096,
+          16384
+        ],
+        "encoding": "classical_hybrid_container",
+        "note": "Elaborate Yoga\u2013Buddhi / Lemma Z1 + Colab oracle regression. Not a photonic QPU MMSE claim."
+      },
+      "cost_cap_usd": 25.0,
+      "region": "us-east-1",
+      "submit": false,
+      "s3_bucket": null,
+      "s3_prefix": "sri-braket/sphota-yoga-buddhi-elaborate"
+    },
+    "estimate_usd": 0.075,
+    "dry_run": {
+      "status": "dry_run_ok",
+      "submit_requested": false,
+      "estimated_cost_usd": 0.075,
+      "within_cost_cap": true,
+      "plan": {
+        "job_name": "sphota-yb-elaborate",
+        "device_arn": "arn:aws:braket:::device/quantum-simulator/amazon/sv1",
+        "shots": 2048,
+        "task": "sphota_yoga_buddhi",
+        "parameters": {
+          "suite": "braket_sphota_yoga_buddhi_elaborate",
+          "seeds": [
+            108,
+            109,
+            110,
+            111
+          ],
+          "n_samples": 8192,
+          "oracle_dimensions": [
+            256,
+            1024,
+            4096,
+            16384
+          ],
+          "encoding": "classical_hybrid_container",
+          "note": "Elaborate Yoga\u2013Buddhi / Lemma Z1 + Colab oracle regression. Not a photonic QPU MMSE claim."
+        },
+        "cost_cap_usd": 25.0,
+        "region": "us-east-1",
+        "submit": false,
+        "s3_bucket": null,
+        "s3_prefix": "sri-braket/sphota-yoga-buddhi-elaborate"
+      }
+    },
+    "credentials_available": false,
+    "submit_requested": false,
+    "submit_executed": false,
+    "notebook_hint": "On Braket notebook: clone/sync repo, PYTHONPATH=., run this module, upload elaborate_summary.json to S3, paste verdict + theory_hooks.",
+    "note": "Dry-run / local elaborate only unless BRAKET_SUBMIT=1"
+  },
+  "theory_hooks": {
+    "lemma_z1_status": "supported",
+    "colab_oracle_regression": "supported",
+    "proposed_next_lemmas": [
+      {
+        "id": "Z2",
+        "question": "unveil\u2192Z1 vs select\u2192Z1 composition order",
+        "needs_from_this_run": "stable Z1 grid + antithesis distance diagnostics"
+      },
+      {
+        "id": "Z1b_distance",
+        "question": "Formalize E[\u2016\u0108_S(Y)+y_A\u2016\u00b2] as a non-involution witness on raw Y (empirical mean_sq\u22481.28233)",
+        "status": "metric_emitted"
+      }
+    ],
+    "do_not_promote": [
+      "Landauer circumvention",
+      "hardware MSB XOR O(0)",
+      "NVIDIA DeepSeek TFLOPS as SREE",
+      "cuTile CUPTI geomean without Blackwell run"
+    ],
+    "framework_files_to_update_after_pasteback": [
+      "docs/architecture-axioms.md",
+      "docs/yoga-buddhi-projector.md",
+      "docs/theoretical-framework.md",
+      "docs/conjecture-registry.md"
+    ]
+  },
+  "tile_analysis": {
+    "source": "sri.omlang.tile_ref",
+    "methodology": "nvidia-cutile-python-to-rust-agentic",
+    "operators": [
+      {
+        "name": "oracle_samya_tile",
+        "dtype": [
+          "f32",
+          "f64"
+        ],
+        "kind": "elementwise_binary",
+        "tolerance_abs": 1e-06
+      },
+      {
+        "name": "observable_upsilon_tile",
+        "dtype": [
+          "f32",
+          "f64"
+        ],
+        "kind": "elementwise_binary_weighted",
+        "tolerance_rel": 1e-10,
+        "forbids_inputs": [
+          "clean_s",
+          "oracle_n"
+        ]
+      },
+      {
+        "name": "mirror_abs2_tile",
+        "dtype": [
+          "f32",
+          "f64"
+        ],
+        "kind": "elementwise_binary",
+        "tolerance_abs": 1e-12
+      }
+    ],
+    "perf_gate": {
+      "metric": "cupti_device_time_geomean",
+      "threshold_vs_reference": 0.95,
+      "status": "not_run"
+    }
+  },
+  "script_sha256": "6c5740ac136bee67cf1a3c4cc52abda41c2adc5f9bcfc0712b022b922456ef66",
+  "verdict": {
+    "pass_all": true,
+    "pass_core": true,
+    "pass_lemma_z1": true,
+    "pass_colab_oracle_fixture": true,
+    "c5_status": "confirmed",
+    "failed_checks": []
+  }
+}

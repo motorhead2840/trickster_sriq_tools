@@ -1,0 +1,15 @@
+{
+  "active_gpus": 4,
+  "nodes_per_gpu": 20000000,
+  "total_nodes": 80000000,
+  "parallel_sram_kernel_ms": 17.5875,
+  "pcie_gen5_scalar_sync_ms": 3.7208,
+  "aggregate_gddr7_bandwidth_gbps": 54.58,
+  "global_stability_xi": 0.0,
+  "pcie_bytes_transferred": 16,
+  "pcie_bytes_saved_vs_full_allreduce": 319999984,
+  "pcie_traffic_reduction_ratio": 20000000.0,
+  "adversarial_xi_test": 0.0,
+  "julia_machine_dharma_early_abort": true,
+  "jax_sharded_triadic_omega": 8.0866
+}

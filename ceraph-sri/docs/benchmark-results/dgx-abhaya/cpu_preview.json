@@ -1,0 +1,30 @@
+{
+  "preview": {
+    "seed": 11,
+    "length": 8192,
+    "lam": 1.0,
+    "window": 9,
+    "xi_definition": "sliding window variance of the observation; latent value withheld",
+    "pass_series": "zero-mean latent plus sparse spikes",
+    "identity_mse": 6.90957890520672,
+    "moving_average_mse": 1.675011171028009,
+    "abhaya_mse": 0.7735443353494624,
+    "flux_mse": 1.472352151734814,
+    "flux_variance_remaining": 0.11660588273684425,
+    "hallucination": "SUPPORTED",
+    "flux_hallucination": "SUPPORTED",
+    "flux_variance": "SUPPORTED"
+  },
+  "boundary": {
+    "latent_mean": 5.0,
+    "role": "boundary, not the pass bar",
+    "identity_mse": 6.90957890520672,
+    "moving_average_mse": 1.675011171028009,
+    "abhaya_mse": 18.17085199652528,
+    "flux_mse": 1.472352151734814,
+    "flux_variance_remaining": 0.11660588273684425,
+    "hallucination": "NOT_MET",
+    "flux_hallucination": "SUPPORTED",
+    "flux_variance": "SUPPORTED"
+  }
+}

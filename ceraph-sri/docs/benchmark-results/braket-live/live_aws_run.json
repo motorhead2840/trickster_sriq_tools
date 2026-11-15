@@ -1,0 +1,48 @@
+{
+  "experiment": "braket_live_aws_run",
+  "recorded_utc": "2026-11-11T20:06:18Z",
+  "region": "us-east-1",
+  "aws_account_id": "443387201727",
+  "results_bucket": "amazon-braket-sri-results-1",
+  "weekly_budget_usd": 100.0,
+  "live_aws": true,
+  "sv1_smoke": {
+    "status": "COMPLETED",
+    "mode": "live",
+    "task_arn": "arn:aws:braket:us-east-1:443387201727:quantum-task/8784b986-956a-451c-86ca-e4dd8502e5a3",
+    "device_arn": "arn:aws:braket:::device/quantum-simulator/amazon/sv1",
+    "shots": 1000,
+    "n_qubits": 4,
+    "tracker_simulator_cost_usd": 0.00375,
+    "tracker_qpu_cost_usd": 0.0,
+    "disclaimer": "SV1 Ising smoke is job plumbing only — not CV MMSE on a QPU."
+  },
+  "hybrid_job": {
+    "status": "COMPLETED",
+    "training": "SUCCESS",
+    "job_arn": "arn:aws:braket:us-east-1:443387201727:job/50cf12a3-82c0-446e-beb5-b49f30e5d131",
+    "instance_type": "ml.m5.large",
+    "mode": "aws_hybrid_job",
+    "analytic_mmse": 0.6126759441137769,
+    "sample": {
+      "mmse": 0.6137248633352207,
+      "ma": 1.0881443514705094,
+      "median": 1.2352300114315238,
+      "single": 0.6944325357306224
+    },
+    "abs_err": 0.0010489192214437892,
+    "mmse_beats_ma": true,
+    "mmse_beats_median": true,
+    "mmse_beats_single": true,
+    "near_analytic": true,
+    "pass": true,
+    "artifact_in_container": "/opt/braket/model/hybrid_lock.json",
+    "note": "Classical CV MMSE lock on Braket-managed compute; matches repo e1_colab_lock aggregates."
+  },
+  "campaign_pass": true,
+  "honesty_boundary": [
+    "Live SV1 proves AWS quantum-simulator contact only.",
+    "Hybrid Job proves reproducible classical CV sensing numerics on managed compute.",
+    "Not photonic hardware advantage, CV-on-QPU, O(1), or Landauer claims."
+  ]
+}

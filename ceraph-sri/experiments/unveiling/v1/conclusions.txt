@@ -1,0 +1,85 @@
+WHAT THIS RUN ACTUALLY SHOWED
+==============================
+SIZE=small,  s_a=0.25, s_p=0.4,  theoretical Ξ = exp(-(s_a²+s_p²)) = 0.8005.
+Default K=64, default SNR=20 dB, 10 trials, N up to 225.
+
+1. Gauge ambiguity is real, not a bookkeeping choice.
+   On the N=64 torus demo, the ungauged RMS errors were amp=0.0207, phase=0.8173.
+   After removing the best common complex factor, RMS(κ) = 0.0168.
+   Scaling the true τ by an extra factor (0.6436835360828034+1.2646834437306493j) left that gauged error at 0.0168; scaling τ̂ instead left it at 0.0168.
+   Cross-checks cannot see a common gain or a common phase. That is the mathematical form of Axiom 1 for this model: an absolute veil is not observable, only the relative balance between tiles.
+
+2. In the *shared-input* model, graph topology barely matters at high SNR.
+   Shared inputs, SNR=20 dB, K=64. Fitted exponents:
+   - ring (1-D cycle)      RMS ∝ N^0.026 (r=0.525),  MSE ∝ N^0.042 (r=0.454),  MSE vs log N: slope=0.0000 (r=0.446)
+   - 2-D torus             RMS ∝ N^0.005 (r=0.118),  MSE ∝ N^-0.000 (r=-0.001),  MSE vs log N: slope=-0.0000 (r=-0.007)
+   - 4-regular expander    RMS ∝ N^0.006 (r=0.138),  MSE ∝ N^0.002 (r=0.020),  MSE vs log N: slope=0.0000 (r=0.012)
+   - centralized SVD       RMS ∝ N^-0.001 (r=-0.029),  MSE ∝ N^-0.009 (r=-0.109),  MSE vs log N: slope=-0.0000 (r=-0.124)
+   Mean RMS(κ):
+   - ring (1-D cycle)      0.0135 → 0.0145    (N=16 → 225)
+   - 2-D torus             0.0135 → 0.0136    (N=16 → 225)
+   - 4-regular expander    0.0135 → 0.0136    (N=16 → 225)
+   - centralized SVD       0.0136 → 0.0134    (N=16 → 225)
+   Shared inputs, SNR=0 dB, K=64. Fitted exponents:
+   - ring (1-D cycle)      RMS ∝ N^0.330 (r=0.978),  MSE ∝ N^0.687 (r=0.976),  MSE vs log N: slope=0.0856 (r=0.903)
+   - 2-D torus             RMS ∝ N^0.001 (r=0.029),  MSE ∝ N^-0.008 (r=-0.110),  MSE vs log N: slope=-0.0002 (r=-0.108)
+   - 4-regular expander    RMS ∝ N^0.000 (r=0.020),  MSE ∝ N^-0.008 (r=-0.190),  MSE vs log N: slope=-0.0003 (r=-0.189)
+   - centralized SVD       RMS ∝ N^0.005 (r=0.123),  MSE ∝ N^-0.001 (r=-0.015),  MSE vs log N: slope=-0.0000 (r=-0.013)
+   Mean RMS(κ):
+   - ring (1-D cycle)      0.2071 → 0.5083    (N=16 → 225)
+   - 2-D torus             0.1793 → 0.1849    (N=16 → 225)
+   - 4-regular expander    0.1798 → 0.1824    (N=16 → 225)
+   - centralized SVD       0.1305 → 0.1343    (N=16 → 225)
+   Why the high-SNR curves are flat: each tile observes y_n = τ_n ψ + w_n with the *same* unknown ψ. The leading noise in log r_nm is then of the form ε_n − ε_m, a coboundary (a discrete gradient of a *node* potential). Least-squares on any connected graph recovers η + ε, so the residual does not accumulate along long paths. This is a different measurement model from Barooah–Hespanha, whose theorems assume *independent* noise on each edge.
+   At 0 dB the higher-order terms (products of noises, and the division by ⟨y_m, y_m⟩) break that coboundary structure. The ring, with poor connectivity, then loses ground against the torus, the expander, and the centralized SVD.
+
+3. When we give the estimator independent per-edge noise (the B&H setting),
+   the literature scaling appears clearly.
+   Edge-noise σ = 0.08. Fitted exponents:
+   - ring (1-D cycle)      RMS ∝ N^0.527 (r=0.989),  MSE ∝ N^1.068 (r=0.986),  MSE vs log N: slope=0.1084 (r=0.861)
+   - 2-D torus             RMS ∝ N^0.104 (r=0.981),  MSE ∝ N^0.202 (r=0.981),  MSE vs log N: slope=0.0010 (r=0.982)
+   - 4-regular expander    RMS ∝ N^0.051 (r=0.775),  MSE ∝ N^0.097 (r=0.772),  MSE vs log N: slope=0.0004 (r=0.779)
+   Mean RMS(κ):
+   - ring (1-D cycle)      0.1320 → 0.5599    (N=16 → 225)
+   - 2-D torus             0.0596 → 0.0775    (N=16 → 225)
+   - 4-regular expander    0.0565 → 0.0691    (N=16 → 225)
+   Expected MSE exponents: ring ~ 1, 2-D grid ~ log N (not a power of N), expander ~ 0. Expected RMS exponents are about half of those, i.e. ring ~ 1/2, expander ~ 0. The fits should be read against that, and against the modest N range.
+
+4. More samples and a higher SNR reduce the error, as they should.
+   ring (1-D cycle) RMS(κ) vs SNR [0.0, 5.0, 10.0, 15.0, 20.0, 25.0, 30.0]: 0.3091, 0.1138, 0.0510, 0.0271, 0.0131, 0.0071, 0.0042
+   2-D torus RMS(κ) vs SNR [0.0, 5.0, 10.0, 15.0, 20.0, 25.0, 30.0]: 0.1904, 0.0963, 0.0479, 0.0257, 0.0130, 0.0071, 0.0041
+   4-regular expander RMS(κ) vs SNR [0.0, 5.0, 10.0, 15.0, 20.0, 25.0, 30.0]: 0.1873, 0.0969, 0.0479, 0.0258, 0.0130, 0.0071, 0.0041
+   centralized SVD RMS(κ) vs SNR [0.0, 5.0, 10.0, 15.0, 20.0, 25.0, 30.0]: 0.1443, 0.0728, 0.0408, 0.0238, 0.0127, 0.0071, 0.0041
+   ring (1-D cycle) RMS(κ) vs K   [8, 16, 32, 64, 128]: 0.0439, 0.0300, 0.0187, 0.0132, 0.0105
+   2-D torus RMS(κ) vs K   [8, 16, 32, 64, 128]: 0.0437, 0.0298, 0.0183, 0.0130, 0.0104
+   4-regular expander RMS(κ) vs K   [8, 16, 32, 64, 128]: 0.0436, 0.0297, 0.0184, 0.0129, 0.0104
+   centralized SVD RMS(κ) vs K   [8, 16, 32, 64, 128]: 0.0437, 0.0295, 0.0184, 0.0130, 0.0098
+
+5. Correction raises Ξ toward 1, but does not reach 1.
+   Theoretical Ξ of the drawn veils is 0.8005. Empirical Ξ before correction was 0.8033 ± 0.0068  (so 1−Ξ ≈ 0.1967).
+   - after ring (1-D cycle):  Ξ = 0.999802 ± 0.000020  (1−Ξ ≈ 0.000198),  RMS(κ) = 0.0140 ± 0.0007
+   - after 2-D torus:  Ξ = 0.999808 ± 0.000019  (1−Ξ ≈ 0.000192),  RMS(κ) = 0.0138 ± 0.0006
+   - after 4-regular expander:  Ξ = 0.999807 ± 0.000019  (1−Ξ ≈ 0.000193),  RMS(κ) = 0.0138 ± 0.0007
+   - after centralized SVD:  Ξ = 0.999816 ± 0.000017  (1−Ξ ≈ 0.000184),  RMS(κ) = 0.0135 ± 0.0006
+   The leftover is measurement noise and finite K, not a bug in the estimator. It is consistent with Axiom 1: the veil can be balanced, not erased.
+
+6. A slowly drifting veil can be tracked with a first-order gain.
+   Late-window mean RMS(κ) over 5 OU walk(s), after the burn-in:
+   - fixed g=0.05        RMS(κ)=0.2991  ± 0.0081,  amp=0.1518, phase=0.2569,  mean g=0.050
+   - fixed g=0.20        RMS(κ)=0.1643  ± 0.0146,  amp=0.0776, phase=0.1434,  mean g=0.200
+   - fixed g=0.60        RMS(κ)=0.1103  ± 0.0239,  amp=0.0321, phase=0.1031,  mean g=0.600
+   - adaptive g(Ξ)       RMS(κ)=0.0789  ± 0.0150,  amp=0.0321, phase=0.0702,  mean g=0.576
+   Lowest late error in this run: adaptive g(Ξ) at RMS(κ)=0.0789. The adaptive rule ended at 0.0789.
+   That comparison is for a simple g(Ξ_proxy) rule and a modest number of walks; it is not a general claim that adaptive gain beats a well-tuned fixed g.
+
+WHAT THIS DOES NOT SHOW
+=======================
+- This is a classical numerical simulation of complex arrays. Using i and a Hilbert-space notation for a veil does not make the simulation quantum, and it does not demonstrate entanglement, a quantum advantage, or a new physical chip.
+- There is no CMOS, timing-error, voltage, or energy model here. The notebook does not compare a tile array to Razor-style detection or adaptive voltage scaling. That measured-result claim still needs an FPGA or ASIC experiment.
+- This is not a theorem. The N-scaling we fit is empirical over a modest range of N. The LS theory on graphs with independent edge noise is already known (Barooah & Hespanha). What would be new is a theorem about unveiling without a reference under the *shared-input* (or partial-overlap) model — including a precise statement of when the coboundary structure holds and when topology takes over.
+- The main model gives every tile the same K samples ψ_k. If neighboring tiles never process related inputs, the ratio r_nm is not an estimate of τ_n/τ_m, and the method as written does not apply. A careful partial-overlap model (neighboring tiles sharing a window of a data stream) is left for a later notebook.
+- A programming model in which the programmer declares Ξ_crit(c) is not implemented here.
+- The local Jacobi / phase-sync iteration on a ring needs many more than a few hundred steps to reach the LS/eigenvector solution (see the convergence diagnostic). The scaling plots report that *converged* decentralized estimator, not a short iteration.
+
+RUNTIME
+  exp1 4.0s,  exp1b 1.6s,  exp2 0.6s,  exp3 0.0s,  exp4 1.6s.

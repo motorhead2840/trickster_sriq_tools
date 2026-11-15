@@ -1,0 +1,20 @@
+{
+  "recorded_utc_prefix": "20261112T064213Z",
+  "bucket": "amazon-braket-sri-results-1",
+  "prefix": "sri-braket/cudaq-provisional-dissertation/results/20261112T064213Z",
+  "uris": {
+    "telemetry.json": "s3://amazon-braket-sri-results-1/sri-braket/cudaq-provisional-dissertation/results/20261112T064213Z/telemetry.json",
+    "pasteback.json": "s3://amazon-braket-sri-results-1/sri-braket/cudaq-provisional-dissertation/results/20261112T064213Z/pasteback.json",
+    "cudaq_provisional_summary.json": "s3://amazon-braket-sri-results-1/sri-braket/cudaq-provisional-dissertation/results/20261112T064213Z/cudaq_provisional_summary.json",
+    "PATENT_ANNEX_cudaq_dissertation_enablement.md": "s3://amazon-braket-sri-results-1/sri-braket/cudaq-provisional-dissertation/results/20261112T064213Z/PATENT_ANNEX_cudaq_dissertation_enablement.md",
+    "PROJECT_REPORT_cudaq_provisional.md": "s3://amazon-braket-sri-results-1/sri-braket/cudaq-provisional-dissertation/results/20261112T064213Z/PROJECT_REPORT_cudaq_provisional.md"
+  },
+  "provenance": {
+    "head_at_run": "38c51c4",
+    "branch": "cursor/cudaq-provisional-dissertation-fd3c",
+    "gpu": "Tesla T4",
+    "cudaq": "0.16.0",
+    "target": "nvidia",
+    "verdict": "pass_breakthrough=true; D1-D8 all true; softwalls honest"
+  }
+}

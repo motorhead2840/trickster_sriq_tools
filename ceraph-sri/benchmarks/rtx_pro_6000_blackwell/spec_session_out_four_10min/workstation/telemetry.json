@@ -1,0 +1,32 @@
+[
+  {
+    "length": 256,
+    "triton_ms": 0.00939,
+    "moving_avg_ms": 0.00503
+  },
+  {
+    "length": 8192,
+    "triton_ms": 0.00911,
+    "moving_avg_ms": 0.00497
+  },
+  {
+    "length": 10000,
+    "triton_ms": 0.00895,
+    "moving_avg_ms": 0.00501
+  },
+  {
+    "length": 65536,
+    "triton_ms": 0.01269,
+    "moving_avg_ms": 0.00726
+  },
+  {
+    "length": 262144,
+    "triton_ms": 0.00935,
+    "moving_avg_ms": 0.00494
+  },
+  {
+    "length": 1048576,
+    "triton_ms": 0.00919,
+    "moving_avg_ms": 0.01243
+  }
+]

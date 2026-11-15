@@ -1,0 +1,62 @@
+{
+  "experiment": "omega_landauer_track_a_live_braket",
+  "track": "A1",
+  "recorded_utc": "2026-11-11T22:03:02Z",
+  "region": "us-east-1",
+  "results_bucket": "amazon-braket-sri-results-1",
+  "s3_uri": "s3://amazon-braket-sri-results-1/sri-braket/track-a/results/20261111T220302Z_track_a.json",
+  "omega_dit": {
+    "dimension": 64,
+    "n_samples": 8,
+    "integral_mean_abs": 0.30503211574051226,
+    "finite": true,
+    "pass": true
+  },
+  "complexity": {
+    "rows": [
+      {
+        "dimension": 256,
+        "projector_median_s": 7.496000023365923e-06,
+        "omega_integrate_median_s": 5.033200000070792e-05,
+        "projection_mse": 0.0
+      },
+      {
+        "dimension": 1024,
+        "projector_median_s": 1.014499997609164e-05,
+        "omega_integrate_median_s": 7.78279999735787e-05,
+        "projection_mse": 0.0
+      },
+      {
+        "dimension": 4096,
+        "projector_median_s": 1.7103999994105834e-05,
+        "omega_integrate_median_s": 0.00015054099998224046,
+        "projection_mse": 0.0
+      },
+      {
+        "dimension": 16384,
+        "projector_median_s": 5.3917000002456916e-05,
+        "omega_integrate_median_s": 0.0005377759999873888,
+        "projection_mse": 0.0
+      }
+    ],
+    "projector_loglog_slope": 0.4646603492646607,
+    "projector_r2": 0.9173296279698638,
+    "omega_loglog_slope": 0.5602083946389022,
+    "omega_r2": 0.9428246350428732,
+    "software_o1_refuted": true,
+    "verdict": "Software scales with N (O(N)-like). Present implementation is NOT hardware-native O(1).",
+    "pass": true
+  },
+  "landauer": {
+    "formula": "Q_min = k_B * T * ln(2) per erased bit",
+    "kT_ln2_at_300K_joules": 2.870978885078724e-21,
+    "circumvention_claim": "not_validated",
+    "pass": true
+  },
+  "campaign_pass": true,
+  "honesty_boundary": [
+    "Ω-dit here is a finite-dimensional complex sample, not a physical continuous manifold.",
+    "N-scaling refutes software-native O(1) for this implementation; it does not implement TMEM XOR / single-cycle FMA hardware.",
+    "Landauer table is k_B T ln 2 accounting only — not a joulemeter experiment and not circumvention."
+  ]
+}

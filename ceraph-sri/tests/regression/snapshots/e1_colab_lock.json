@@ -1,0 +1,40 @@
+{
+  "circuit_b_research_default": "W",
+  "dimension": 4096,
+  "exit": {
+    "branch_w_preferred": true,
+    "c1_c4_confirmed": true,
+    "entropy_nonincreasing": true,
+    "xi_snr_in_unit_interval": true
+  },
+  "foundation_aggregate": {
+    "entropy_nonincreasing_under_cptp": true,
+    "legacy_xi_max": 0.8518234176637091,
+    "legacy_xi_min": -148.25956339213943,
+    "mean_chi_branch_P": 50.428131005113144,
+    "mean_chi_branch_W": 22.42813100511313,
+    "xi_snr_max": 0.9313530236278,
+    "xi_snr_min": 0.010266705723728333
+  },
+  "observable_aggregate": {
+    "mean_median_filter_mse": 1.2352300114315238,
+    "mean_mmse_sample_mse": 0.6137248633352207,
+    "mean_moving_average_mse": 1.0881443514705091,
+    "mean_single_mode_mse": 0.6944325357306224,
+    "mmse_beats_median": true,
+    "mmse_beats_moving_average": true
+  },
+  "seeds": [
+    108,
+    109,
+    110
+  ],
+  "shots": 20000,
+  "source": "docs/benchmark-results/e1_colab_lock.json",
+  "statuses": {
+    "C1": "confirmed",
+    "C2": "confirmed",
+    "C3": "confirmed",
+    "C4": "confirmed"
+  }
+}

@@ -1,0 +1,13 @@
+flowchart LR
+  U700["700 Operator request"] --> R702["702 Start processing"]
+  R702 --> R704["704 Sensor A"]
+  R702 --> R706["706 Sensor B"]
+  R704 --> R708["708 Cleaned state"]
+  R706 --> R708
+  R708 --> R710["710 Controller"]
+  R710 --> R712{"712 Unstable outputs?"}
+  R712 -->|Yes| R714["714 Stability scaling"]
+  R712 -->|No| R716["716 Pass through"]
+  R714 --> R718["718 Drive actuators"]
+  R716 --> R718
+  R718 --> U722["722 Report to operator"]

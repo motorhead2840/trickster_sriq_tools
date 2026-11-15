@@ -1,0 +1,31 @@
+{
+  "experiment": "truthfulqa_mc1_next_token",
+  "configuration": {
+    "model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "dataset": "truthfulqa/truthful_qa",
+    "config": "multiple_choice",
+    "split": "validation",
+    "first_n": 100,
+    "seed": 108
+  },
+  "results": {
+    "accuracy": 0.13,
+    "correct": 13,
+    "incorrect": 87,
+    "confidence_correctness_auc": 0.6242263483642794,
+    "xi_correctness_auc": 0.4650751547303271
+  },
+  "provenance": {
+    "device": "NVIDIA A100-SXM4-80GB",
+    "torch": "2.14.1+cu130",
+    "transformers": "5.22.1",
+    "datasets": "4.8.5",
+    "dataset_fingerprint": "8ba81adae744fd06",
+    "model_commit": null
+  },
+  "limitations": [
+    "Answer-letter multiple-choice proxy, not open-ended hallucination prevention",
+    "No V3 damping or detection threshold tested",
+    "First 100 validation examples; possible model training-data contamination"
+  ]
+}

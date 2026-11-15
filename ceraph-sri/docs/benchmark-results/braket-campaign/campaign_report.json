@@ -1,0 +1,56 @@
+{
+  "experiment": "braket_campaign_report",
+  "generated_utc": "2026-11-11T19:12:44.744748+00:00",
+  "live_aws_update_utc": "2026-11-11T20:06:18Z",
+  "phases": {
+    "S1_accuracy": {
+      "pass": true,
+      "artifact": "docs/benchmark-results/e1_colab_lock.json"
+    },
+    "S2_advantage": {
+      "pass": true,
+      "artifact": "docs/benchmark-results/braket-campaign/advantage/advantage_summary.json"
+    },
+    "S3_efficiency": {
+      "pass": true,
+      "artifact": "docs/benchmark-results/braket-campaign/efficiency/efficiency_summary.json"
+    },
+    "S4_sv1_smoke": {
+      "pass": true,
+      "mode": "live",
+      "status": "COMPLETED",
+      "artifact": "docs/benchmark-results/braket-live/live_aws_run.json",
+      "live_aws": true,
+      "task_arn": "arn:aws:braket:us-east-1:443387201727:quantum-task/8784b986-956a-451c-86ca-e4dd8502e5a3",
+      "tracker_simulator_cost_usd": 0.00375
+    },
+    "S5_hybrid": {
+      "pass": true,
+      "submit_status": "COMPLETED",
+      "artifact": "docs/benchmark-results/braket-live/live_aws_run.json",
+      "live_aws": true,
+      "job_arn": "arn:aws:braket:us-east-1:443387201727:job/50cf12a3-82c0-446e-beb5-b49f30e5d131",
+      "instance_type": "ml.m5.large"
+    }
+  },
+  "campaign_pass": true,
+  "live_aws": true,
+  "headlines": {
+    "mean_mmse_sample_mse": 0.6137248633352207,
+    "mean_moving_average_mse": 1.0881443514705091,
+    "mean_median_filter_mse": 1.2352300114315238,
+    "mean_single_mode_mse": 0.6944325357306224,
+    "xi_snr_min": 0.010266705723728333,
+    "xi_snr_max": 0.9313530236278,
+    "efficiency_accuracy_ok": true,
+    "live_hybrid_analytic_mmse": 0.6126759441137769,
+    "live_hybrid_sample_mmse": 0.6137248633352207
+  },
+  "live_arns": {
+    "sv1_task_arn": "arn:aws:braket:us-east-1:443387201727:quantum-task/8784b986-956a-451c-86ca-e4dd8502e5a3",
+    "hybrid_job_arn": "arn:aws:braket:us-east-1:443387201727:job/50cf12a3-82c0-446e-beb5-b49f30e5d131",
+    "results_bucket": "amazon-braket-sri-results-1",
+    "aws_account_id": "443387201727",
+    "region": "us-east-1"
+  }
+}

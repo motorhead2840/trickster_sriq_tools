@@ -1,0 +1,14 @@
+flowchart LR
+  U400["400 User query"] --> W402["402 AI processing"]
+  W402 --> W404["404 Candidate scores"]
+  W404 --> W406["406 Before Softmax"]
+  W406 --> W408["408 Stability score"]
+  W408 --> W410{"410 High volatility?"}
+  W410 -->|No| W412["412 Mild scaling"]
+  W410 -->|Yes| W414["414 Strong scaling"]
+  W412 --> W416["416 Rescale scores"]
+  W414 --> W416
+  W416 --> W418["418 Softmax / sample"]
+  W418 --> W420{"420 More tokens?"}
+  W420 -->|Yes| W404
+  W420 -->|No| U424["424 Present to user"]

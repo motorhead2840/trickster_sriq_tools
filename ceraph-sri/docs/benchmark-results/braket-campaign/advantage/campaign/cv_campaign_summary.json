@@ -1,0 +1,352 @@
+{
+  "experiment": "cv_photonics_campaign",
+  "configuration": {
+    "seed": 108,
+    "shots": 20000,
+    "confirmation_subset": true,
+    "grid_size": 6,
+    "vs_vals": [
+      0.25,
+      1.0,
+      4.0
+    ],
+    "vn_vals": [
+      0.25,
+      1.0,
+      4.0
+    ],
+    "k_vals": [
+      0.0,
+      0.5,
+      1.0
+    ],
+    "eta_vals": [
+      0.5,
+      0.8,
+      1.0
+    ],
+    "r_vals": [
+      0.0,
+      0.3,
+      0.7,
+      1.0
+    ],
+    "vacuum_convention": "hbar=2"
+  },
+  "points": [
+    {
+      "signal_variance": 1.0,
+      "noise_variance": 1.0,
+      "coupling": 1.0,
+      "efficiency": 0.8,
+      "squeezing": 0.7,
+      "results": {
+        "coherent_two_mode": {
+          "analytic_mse": 0.6435643564356436,
+          "sample_mse": 0.6462712618449221,
+          "sample_mse_standard_error": 0.006449521580072806,
+          "resources": {
+            "n_A": 0.5,
+            "n_B": 0.25,
+            "n_disp": 0.75,
+            "n_squeeze": 0.0,
+            "n_tot": 0.75
+          },
+          "squeezing_photons": 0.5754492326965702
+        },
+        "squeezed_signal": {
+          "analytic_mse": 0.5127067844620878,
+          "sample_mse": 0.5041928517804813,
+          "sample_mse_standard_error": 0.0049760480607754995,
+          "resources": {
+            "n_A": 1.0754492326965703,
+            "n_B": 0.25,
+            "n_disp": 0.75,
+            "n_squeeze": 0.5754492326965702,
+            "n_tot": 1.3254492326965703
+          },
+          "squeezing_photons": 0.5754492326965702
+        },
+        "squeezed_reference": {
+          "analytic_mse": 0.6126759441137769,
+          "sample_mse": 0.6099703396239342,
+          "sample_mse_standard_error": 0.006050814013697545,
+          "resources": {
+            "n_A": 0.5,
+            "n_B": 0.8254492326965702,
+            "n_disp": 0.75,
+            "n_squeeze": 0.5754492326965702,
+            "n_tot": 1.3254492326965703
+          },
+          "squeezing_photons": 0.5754492326965702
+        }
+      },
+      "squeezed_reference_beats_coherent": true,
+      "squeezed_signal_beats_reference": true
+    },
+    {
+      "signal_variance": 1.0,
+      "noise_variance": 1.0,
+      "coupling": 1.0,
+      "efficiency": 0.8,
+      "squeezing": 0.0,
+      "results": {
+        "coherent_two_mode": {
+          "analytic_mse": 0.6435643564356436,
+          "sample_mse": 0.6471528449835727,
+          "sample_mse_standard_error": 0.006483293297805666,
+          "resources": {
+            "n_A": 0.5,
+            "n_B": 0.25,
+            "n_disp": 0.75,
+            "n_squeeze": 0.0,
+            "n_tot": 0.75
+          },
+          "squeezing_photons": 0.0
+        },
+        "squeezed_signal": {
+          "analytic_mse": 0.6435643564356436,
+          "sample_mse": 0.6400640205665621,
+          "sample_mse_standard_error": 0.006362710798142077,
+          "resources": {
+            "n_A": 0.5,
+            "n_B": 0.25,
+            "n_disp": 0.75,
+            "n_squeeze": 0.0,
+            "n_tot": 0.75
+          },
+          "squeezing_photons": 0.0
+        },
+        "squeezed_reference": {
+          "analytic_mse": 0.6435643564356436,
+          "sample_mse": 0.6449929109976343,
+          "sample_mse_standard_error": 0.006418133049813233,
+          "resources": {
+            "n_A": 0.5,
+            "n_B": 0.25,
+            "n_disp": 0.75,
+            "n_squeeze": 0.0,
+            "n_tot": 0.75
+          },
+          "squeezing_photons": 0.0
+        }
+      },
+      "squeezed_reference_beats_coherent": false,
+      "squeezed_signal_beats_reference": true
+    },
+    {
+      "signal_variance": 1.0,
+      "noise_variance": 1.0,
+      "coupling": 0.5,
+      "efficiency": 0.8,
+      "squeezing": 0.7,
+      "results": {
+        "coherent_two_mode": {
+          "analytic_mse": 0.6756756756756757,
+          "sample_mse": 0.6855363188858541,
+          "sample_mse_standard_error": 0.006817085965602796,
+          "resources": {
+            "n_A": 0.5,
+            "n_B": 0.0625,
+            "n_disp": 0.5625,
+            "n_squeeze": 0.0,
+            "n_tot": 0.5625
+          },
+          "squeezing_photons": 0.5754492326965702
+        },
+        "squeezed_signal": {
+          "analytic_mse": 0.5708026110611168,
+          "sample_mse": 0.5685937835087261,
+          "sample_mse_standard_error": 0.00575595058121828,
+          "resources": {
+            "n_A": 1.0754492326965703,
+            "n_B": 0.0625,
+            "n_disp": 0.5625,
+            "n_squeeze": 0.5754492326965702,
+            "n_tot": 1.1379492326965703
+          },
+          "squeezing_photons": 0.5754492326965702
+        },
+        "squeezed_reference": {
+          "analytic_mse": 0.6569641624014717,
+          "sample_mse": 0.6499741343549573,
+          "sample_mse_standard_error": 0.006480463072064298,
+          "resources": {
+            "n_A": 0.5,
+            "n_B": 0.6379492326965702,
+            "n_disp": 0.5625,
+            "n_squeeze": 0.5754492326965702,
+            "n_tot": 1.1379492326965703
+          },
+          "squeezing_photons": 0.5754492326965702
+        }
+      },
+      "squeezed_reference_beats_coherent": true,
+      "squeezed_signal_beats_reference": true
+    },
+    {
+      "signal_variance": 1.0,
+      "noise_variance": 4.0,
+      "coupling": 1.0,
+      "efficiency": 0.5,
+      "squeezing": 1.0,
+      "results": {
+        "coherent_two_mode": {
+          "analytic_mse": 0.7692307692307693,
+          "sample_mse": 0.7761182368131702,
+          "sample_mse_standard_error": 0.0077029851512522675,
+          "resources": {
+            "n_A": 1.25,
+            "n_B": 1.0,
+            "n_disp": 2.25,
+            "n_squeeze": 0.0,
+            "n_tot": 2.25
+          },
+          "squeezing_photons": 1.3810978455418155
+        },
+        "squeezed_signal": {
+          "analytic_mse": 0.711704947764982,
+          "sample_mse": 0.7054072217012654,
+          "sample_mse_standard_error": 0.00703533947817845,
+          "resources": {
+            "n_A": 2.6310978455418157,
+            "n_B": 1.0,
+            "n_disp": 2.25,
+            "n_squeeze": 1.3810978455418155,
+            "n_tot": 3.6310978455418157
+          },
+          "squeezing_photons": 1.3810978455418155
+        },
+        "squeezed_reference": {
+          "analytic_mse": 0.7425554742842917,
+          "sample_mse": 0.7529981435072621,
+          "sample_mse_standard_error": 0.0075894880688788064,
+          "resources": {
+            "n_A": 1.25,
+            "n_B": 2.3810978455418157,
+            "n_disp": 2.25,
+            "n_squeeze": 1.3810978455418155,
+            "n_tot": 3.6310978455418157
+          },
+          "squeezing_photons": 1.3810978455418155
+        }
+      },
+      "squeezed_reference_beats_coherent": true,
+      "squeezed_signal_beats_reference": true
+    },
+    {
+      "signal_variance": 0.25,
+      "noise_variance": 0.25,
+      "coupling": 1.0,
+      "efficiency": 1.0,
+      "squeezing": 0.3,
+      "results": {
+        "coherent_two_mode": {
+          "analytic_mse": 0.20689655172413793,
+          "sample_mse": 0.2065198374923139,
+          "sample_mse_standard_error": 0.0020592802721662988,
+          "resources": {
+            "n_A": 0.125,
+            "n_B": 0.0625,
+            "n_disp": 0.1875,
+            "n_squeeze": 0.0,
+            "n_tot": 0.1875
+          },
+          "squeezing_photons": 0.09273260912113383
+        },
+        "squeezed_signal": {
+          "analytic_mse": 0.1874256388878149,
+          "sample_mse": 0.1860425850630453,
+          "sample_mse_standard_error": 0.0019042022954780986,
+          "resources": {
+            "n_A": 0.21773260912113385,
+            "n_B": 0.0625,
+            "n_disp": 0.1875,
+            "n_squeeze": 0.09273260912113383,
+            "n_tot": 0.28023260912113385
+          },
+          "squeezing_photons": 0.09273260912113383
+        },
+        "squeezed_reference": {
+          "analytic_mse": 0.2060403627910815,
+          "sample_mse": 0.20830110593631143,
+          "sample_mse_standard_error": 0.0020984514916301835,
+          "resources": {
+            "n_A": 0.125,
+            "n_B": 0.15523260912113385,
+            "n_disp": 0.1875,
+            "n_squeeze": 0.09273260912113383,
+            "n_tot": 0.28023260912113385
+          },
+          "squeezing_photons": 0.09273260912113383
+        }
+      },
+      "squeezed_reference_beats_coherent": true,
+      "squeezed_signal_beats_reference": true
+    },
+    {
+      "signal_variance": 4.0,
+      "noise_variance": 4.0,
+      "coupling": 0.5,
+      "efficiency": 0.5,
+      "squeezing": 0.7,
+      "results": {
+        "coherent_two_mode": {
+          "analytic_mse": 2.1538461538461537,
+          "sample_mse": 2.1391560659649875,
+          "sample_mse_standard_error": 0.02167494795621802,
+          "resources": {
+            "n_A": 2.0,
+            "n_B": 0.25,
+            "n_disp": 2.25,
+            "n_squeeze": 0.0,
+            "n_tot": 2.25
+          },
+          "squeezing_photons": 0.5754492326965702
+        },
+        "squeezed_signal": {
+          "analytic_mse": 1.978078230818386,
+          "sample_mse": 1.9886218876451243,
+          "sample_mse_standard_error": 0.019840527086543977,
+          "resources": {
+            "n_A": 2.5754492326965703,
+            "n_B": 0.25,
+            "n_disp": 2.25,
+            "n_squeeze": 0.5754492326965702,
+            "n_tot": 2.8254492326965703
+          },
+          "squeezing_photons": 0.5754492326965702
+        },
+        "squeezed_reference": {
+          "analytic_mse": 2.053416521039922,
+          "sample_mse": 2.0411807205148347,
+          "sample_mse_standard_error": 0.02038584740121043,
+          "resources": {
+            "n_A": 2.0,
+            "n_B": 0.8254492326965702,
+            "n_disp": 2.25,
+            "n_squeeze": 0.5754492326965702,
+            "n_tot": 2.8254492326965703
+          },
+          "squeezing_photons": 0.5754492326965702
+        }
+      },
+      "squeezed_reference_beats_coherent": true,
+      "squeezed_signal_beats_reference": true
+    }
+  ],
+  "aggregate": {
+    "fraction_sq_ref_beats_coherent": 0.8333333333333334,
+    "default_point_analytic": {
+      "coherent": 0.6435643564356436,
+      "squeezed_reference": 0.6126759441137769,
+      "squeezed_signal": 0.5127067844620878
+    }
+  },
+  "resource_note": "Comparisons report analytic MSE with per-point photon accounting; squeezed strategies use squeezing photons that coherent baselines do not.",
+  "provenance": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "script_sha256": "8838392d707ccedf23e994a1a0d364b06705b8c5bd298af22b267d576abb3b5a"
+  }
+}

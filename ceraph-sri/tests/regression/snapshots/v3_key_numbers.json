@@ -1,0 +1,9 @@
+{
+  "r_formula_10": 0.007082177831667665,
+  "r_formula_20": 0.0007082177831667665,
+  "r_meas_10": 0.008771090260658311,
+  "r_meas_20": 0.0007203620279173199,
+  "seed": 7,
+  "source": "experiments/unveiling/v3/reference_results.json",
+  "stationary_oracle_rms_kappa": 0.031162287649033706
+}

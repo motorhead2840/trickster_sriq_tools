@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sri-architecture"
+version = "0.1.0.dev0"
+description = "Research codebase for the SRI computing architecture."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "LicenseRef-Proprietary"
+authors = [{name = "Ceraph Corporation"}]
+classifiers = [
+    "Private :: Do Not Upload",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "numpy",
+    "scipy",
+    "networkx",
+]
+
+[project.optional-dependencies]
+gpu = [
+    "jax",
+    "jaxlib",
+    "torch",
+    "triton",
+]
+llm = [
+    "torch",
+    "transformers",
+    "datasets",
+]
+braket = [
+    "amazon-braket-sdk>=1.80",
+    "boto3",
+]
+viz = [
+    "matplotlib",
+]
+dev = [
+    "pytest",
+    "ruff",
+    "matplotlib",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["sri*"]
+
+[tool.setuptools.package-data]
+sri = ["omlang/julia/*.jl"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: published-size driver reproductions excluded from the default suite",
+]
+addopts = "-m 'not slow'"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+# Notebook cell import style is outside this pass.
+extend-exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

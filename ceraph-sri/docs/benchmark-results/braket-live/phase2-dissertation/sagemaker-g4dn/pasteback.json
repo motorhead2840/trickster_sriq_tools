@@ -1,0 +1,49 @@
+{
+  "verdict": {
+    "pass_stage1_dissertation_math": true,
+    "pass_stage2_safety_tax_architecture": true,
+    "pass_stage3_project_advances": true,
+    "pass_softwall_honesty": true,
+    "pass_phase2_complete": true,
+    "safety_tax_speedup": 633.8106279431844,
+    "inprocess_median_ms": 0.47332750000350643,
+    "post_filter_model_ms": 300.0
+  },
+  "devices": {
+    "jax_default_backend": "cpu",
+    "cudaq": "CUDA-Q Version 0.16.0",
+    "nvidia_smi": "Tesla T4, 595.91.07"
+  },
+  "stage_pass": {
+    "S1_omega": true,
+    "S1_samya": true,
+    "S1_v3": true,
+    "S1_mirror": true,
+    "S1_landauer": true,
+    "S1_fibonacci": true,
+    "S2_safety_tax": true,
+    "S3_z1": true,
+    "S3_advantage": true,
+    "S3_softwall": true
+  },
+  "softwall": {
+    "landauer_circumvention": "NOT_PROVEN",
+    "tmem_msb_xor_o0": "SOFTWARE_PROXY_NOT_TMEM",
+    "blackwell_0p0062ms": "REFERENCE_ONLY_NOT_REMEASURED",
+    "theorem_zero_full": "OPEN_NEEDS_LEMMA_Z2",
+    "mbl_quasicrystal": "INSTRUMENT_ONLY_NOT_PROVEN",
+    "any_softwall_falsely_greened": false
+  },
+  "cancellation_telemetry": {
+    "mse_raw": 1.813966233139118,
+    "mse_projected": 0.6235771090201612
+  },
+  "wall_seconds": 8.58483985700002,
+  "s3_prefix": "s3://amazon-braket-sri-results-1/sri-braket/phase2-dissertation/results/20261112T072158Z",
+  "provenance": {
+    "head": "98637ad",
+    "branch": "cursor/phase2-dissertation-braket-fd3c",
+    "gpu": "Tesla T4",
+    "recorded_utc": "2026-11-12T07:21:45Z"
+  }
+}

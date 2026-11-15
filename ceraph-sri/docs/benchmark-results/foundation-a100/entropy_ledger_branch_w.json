@@ -1,0 +1,202 @@
+[
+  {
+    "cycle": 0,
+    "noise_std": 0.5,
+    "chi": 0.7556370217282288,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9299514629772425
+  },
+  {
+    "cycle": 1,
+    "noise_std": 0.5,
+    "chi": 0.742563305007375,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9255882118323862
+  },
+  {
+    "cycle": 2,
+    "noise_std": 0.5,
+    "chi": 0.752383294106795,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9288726536812696
+  },
+  {
+    "cycle": 3,
+    "noise_std": 0.5,
+    "chi": 0.7516300593471241,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9286222453917036
+  },
+  {
+    "cycle": 4,
+    "noise_std": 0.5,
+    "chi": 0.7476460091430424,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9272935842913849
+  },
+  {
+    "cycle": 5,
+    "noise_std": 0.5,
+    "chi": 0.7469376105146655,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9270565956504992
+  },
+  {
+    "cycle": 6,
+    "noise_std": 0.5,
+    "chi": 0.7479048508052037,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9273801215238113
+  },
+  {
+    "cycle": 7,
+    "noise_std": 0.5,
+    "chi": 0.7488476189018783,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9276950594445545
+  },
+  {
+    "cycle": 8,
+    "noise_std": 0.5,
+    "chi": 0.7534905970480911,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.929240314993207
+  },
+  {
+    "cycle": 9,
+    "noise_std": 0.5,
+    "chi": 0.7559450035723015,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9300533369884373
+  },
+  {
+    "cycle": 10,
+    "noise_std": 15.0,
+    "chi": 50.01961184958405,
+    "entropy_before": 6.400685346131695,
+    "entropy_after": 0.0,
+    "xi_snr": 0.017094668797497572
+  },
+  {
+    "cycle": 11,
+    "noise_std": 15.0,
+    "chi": 50.019574811710896,
+    "entropy_before": 6.431086314224899,
+    "entropy_after": 0.0,
+    "xi_snr": 0.016622085998129272
+  },
+  {
+    "cycle": 12,
+    "noise_std": 15.0,
+    "chi": 50.01971729039213,
+    "entropy_before": 6.401415060467684,
+    "entropy_after": 0.0,
+    "xi_snr": 0.018435164175350495
+  },
+  {
+    "cycle": 13,
+    "noise_std": 15.0,
+    "chi": 50.01944799686908,
+    "entropy_before": 6.427495518806722,
+    "entropy_after": 0.0,
+    "xi_snr": 0.014997199260627316
+  },
+  {
+    "cycle": 14,
+    "noise_std": 15.0,
+    "chi": 50.01963676434107,
+    "entropy_before": 6.418585844523591,
+    "entropy_after": 0.0,
+    "xi_snr": 0.017412065488477214
+  },
+  {
+    "cycle": 15,
+    "noise_std": 15.0,
+    "chi": 50.019516521857355,
+    "entropy_before": 6.422112022879105,
+    "entropy_after": 0.0,
+    "xi_snr": 0.015876525647237082
+  },
+  {
+    "cycle": 16,
+    "noise_std": 15.0,
+    "chi": 50.019306306234206,
+    "entropy_before": 6.423041672781778,
+    "entropy_after": 0.0,
+    "xi_snr": 0.013169127861167376
+  },
+  {
+    "cycle": 17,
+    "noise_std": 15.0,
+    "chi": 50.01958471755807,
+    "entropy_before": 6.413592739340629,
+    "entropy_after": 0.0,
+    "xi_snr": 0.016748566673082055
+  },
+  {
+    "cycle": 18,
+    "noise_std": 15.0,
+    "chi": 50.01993419618409,
+    "entropy_before": 6.423831289455052,
+    "entropy_after": 0.0,
+    "xi_snr": 0.02117034479912666
+  },
+  {
+    "cycle": 19,
+    "noise_std": 15.0,
+    "chi": 50.01958170175937,
+    "entropy_before": 6.413731052073786,
+    "entropy_after": 0.0,
+    "xi_snr": 0.016710066872037185
+  },
+  {
+    "cycle": 20,
+    "noise_std": 15.0,
+    "chi": 50.02001033536178,
+    "entropy_before": 6.420210476911848,
+    "entropy_after": 0.0,
+    "xi_snr": 0.022123407295603255
+  },
+  {
+    "cycle": 21,
+    "noise_std": 0.5,
+    "chi": 0.7598852032326558,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9313530236278
+  },
+  {
+    "cycle": 22,
+    "noise_std": 0.5,
+    "chi": 0.7484260483369425,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9275542800448696
+  },
+  {
+    "cycle": 23,
+    "noise_std": 0.5,
+    "chi": 0.7553462224553759,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9298552344857742
+  },
+  {
+    "cycle": 24,
+    "noise_std": 0.5,
+    "chi": 0.7529810755745374,
+    "entropy_before": 0.0,
+    "entropy_after": 0.0,
+    "xi_snr": 0.9290712041157037
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "experiment": "braket_live_smoke",
+  "phase": "S4",
+  "device": "dm1",
+  "device_arn": "arn:aws:braket:::device/quantum-simulator/amazon/dm1",
+  "live": false,
+  "validation": {
+    "status": "dry_run_ok",
+    "submit_requested": false,
+    "estimated_cost_usd": 0.075,
+    "within_cost_cap": true,
+    "plan": {
+      "job_name": "sri-e1-braket-smoke",
+      "device_arn": "arn:aws:braket:::device/quantum-simulator/amazon/dm1",
+      "shots": 1000,
+      "task": "qubit_toy_ising",
+      "parameters": {
+        "n_qubits": 4,
+        "hamiltonian": "ising_chain",
+        "j_coupling": 1.0,
+        "device_alias": "dm1",
+        "note": "Small qubit toy for account/device smoke tests. DM1 enables density-matrix / noise simulations; still not CV MMSE."
+      },
+      "cost_cap_usd": 5.0,
+      "region": "us-east-1",
+      "submit": false,
+      "s3_bucket": null,
+      "s3_prefix": "sri-braket"
+    }
+  },
+  "estimated_cost_usd": 0.075,
+  "quantum_task": {
+    "status": "COMPLETED",
+    "mode": "local_emulate",
+    "task_arn": null,
+    "device_arn": "arn:aws:braket:::device/quantum-simulator/amazon/dm1",
+    "shots": 1000,
+    "estimated_cost_usd": 0.075,
+    "measurement_counts": {
+      "0000": 134,
+      "0001": 12,
+      "0010": 26,
+      "0011": 5,
+      "0100": 13,
+      "0101": 44,
+      "0110": 7,
+      "0111": 41,
+      "1000": 21,
+      "1001": 103,
+      "1010": 86,
+      "1011": 100,
+      "1100": 44,
+      "1101": 72,
+      "1110": 22,
+      "1111": 270
+    },
+    "note": "Emulated locally; not an AWS Braket task. Set BRAKET_SUBMIT=1 with credentials for live SV1."
+  },
+  "classical_cv_shadow": {
+    "backend": "classical_gaussian",
+    "sample_mse": 0.6089126826252788,
+    "analytic_mse": 0.6126759441137769,
+    "weights": [
+      0.43304145914126124,
+      -0.28935075345920414
+    ],
+    "shots": 1000.0
+  },
+  "credentials_available": false,
+  "provenance": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "script_sha256": "22d953f95f337710ae156659a6f718326d15cefa690d63cc288aaae0c1c9fdf3"
+  },
+  "disclaimer": "Qubit Ising smoke is hardware/simulator contact only. Classical CV shadow is Experiment Set 1 sensing math \u2014 not a QPU result. DM1 noise simulations remain qubit plumbing, not CV MMSE."
+}

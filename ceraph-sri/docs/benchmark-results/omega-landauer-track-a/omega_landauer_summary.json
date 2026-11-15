@@ -1,0 +1,321 @@
+{
+  "experiment": "omega_landauer_track_a",
+  "track": "A1",
+  "omega_dit_harness": {
+    "dimension": 64,
+    "n_samples": 8,
+    "d_omega": 0.125,
+    "integral_mean_abs": 0.3096752644507057,
+    "integral_max_abs": 0.7226094312931701,
+    "finite": true,
+    "note": "Finite equally-spaced Riemann sum of \u03c3 e^{i\u03b2}(v+\u03be). Not a continuous physical field or quantum state."
+  },
+  "complexity_scaling": {
+    "dimensions": [
+      256,
+      1024,
+      4096,
+      16384
+    ],
+    "loglog_fits": {
+      "projector": {
+        "slope": 0.9486043983053394,
+        "intercept": -15.00951147569973,
+        "r2": 0.9994547929370534,
+        "interpretation": "consistent_with_O(N)_software"
+      },
+      "damping": {
+        "slope": 0.8991907261941045,
+        "intercept": -15.570364406267322,
+        "r2": 0.9982300241770952,
+        "interpretation": "consistent_with_O(N)_software"
+      },
+      "omega_integrate": {
+        "slope": 1.9802242722268697,
+        "intercept": -15.302076759812953,
+        "r2": 0.999830261748629,
+        "interpretation": "superlinear_or_memory_bound"
+      },
+      "simulate": {
+        "slope": 0.9053682987963861,
+        "intercept": -10.993396719438877,
+        "r2": 0.9984346289968031,
+        "interpretation": "consistent_with_O(N)_software"
+      }
+    },
+    "software_o1_claim_refuted": true,
+    "verdict": "Software path scales with N (O(N)-like). This refutes treating the present CPU/Python implementation as hardware-native O(1)."
+  },
+  "complexity_rows": [
+    {
+      "dimension": 256,
+      "projector_median_s": 5.82329994358588e-05,
+      "damping_median_s": 2.6953000997309573e-05,
+      "omega_integrate_median_s": 0.013843241499671421,
+      "simulate_median_s": 0.0026824014994417666,
+      "projector": {
+        "repeats": 3,
+        "mean_s": 5.8885666779436484e-05,
+        "median_s": 5.82329994358588e-05,
+        "std_s": 2.0744869816569633e-06,
+        "min_s": 5.721600064134691e-05,
+        "max_s": 6.120800026110373e-05
+      },
+      "damping": {
+        "repeats": 3,
+        "mean_s": 2.731400066598629e-05,
+        "median_s": 2.6953000997309573e-05,
+        "std_s": 3.0575259517642454e-06,
+        "min_s": 2.4453000150970183e-05,
+        "max_s": 3.053600084967911e-05
+      },
+      "omega_integrate": {
+        "repeats": 2,
+        "mean_s": 0.013843241499671421,
+        "median_s": 0.013843241499671421,
+        "std_s": 0.0002986189712023103,
+        "min_s": 0.013632086000143318,
+        "max_s": 0.014054396999199525
+      },
+      "simulate": {
+        "repeats": 2,
+        "mean_s": 0.0026824014994417666,
+        "median_s": 0.0026824014994417666,
+        "std_s": 0.00031107819340619157,
+        "min_s": 0.0024624359994049883,
+        "max_s": 0.002902366999478545
+      },
+      "projection_mse": 0.0
+    },
+    {
+      "dimension": 1024,
+      "projector_median_s": 0.00022397500106308144,
+      "damping_median_s": 8.18170010461472e-05,
+      "omega_integrate_median_s": 0.19773714700022538,
+      "simulate_median_s": 0.008536296500096796,
+      "projector": {
+        "repeats": 3,
+        "mean_s": 0.00022537966772991544,
+        "median_s": 0.00022397500106308144,
+        "std_s": 2.5531996070244518e-05,
+        "min_s": 0.00020057900110259652,
+        "max_s": 0.00025158500102406833
+      },
+      "damping": {
+        "repeats": 3,
+        "mean_s": 8.118366713461e-05,
+        "median_s": 8.18170010461472e-05,
+        "std_s": 3.655383664249111e-06,
+        "min_s": 7.725300019956194e-05,
+        "max_s": 8.448100015812088e-05
+      },
+      "omega_integrate": {
+        "repeats": 2,
+        "mean_s": 0.19773714700022538,
+        "median_s": 0.19773714700022538,
+        "std_s": 0.0028432989947871586,
+        "min_s": 0.19572663100007048,
+        "max_s": 0.19974766300038027
+      },
+      "simulate": {
+        "repeats": 2,
+        "mean_s": 0.008536296500096796,
+        "median_s": 0.008536296500096796,
+        "std_s": 0.0005663338403347527,
+        "min_s": 0.008135838001180673,
+        "max_s": 0.00893675499901292
+      },
+      "projection_mse": 0.0
+    },
+    {
+      "dimension": 4096,
+      "projector_median_s": 0.0007657280002604239,
+      "damping_median_s": 0.00029377900136751123,
+      "omega_integrate_median_s": 3.107790424999621,
+      "simulate_median_s": 0.029381185499914864,
+      "projector": {
+        "repeats": 3,
+        "mean_s": 0.0007617226668420093,
+        "median_s": 0.0007657280002604239,
+        "std_s": 1.0323214551765549e-05,
+        "min_s": 0.000749996999729774,
+        "max_s": 0.0007694430005358299
+      },
+      "damping": {
+        "repeats": 3,
+        "mean_s": 0.0003180036674166331,
+        "median_s": 0.00029377900136751123,
+        "std_s": 5.003918443739188e-05,
+        "min_s": 0.0002846869992936263,
+        "max_s": 0.0003755450015887618
+      },
+      "omega_integrate": {
+        "repeats": 2,
+        "mean_s": 3.107790424999621,
+        "median_s": 3.107790424999621,
+        "std_s": 0.023252802035036515,
+        "min_s": 3.091348210999058,
+        "max_s": 3.1242326390001836
+      },
+      "simulate": {
+        "repeats": 2,
+        "mean_s": 0.029381185499914864,
+        "median_s": 0.029381185499914864,
+        "std_s": 0.00020493297864081951,
+        "min_s": 0.029236276001029182,
+        "max_s": 0.029526094998800545
+      },
+      "projection_mse": 0.0
+    },
+    {
+      "dimension": 16384,
+      "projector_median_s": 0.003096944001299562,
+      "damping_median_s": 0.0011222869998164242,
+      "omega_integrate_median_s": 52.05902168400007,
+      "simulate_median_s": 0.11655849799990392,
+      "projector": {
+        "repeats": 3,
+        "mean_s": 0.003098928334414571,
+        "median_s": 0.003096944001299562,
+        "std_s": 3.504565939767871e-05,
+        "min_s": 0.003064917000301648,
+        "max_s": 0.003134924001642503
+      },
+      "damping": {
+        "repeats": 3,
+        "mean_s": 0.0011869883334535796,
+        "median_s": 0.0011222869998164242,
+        "std_s": 0.00011450029964252114,
+        "min_s": 0.0011194859998795437,
+        "max_s": 0.0013191920006647706
+      },
+      "omega_integrate": {
+        "repeats": 2,
+        "mean_s": 52.05902168400007,
+        "median_s": 52.05902168400007,
+        "std_s": 0.0682737519761205,
+        "min_s": 52.01074485100071,
+        "max_s": 52.107298516999435
+      },
+      "simulate": {
+        "repeats": 2,
+        "mean_s": 0.11655849799990392,
+        "median_s": 0.11655849799990392,
+        "std_s": 7.391952834153976e-05,
+        "min_s": 0.1165062290001515,
+        "max_s": 0.11661076699965633
+      },
+      "projection_mse": 0.0
+    }
+  ],
+  "landauer_theory_check": {
+    "formula": "Q_min = k_B * T * ln(2) per erased bit",
+    "k_B": 1.380649e-23,
+    "rows": [
+      {
+        "temperature_kelvin": 1.0,
+        "kT_ln2_joules": 9.569929616929079e-24,
+        "hypothetical_erasures": [
+          {
+            "bits": 1,
+            "ideal_lower_bound_joules": 9.569929616929079e-24,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 1024,
+            "ideal_lower_bound_joules": 9.799607927735377e-21,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 16384,
+            "ideal_lower_bound_joules": 1.5679372684376603e-19,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          }
+        ]
+      },
+      {
+        "temperature_kelvin": 77.0,
+        "kT_ln2_joules": 7.368845805035391e-22,
+        "hypothetical_erasures": [
+          {
+            "bits": 1,
+            "ideal_lower_bound_joules": 7.368845805035391e-22,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 1024,
+            "ideal_lower_bound_joules": 7.54569810435624e-19,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 16384,
+            "ideal_lower_bound_joules": 1.2073116966969984e-17,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          }
+        ]
+      },
+      {
+        "temperature_kelvin": 300.0,
+        "kT_ln2_joules": 2.870978885078724e-21,
+        "hypothetical_erasures": [
+          {
+            "bits": 1,
+            "ideal_lower_bound_joules": 2.870978885078724e-21,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 1024,
+            "ideal_lower_bound_joules": 2.9398823783206133e-18,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 16384,
+            "ideal_lower_bound_joules": 4.703811805312981e-17,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          }
+        ]
+      },
+      {
+        "temperature_kelvin": 350.0,
+        "kT_ln2_joules": 3.349475365925178e-21,
+        "hypothetical_erasures": [
+          {
+            "bits": 1,
+            "ideal_lower_bound_joules": 3.349475365925178e-21,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 1024,
+            "ideal_lower_bound_joules": 3.4298627747073822e-18,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          },
+          {
+            "bits": 16384,
+            "ideal_lower_bound_joules": 5.4877804395318116e-17,
+            "note": "Ideal irreversible bit-erasure lower bound only; not measured device heat."
+          }
+        ]
+      }
+    ],
+    "disclaimer": "Theory check only. Does not measure silicon energy, does not prove Landauer circumvention, and does not equate float32 variance collapse with thermodynamics.",
+    "circumvention_claim": "not_validated"
+  },
+  "pass_criteria": {
+    "omega_dit_finite": true,
+    "software_o1_refuted_or_inconclusive_ok": true,
+    "landauer_formula_ok": true,
+    "no_circumvention_claim": true
+  },
+  "honesty_boundary": [
+    "\u03a9-dit here is a finite-dimensional complex sample, not a physical continuous manifold.",
+    "N-scaling refutes software-native O(1) for this implementation; it does not implement TMEM XOR / single-cycle FMA hardware.",
+    "Landauer table is k_B T ln 2 accounting only \u2014 not a joulemeter experiment and not circumvention."
+  ],
+  "pass": true,
+  "provenance": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "platform": "Linux-6.12.113+-x86_64-with-glibc2.39",
+    "script_sha256": "1169d42687e2c1f1a76bf846eb353a40bf4a9a6ffa35a9fd734074a492963c7d"
+  }
+}

@@ -1,0 +1,242 @@
+WHAT THIS RUN ACTUALLY SHOWED
+==============================
+SIZE=small,  s_a=0.25, s_p=0.4,  theoretical Ξ = exp(-(s_a²+s_p²)) = 0.8005.
+OU ρ=0.97, N=64, K=16,  t=300,  n_walks=8,  torus,  seed=7.
+Process q0:  q_amp=0.00369, q_phase=0.00946, q_κ=0.01315.
+Measurement r at 20 dB:  formula floor=7.082178e-04,  measured MSE=7.203620e-04  (amp=3.670917e-04, phase=3.532703e-04).
+Measurement r at 10 dB:  formula floor=7.082178e-03,  measured MSE=8.771090e-03  (amp=4.398602e-03, phase=4.372488e-03).
+Chip methods used r̂ from the 20 dB formula floor, split in the measured 20 dB amp/phase proportion:  r_amp=3.609031e-04, r_phase=3.473147e-04.
+Steady-state Kalman gains at (q0, r̂):  g_amp=0.917, g_phase=0.966.
+Adaptive default forgetting λ=0.97; adaptation frozen for the first 8 steps.  Sage–Husa uses constant d=1-λ (not the shrinking textbook schedule).
+
+STATIONARY  —  stationary OU
+----------------------------------------
+   true SNR=20 dB, assumed SNR=20 dB,  elapsed 5.6s.
+   Late-window RMS(κ) (s.e.m. across walks):
+     - oracle Kalman           RMS(κ)=0.0312 ± 0.0047,  amp=0.0185 ± 0.0001,  phase=0.0241 ± 0.0054,  regret=+0.0000 ± 0.0000,  mean g=0.941
+     - Kalman initial q        RMS(κ)=0.0311 ± 0.0046,  amp=0.0185 ± 0.0001,  phase=0.0240 ± 0.0052,  regret=-0.0001 ± 0.0001,  mean g=0.942
+     - fixed g=0.05            RMS(κ)=0.3045 ± 0.0254,  amp=0.1649 ± 0.0164,  phase=0.2546 ± 0.0187,  regret=+0.2734 ± 0.0207,  mean g=0.050
+     - fixed g=0.20            RMS(κ)=0.1465 ± 0.0019,  amp=0.0772 ± 0.0004,  phase=0.1241 ± 0.0021,  regret=+0.1154 ± 0.0030,  mean g=0.200
+     - fixed g=0.60            RMS(κ)=0.0579 ± 0.0050,  amp=0.0297 ± 0.0002,  phase=0.0489 ± 0.0052,  regret=+0.0267 ± 0.0003,  mean g=0.600
+     - fixed g=0.90            RMS(κ)=0.0437 ± 0.0165,  amp=0.0190 ± 0.0005,  phase=0.0371 ± 0.0172,  regret=+0.0125 ± 0.0117,  mean g=0.900
+     - v1 g(Ξ)                 RMS(κ)=0.0635 ± 0.0082,  amp=0.0311 ± 0.0004,  phase=0.0543 ± 0.0085,  regret=+0.0323 ± 0.0034,  mean g=0.580
+     - Mehra AKF               RMS(κ)=0.0264 ± 0.0001,  amp=0.0185 ± 0.0001,  phase=0.0188 ± 0.0001,  regret=-0.0048 ± 0.0048,  mean g=0.949
+     - Sage–Husa AKF           RMS(κ)=0.0292 ± 0.0002,  amp=0.0201 ± 0.0001,  phase=0.0210 ± 0.0002,  regret=-0.0020 ± 0.0046,  mean g=0.887
+     - corrected g(Ξ_ν)        RMS(κ)=0.0265 ± 0.0001,  amp=0.0185 ± 0.0001,  phase=0.0189 ± 0.0002,  regret=-0.0047 ± 0.0047,  mean g=0.951
+     - IMM (q, 10q)            RMS(κ)=0.0265 ± 0.0002,  amp=0.0185 ± 0.0001,  phase=0.0189 ± 0.0002,  regret=-0.0046 ± 0.0047,  mean g=0.946
+   Best fixed IIR gain in this scenario: fixed g=0.90 at RMS(κ)=0.0437 ± 0.0165.
+   Oracle ties (within combined s.e.m.) Kalman-at-initial-q,  and beats the v1 Ξ rule.
+   Kalman-at-initial-q beats the v1 Ξ rule.
+   Mehra AKF beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  beats the oracle.
+   Sage–Husa AKF ties (within combined s.e.m.) Kalman-at-initial-q,  beats v1 Ξ,  ties (within combined s.e.m.) fixed g=0.90,  ties (within combined s.e.m.) the oracle.
+   corrected g(Ξ_ν) ties (within combined s.e.m.) Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  ties (within combined s.e.m.) the oracle.
+   IMM (q, 10q) ties (within combined s.e.m.) Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  ties (within combined s.e.m.) the oracle.
+
+JUMP UP  —  q × 10 jump up
+----------------------------------------
+   true SNR=20 dB, assumed SNR=20 dB, event at t=150,  elapsed 5.5s.
+   Before the event:
+     - oracle Kalman           RMS(κ)=0.0416 ± 0.0046,  amp=0.0184, phase=0.0363,  mean g=0.941
+     - Kalman initial q        RMS(κ)=0.0412 ± 0.0045,  amp=0.0184, phase=0.0360,  mean g=0.942
+     - fixed g=0.05            RMS(κ)=0.3257 ± 0.0199,  amp=0.1571, phase=0.2841,  mean g=0.050
+     - fixed g=0.20            RMS(κ)=0.2050 ± 0.0280,  amp=0.0806, phase=0.1859,  mean g=0.200
+     - fixed g=0.60            RMS(κ)=0.0983 ± 0.0248,  amp=0.0327, phase=0.0904,  mean g=0.600
+     - fixed g=0.90            RMS(κ)=0.1012 ± 0.0219,  amp=0.0202, phase=0.0975,  mean g=0.900
+     - v1 g(Ξ)                 RMS(κ)=0.0945 ± 0.0255,  amp=0.0334, phase=0.0861,  mean g=0.572
+     - Mehra AKF               RMS(κ)=0.0269 ± 0.0003,  amp=0.0185, phase=0.0195,  mean g=0.952
+     - Sage–Husa AKF           RMS(κ)=0.0292 ± 0.0005,  amp=0.0204, phase=0.0207,  mean g=0.895
+     - corrected g(Ξ_ν)        RMS(κ)=0.0269 ± 0.0004,  amp=0.0185, phase=0.0196,  mean g=0.954
+     - IMM (q, 10q)            RMS(κ)=0.0269 ± 0.0004,  amp=0.0185, phase=0.0194,  mean g=0.949
+   After the event (late window starts 20 steps later):
+     - oracle Kalman           RMS(κ)=0.0544 ± 0.0010,  amp=0.0430 ± 0.0009,  phase=0.0325 ± 0.0005,  regret=+0.0000 ± 0.0000,  mean g=0.993,  recovery 0 steps (all walks)
+     - Kalman initial q        RMS(κ)=0.0734 ± 0.0020,  amp=0.0476 ± 0.0010,  phase=0.0540 ± 0.0032,  regret=+0.0190 ± 0.0025,  mean g=0.942,  recovery median 142 steps (5/8 walks)
+     - fixed g=0.05            RMS(κ)=1.0619 ± 0.0218,  amp=0.5284 ± 0.0069,  phase=0.9164 ± 0.0248,  regret=+1.0075 ± 0.0224,  mean g=0.050,  never recovered (0 walks within 1.5× oracle)
+     - fixed g=0.20            RMS(κ)=0.6737 ± 0.0229,  amp=0.2794 ± 0.0064,  phase=0.6088 ± 0.0228,  regret=+0.6192 ± 0.0235,  mean g=0.200,  never recovered (0 walks within 1.5× oracle)
+     - fixed g=0.60            RMS(κ)=0.4855 ± 0.0492,  amp=0.1268 ± 0.0057,  phase=0.4644 ± 0.0498,  regret=+0.4310 ± 0.0499,  mean g=0.600,  never recovered (0 walks within 1.5× oracle)
+     - fixed g=0.90            RMS(κ)=0.1413 ± 0.0113,  amp=0.0466 ± 0.0009,  phase=0.1309 ± 0.0126,  regret=+0.0869 ± 0.0119,  mean g=0.900,  recovery median 149 steps (2/8 walks)
+     - v1 g(Ξ)                 RMS(κ)=0.5949 ± 0.0617,  amp=0.2334 ± 0.0236,  phase=0.5437 ± 0.0572,  regret=+0.5405 ± 0.0620,  mean g=0.308,  never recovered (0 walks within 1.5× oracle)
+     - Mehra AKF               RMS(κ)=0.0540 ± 0.0010,  amp=0.0427 ± 0.0009,  phase=0.0321 ± 0.0006,  regret=-0.0005 ± 0.0000,  mean g=0.996,  recovery 0 steps (all walks)
+     - Sage–Husa AKF           RMS(κ)=0.3909 ± 0.0141,  amp=0.1708 ± 0.0024,  phase=0.3444 ± 0.0150,  regret=+0.3365 ± 0.0139,  mean g=0.497,  never recovered (0 walks within 1.5× oracle)
+     - corrected g(Ξ_ν)        RMS(κ)=0.0545 ± 0.0010,  amp=0.0430 ± 0.0009,  phase=0.0325 ± 0.0005,  regret=+0.0000 ± 0.0000,  mean g=0.990,  recovery 0 steps (all walks)
+     - IMM (q, 10q)            RMS(κ)=0.0544 ± 0.0010,  amp=0.0430 ± 0.0009,  phase=0.0325 ± 0.0005,  regret=-0.0000 ± 0.0000,  mean g=0.992,  recovery 0 steps (all walks)
+   Best fixed IIR gain in this scenario: fixed g=0.90 at RMS(κ)=0.1413 ± 0.0113.
+   Oracle beats Kalman-at-initial-q,  and beats the v1 Ξ rule.
+   Kalman-at-initial-q beats the v1 Ξ rule.
+   Mehra AKF beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  ties (within combined s.e.m.) the oracle.
+   Sage–Husa AKF loses to Kalman-at-initial-q,  beats v1 Ξ,  loses to fixed g=0.90,  loses to the oracle.
+   corrected g(Ξ_ν) beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  ties (within combined s.e.m.) the oracle.
+   IMM (q, 10q) beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  ties (within combined s.e.m.) the oracle.
+
+JUMP DOWN  —  q ÷ 10 jump down
+----------------------------------------
+   true SNR=20 dB, assumed SNR=20 dB, event at t=150,  elapsed 5.5s.
+   Before the event:
+     - oracle Kalman           RMS(κ)=0.0417 ± 0.0061,  amp=0.0181, phase=0.0363,  mean g=0.941
+     - Kalman initial q        RMS(κ)=0.0415 ± 0.0061,  amp=0.0181, phase=0.0362,  mean g=0.942
+     - fixed g=0.05            RMS(κ)=0.3034 ± 0.0126,  amp=0.1525, phase=0.2611,  mean g=0.050
+     - fixed g=0.20            RMS(κ)=0.1637 ± 0.0129,  amp=0.0779, phase=0.1424,  mean g=0.200
+     - fixed g=0.60            RMS(κ)=0.1017 ± 0.0226,  amp=0.0321, phase=0.0941,  mean g=0.600
+     - fixed g=0.90            RMS(κ)=0.0926 ± 0.0252,  amp=0.0200, phase=0.0883,  mean g=0.900
+     - v1 g(Ξ)                 RMS(κ)=0.0924 ± 0.0322,  amp=0.0493, phase=0.0770,  mean g=0.569
+     - Mehra AKF               RMS(κ)=0.0264 ± 0.0002,  amp=0.0182, phase=0.0190,  mean g=0.951
+     - Sage–Husa AKF           RMS(κ)=0.0286 ± 0.0004,  amp=0.0200, phase=0.0203,  mean g=0.898
+     - corrected g(Ξ_ν)        RMS(κ)=0.0265 ± 0.0003,  amp=0.0182, phase=0.0192,  mean g=0.953
+     - IMM (q, 10q)            RMS(κ)=0.0265 ± 0.0002,  amp=0.0182, phase=0.0192,  mean g=0.949
+   After the event (late window starts 20 steps later):
+     - oracle Kalman           RMS(κ)=0.0215 ± 0.0001,  amp=0.0144 ± 0.0001,  phase=0.0160 ± 0.0001,  regret=+0.0000 ± 0.0000,  mean g=0.693,  recovery 0 steps (all walks)
+     - Kalman initial q        RMS(κ)=0.0248 ± 0.0003,  amp=0.0166 ± 0.0001,  phase=0.0183 ± 0.0004,  regret=+0.0033 ± 0.0003,  mean g=0.942,  recovery 0 steps (all walks)
+     - fixed g=0.05            RMS(κ)=0.1016 ± 0.0010,  amp=0.0530 ± 0.0005,  phase=0.0865 ± 0.0011,  regret=+0.0801 ± 0.0010,  mean g=0.050,  never recovered (0 walks within 1.5× oracle)
+     - fixed g=0.20            RMS(κ)=0.0474 ± 0.0001,  amp=0.0252 ± 0.0001,  phase=0.0401 ± 0.0001,  regret=+0.0259 ± 0.0002,  mean g=0.200,  never recovered (0 walks within 1.5× oracle)
+     - fixed g=0.60            RMS(κ)=0.0229 ± 0.0001,  amp=0.0144 ± 0.0001,  phase=0.0178 ± 0.0001,  regret=+0.0014 ± 0.0000,  mean g=0.600,  recovery 0 steps (all walks)
+     - fixed g=0.90            RMS(κ)=0.0334 ± 0.0051,  amp=0.0165 ± 0.0001,  phase=0.0275 ± 0.0055,  regret=+0.0119 ± 0.0051,  mean g=0.900,  recovery median 0 steps (7/8 walks)
+     - v1 g(Ξ)                 RMS(κ)=0.0229 ± 0.0001,  amp=0.0144 ± 0.0001,  phase=0.0178 ± 0.0001,  regret=+0.0014 ± 0.0000,  mean g=0.597,  recovery 0 steps (all walks)
+     - Mehra AKF               RMS(κ)=0.0231 ± 0.0003,  amp=0.0152 ± 0.0001,  phase=0.0173 ± 0.0004,  regret=+0.0016 ± 0.0003,  mean g=0.859,  recovery median 0 steps (7/8 walks)
+     - Sage–Husa AKF           RMS(κ)=0.0249 ± 0.0001,  amp=0.0173 ± 0.0001,  phase=0.0178 ± 0.0001,  regret=+0.0034 ± 0.0000,  mean g=0.970,  recovery 0 steps (all walks)
+     - corrected g(Ξ_ν)        RMS(κ)=0.0247 ± 0.0003,  amp=0.0166 ± 0.0001,  phase=0.0182 ± 0.0004,  regret=+0.0032 ± 0.0002,  mean g=0.948,  recovery 0 steps (all walks)
+     - IMM (q, 10q)            RMS(κ)=0.0243 ± 0.0001,  amp=0.0166 ± 0.0001,  phase=0.0176 ± 0.0001,  regret=+0.0027 ± 0.0000,  mean g=0.942,  recovery 0 steps (all walks)
+   Best fixed IIR gain in this scenario: fixed g=0.60 at RMS(κ)=0.0229 ± 0.0001.
+   Oracle beats Kalman-at-initial-q,  and beats the v1 Ξ rule.
+   Kalman-at-initial-q loses to the v1 Ξ rule.
+   Mehra AKF beats Kalman-at-initial-q,  ties (within combined s.e.m.) v1 Ξ,  ties (within combined s.e.m.) fixed g=0.60,  loses to the oracle.
+   Sage–Husa AKF ties (within combined s.e.m.) Kalman-at-initial-q,  loses to v1 Ξ,  loses to fixed g=0.60,  loses to the oracle.
+   corrected g(Ξ_ν) ties (within combined s.e.m.) Kalman-at-initial-q,  loses to v1 Ξ,  loses to fixed g=0.60,  loses to the oracle.
+   IMM (q, 10q) beats Kalman-at-initial-q,  loses to v1 Ξ,  loses to fixed g=0.60,  loses to the oracle.
+
+RAMP  —  slowly ramping q (×1 → ×10)
+----------------------------------------
+   true SNR=20 dB, assumed SNR=20 dB, event at t=150,  elapsed 5.2s.
+   Before the event:
+     - oracle Kalman           RMS(κ)=0.0362 ± 0.0054,  amp=0.0181, phase=0.0301,  mean g=0.941
+     - Kalman initial q        RMS(κ)=0.0359 ± 0.0052,  amp=0.0181, phase=0.0298,  mean g=0.942
+     - fixed g=0.05            RMS(κ)=0.2970 ± 0.0095,  amp=0.1521, phase=0.2539,  mean g=0.050
+     - fixed g=0.20            RMS(κ)=0.1566 ± 0.0086,  amp=0.0779, phase=0.1346,  mean g=0.200
+     - fixed g=0.60            RMS(κ)=0.0959 ± 0.0284,  amp=0.0326, phase=0.0879,  mean g=0.600
+     - fixed g=0.90            RMS(κ)=0.0716 ± 0.0223,  amp=0.0193, phase=0.0664,  mean g=0.900
+     - v1 g(Ξ)                 RMS(κ)=0.0709 ± 0.0150,  amp=0.0314, phase=0.0621,  mean g=0.578
+     - Mehra AKF               RMS(κ)=0.0262 ± 0.0003,  amp=0.0182, phase=0.0187,  mean g=0.948
+     - Sage–Husa AKF           RMS(κ)=0.0281 ± 0.0003,  amp=0.0194, phase=0.0202,  mean g=0.901
+     - corrected g(Ξ_ν)        RMS(κ)=0.0262 ± 0.0003,  amp=0.0181, phase=0.0188,  mean g=0.951
+     - IMM (q, 10q)            RMS(κ)=0.0262 ± 0.0003,  amp=0.0182, phase=0.0187,  mean g=0.947
+   After the event (late window starts 20 steps later):
+     - oracle Kalman           RMS(κ)=0.0410 ± 0.0012,  amp=0.0303 ± 0.0008,  phase=0.0271 ± 0.0009,  regret=+0.0000 ± 0.0000,  mean g=0.987,  recovery 0 steps (all walks)
+     - Kalman initial q        RMS(κ)=0.0521 ± 0.0047,  amp=0.0331 ± 0.0008,  phase=0.0385 ± 0.0057,  regret=+0.0112 ± 0.0039,  mean g=0.942,  recovery median 138 steps (6/8 walks)
+     - fixed g=0.05            RMS(κ)=0.7176 ± 0.0286,  amp=0.3561 ± 0.0058,  phase=0.6212 ± 0.0297,  regret=+0.6766 ± 0.0279,  mean g=0.050,  never recovered (0 walks within 1.5× oracle)
+     - fixed g=0.20            RMS(κ)=0.4439 ± 0.0382,  amp=0.1917 ± 0.0035,  phase=0.3972 ± 0.0405,  regret=+0.4029 ± 0.0375,  mean g=0.200,  never recovered (0 walks within 1.5× oracle)
+     - fixed g=0.60            RMS(κ)=0.2520 ± 0.0513,  amp=0.0782 ± 0.0038,  phase=0.2351 ± 0.0529,  regret=+0.2110 ± 0.0506,  mean g=0.600,  never recovered (0 walks within 1.5× oracle)
+     - fixed g=0.90            RMS(κ)=0.0973 ± 0.0219,  amp=0.0335 ± 0.0008,  phase=0.0879 ± 0.0235,  regret=+0.0564 ± 0.0212,  mean g=0.900,  recovery median 123 steps (1/8 walks)
+     - v1 g(Ξ)                 RMS(κ)=0.2912 ± 0.0520,  amp=0.1107 ± 0.0099,  phase=0.2658 ± 0.0521,  regret=+0.2502 ± 0.0514,  mean g=0.453,  never recovered (0 walks within 1.5× oracle)
+     - Mehra AKF               RMS(κ)=0.0400 ± 0.0009,  amp=0.0301 ± 0.0008,  phase=0.0259 ± 0.0004,  regret=-0.0009 ± 0.0004,  mean g=0.986,  recovery 0 steps (all walks)
+     - Sage–Husa AKF           RMS(κ)=0.1762 ± 0.0096,  amp=0.0951 ± 0.0019,  phase=0.1438 ± 0.0100,  regret=+0.1352 ± 0.0092,  mean g=0.608,  never recovered (0 walks within 1.5× oracle)
+     - corrected g(Ξ_ν)        RMS(κ)=0.0403 ± 0.0010,  amp=0.0303 ± 0.0008,  phase=0.0262 ± 0.0005,  regret=-0.0006 ± 0.0003,  mean g=0.981,  recovery 0 steps (all walks)
+     - IMM (q, 10q)            RMS(κ)=0.0403 ± 0.0010,  amp=0.0302 ± 0.0008,  phase=0.0262 ± 0.0005,  regret=-0.0007 ± 0.0003,  mean g=0.986,  recovery 0 steps (all walks)
+   Best fixed IIR gain in this scenario: fixed g=0.90 at RMS(κ)=0.0973 ± 0.0219.
+   Oracle beats Kalman-at-initial-q,  and beats the v1 Ξ rule.
+   Kalman-at-initial-q beats the v1 Ξ rule.
+   Mehra AKF beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  ties (within combined s.e.m.) the oracle.
+   Sage–Husa AKF loses to Kalman-at-initial-q,  beats v1 Ξ,  loses to fixed g=0.90,  loses to the oracle.
+   corrected g(Ξ_ν) beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  ties (within combined s.e.m.) the oracle.
+   IMM (q, 10q) beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  ties (within combined s.e.m.) the oracle.
+
+FAULT  —  sudden step of 0.5 in Re(κ) of one tile
+----------------------------------------
+   true SNR=20 dB, assumed SNR=20 dB, event at t=150,  elapsed 5.6s.
+   Before the event:
+     - oracle Kalman           RMS(κ)=0.0436 ± 0.0060,  amp=0.0185, phase=0.0384,  mean g=0.941
+     - Kalman initial q        RMS(κ)=0.0433 ± 0.0059,  amp=0.0185, phase=0.0381,  mean g=0.942
+     - fixed g=0.05            RMS(κ)=0.3102 ± 0.0119,  amp=0.1538, phase=0.2682,  mean g=0.050
+     - fixed g=0.20            RMS(κ)=0.1765 ± 0.0170,  amp=0.0782, phase=0.1561,  mean g=0.200
+     - fixed g=0.60            RMS(κ)=0.1120 ± 0.0196,  amp=0.0323, phase=0.1048,  mean g=0.600
+     - fixed g=0.90            RMS(κ)=0.0993 ± 0.0223,  amp=0.0204, phase=0.0954,  mean g=0.900
+     - v1 g(Ξ)                 RMS(κ)=0.0889 ± 0.0166,  amp=0.0322, phase=0.0806,  mean g=0.574
+     - Mehra AKF               RMS(κ)=0.0269 ± 0.0003,  amp=0.0185, phase=0.0194,  mean g=0.952
+     - Sage–Husa AKF           RMS(κ)=0.0289 ± 0.0003,  amp=0.0198, phase=0.0209,  mean g=0.901
+     - corrected g(Ξ_ν)        RMS(κ)=0.0271 ± 0.0003,  amp=0.0185, phase=0.0197,  mean g=0.954
+     - IMM (q, 10q)            RMS(κ)=0.0271 ± 0.0003,  amp=0.0186, phase=0.0196,  mean g=0.949
+   After the event (late window starts 20 steps later):
+     - oracle Kalman           RMS(κ)=0.0387 ± 0.0054,  amp=0.0187 ± 0.0001,  phase=0.0328 ± 0.0061,  regret=+0.0000 ± 0.0000,  mean g=0.941,  recovery 0 steps (all walks),  faulted-tile peak 0.1156 ± 0.0290 (4.47× pre-event baseline)
+     - Kalman initial q        RMS(κ)=0.0384 ± 0.0052,  amp=0.0186 ± 0.0002,  phase=0.0324 ± 0.0059,  regret=-0.0003 ± 0.0002,  mean g=0.942,  recovery 0 steps (all walks),  faulted-tile peak 0.1130 ± 0.0274 (4.46× pre-event baseline)
+     - fixed g=0.05            RMS(κ)=0.2861 ± 0.0046,  amp=0.1490 ± 0.0005,  phase=0.2436 ± 0.0051,  regret=+0.2474 ± 0.0077,  mean g=0.050,  recovery median 149 steps (1/8 walks),  faulted-tile peak 0.6597 ± 0.0417 (2.26× pre-event baseline)
+     - fixed g=0.20            RMS(κ)=0.1533 ± 0.0048,  amp=0.0771 ± 0.0004,  phase=0.1318 ± 0.0052,  regret=+0.1146 ± 0.0081,  mean g=0.200,  recovery median 149 steps (2/8 walks),  faulted-tile peak 0.4224 ± 0.0386 (2.60× pre-event baseline)
+     - fixed g=0.60            RMS(κ)=0.1021 ± 0.0188,  amp=0.0319 ± 0.0011,  phase=0.0947 ± 0.0193,  regret=+0.0634 ± 0.0163,  mean g=0.600,  recovery median 149 steps (2/8 walks),  faulted-tile peak 0.2092 ± 0.0099 (3.97× pre-event baseline)
+     - fixed g=0.90            RMS(κ)=0.0993 ± 0.0216,  amp=0.0203 ± 0.0006,  phase=0.0954 ± 0.0226,  regret=+0.0606 ± 0.0176,  mean g=0.900,  recovery median 130 steps (2/8 walks),  faulted-tile peak 0.2922 ± 0.1062 (10.74× pre-event baseline)
+     - v1 g(Ξ)                 RMS(κ)=0.0761 ± 0.0111,  amp=0.0318 ± 0.0008,  phase=0.0674 ± 0.0114,  regret=+0.0374 ± 0.0104,  mean g=0.577,  recovery median 149 steps (2/8 walks),  faulted-tile peak 0.2222 ± 0.0113 (4.16× pre-event baseline)
+     - Mehra AKF               RMS(κ)=0.0269 ± 0.0002,  amp=0.0187 ± 0.0002,  phase=0.0193 ± 0.0002,  regret=-0.0118 ± 0.0053,  mean g=0.962,  recovery 136 steps (all walks),  faulted-tile peak 0.0753 ± 0.0080 (3.23× pre-event baseline)
+     - Sage–Husa AKF           RMS(κ)=0.0296 ± 0.0002,  amp=0.0208 ± 0.0002,  phase=0.0210 ± 0.0001,  regret=-0.0091 ± 0.0054,  mean g=0.884,  recovery median 142 steps (6/8 walks),  faulted-tile peak 0.0880 ± 0.0081 (3.60× pre-event baseline)
+     - corrected g(Ξ_ν)        RMS(κ)=0.0272 ± 0.0003,  amp=0.0187 ± 0.0002,  phase=0.0196 ± 0.0003,  regret=-0.0115 ± 0.0052,  mean g=0.960,  recovery 136 steps (all walks),  faulted-tile peak 0.0719 ± 0.0058 (3.18× pre-event baseline)
+     - IMM (q, 10q)            RMS(κ)=0.0272 ± 0.0003,  amp=0.0188 ± 0.0002,  phase=0.0195 ± 0.0003,  regret=-0.0115 ± 0.0052,  mean g=0.950,  recovery 142 steps (all walks),  faulted-tile peak 0.0711 ± 0.0062 (3.10× pre-event baseline)
+   Best fixed IIR gain in this scenario: fixed g=0.90 at RMS(κ)=0.0993 ± 0.0216.
+   Oracle ties (within combined s.e.m.) Kalman-at-initial-q,  and beats the v1 Ξ rule.
+   Kalman-at-initial-q beats the v1 Ξ rule.
+   Mehra AKF beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  beats the oracle.
+   Sage–Husa AKF beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  beats the oracle.
+   corrected g(Ξ_ν) beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  beats the oracle.
+   IMM (q, 10q) beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.90,  beats the oracle.
+
+MISMATCH  —  measurement-noise mismatch (true 10 dB, r̂ assumes 20 dB)
+----------------------------------------
+   true SNR=10 dB, assumed SNR=20 dB,  elapsed 5.5s.
+   Late-window RMS(κ) (s.e.m. across walks):
+     - oracle Kalman           RMS(κ)=0.0779 ± 0.0008,  amp=0.0556 ± 0.0008,  phase=0.0543 ± 0.0004,  regret=+0.0000 ± 0.0000,  mean g=0.661
+     - Kalman initial q        RMS(κ)=0.0955 ± 0.0040,  amp=0.0577 ± 0.0008,  phase=0.0753 ± 0.0047,  regret=+0.0176 ± 0.0035,  mean g=0.942
+     - fixed g=0.05            RMS(κ)=0.3039 ± 0.0061,  amp=0.1526 ± 0.0029,  phase=0.2617 ± 0.0056,  regret=+0.2260 ± 0.0058,  mean g=0.050
+     - fixed g=0.20            RMS(κ)=0.1845 ± 0.0114,  amp=0.0837 ± 0.0005,  phase=0.1618 ± 0.0123,  regret=+0.1066 ± 0.0117,  mean g=0.200
+     - fixed g=0.60            RMS(κ)=0.1264 ± 0.0104,  amp=0.0538 ± 0.0008,  phase=0.1097 ± 0.0114,  regret=+0.0485 ± 0.0106,  mean g=0.600
+     - fixed g=0.90            RMS(κ)=0.1658 ± 0.0150,  amp=0.0573 ± 0.0008,  phase=0.1537 ± 0.0167,  regret=+0.0879 ± 0.0148,  mean g=0.900
+     - v1 g(Ξ)                 RMS(κ)=0.1155 ± 0.0118,  amp=0.0542 ± 0.0006,  phase=0.0976 ± 0.0128,  regret=+0.0377 ± 0.0121,  mean g=0.563
+     - Mehra AKF               RMS(κ)=0.0862 ± 0.0010,  amp=0.0595 ± 0.0008,  phase=0.0620 ± 0.0006,  regret=+0.0083 ± 0.0002,  mean g=0.981
+     - Sage–Husa AKF           RMS(κ)=0.0813 ± 0.0011,  amp=0.0564 ± 0.0008,  phase=0.0582 ± 0.0008,  regret=+0.0034 ± 0.0004,  mean g=0.844
+     - corrected g(Ξ_ν)        RMS(κ)=0.0866 ± 0.0010,  amp=0.0594 ± 0.0008,  phase=0.0627 ± 0.0008,  regret=+0.0087 ± 0.0003,  mean g=0.977
+     - IMM (q, 10q)            RMS(κ)=0.0867 ± 0.0010,  amp=0.0598 ± 0.0008,  phase=0.0624 ± 0.0007,  regret=+0.0088 ± 0.0003,  mean g=0.968
+   Best fixed IIR gain in this scenario: fixed g=0.60 at RMS(κ)=0.1264 ± 0.0104.
+   Oracle beats Kalman-at-initial-q,  and beats the v1 Ξ rule.
+   Kalman-at-initial-q beats the v1 Ξ rule.
+   Mehra AKF beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.60,  loses to the oracle.
+   Sage–Husa AKF beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.60,  loses to the oracle.
+   corrected g(Ξ_ν) beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.60,  loses to the oracle.
+   IMM (q, 10q) beats Kalman-at-initial-q,  beats v1 Ξ,  beats fixed g=0.60,  loses to the oracle.
+
+FORGETTING-FACTOR SENSITIVITY
+----------------------------------------
+   Shared traces, n_walks=8,  λ in [0.9, 0.95, 0.97, 0.99],  elapsed 12.3s.
+   stationary:
+     Mehra AKF:  λ=0.90: 0.0269±0.0002,  λ=0.95: 0.0268±0.0002,  λ=0.97: 0.0267±0.0002,  λ=0.99: 0.0267±0.0002.  Best λ=0.97.
+     Sage–Husa AKF:  λ=0.90: 0.0322±0.0002,  λ=0.95: 0.0302±0.0002,  λ=0.97: 0.0291±0.0002,  λ=0.99: 0.0283±0.0004.  Best λ=0.99.
+     corrected g(Ξ_ν):  λ=0.90: 0.0269±0.0002,  λ=0.95: 0.0269±0.0002,  λ=0.97: 0.0269±0.0002,  λ=0.99: 0.0269±0.0002.  Best λ=0.99.
+   jump_up:
+     Mehra AKF:  λ=0.90: 0.0529±0.0020,  λ=0.95: 0.0529±0.0020,  λ=0.97: 0.0530±0.0020,  λ=0.99: 0.0530±0.0020.  Best λ=0.90.
+     Sage–Husa AKF:  λ=0.90: 0.3277±0.0118,  λ=0.95: 0.3850±0.0107,  λ=0.97: 0.3845±0.0117,  λ=0.99: 0.3590±0.0124.  Best λ=0.90.
+     corrected g(Ξ_ν):  λ=0.90: 0.0533±0.0020,  λ=0.95: 0.0533±0.0020,  λ=0.97: 0.0533±0.0020,  λ=0.99: 0.0534±0.0020.  Best λ=0.90.
+   The default λ=0.97 was within 25% of the best λ in every reported cell, so it is a reasonable single setting for this suite, not a fully tuned optimum.
+
+WHICH RULE TO ADOPT FOR THE SRI TILE
+----------------------------------------
+   Recommended rule on this evidence: Mehra AKF.  Mean late regret vs the oracle, averaged across the 6 scenarios, is -0.0013.  Collapse flags (5× oracle, or recovery on fewer than half the walks, or jump-up RMS>0.3): 0 scenario(s).
+   On the q×10 jump, Mehra AKF reached RMS(κ)=0.0540 ± 0.0010 versus oracle 0.0544, Kalman-at-initial-q 0.0734, and v1 Ξ 0.5949.
+   Median recovery to within 1.5× the oracle was 0 steps (8/8 walks).
+   On the r-mismatch test (true 10 dB, r̂ from a 20 dB formula), Mehra AKF reached RMS(κ)=0.0862 ± 0.0010 versus oracle 0.0779 and Kalman-at-initial-q 0.0955.
+   Note: Mehra attributes all excess innovation power to q, so an underestimated r can push its gain *up*, which is the wrong direction for extra measurement noise. Sage–Husa adapts r as well; that difference is visible here if Sage–Husa wins this cell.
+   It is not uniformly best in every scenario:
+     mismatch: Sage–Husa AKF was lower (0.0813 vs 0.0862).  The recommendation is a robustness compromise, not a per-cell optimum.
+   Where this rule has a slightly *lower* late RMS than the oracle (stationary, jump_up, ramp, fault), that is consistent with v2, where a Kalman filter with q×4 beat the filter that used the true q.  A slightly higher gain can help in this finite-K, gauge-aligned model.  It is not evidence that the adaptive rule is more efficient than a well-specified Kalman filter in the large-sample limit.
+   Documented filter cost is about 36 flops per tile per step (both channels), versus ~20 for a fixed-q Kalman and ~72 for the two-model IMM.  These are engineering counts, not measured cycles.  The shared unveiling step (graph least-squares on the neighbour ratios) dominates any of these filter costs.
+   The v1 Ξ-consistency rule is not recommended: after the q×10 jump it reached RMS(κ)=0.5949 ± 0.0617.  That rule still lowers the gain when neighbour consistency falls, which is the wrong sign.
+
+WHAT REMAINS OPEN
+----------------------------------------
+   - Identifiability.  Innovation variance alone cannot separate q from r:  E[ν²] = a²P + q + r.  The Mehra estimator is unbiased for q in steady state when r̂ = r and P equals the true posterior; otherwise the bias in r̂ is absorbed into q̂.  A lag-1 Mehra correction, or a Cramér–Rao bound for this blind model, was not derived here.
+   - The forgetting factor is still a tuning knob.  Sensitivity is reported, but there is no automatic λ scheduler in the recommended rule.
+   - Partial overlap.  v2 showed that layout matters as soon as neighbouring tiles share only part of their inputs.  All tracking walks here used full overlap on a 64-tile torus.  The theorem-plus-filter story under sliding-window overlap is untested.
+   - The gauge is still a single complex factor for the whole network, computed from the held estimate.  A chip that cannot do that global step would need a reference tile or a different pin.  That choice was left open in v2 and is still open.
+   - IMM used two models at {q0, 10 q0}.  The q÷10 jump is therefore a mismatched-model test, not a matched one.  A three-model bank, or a different pair, was not tried.
+   - The fault model is a single real-part step of 0.5 on one tile.  Other faults (phase steps, multiple tiles, sticking) were not tried.
+   - Settling time of the *unveiling* iteration (v2 experiment D) is not revisited; every filter here was fed the converged least-squares / leading-eigenvector estimate.
+
+WHAT THIS DOES NOT SHOW
+=======================
+- This is a classical numerical simulation of complex arrays.  Using i and a Hilbert-space notation for a veil does not make the simulation quantum, and it does not demonstrate entanglement, a quantum advantage, or a new physical chip.
+- There is no CMOS, timing-error, voltage, or energy model here.  The notebook does not compare a tile array to Razor-style detection or adaptive voltage scaling.  That measured-result claim still needs an FPGA or ASIC experiment.
+- A programming model in which the programmer declares Ξ_crit(c) is not implemented here.
+- Filter flop counts are documented estimates of arithmetic in the *filter*, not a chip area or clock-cycle model, and they exclude the shared unveiling solve.
+
+RUNTIME
+  stationary 5.6s,  jump_up 5.5s,  jump_down 5.5s,  ramp 5.2s,  fault 5.6s,  mismatch 5.5s,  sensitivity 12.3s,  wall 48.9s.

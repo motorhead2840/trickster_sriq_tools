@@ -1,0 +1,11 @@
+flowchart LR
+  U200["200 User query"] --> S202["202 Raw internal state"]
+  S202 --> S204["204 Signal + noise"]
+  S204 --> S206["206 Mark signal"]
+  S204 --> S208["208 Mark noise"]
+  S206 --> S210["210 Noise-inverted copy"]
+  S208 --> S210
+  S210 --> S212["212 Combine with original"]
+  S212 --> S214["214 Cleaned estimate"]
+  S214 --> S216["216 Continue generation"]
+  S216 --> U220["220 Present to user"]

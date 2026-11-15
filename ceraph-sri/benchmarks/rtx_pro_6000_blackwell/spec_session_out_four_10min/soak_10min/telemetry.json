@@ -1,0 +1,6052 @@
+[
+  {
+    "elapsed_min": 0.0,
+    "cumulative_jobs": 0,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 90.3,
+        "power_limit_w": 600.0,
+        "tdp_pct": 15.0,
+        "temp_c": 33.0,
+        "clock_mhz": 2340,
+        "occupancy_pct": 42.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 86.02,
+        "power_limit_w": 600.0,
+        "tdp_pct": 14.3,
+        "temp_c": 32.0,
+        "clock_mhz": 2295,
+        "occupancy_pct": 11.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 86.6,
+        "power_limit_w": 600.0,
+        "tdp_pct": 14.4,
+        "temp_c": 33.0,
+        "clock_mhz": 2347,
+        "occupancy_pct": 17.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 87.36,
+        "power_limit_w": 600.0,
+        "tdp_pct": 14.6,
+        "temp_c": 33.0,
+        "clock_mhz": 2362,
+        "occupancy_pct": 17.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 0.083,
+    "cumulative_jobs": 2708,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 311.2,
+        "power_limit_w": 600.0,
+        "tdp_pct": 51.9,
+        "temp_c": 40.0,
+        "clock_mhz": 2325,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 308.45,
+        "power_limit_w": 600.0,
+        "tdp_pct": 51.4,
+        "temp_c": 38.0,
+        "clock_mhz": 2280,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 311.9,
+        "power_limit_w": 600.0,
+        "tdp_pct": 52.0,
+        "temp_c": 39.0,
+        "clock_mhz": 2332,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 313.13,
+        "power_limit_w": 600.0,
+        "tdp_pct": 52.2,
+        "temp_c": 39.0,
+        "clock_mhz": 2347,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 0.167,
+    "cumulative_jobs": 5420,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 312.81,
+        "power_limit_w": 600.0,
+        "tdp_pct": 52.1,
+        "temp_c": 41.0,
+        "clock_mhz": 2325,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 309.76,
+        "power_limit_w": 600.0,
+        "tdp_pct": 51.6,
+        "temp_c": 40.0,
+        "clock_mhz": 2280,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 313.75,
+        "power_limit_w": 600.0,
+        "tdp_pct": 52.3,
+        "temp_c": 41.0,
+        "clock_mhz": 2332,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 318.69,
+        "power_limit_w": 600.0,
+        "tdp_pct": 53.1,
+        "temp_c": 41.0,
+        "clock_mhz": 2355,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 0.25,
+    "cumulative_jobs": 8132,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 314.06,
+        "power_limit_w": 600.0,
+        "tdp_pct": 52.3,
+        "temp_c": 43.0,
+        "clock_mhz": 2325,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 311.22,
+        "power_limit_w": 600.0,
+        "tdp_pct": 51.9,
+        "temp_c": 41.0,
+        "clock_mhz": 2280,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 315.68,
+        "power_limit_w": 600.0,
+        "tdp_pct": 52.6,
+        "temp_c": 43.0,
+        "clock_mhz": 2332,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 331.59,
+        "power_limit_w": 600.0,
+        "tdp_pct": 55.3,
+        "temp_c": 43.0,
+        "clock_mhz": 2362,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 0.333,
+    "cumulative_jobs": 10844,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 315.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 52.6,
+        "temp_c": 44.0,
+        "clock_mhz": 2325,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 312.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 52.1,
+        "temp_c": 42.0,
+        "clock_mhz": 2280,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 320.01,
+        "power_limit_w": 600.0,
+        "tdp_pct": 53.3,
+        "temp_c": 44.0,
+        "clock_mhz": 2340,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 325.7,
+        "power_limit_w": 600.0,
+        "tdp_pct": 54.3,
+        "temp_c": 44.0,
+        "clock_mhz": 2392,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 0.417,
+    "cumulative_jobs": 13552,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 308.12,
+        "power_limit_w": 600.0,
+        "tdp_pct": 51.4,
+        "temp_c": 44.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 313.97,
+        "power_limit_w": 600.0,
+        "tdp_pct": 52.3,
+        "temp_c": 43.0,
+        "clock_mhz": 2280,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 304.11,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.7,
+        "temp_c": 44.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 303.22,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 44.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 0.5,
+    "cumulative_jobs": 16264,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 304.59,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.8,
+        "temp_c": 45.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 315.22,
+        "power_limit_w": 600.0,
+        "tdp_pct": 52.5,
+        "temp_c": 44.0,
+        "clock_mhz": 2280,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 304.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.8,
+        "temp_c": 45.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 303.74,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.6,
+        "temp_c": 44.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 0.583,
+    "cumulative_jobs": 18976,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 305.19,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.9,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 305.92,
+        "power_limit_w": 600.0,
+        "tdp_pct": 51.0,
+        "temp_c": 44.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 295.54,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.3,
+        "temp_c": 45.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 304.41,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.7,
+        "temp_c": 45.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 0.667,
+    "cumulative_jobs": 21692,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 295.98,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.3,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 306.35,
+        "power_limit_w": 600.0,
+        "tdp_pct": 51.1,
+        "temp_c": 45.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 294.77,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.1,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 304.83,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.8,
+        "temp_c": 45.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 0.75,
+    "cumulative_jobs": 24404,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 296.33,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 306.96,
+        "power_limit_w": 600.0,
+        "tdp_pct": 51.2,
+        "temp_c": 45.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 295.29,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.2,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 305.35,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.9,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 0.833,
+    "cumulative_jobs": 27120,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 296.81,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.5,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 300.18,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.0,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 295.63,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.3,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 293.94,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.0,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 0.917,
+    "cumulative_jobs": 29836,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 297.16,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.5,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 300.53,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.1,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 295.97,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.3,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 294.34,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.1,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 1.0,
+    "cumulative_jobs": 32548,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 297.43,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 300.74,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.1,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 296.1,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.3,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 294.6,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.1,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 1.083,
+    "cumulative_jobs": 35264,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 297.73,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 301.05,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.2,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 296.29,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 294.79,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.1,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 1.167,
+    "cumulative_jobs": 37980,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 297.93,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.7,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 301.23,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.2,
+        "temp_c": 46.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 296.52,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 294.84,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.1,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 1.25,
+    "cumulative_jobs": 40696,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 298.13,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.7,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 301.46,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.2,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 296.77,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.5,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 295.17,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.2,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 1.333,
+    "cumulative_jobs": 43412,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 298.25,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.7,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 301.58,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.3,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 296.78,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.5,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 295.26,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.2,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 1.417,
+    "cumulative_jobs": 46124,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 298.37,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.7,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 301.69,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.3,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 296.84,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.5,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 295.41,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.2,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 1.5,
+    "cumulative_jobs": 48840,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 298.52,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.8,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 301.75,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.3,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 296.95,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.5,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 295.4,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.2,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 1.583,
+    "cumulative_jobs": 51552,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 298.66,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.8,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 301.98,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.3,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.03,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 295.69,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.3,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 1.667,
+    "cumulative_jobs": 54268,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 298.83,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.8,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.19,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.22,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 295.67,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.3,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 1.75,
+    "cumulative_jobs": 56984,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 298.94,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.8,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.08,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.3,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.29,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 295.8,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.3,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 1.833,
+    "cumulative_jobs": 59700,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.03,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.8,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.22,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.33,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 295.94,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.3,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 1.917,
+    "cumulative_jobs": 62416,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.1,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.23,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.33,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 295.91,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.3,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 2.0,
+    "cumulative_jobs": 65128,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.08,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.8,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.45,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.39,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.09,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.3,
+        "temp_c": 47.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 2.083,
+    "cumulative_jobs": 67844,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.14,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.33,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.43,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.06,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.3,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 2.167,
+    "cumulative_jobs": 70560,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.25,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.43,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.31,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 2.25,
+    "cumulative_jobs": 73272,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.32,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.47,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.64,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.27,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 2.333,
+    "cumulative_jobs": 75988,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.31,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.41,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.64,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.2,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 2.417,
+    "cumulative_jobs": 78704,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.29,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.58,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.6,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.42,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 2.5,
+    "cumulative_jobs": 81408,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.38,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.73,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.25,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 2.583,
+    "cumulative_jobs": 84124,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.35,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.65,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.63,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.37,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 2.667,
+    "cumulative_jobs": 86840,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.3,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.5,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.54,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.29,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 2.75,
+    "cumulative_jobs": 89552,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.18,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.47,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.45,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.34,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 2.833,
+    "cumulative_jobs": 92268,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.42,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.65,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.71,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.45,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 2.917,
+    "cumulative_jobs": 94980,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.36,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.63,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.19,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 3.0,
+    "cumulative_jobs": 97696,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.48,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.71,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.79,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.39,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 3.083,
+    "cumulative_jobs": 100412,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.32,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.55,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.66,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.36,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 3.167,
+    "cumulative_jobs": 103128,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.47,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.59,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.69,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.45,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 3.25,
+    "cumulative_jobs": 105844,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.4,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.6,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.6,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.28,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 3.333,
+    "cumulative_jobs": 108556,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.71,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.64,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.17,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 3.417,
+    "cumulative_jobs": 111272,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.47,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.79,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.52,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 3.5,
+    "cumulative_jobs": 113988,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.43,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.69,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.7,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.47,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 3.583,
+    "cumulative_jobs": 116704,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.52,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.58,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.65,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.38,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 3.667,
+    "cumulative_jobs": 119416,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.59,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.68,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.63,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.31,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 3.75,
+    "cumulative_jobs": 122132,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.54,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.85,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.8,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.63,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 3.833,
+    "cumulative_jobs": 124848,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.42,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.71,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.7,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.61,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 3.917,
+    "cumulative_jobs": 127564,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.37,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.64,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.68,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.28,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 4.0,
+    "cumulative_jobs": 130276,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.51,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.66,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.69,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.37,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 4.083,
+    "cumulative_jobs": 132992,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.38,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.6,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.67,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.4,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 4.167,
+    "cumulative_jobs": 135708,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.32,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.72,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.65,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.49,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 4.25,
+    "cumulative_jobs": 138420,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.47,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.63,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.7,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.4,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 4.333,
+    "cumulative_jobs": 141136,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.5,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.77,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.8,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.39,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 4.417,
+    "cumulative_jobs": 143852,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.45,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.54,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.55,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.25,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 4.5,
+    "cumulative_jobs": 146564,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.52,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.57,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.66,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.51,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 4.583,
+    "cumulative_jobs": 149280,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.35,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.75,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.64,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.31,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 4.667,
+    "cumulative_jobs": 151996,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.54,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.67,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.81,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.5,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 4.75,
+    "cumulative_jobs": 154712,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.61,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.73,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.74,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.42,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 4.833,
+    "cumulative_jobs": 157428,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.53,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.7,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.68,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.33,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 4.917,
+    "cumulative_jobs": 160140,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.64,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.69,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.39,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 5.0,
+    "cumulative_jobs": 162856,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.57,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.71,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.66,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.63,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 5.083,
+    "cumulative_jobs": 165572,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.64,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.58,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.72,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.36,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 5.167,
+    "cumulative_jobs": 168288,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.58,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.67,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.74,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.31,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 5.25,
+    "cumulative_jobs": 171000,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.72,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.0,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.75,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.96,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.7,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.41,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 5.333,
+    "cumulative_jobs": 173716,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.5,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.54,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.69,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.37,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 5.417,
+    "cumulative_jobs": 176432,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.41,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.59,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.74,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.32,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 5.5,
+    "cumulative_jobs": 179148,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.41,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.61,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.74,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.28,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 5.583,
+    "cumulative_jobs": 181860,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.33,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.72,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.49,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 5.667,
+    "cumulative_jobs": 184576,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.34,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.51,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.37,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 5.75,
+    "cumulative_jobs": 187292,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.48,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.65,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.58,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.33,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 5.833,
+    "cumulative_jobs": 190004,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.48,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.64,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.39,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 5.917,
+    "cumulative_jobs": 192720,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.39,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.7,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.42,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 6.0,
+    "cumulative_jobs": 195436,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.55,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.69,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.55,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.38,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 6.083,
+    "cumulative_jobs": 198148,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.44,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.67,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.65,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.24,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 6.167,
+    "cumulative_jobs": 200864,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.57,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.74,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.79,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.45,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 6.25,
+    "cumulative_jobs": 203580,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.57,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.69,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.67,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.28,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 6.333,
+    "cumulative_jobs": 206292,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.52,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.67,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.74,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.38,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 6.417,
+    "cumulative_jobs": 209008,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.42,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.53,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.34,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 6.5,
+    "cumulative_jobs": 211720,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.47,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.71,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.76,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.41,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 6.583,
+    "cumulative_jobs": 214436,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.68,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.67,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.38,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 6.667,
+    "cumulative_jobs": 217152,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.7,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.66,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.38,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 6.75,
+    "cumulative_jobs": 219868,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.64,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.74,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.79,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.77,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 6.833,
+    "cumulative_jobs": 222580,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.54,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.78,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.75,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.4,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 6.917,
+    "cumulative_jobs": 225296,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.52,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.7,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.8,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.68,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 7.0,
+    "cumulative_jobs": 228012,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.53,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.77,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.81,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.5,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 7.083,
+    "cumulative_jobs": 230724,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.67,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.86,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.87,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.55,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 7.167,
+    "cumulative_jobs": 233440,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.45,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.76,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.8,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.29,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 7.25,
+    "cumulative_jobs": 236156,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.61,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.69,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.81,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.3,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 7.333,
+    "cumulative_jobs": 238872,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.61,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.72,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.76,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 7.417,
+    "cumulative_jobs": 241584,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.78,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.7,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.25,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 7.5,
+    "cumulative_jobs": 244300,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.66,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 303.01,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.95,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.7,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.57,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 7.583,
+    "cumulative_jobs": 247016,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.49,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.71,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.8,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.58,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 7.667,
+    "cumulative_jobs": 249732,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.52,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.75,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.67,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.57,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 7.75,
+    "cumulative_jobs": 252444,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.38,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.73,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.74,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.29,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 7.833,
+    "cumulative_jobs": 255160,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.5,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.68,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.76,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.66,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 7.917,
+    "cumulative_jobs": 257876,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.55,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.77,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.78,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.41,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 8.0,
+    "cumulative_jobs": 260592,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.44,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.65,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.72,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.4,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 8.083,
+    "cumulative_jobs": 263304,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.54,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.71,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.73,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.64,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 8.167,
+    "cumulative_jobs": 266020,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.5,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.6,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.76,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.29,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 8.25,
+    "cumulative_jobs": 268736,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.6,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.79,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.81,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.37,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 8.333,
+    "cumulative_jobs": 271448,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.52,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.76,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.33,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 8.417,
+    "cumulative_jobs": 274160,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.7,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.86,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.49,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 8.5,
+    "cumulative_jobs": 276876,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.47,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.75,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.76,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.66,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 8.583,
+    "cumulative_jobs": 279592,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.61,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.75,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.83,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.54,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 8.667,
+    "cumulative_jobs": 282308,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.71,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.0,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.72,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.81,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.6,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 8.75,
+    "cumulative_jobs": 285024,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.79,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.8,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.66,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 8.833,
+    "cumulative_jobs": 287736,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.6,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.83,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.84,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.72,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 8.917,
+    "cumulative_jobs": 290452,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.58,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.61,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.68,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.39,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 9.0,
+    "cumulative_jobs": 293168,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.78,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.81,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 9.083,
+    "cumulative_jobs": 295880,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.28,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.46,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.42,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 9.167,
+    "cumulative_jobs": 298592,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.55,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.79,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.79,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.42,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 9.25,
+    "cumulative_jobs": 301308,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.76,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.76,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.41,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 9.333,
+    "cumulative_jobs": 304020,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.57,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.73,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.72,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.38,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 9.417,
+    "cumulative_jobs": 306736,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.44,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.63,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.58,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.15,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 9.5,
+    "cumulative_jobs": 309448,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.57,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.52,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.67,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.31,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 9.583,
+    "cumulative_jobs": 312160,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.54,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.77,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.71,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.55,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 9.667,
+    "cumulative_jobs": 314876,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.46,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.71,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.5,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.74,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.37,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 9.75,
+    "cumulative_jobs": 317592,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.46,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.65,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.69,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.43,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 9.833,
+    "cumulative_jobs": 320304,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.76,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.0,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.7,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.39,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 9.917,
+    "cumulative_jobs": 323016,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.45,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.62,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.65,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.38,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  },
+  {
+    "elapsed_min": 10.0,
+    "cumulative_jobs": 325732,
+    "boards": [
+      {
+        "gpu_id": 0,
+        "power_w": 299.54,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.9,
+        "temp_c": 49.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1899,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 1,
+        "power_w": 302.63,
+        "power_limit_w": 600.0,
+        "tdp_pct": 50.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 2,
+        "power_w": 297.6,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.6,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1811,
+        "vram_total_mib": 97887
+      },
+      {
+        "gpu_id": 3,
+        "power_w": 296.56,
+        "power_limit_w": 600.0,
+        "tdp_pct": 49.4,
+        "temp_c": 48.0,
+        "clock_mhz": 2422,
+        "occupancy_pct": 99.0,
+        "vram_used_mib": 1875,
+        "vram_total_mib": 97887
+      }
+    ]
+  }
+]

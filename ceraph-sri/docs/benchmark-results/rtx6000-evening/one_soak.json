@@ -1,0 +1,1544 @@
+{
+  "cell": 6,
+  "machine": "one-board",
+  "suite": "soak_5min_one_omlang",
+  "length": 16777216,
+  "passes": 40,
+  "block": 256,
+  "density": 0.8885962963104248,
+  "elapsed_s": 300.3,
+  "loops": 40377,
+  "finite": true,
+  "repeat_drift": 0.0,
+  "mean_power_w": 306.9044666666667,
+  "max_power_w": 368.87,
+  "start_c": 33.0,
+  "max_c": 46.0,
+  "mean_util_pct": 97.74666666666667,
+  "min_clock_mhz": 2377.0,
+  "max_clock_mhz": 2422.0,
+  "first": {
+    "t_s": 0.0,
+    "index": 0,
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "power_w": 86.64,
+    "limit_w": 600.0,
+    "temperature_c": 33.0,
+    "util_pct": 0.0,
+    "sm_mhz": 2392.0
+  },
+  "last": {
+    "t_s": 298.8,
+    "index": 0,
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "power_w": 305.68,
+    "limit_w": 600.0,
+    "temperature_c": 46.0,
+    "util_pct": 99.0,
+    "sm_mhz": 2422.0
+  },
+  "samples": [
+    {
+      "t_s": 0.0,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 86.64,
+      "limit_w": 600.0,
+      "temperature_c": 33.0,
+      "util_pct": 0.0,
+      "sm_mhz": 2392.0
+    },
+    {
+      "t_s": 2.0,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 341.57,
+      "limit_w": 600.0,
+      "temperature_c": 39.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2377.0
+    },
+    {
+      "t_s": 4.0,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 347.11,
+      "limit_w": 600.0,
+      "temperature_c": 40.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2377.0
+    },
+    {
+      "t_s": 6.0,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 349.7,
+      "limit_w": 600.0,
+      "temperature_c": 41.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2377.0
+    },
+    {
+      "t_s": 8.0,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 354.68,
+      "limit_w": 600.0,
+      "temperature_c": 42.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2377.0
+    },
+    {
+      "t_s": 10.0,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 360.06,
+      "limit_w": 600.0,
+      "temperature_c": 43.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2377.0
+    },
+    {
+      "t_s": 12.0,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 365.47,
+      "limit_w": 600.0,
+      "temperature_c": 44.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2377.0
+    },
+    {
+      "t_s": 14.0,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 368.87,
+      "limit_w": 600.0,
+      "temperature_c": 44.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2377.0
+    },
+    {
+      "t_s": 16.0,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 344.3,
+      "limit_w": 600.0,
+      "temperature_c": 44.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2392.0
+    },
+    {
+      "t_s": 18.0,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 343.33,
+      "limit_w": 600.0,
+      "temperature_c": 44.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2400.0
+    },
+    {
+      "t_s": 20.0,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 320.01,
+      "limit_w": 600.0,
+      "temperature_c": 44.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 22.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 315.17,
+      "limit_w": 600.0,
+      "temperature_c": 44.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 24.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 315.32,
+      "limit_w": 600.0,
+      "temperature_c": 44.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 26.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 315.49,
+      "limit_w": 600.0,
+      "temperature_c": 44.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 28.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 315.73,
+      "limit_w": 600.0,
+      "temperature_c": 44.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 30.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 315.96,
+      "limit_w": 600.0,
+      "temperature_c": 44.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 32.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 315.98,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 34.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 316.33,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 36.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 306.65,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 38.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 306.73,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 40.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 307.99,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 42.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 308.69,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 44.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 304.24,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 46.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 304.23,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 48.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 304.41,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 94.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 50.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 304.5,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 52.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 304.79,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 54.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 304.54,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 56.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 304.91,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 58.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 304.9,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 60.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 304.94,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 62.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.08,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 64.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.07,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 66.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.07,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 68.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.08,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 70.1,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.04,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 72.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.02,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 74.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.15,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 76.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.1,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 78.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.48,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 80.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.15,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 82.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 296.01,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 84.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 304.26,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 95.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 86.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.27,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 91.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 88.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.3,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 96.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 90.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.29,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 93.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 92.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.42,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 94.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.26,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 96.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.4,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 98.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.5,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 100.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.53,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 102.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.39,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 104.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.47,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 106.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.53,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 108.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.61,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 110.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.66,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 112.2,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.64,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 114.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.67,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 116.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.64,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 118.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.52,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 120.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.57,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 122.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 295.63,
+      "limit_w": 600.0,
+      "temperature_c": 45.0,
+      "util_pct": 81.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 124.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 297.81,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 126.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.55,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 91.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 128.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.8,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 130.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.76,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 98.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 132.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.91,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 134.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.97,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 136.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.61,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 138.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.64,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 140.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.62,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 142.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.8,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 144.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.64,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 146.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.9,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 148.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.63,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 150.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.61,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 152.3,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.77,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 154.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.63,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 156.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.76,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 158.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 292.25,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 160.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 297.83,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 92.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 162.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.65,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 91.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 164.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.82,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 166.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.76,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 168.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.73,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 170.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.83,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 172.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.79,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 174.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.79,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 176.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.64,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 178.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.87,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 180.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.8,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 182.4,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.71,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 184.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.61,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 186.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.61,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 188.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.77,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 190.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.73,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 192.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.76,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 194.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 294.53,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 196.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 299.76,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 198.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 302.78,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 89.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 200.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.73,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 202.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.58,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 95.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 204.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.53,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 206.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.59,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 208.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.67,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 210.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.57,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 212.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.68,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 214.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.64,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 216.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.74,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 218.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.75,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 220.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.68,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 222.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.75,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 224.5,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.84,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 226.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.7,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 228.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.71,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 230.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.72,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 232.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 297.72,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 234.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 304.34,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 95.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 236.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.59,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 96.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 238.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.76,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 240.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.75,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 242.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.7,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 244.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.77,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 246.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.7,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 248.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.69,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 250.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.62,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 252.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.86,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 254.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.75,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 256.6,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 306.08,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 258.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.55,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 260.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.69,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 262.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.58,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 264.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 294.55,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 266.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 299.37,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 268.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.67,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 270.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.73,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 272.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.59,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 274.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.56,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 276.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.59,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 278.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.77,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 280.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.61,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 282.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.58,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 284.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.76,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 286.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 306.0,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 288.7,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.67,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 290.8,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.79,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 292.8,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.71,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 294.8,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.67,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 296.8,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.86,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    },
+    {
+      "t_s": 298.8,
+      "index": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "power_w": 305.68,
+      "limit_w": 600.0,
+      "temperature_c": 46.0,
+      "util_pct": 99.0,
+      "sm_mhz": 2422.0
+    }
+  ],
+  "figure": "spec_session_out/omlang_one/soak/figures/soak_one_omlang_3d.png",
+  "legend": "Five-minute Triton flux kernel at the block Julia chose. Coral is watts, purple is degrees Celsius, green is percent busy."
+}

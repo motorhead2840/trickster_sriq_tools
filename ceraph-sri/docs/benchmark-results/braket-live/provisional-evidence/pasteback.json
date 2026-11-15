@@ -1,0 +1,29 @@
+{
+  "verdict": {
+    "pass_all": true,
+    "pass_core": true,
+    "failed_rounds": [],
+    "provisional_foundation": "solid_for_supported_claims"
+  },
+  "devices": {
+    "jax_default_backend": "cpu",
+    "jax_devices": [
+      "cpu:0"
+    ]
+  },
+  "r5_timing_ms_mean": 0.24546039967390246,
+  "r4_gap": 0.6098240315048766,
+  "r7_do_not_claim_yet": [
+    "Landauer circumvention / Helmholtz F=U_min as measured fact",
+    "IEEE-754 MSB XOR in TMEM as O(0) hardware primitive",
+    "Photonic QPU MMSE from Braket SV1 toys",
+    "NVIDIA DeepSeek TFLOPS or cuTile CUPTI geomean as Ceraph results",
+    "Full Theorem Zero multi-layer composition (needs Lemma Z2)"
+  ],
+  "supported_claim_titles": [
+    "Observable Yoga\u2013Buddhi / Lemma Z1",
+    "Sphota multi-backend crystallization",
+    "Pre-Softmax Witness gate (software)"
+  ],
+  "wall_seconds": 0.02965978499923949
+}

@@ -1,0 +1,37 @@
+{
+  "verdict": {
+    "pass_foundation": true,
+    "pass_integrity_softwalls": true,
+    "pass_all": true,
+    "provisional_foundation": "solid_for_supported_claims",
+    "softwall_summary": {
+      "software_O1_or_O0": "REFUTED_FOR_THIS_SOFTWARE",
+      "tmem_msb_xor_O0": "NOT_INSTRUMENTED_NO_TMEM_XOR_PATH",
+      "landauer_circumvention": "NOT_PROVEN",
+      "deepseek_tflops_as_ours": "REFERENCE_ONLY_NOT_OURS"
+    }
+  },
+  "devices": {
+    "jax_default_backend": "cpu",
+    "jax_devices": [
+      "cpu:0"
+    ],
+    "nvidia_smi": null
+  },
+  "softwall_summary": {
+    "software_O1_or_O0": "REFUTED_FOR_THIS_SOFTWARE",
+    "tmem_msb_xor_O0": "NOT_INSTRUMENTED_NO_TMEM_XOR_PATH",
+    "landauer_circumvention": "NOT_PROVEN",
+    "deepseek_tflops_as_ours": "REFERENCE_ONLY_NOT_OURS"
+  },
+  "figures": {
+    "hist3d_z1_mse_cube": "docs/benchmark-results/braket-live/grand-theory-audit/figures/hist3d_z1_mse_cube.png",
+    "hist3d_residual_field": "docs/benchmark-results/braket-live/grand-theory-audit/figures/hist3d_residual_field.png",
+    "hist3d_n_scaling_softwall": "docs/benchmark-results/braket-live/grand-theory-audit/figures/hist3d_n_scaling_softwall.png"
+  },
+  "documents": {
+    "project_report": "docs/benchmark-results/braket-live/grand-theory-audit/PROJECT_REPORT_grand_theory_audit.md",
+    "patent_annex": "docs/benchmark-results/braket-live/grand-theory-audit/PATENT_ANNEX_enablement_and_softwalls.md"
+  },
+  "wall_seconds": 6.668243754000287
+}

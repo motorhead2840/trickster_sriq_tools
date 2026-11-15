@@ -1,0 +1,25 @@
+{
+  "job_name": "sri-e1-e4-hybrid",
+  "entry_point": "experiments/braket_hybrid_e1_e4.py",
+  "args": [
+    "--output-dir",
+    "/opt/ml/model",
+    "--local-hybrid",
+    "--include-campaign-bundle",
+    "--shots",
+    "20000",
+    "--dimension",
+    "4096"
+  ],
+  "cost_cap_usd": 25.0,
+  "instance": "ml.m5.large",
+  "source_module": "experiments",
+  "campaign_bundle": [
+    "experiments/braket_advantage_suite.py",
+    "experiments/braket_efficiency_suite.py"
+  ],
+  "environment": {
+    "BRAKET_SUBMIT": "0"
+  },
+  "instructions": "From an environment with AWS credentials: BRAKET_SUBMIT=1 BRAKET_S3_BUCKET=... python experiments/braket_hybrid_e1_e4.py --output-dir ... --submit-hybrid. Automated create uses AwsQuantumJob.create when the SDK is available; otherwise use this packaged spec manually. Do not exceed cost_cap_usd=$25 for this job."
+}

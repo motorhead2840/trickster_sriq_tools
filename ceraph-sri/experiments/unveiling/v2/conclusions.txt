@@ -1,0 +1,148 @@
+WHAT THIS RUN ACTUALLY SHOWED
+==============================
+SIZE=small,  s_a=0.25, s_p=0.4,  theoretical Ξ = exp(-(s_a²+s_p²)) = 0.8005.
+E|τ|^{-2} = exp(2 s_a²) = 1.1331,  E|τ|^{-4} = exp(8 s_a²) = 1.6487,  factor E|τ|^{-2}/E|τ|^{-4} = 0.6873.
+Error-law grid: N=[16, 36, 64, 100, 144, 225, 400, 576, 784, 1024],  K=[16, 64, 256],  SNR=[0.0, 5.0, 10.0, 20.0] dB,  6 trials.
+
+A. Error-law test
+-----------------
+Proposed law:  MSE(κ̂) ≈ c_floor · E|τ|^{-2}/(K·SNR)  +  c_layout · E|τ|^{-4}/(K·SNR²) · R̄(G),
+with predicted c_floor ≈ 1, c_layout ≈ 1  (other second-order terms exist, some node-only).
+   Global weighted LS fit (ring+torus+expander, all SNR, K, N):  c_floor = 1.128,  c_layout = 0.730,  R² = 0.765  (n=360 points).
+   With an intercept: intercept=0.00000,  c_floor=1.123,  c_layout=0.731.
+   c_floor is within a factor of two of the predicted 1.  c_layout is within a factor of two of the predicted 1.
+   Fits by SNR:
+     SNR=0 dB:  c_floor=2.370,  c_layout=0.537,  R²=-3.133
+     SNR=5 dB:  c_floor=1.689,  c_layout=0.441,  R²=-0.740
+     SNR=10 dB:  c_floor=0.993,  c_layout=0.479,  R²=0.749
+     SNR=20 dB:  c_floor=1.084,  c_layout=0.547,  R²=0.982
+   Fits by K:
+     K=16:  c_floor=0.908,  c_layout=0.397,  R²=0.975
+     K=64:  c_floor=1.134,  c_layout=0.578,  R²=0.930
+     K=256:  c_floor=1.753,  c_layout=0.966,  R²=0.689
+   Fits by graph:
+     ring:  c_floor=1.203,  c_layout=0.483,  R²=0.896
+     torus:  c_floor=0.952,  c_layout=2.699,  R²=0.833
+     expander:  c_floor=0.982,  c_layout=3.136,  R²=0.811
+   Mean effective resistance R̄(G)=trace(L⁺)/N used in the overlay:
+     N=16: ring=1.3281, torus=0.2682, expander=0.2996  (ring exact 1.3281)
+     N=36: ring=2.9977, torus=0.3332, expander=0.3382  (ring exact 2.9977)
+     N=64: ring=5.3320, torus=0.3793, expander=0.3459  (ring exact 5.3320)
+     N=100: ring=8.3325, torus=0.4150, expander=0.3587  (ring exact 8.3325)
+     N=144: ring=11.9994, torus=0.4441, expander=0.3660  (ring exact 11.9994)
+     N=225: ring=18.7496, torus=0.4796, expander=0.3675  (ring exact 18.7496)
+     N=400: ring=33.3331, torus=0.5255, expander=0.3711  (ring exact 33.3331)
+     N=576: ring=47.9999, torus=0.5545, expander=0.3722  (ring exact 47.9999)
+     N=784: ring=65.3332, torus=0.5791, expander=0.3726  (ring exact 65.3332)
+     N=1024: ring=85.3333, torus=0.6003, expander=0.3736  (ring exact 85.3333)
+   Sanity at SNR=20 dB, K=64, N=64, ring:  MSE=0.000220,  1−Ξ=0.000217,  formula floor=0.000177  (v1 reported floor 1.77e-4 vs measured 1−Ξ 1.9e-4).
+   Sanity at SNR=20 dB, K=64, N=64, torus:  MSE=0.000212,  1−Ξ=0.000209,  formula floor=0.000177  (v1 reported floor 1.77e-4 vs measured 1−Ξ 1.9e-4).
+   Sanity at SNR=20 dB, K=64, N=64, expander:  MSE=0.000212,  1−Ξ=0.000209,  formula floor=0.000177  (v1 reported floor 1.77e-4 vs measured 1−Ξ 1.9e-4).
+   Sanity at SNR=20 dB, K=64, N=64, svd:  MSE=0.000203,  1−Ξ=0.000202,  formula floor=0.000177  (v1 reported floor 1.77e-4 vs measured 1−Ξ 1.9e-4).
+
+   Ring crossover N* (where the layout term equals the floor, i.e. MSE ≈ 2×floor):
+   Theory is independent of K.  We report the formula-floor crossing from the measured ring curve.
+     SNR=0 dB:  theory 12·SNR=12.0,  12·SNR·factor=8.2,  exact-R̄ root=8.4.
+       K=16:  measured N* (formula floor) = 20.8;  using SVD floor = 24.6;  from fitted c = 12.8.
+       K=64:  measured N* (formula floor) = < 16 (already above 2×floor at N_min);  using SVD floor = < 16 (already above 2×floor at N_min);  from fitted c = 12.8.
+       K=256:  measured N* (formula floor) = < 16 (already above 2×floor at N_min);  using SVD floor = < 16 (already above 2×floor at N_min);  from fitted c = 12.8.
+     SNR=5 dB:  theory 12·SNR=37.9,  12·SNR·factor=26.1,  exact-R̄ root=26.1.
+       K=16:  measured N* (formula floor) = 53.4;  using SVD floor = 60.2;  from fitted c = 40.3.
+       K=64:  measured N* (formula floor) = 25.1;  using SVD floor = 30.2;  from fitted c = 40.3.
+       K=256:  measured N* (formula floor) = < 16 (already above 2×floor at N_min);  using SVD floor = < 16 (already above 2×floor at N_min);  from fitted c = 40.3.
+     SNR=10 dB:  theory 12·SNR=120.0,  12·SNR·factor=82.5,  exact-R̄ root=82.5.
+       K=16:  measured N* (formula floor) = 88.0;  using SVD floor = 273.1;  from fitted c = 127.5.
+       K=64:  measured N* (formula floor) = 115.9;  using SVD floor = 116.4;  from fitted c = 127.5.
+       K=256:  measured N* (formula floor) = < 16 (already above 2×floor at N_min);  using SVD floor = < 16 (already above 2×floor at N_min);  from fitted c = 127.5.
+     SNR=20 dB:  theory 12·SNR=1200.0,  12·SNR·factor=824.7,  exact-R̄ root=824.7.
+       K=16:  measured N* (formula floor) = 890.6;  using SVD floor = 969.3;  from fitted c = 1274.6.
+       K=64:  measured N* (formula floor) = > 1024 (no crossing up to N_max);  using SVD floor = > 1024 (no crossing up to N_max);  from fitted c = 1274.6.
+       K=256:  measured N* (formula floor) = > 1024 (no crossing up to N_max);  using SVD floor = > 1024 (no crossing up to N_max);  from fitted c = 1274.6.
+   K-independence check (measured N* should agree across K at each SNR, if a crossing exists):
+     SNR=0 dB: only one K produced a crossing (16: 20.8); cannot test K-independence.
+     SNR=5 dB: K=16: 53.4, K=64: 25.1.  Relative spread 0.72.  NOT clearly K-independent in this run.
+     SNR=10 dB: K=16: 88.0, K=64: 115.9.  Relative spread 0.27.  consistent with K-independence.
+     SNR=20 dB: only one K produced a crossing (16: 890.6); cannot test K-independence.
+
+B. Partial overlap
+------------------
+On shared samples S_nm = S_n ∩ S_m, the first-order term in log r_nm is a_n^{(nm)} - a_m^{(nm)}, with a_n^{(nm)} = ⟨u_n, ψ⟩_{S_nm} / ‖ψ‖_{S_nm}². This is a coboundary of a single node potential iff a_n^{(nm)} does not depend on the neighbour m, which holds when every neighbour pair sees the same samples (ρ=1). For a sliding window, S_nm is a different subset for each edge, so the 1-cochain generally has a nonzero curl around plaquettes.
+   Grid: ρ=[1.0, 0.75, 0.5, 0.25],  N=[25, 36, 64, 100, 144, 225, 400, 576],  K=64,  SNR=[10.0, 20.0] dB,  6 trials.  Skipped disconnected estimates: 0.
+   Window construction at N=144, ring: ρ=1: method=1d-sliding, min_share=64, mean_share=64.0, ok=True | ρ=0.75: method=1d-sliding, min_share=48, mean_share=48.0, ok=True | ρ=0.5: method=1d-sliding, min_share=32, mean_share=32.0, ok=True | ρ=0.25: method=1d-sliding, min_share=16, mean_share=16.0, ok=True
+   Window construction at N=144, torus: ρ=1: method=2d-sliding, min_share=64, mean_share=64.0, ok=True | ρ=0.75: method=2d-sliding, min_share=48, mean_share=48.0, ok=True | ρ=0.5: method=2d-sliding, min_share=32, mean_share=32.0, ok=True | ρ=0.25: method=2d-sliding, min_share=16, mean_share=16.0, ok=True
+   Window construction at N=144, expander: ρ=1: method=full, min_share=64, mean_share=64.0, ok=True | ρ=0.75: method=random-subset-repair, min_share=45, mean_share=48.857638888888886, ok=True | ρ=0.5: method=random-subset-repair, min_share=32, mean_share=33.3125, ok=True | ρ=0.25: method=random-subset-repair, min_share=16, mean_share=17.09722222222222, ok=True
+   SNR=10 dB, ring N* vs ρ (empirical floor = mean expander/torus MSE at that ρ):
+     ρ=1:  N* = 257.5;  MSE_ring / MSE_ref at N_max = 2.72  (ring MSE=0.00612, ref MSE=0.00225).
+     ρ=0.75:  N* = < 25 (already above 2×floor at N_min);  MSE_ring / MSE_ref at N_max = 29.60  (ring MSE=0.07644, ref MSE=0.00258).
+     ρ=0.5:  N* = < 25 (already above 2×floor at N_min);  MSE_ring / MSE_ref at N_max = 299.67  (ring MSE=1.12244, ref MSE=0.00375).
+     ρ=0.25:  N* = < 25 (already above 2×floor at N_min);  MSE_ring / MSE_ref at N_max = 177.26  (ring MSE=1.15290, ref MSE=0.00650).
+     Verdict: at N_max, the ring-vs-ref MSE ratio grew as ρ dropped, which is the qualitative layout-earlier signature even without a clean N* crossing.
+   SNR=20 dB, ring N* vs ρ (empirical floor = mean expander/torus MSE at that ρ):
+     ρ=1:  N* = > 576 (no crossing up to N_max);  MSE_ring / MSE_ref at N_max = 1.13  (ring MSE=0.00021, ref MSE=0.00019).
+     ρ=0.75:  N* = < 25 (already above 2×floor at N_min);  MSE_ring / MSE_ref at N_max = 40.44  (ring MSE=0.00878, ref MSE=0.00022).
+     ρ=0.5:  N* = < 25 (already above 2×floor at N_min);  MSE_ring / MSE_ref at N_max = 111.40  (ring MSE=0.03429, ref MSE=0.00031).
+     ρ=0.25:  N* = < 25 (already above 2×floor at N_min);  MSE_ring / MSE_ref at N_max = 78.62  (ring MSE=0.04392, ref MSE=0.00056).
+     Verdict: at N_max, the ring-vs-ref MSE ratio grew as ρ dropped, which is the qualitative layout-earlier signature even without a clean N* crossing.
+
+C. Kalman baseline for the drifting veil
+----------------------------------------
+   OU ρ=0.97, N=64, K=16, SNR=20 dB, 6 walks, torus, t=250, burn-in=50.
+   Process q:  q_amp=0.00369, q_phase=0.00946, q_κ=0.01315.
+   Measurement r:  formula floor=0.000708,  measured MSE=0.000682  (amp=0.000360, phase=0.000322).
+   Steady-state Kalman gains (true q, measured r):  g_amp=0.918, g_phase=0.968.
+   Stationary-OU late-window RMS(κ) (s.e.m. across walks):
+     - fixed g=0.05                  RMS(κ)=0.3470 ± 0.0394,  amp=0.1796 ± 0.0264,  phase=0.2936 ± 0.0295,  mean g=0.050
+     - fixed g=0.20                  RMS(κ)=0.1849 ± 0.0221,  amp=0.0801 ± 0.0021,  phase=0.1644 ± 0.0232,  mean g=0.200
+     - fixed g=0.60                  RMS(κ)=0.1197 ± 0.0381,  amp=0.0332 ± 0.0025,  phase=0.1124 ± 0.0389,  mean g=0.600
+     - adaptive g(Ξ)                 RMS(κ)=0.1224 ± 0.0323,  amp=0.0349 ± 0.0023,  phase=0.1147 ± 0.0331,  mean g=0.565
+     - Kalman true q,r               RMS(κ)=0.0336 ± 0.0055,  amp=0.0183 ± 0.0001,  phase=0.0271 ± 0.0063,  mean g=0.943
+     - Kalman q×0.25                 RMS(κ)=0.0365 ± 0.0059,  amp=0.0215 ± 0.0001,  phase=0.0277 ± 0.0063,  mean g=0.829
+     - Kalman q×4                    RMS(κ)=0.0275 ± 0.0006,  amp=0.0185 ± 0.0001,  phase=0.0201 ± 0.0008,  mean g=0.984
+   Lowest late error (stationary): Kalman q×4 at RMS(κ)=0.0275.
+   Kalman with true (q,r) beat the adaptive Ξ rule on the stationary OU (outside combined s.e.m.).
+   Misspecified q:  true 0.0336,  q×0.25 0.0365,  q×4 0.0275.
+
+   Jump experiment: q → 10 q at t=125, 6 walks.  Late-window figures below are AFTER the jump (plus a 20-step buffer).
+   Before the jump:
+     - fixed g=0.05                  RMS(κ)=0.3362 ± 0.0231,  amp=0.1498, phase=0.2994
+     - fixed g=0.20                  RMS(κ)=0.2477 ± 0.0493,  amp=0.0826, phase=0.2303
+     - fixed g=0.60                  RMS(κ)=0.1521 ± 0.0457,  amp=0.0369, phase=0.1451
+     - adaptive g(Ξ)                 RMS(κ)=0.1350 ± 0.0451,  amp=0.0364, phase=0.1274
+     - Kalman true q,r               RMS(κ)=0.0438 ± 0.0060,  amp=0.0182, phase=0.0389
+     - Kalman q×0.25                 RMS(κ)=0.0475 ± 0.0067,  amp=0.0207, phase=0.0405
+     - Kalman q×4                    RMS(κ)=0.0290 ± 0.0009,  amp=0.0185, phase=0.0222
+     - Kalman initial q (stuck)      RMS(κ)=0.0438 ± 0.0060,  amp=0.0182, phase=0.0389
+     - Kalman oracle after jump      RMS(κ)=0.0438 ± 0.0060,  amp=0.0182, phase=0.0389
+   After the jump:
+     - fixed g=0.05                  RMS(κ)=1.0673 ± 0.0333,  amp=0.5260, phase=0.9250
+     - fixed g=0.20                  RMS(κ)=0.7953 ± 0.0812,  amp=0.3112, phase=0.7265
+     - fixed g=0.60                  RMS(κ)=0.4213 ± 0.0461,  amp=0.1157, phase=0.4011
+     - adaptive g(Ξ)                 RMS(κ)=0.7681 ± 0.1385,  amp=0.3254, phase=0.6902
+     - Kalman true q,r               RMS(κ)=0.0771 ± 0.0059,  amp=0.0475, phase=0.0588
+     - Kalman q×0.25                 RMS(κ)=0.1421 ± 0.0144,  amp=0.0651, phase=0.1224
+     - Kalman q×4                    RMS(κ)=0.0575 ± 0.0036,  amp=0.0443, phase=0.0356
+     - Kalman initial q (stuck)      RMS(κ)=0.0771 ± 0.0059,  amp=0.0475, phase=0.0588
+     - Kalman oracle after jump      RMS(κ)=0.0556 ± 0.0035,  amp=0.0439, phase=0.0331
+   After the jump, a Kalman filter stuck at the initial q still beat (or was no worse than, within noise) the adaptive Ξ rule. The v1 adaptive rule raises g when neighbour consistency is *high*; a sudden increase in drift can make the held estimate inconsistent and *lower* g, which is the wrong direction. That limitation is visible here if it occurs.
+   Oracle Kalman retuned to the post-jump q reached RMS(κ)=0.0556 ± 0.0035.
+
+D. Convergence / settling of local iterations
+---------------------------------------------
+   ring:  λ₂=0.00963, λ_max=4.0000, deg=2.00,  predicted Jacobi steps d/λ₂ ≈ 207.7.  Jacobi steps to 1e-3: None,  Chebyshev steps to 1e-3: None.  Converged RMS(κ)=0.0151.
+     Jacobi did not reach 1e-3 in 800 steps (final dist=0.0481).  Chebyshev ended at 0.0479.  Because Chebyshev only accelerates the amplitude update and tracks Jacobi here, the leftover is in the phase-sync iteration, not in the Laplacian mixing time.
+   torus:  λ₂=0.58579, λ_max=8.0000, deg=4.00,  predicted Jacobi steps d/λ₂ ≈ 6.8.  Jacobi steps to 1e-3: None,  Chebyshev steps to 1e-3: None.  Converged RMS(κ)=0.0148.
+     Jacobi did not reach 1e-3 in 800 steps (final dist=0.0083).  Chebyshev ended at 0.0081.  Because Chebyshev only accelerates the amplitude update and tracks Jacobi here, the leftover is in the phase-sync iteration, not in the Laplacian mixing time.
+   expander:  λ₂=0.74456, λ_max=7.3207, deg=4.00,  predicted Jacobi steps d/λ₂ ≈ 5.4.  Jacobi steps to 1e-3: 23,  Chebyshev steps to 1e-3: 23.  Converged RMS(κ)=0.0148.
+     Jacobi settling / (d/λ₂) = 4.28.  The predicted scale is a 1/e-style mixing time, so a factor of a few to reach 1e-3 is expected; a factor of 20+ would mean the prediction is not useful.
+     Chebyshev was comparable to Jacobi (23 vs 23).
+
+WHAT THIS DOES NOT SHOW
+=======================
+- This is a classical numerical simulation of complex arrays. Using i and a Hilbert-space notation for a veil does not make the simulation quantum, and it does not demonstrate entanglement, a quantum advantage, or a new physical chip.
+- There is no CMOS, timing-error, voltage, or energy model here. The notebook does not compare a tile array to Razor-style detection or adaptive voltage scaling. That measured-result claim still needs an FPGA or ASIC experiment.
+- The two-term error law is a leading-term calculation with approximate constants. A fitted c_floor or c_layout far from 1 is a limitation of that calculation, not a licence to treat the fitted numbers as a theorem. N* extracted from a finite N grid has interpolation error, and a 'no crossing' result is only a bound.
+- Partial overlap on the expander is not a sliding window (an expander has no geometry). Ring and torus use exact windows that guarantee ρK shared samples on every edge. If the expander construction failed to reach the target overlap, that is stated in the window-info lines above, and those points should be read with care.
+- A programming model in which the programmer declares Ξ_crit(c) is not implemented here.
+
+RUNTIME
+  expA 198.4s,  expB 32.2s,  expC 2.7s,  expC-jump 2.7s,  expD  (included in wall time).

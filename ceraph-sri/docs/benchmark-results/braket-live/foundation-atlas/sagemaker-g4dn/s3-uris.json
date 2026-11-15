@@ -1,0 +1,16 @@
+{
+  "recorded_utc_prefix": "20261112T065601Z",
+  "bucket": "amazon-braket-sri-results-1",
+  "prefix": "sri-braket/foundation-atlas/results/20261112T065601Z",
+  "uris": {
+    "telemetry.json": "s3://amazon-braket-sri-results-1/sri-braket/foundation-atlas/results/20261112T065601Z/telemetry.json",
+    "pasteback.json": "s3://amazon-braket-sri-results-1/sri-braket/foundation-atlas/results/20261112T065601Z/pasteback.json",
+    "foundation_atlas_summary.json": "s3://amazon-braket-sri-results-1/sri-braket/foundation-atlas/results/20261112T065601Z/foundation_atlas_summary.json",
+    "FOUNDATION_CATALOG.json": "s3://amazon-braket-sri-results-1/sri-braket/foundation-atlas/results/20261112T065601Z/FOUNDATION_CATALOG.json",
+    "PATENT_ATTORNEY_FOUNDATION_ATLAS_REPORT.md": "s3://amazon-braket-sri-results-1/sri-braket/foundation-atlas/results/20261112T065601Z/PATENT_ATTORNEY_FOUNDATION_ATLAS_REPORT.md",
+    "hist3d_fma_vs_iterative.png": "s3://amazon-braket-sri-results-1/sri-braket/foundation-atlas/results/20261112T065601Z/hist3d_fma_vs_iterative.png",
+    "hist3d_mse_theory_match.png": "s3://amazon-braket-sri-results-1/sri-braket/foundation-atlas/results/20261112T065601Z/hist3d_mse_theory_match.png",
+    "hist3d_cancellation_residuals.png": "s3://amazon-braket-sri-results-1/sri-braket/foundation-atlas/results/20261112T065601Z/hist3d_cancellation_residuals.png",
+    "hist3d_sri_advantage_cube.png": "s3://amazon-braket-sri-results-1/sri-braket/foundation-atlas/results/20261112T065601Z/hist3d_sri_advantage_cube.png"
+  }
+}

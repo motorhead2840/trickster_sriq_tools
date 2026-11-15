@@ -1,0 +1,40 @@
+{
+  "campaign": "dissertation-validity",
+  "host": "sagemaker-g4dn",
+  "branch": "cursor/dissertation-braket-validity-fd3c",
+  "commit": "9ed38e0",
+  "generated_utc": "20261112T161509Z",
+  "verdict": {
+    "pass_dissertation_validity": true,
+    "pass_enabled_math": true,
+    "pass_safety_tax_architecture": true,
+    "pass_lemma_z1": true,
+    "pass_user_query_path": true,
+    "softwall_honest": true,
+    "inprocess_median_ms": 0.49535050004578807,
+    "post_filter_model_ms": 300.0,
+    "speedup_vs_post_filter": 605.6317697716452
+  },
+  "chapter_rollup": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true
+  },
+  "softwalls": {
+    "landauer_circumvention": "NOT_PROVEN",
+    "tmem_msb_xor_o0": "SOFTWARE_PROXY_NOT_TMEM",
+    "blackwell_0p0062ms": "REFERENCE_ONLY_NOT_REMEASURED",
+    "mbl_quasicrystal": "INSTRUMENT_ONLY_NOT_PROVEN",
+    "any_softwall_falsely_greened": false
+  },
+  "user_query_path": {
+    "decision": "present_answer",
+    "elapsed_ms": 0.3246200001285615,
+    "confidence": 0.8810721153203004
+  },
+  "digest": "a8338bf9cbf7033d",
+  "jax_note": "CUDA-enabled jaxlib not installed; JAX fell back to CPU"
+}

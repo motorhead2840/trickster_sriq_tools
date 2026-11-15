@@ -1,0 +1,11 @@
+{
+  "bucket": "amazon-braket-sri-results-1",
+  "uploaded_utc": "20261112T055721Z",
+  "host": "SageMaker ml.g4dn.xlarge / Tesla T4 / JAX cuda:0",
+  "uris": {
+    "elaborate_summary.json": "s3://amazon-braket-sri-results-1/sri-braket/sphota-yoga-buddhi-elaborate/results/20261112T055721Z_elaborate_summary.json",
+    "pasteback.json": "s3://amazon-braket-sri-results-1/sri-braket/sphota-yoga-buddhi-elaborate/results/20261112T055721Z_pasteback.json",
+    "theory_hooks.json": "s3://amazon-braket-sri-results-1/sri-braket/sphota-yoga-buddhi-elaborate/results/20261112T055721Z_theory_hooks.json",
+    "hybrid_job_spec.json": "s3://amazon-braket-sri-results-1/sri-braket/sphota-yoga-buddhi-elaborate/results/20261112T055721Z_hybrid_job_spec.json"
+  }
+}

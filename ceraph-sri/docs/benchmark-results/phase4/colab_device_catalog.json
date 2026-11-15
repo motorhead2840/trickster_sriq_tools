@@ -1,0 +1,138 @@
+{
+  "phase": 4,
+  "assembled": "2026-11-14",
+  "purpose": "Measured device records brought in from the Colab archives, the 7 November JAX run, and the 14 November DGX sessions. A printed latency budget is stored beside the measurement it was compared to, and is flagged so it cannot be scored as a competitor.",
+  "records": [
+    {
+      "id": "jax_blackwell_2026_11_07",
+      "source": "sri_gpu_run.json",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "kind": "measured_kernel_time",
+      "length": 16384,
+      "cycles": 25,
+      "median_ms": 0.08884,
+      "projection_mse_max": 1.3304895379873116e-13,
+      "note": "JIT excluded. Clean vector and injected noise were available to the projector."
+    },
+    {
+      "id": "dissertation_triton_8192",
+      "source": "Colab Notebooks/DISSERTATION.ipynb cells 1 and 4",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "kind": "measured_kernel_time",
+      "length": 8192,
+      "median_ms": 0.0082,
+      "bandwidth_gbps": 12.0,
+      "timing_method": "triton.testing.do_bench median",
+      "printed_budget_ms": 0.2379,
+      "printed_budget_is_measurement": false,
+      "note": "The 0.2379 ms figure is a string literal in the cell. The 0.0082 ms figure is the Triton median."
+    },
+    {
+      "id": "dissertation_triton_10000",
+      "source": "Colab Notebooks/DISSERTATION.ipynb cell 10",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "kind": "measured_kernel_time",
+      "length": 10000,
+      "median_ms": 0.0062,
+      "bandwidth_gbps": 19.33,
+      "max_residual": 0.0,
+      "truth_vector_was_an_input": true,
+      "timing_method": "triton.testing.do_bench median",
+      "note": "Residual is the output minus a truth vector the kernel loaded."
+    },
+    {
+      "id": "patent_single_calls",
+      "source": "Colab Notebooks/Patent.ipynb cells 2 and 3",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "kind": "measured_kernel_time",
+      "latency_ms": [0.2133, 0.1954],
+      "input_variance": 24.99,
+      "output_variance": 0.0,
+      "timing_method": "one perf_counter interval around the same function",
+      "note": "Baseline variance is the input tensor before this function. It is not another product."
+    },
+    {
+      "id": "patent_stress_5e6",
+      "source": "Colab Notebooks/Patent.ipynb cells 4 and 5",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "kind": "measured_kernel_time",
+      "length": 5000000,
+      "footprint_mb": 305.18,
+      "average_latency_ms": [4.8246, 4.8577],
+      "p99_latency_ms": [4.8612, 4.8716],
+      "bandwidth_gbps": [123.54, 122.7],
+      "input_variance": 25.0028,
+      "output_variance": 0.0,
+      "note": "Notebook output for a 500-cycle loop on a 5,000,000-node tensor. Variance collapse is on that tensor."
+    },
+    {
+      "id": "l40s_map_reduce_2026_11_14",
+      "source": "DGX session pasted 14 Nov 2026, recorded in docs/reports/build_l40s_session_pdfs.py",
+      "device": "NVIDIA L40S",
+      "kind": "same_host_cpu_comparison",
+      "rows": [
+        {"length": 4096, "cpu_median_ms": 0.01428, "gpu_median_ms": 0.04096},
+        {"length": 65536, "cpu_median_ms": 0.124651, "gpu_median_ms": 0.04096},
+        {"length": 1048576, "cpu_median_ms": 1.885337, "gpu_median_ms": 0.04608}
+      ],
+      "idle_mean_power_w": 38.27,
+      "load_mean_power_w": 84.72,
+      "load_max_temperature_c": 36.0,
+      "board_limit_w": 350,
+      "log_log_slope_cpu": 0.8954476271026299,
+      "note": "Synthetic map-and-reduce. At 4,096 the CPU was faster. At 1,048,576 the GPU was about 41 times sooner."
+    },
+    {
+      "id": "blackwell_kernel_vs_cpu_2026_11_14",
+      "source": "DGX session pasted 14 Nov 2026, recorded in docs/reports/build_blackwell_session_pdfs.py",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "kind": "same_host_cpu_comparison",
+      "rows": [
+        {"length": 16384, "cpu_median_ms": 1.061457, "gpu_median_ms": 0.149632, "cpu_over_gpu": 7.094},
+        {"length": 65536, "cpu_median_ms": 8.450132, "gpu_median_ms": 0.15248, "cpu_over_gpu": 55.418},
+        {"length": 262144, "cpu_median_ms": 35.982704, "gpu_median_ms": 0.241824, "cpu_over_gpu": 148.797},
+        {"length": 1048576, "cpu_median_ms": 168.046119, "gpu_median_ms": 1.415104, "cpu_over_gpu": 118.752}
+      ],
+      "load_mean_power_w": 104.9785,
+      "load_max_temperature_c": 30.0,
+      "note": "Same kernel on the GPU and the CPU of one machine. GPU time still grew about 9.5 times from 16,384 to 1,048,576 elements."
+    },
+    {
+      "id": "blackwell_vs_avg_pool_2026_11_14",
+      "source": "DGX session pasted 14 Nov 2026, same RTX PRO 6000 notebook",
+      "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "kind": "same_gpu_named_baseline",
+      "length": 1048576,
+      "cycles": 25,
+      "ceraph_median_ms": 1.1775360107421875,
+      "baseline_name": "torch.nn.functional.avg_pool1d kernel 9",
+      "baseline_median_ms": 0.25727999210357666,
+      "ceraph_mean_power_w": 100.78933333333333,
+      "baseline_mean_power_w": 110.79266666666666,
+      "ceraph_max_temperature_c": 31.0,
+      "baseline_max_temperature_c": 30.0,
+      "baseline_faster": true,
+      "note": "First same-GPU comparison against a current PyTorch operator. The average pool finished about 4.6 times sooner. Temperatures matched within a degree. Power samples include an nvidia-smi query between launches."
+    },
+    {
+      "id": "signal_series_quality",
+      "source": "docs/benchmark-results/signal/signal_summary.json",
+      "device": "CPU",
+      "kind": "quality_comparison",
+      "moving_average_mse": 0.03165188732107011,
+      "median_mse": 0.04656933239884878,
+      "paired_mse": 0.04656933239884878,
+      "note": "On this synthetic series the moving average was more accurate, and the paired calculation matched the median."
+    },
+    {
+      "id": "phase3_dual_mode",
+      "source": "docs/phase3-vertical-slice-report.md",
+      "device": "CPU",
+      "kind": "quality_comparison",
+      "mean_relative_reduction_vs_single_mode": 0.1205,
+      "pass_threshold": 0.08,
+      "verdict": "PASS",
+      "note": "Deployable dual-mode path versus single-mode Wiener under the locked Phase 3 model. Algebra matches plain MMSE. This is the quality win Phase 4 carries forward."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "aggregate": {
+    "entropy_nonincreasing_under_cptp": true,
+    "legacy_xi_max": 0.8518234176637091,
+    "legacy_xi_min": -148.25956339213943,
+    "mean_chi_branch_P": 50.428131005113144,
+    "mean_chi_branch_W": 22.42813100511313,
+    "xi_snr_max": 0.9313530236278,
+    "xi_snr_min": 0.010266705723728333
+  },
+  "records_count": 250,
+  "source": "docs/benchmark-results/foundation/foundation_axioms_summary.json",
+  "statuses": {
+    "C1": "open",
+    "C2": "open",
+    "C3": "confirmed",
+    "C4": "confirmed"
+  }
+}

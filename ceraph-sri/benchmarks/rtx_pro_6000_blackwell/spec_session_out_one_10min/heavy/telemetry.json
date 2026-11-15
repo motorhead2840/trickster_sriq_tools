@@ -1,0 +1,21 @@
+{
+  "queued_4_ms": 29.487,
+  "concurrent_4_ms": 7.271,
+  "boards": [
+    {
+      "gpu_id": 0,
+      "jobs_completed": 81634,
+      "drift_error": 0.0,
+      "mean_power_w": 305.1,
+      "peak_power_w": 337.7,
+      "power_limit_w": 600.0,
+      "tdp_headroom_pct": 49.2,
+      "start_temp_c": 34.0,
+      "peak_temp_c": 45.0,
+      "thermal_rise_c": 11.0,
+      "min_clock_mhz": 2317,
+      "max_clock_mhz": 2422,
+      "mean_occupancy_pct": 99.0
+    }
+  ]
+}

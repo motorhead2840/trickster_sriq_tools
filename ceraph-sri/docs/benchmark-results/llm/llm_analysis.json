@@ -1,0 +1,35 @@
+{
+  "validation": "Record counts, correctness, Xi formula and summary metrics agree.",
+  "count": 100,
+  "correct": 13,
+  "accuracy": 0.13,
+  "accuracy_wilson_95": [
+    0.07757167427240512,
+    0.20980351440076428
+  ],
+  "confidence_auc": 0.6242263483642794,
+  "confidence_auc_bootstrap_95": [
+    0.46065428824049515,
+    0.7719053934571173
+  ],
+  "xi_auc": 0.4650751547303271,
+  "xi_auc_bootstrap_95": [
+    0.27320954907161804,
+    0.6578249336870027
+  ],
+  "xi_minus_confidence_auc": -0.15915119363395225,
+  "xi_minus_confidence_auc_bootstrap_95": [
+    -0.372236958443855,
+    0.04599911582670177
+  ],
+  "method": {
+    "bootstrap": "paired, stratified by correctness, percentile interval",
+    "iterations": 5000,
+    "seed": 108,
+    "caveat": "Exploratory; intervals assume these examples represent a sampling population."
+  },
+  "sha256": {
+    "llm_records.csv": "8ef62251170e50e58fdc6d0a51eab11824364ce2b3be30aa25e5a3cda0efea72",
+    "llm_summary.json": "d01c46c98c7caed89bf993dd90b6da7540bc9a6afb246b3c190f5b8c23aa163b"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "campaign": "dissertation-validity-chapters",
+  "host": "sagemaker-g4dn",
+  "branch": "cursor/dissertation-braket-validity-fd3c",
+  "recorded_utc_approx": "2026-11-12T16:14Z",
+  "jax_note": "CUDA-enabled jaxlib not installed; JAX fell back to CPU. CUDA-Q present (FutureWarning on sample/observe).",
+  "rollup": {
+    "pass_all_chapters_1_through_6": true,
+    "chapters": {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "6": true
+    }
+  },
+  "chapter_1": {
+    "pass_chapter": true,
+    "title": "The Epistemological and Thermodynamic Crisis",
+    "check_passes": {
+      "pathology_1_1": true,
+      "safety_tax_1_2": true
+    },
+    "safety_tax": {
+      "inprocess_median_ms": 0.4897459999710918,
+      "post_filter_model_ms": 300.0,
+      "speedup_vs_post_filter": 612.5624303571813
+    }
+  },
+  "chapter_2": {
+    "pass_chapter": true,
+    "title": "Foundational Ontology — CV-dit and bipartite space",
+    "check_passes": {
+      "cv_dit_2_1": true,
+      "bipartition_2_2": true
+    }
+  },
+  "chapter_3": {
+    "pass_chapter": true,
+    "title": "Quasicrystal manifold and cancellation projector",
+    "check_passes": {
+      "cancellation_projector": true,
+      "fibonacci_aah_smoke_3_1": true,
+      "lemma_z1_deployable": true,
+      "z1b_advantage": true
+    },
+    "mbl_note": "Golden-ratio spacing constructed; Many-Body Localization not claimed as proven"
+  },
+  "chapter_4": {
+    "pass_chapter": true,
+    "title": "Witness gate, V3 damping, and mirror validation",
+    "check_passes": {
+      "witness_v3_4_1": true,
+      "mirror_4_2": true,
+      "user_query_witness_path": true
+    },
+    "user_path": {
+      "decision": "present_answer",
+      "confidence": 0.8810721153203004,
+      "elapsed_ms": 0.4031449998365133
+    }
+  },
+  "chapter_5": {
+    "pass_chapter": true,
+    "title": "Free-energy / Landauer math and hardware softwalls",
+    "check_passes": {
+      "landauer_helmholtz_5_1": true,
+      "softwall_board_5_2": true
+    },
+    "math": {
+      "delta_Q_350K": 3.349475365925178e-21,
+      "F_final_Umin": 100.0,
+      "physical_circumvention": "NOT_PROVEN"
+    },
+    "softwalls": {
+      "landauer_circumvention": "NOT_PROVEN",
+      "tmem_msb_xor_o0": "SOFTWARE_PROXY_NOT_TMEM",
+      "blackwell_0p0062ms": "REFERENCE_ONLY_NOT_REMEASURED",
+      "any_softwall_falsely_greened": false
+    }
+  },
+  "chapter_6": {
+    "pass_chapter": true,
+    "title": "Future analog and optical horizons (softwall only)",
+    "check_passes": {
+      "optical_future_6": true,
+      "softwall_board": true
+    },
+    "optical": {
+      "ppln_phase_conjugate": "FUTURE_EMBODIMENT_NOT_PROVEN",
+      "analog_optical_core": "FUTURE_EMBODIMENT_NOT_PROVEN",
+      "falsely_greened": false,
+      "track": "SOFTWALL_FUTURE_ONLY"
+    }
+  }
+}

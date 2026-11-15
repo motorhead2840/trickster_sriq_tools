@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-14",
+  "machine": "4x NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "memory_mib_each": 97887,
+  "power_limit_w_each": 600,
+  "torch": "2.14.1+cu130",
+  "idle": [
+    {"device": 0, "power_w": 30.45, "temperature_c": 28},
+    {"device": 1, "power_w": 29.95, "temperature_c": 29},
+    {"device": 2, "power_w": 29.91, "temperature_c": 31},
+    {"device": 3, "power_w": 30.44, "temperature_c": 30}
+  ],
+  "load": [
+    {"device": 0, "mean_power_w": 86.586, "max_temperature_c": 33},
+    {"device": 1, "mean_power_w": 86.305, "max_temperature_c": 33},
+    {"device": 2, "mean_power_w": 86.276, "max_temperature_c": 36},
+    {"device": 3, "mean_power_w": 86.552, "max_temperature_c": 35}
+  ],
+  "stack": {
+    "stack_real": true,
+    "jax_device": "gpu",
+    "jax_devices": ["cuda:0", "cuda:1", "cuda:2", "cuda:3"],
+    "jax_gpu_max_abs_error": 3.814697265625e-06,
+    "density": 0.7927381992340088,
+    "julia_block": 256,
+    "julia_max_abs_error": 3.814697265625e-06,
+    "jax_max_abs_error": 3.814697265625e-06,
+    "triton_max_abs_error": 7.62939453125e-06,
+    "triton_median_ms_length_16384": [0.012, 0.011936, 0.011552, 0.011616]
+  },
+  "quality": {
+    "offset0": {"identity": 6.90957890520672, "moving_average": 1.675011171028009, "raw": 0.7735443353494624, "flux": 1.472352151734814, "raw": "SUPPORTED", "flux": "SUPPORTED", "flux_variance_remaining": 0.11660588273684425},
+    "offset5": {"raw": 18.17085199652528, "flux": 1.472352151734814, "raw_status": "NOT_MET", "flux_status": "SUPPORTED"}
+  },
+  "abstain_best_f1": 0.29117259552042163,
+  "paired_residual": 1.9371509552001953e-07,
+  "triton_median_ms": {
+    "8192": [0.010912, 0.010912, 0.009984, 0.009728],
+    "10000": [0.010848, 0.010944, 0.009536, 0.009440],
+    "65536": [0.010912, 0.010624, 0.009792, 0.009472],
+    "1048576": [0.010656, 0.011168, 0.009888, 0.009792]
+  },
+  "pytorch_slope": [-0.009482, 0.000375, -0.000809, 0.004302],
+  "dtype_median_ms_1m": {"float32": 0.021728, "float16": 0.020192, "bfloat16": 0.020096},
+  "triton_block_ms_1m": {"128": 0.014656, "256": 0.011648, "512": 0.012640, "1024": 0.012864},
+  "eager_ms_1m": 0.016384,
+  "shard_4m": {"one_gpu_ms": 0.046944, "four_gpu_ms": 0.088192},
+  "flux_vs_pool_1m": {"flux_ms": 0.063552, "pool_ms": 0.015616},
+  "python_vs_fused_4096": {"python_ms": 1.039926, "fused_ms": 0.020672}
+}

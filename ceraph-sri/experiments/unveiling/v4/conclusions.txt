@@ -1,0 +1,739 @@
+WHAT THIS RUN ACTUALLY SHOWED
+==============================
+SIZE=small,  s_a=0.25, s_p=0.4,  theoretical Ξ = exp(-(s_a²+s_p²)) = 0.8005.
+OU ρ=0.97, seed=7.
+Experiment A (partial-overlap tracking): N=36, K=16, t=150, n_walks=6, SNR=20.0 dB.
+  layouts=['expander', 'ring', 'torus'],  ρ=[1.0, 0.75, 0.5, 0.25],  scenarios=['stationary', 'jump_up', 'ramp', 'fault'].
+  official backend for these numbers: numpy.
+  wall time 16.5s.
+Experiment B (gauge pinning): N=64, K=16, n_trials=24, M=[1, 2, 4, 8], wall 1.7s.
+Process q0:  q_amp=0.00369, q_phase=0.00946, q_κ=0.01315.
+
+EXPERIMENT A — adaptive tracking under partial overlap
+------------------------------------------------------
+Methods: oracle Kalman, Kalman at initial q, Mehra AKF, corrected g(Ξ_ν), IMM {q,10q}, and v1 g(Ξ) as a negative control.
+Chip methods use the formula floor with K_eff=ρK, split in the measured amp/phase proportion; the oracle uses a static measured r per (layout, ρ).
+
+Static measurement variance (formula floor uses K_eff=ρK):
+  expander   ρ=1.00:  formula=7.0822e-04  measured MSE(κ)=7.8512e-04  (amp=4.5096e-04, phase=3.3416e-04)
+  expander   ρ=0.75:  formula=9.4429e-04  measured MSE(κ)=8.1399e-04  (amp=3.8028e-04, phase=4.3371e-04)
+  expander   ρ=0.50:  formula=1.4164e-03  measured MSE(κ)=1.1362e-03  (amp=5.9472e-04, phase=5.4150e-04)
+  expander   ρ=0.25:  formula=2.8329e-03  measured MSE(κ)=2.2406e-03  (amp=1.0062e-03, phase=1.2344e-03)
+  ring       ρ=1.00:  formula=7.0822e-04  measured MSE(κ)=7.2421e-04  (amp=3.0756e-04, phase=4.1665e-04)
+  ring       ρ=0.75:  formula=9.4429e-04  measured MSE(κ)=3.1417e-03  (amp=2.0810e-03, phase=1.0607e-03)
+  ring       ρ=0.50:  formula=1.4164e-03  measured MSE(κ)=8.4743e-03  (amp=3.5002e-03, phase=4.9741e-03)
+  ring       ρ=0.25:  formula=2.8329e-03  measured MSE(κ)=2.2865e-02  (amp=1.2908e-02, phase=9.9570e-03)
+  torus      ρ=1.00:  formula=7.0822e-04  measured MSE(κ)=7.2134e-04  (amp=3.8398e-04, phase=3.3736e-04)
+  torus      ρ=0.75:  formula=9.4429e-04  measured MSE(κ)=9.3199e-04  (amp=4.3446e-04, phase=4.9753e-04)
+  torus      ρ=0.50:  formula=1.4164e-03  measured MSE(κ)=1.3330e-03  (amp=7.2472e-04, phase=6.0828e-04)
+  torus      ρ=0.25:  formula=2.8329e-03  measured MSE(κ)=2.8897e-03  (amp=1.3376e-03, phase=1.5522e-03)
+
+TORUS  ρ=1.0  stationary  (elapsed 0.4s)
+  r̂ formula=7.0822e-04, measured MSE=7.2134e-04, window=2d-sliding target=16
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0354 ± 0.0053,  regret=+0.0000 ± 0.0000,  mean g=0.940
+    - Kalman initial q        RMS(κ)=0.0353 ± 0.0052,  regret=-0.0002 ± 0.0001,  mean g=0.941
+    - v1 g(Ξ)                 RMS(κ)=0.1018 ± 0.0296,  regret=+0.0663 ± 0.0292,  mean g=0.568
+    - Mehra AKF               RMS(κ)=0.0267 ± 0.0004,  regret=-0.0088 ± 0.0051,  mean g=0.948
+    - corrected g(Ξ_ν)        RMS(κ)=0.0266 ± 0.0004,  regret=-0.0089 ± 0.0050,  mean g=0.950
+    - IMM (q, 10q)            RMS(κ)=0.0265 ± 0.0004,  regret=-0.0089 ± 0.0050,  mean g=0.946
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+TORUS  ρ=0.75  stationary  (elapsed 0.4s)
+  r̂ formula=9.4429e-04, measured MSE=9.3199e-04, window=2d-sliding target=12
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0541 ± 0.0099,  regret=+0.0000 ± 0.0000,  mean g=0.928
+    - Kalman initial q        RMS(κ)=0.0541 ± 0.0099,  regret=+0.0000 ± 0.0002,  mean g=0.927
+    - v1 g(Ξ)                 RMS(κ)=0.1621 ± 0.0462,  regret=+0.1081 ± 0.0439,  mean g=0.548
+    - Mehra AKF               RMS(κ)=0.0308 ± 0.0006,  regret=-0.0232 ± 0.0095,  mean g=0.943
+    - corrected g(Ξ_ν)        RMS(κ)=0.0309 ± 0.0006,  regret=-0.0232 ± 0.0094,  mean g=0.944
+    - IMM (q, 10q)            RMS(κ)=0.0309 ± 0.0006,  regret=-0.0232 ± 0.0094,  mean g=0.937
+    Mehra AKF beats the oracle
+    corrected g(Ξ_ν) beats the oracle
+    IMM (q, 10q) beats the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+TORUS  ρ=0.5  stationary  (elapsed 0.4s)
+  r̂ formula=1.4164e-03, measured MSE=1.3330e-03, window=2d-sliding target=8
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0439 ± 0.0107,  regret=+0.0000 ± 0.0000,  mean g=0.899
+    - Kalman initial q        RMS(κ)=0.0456 ± 0.0124,  regret=+0.0017 ± 0.0016,  mean g=0.894
+    - v1 g(Ξ)                 RMS(κ)=0.0579 ± 0.0012,  regret=+0.0140 ± 0.0110,  mean g=0.581
+    - Mehra AKF               RMS(κ)=0.0339 ± 0.0006,  regret=-0.0100 ± 0.0102,  mean g=0.898
+    - corrected g(Ξ_ν)        RMS(κ)=0.0339 ± 0.0007,  regret=-0.0100 ± 0.0100,  mean g=0.905
+    - IMM (q, 10q)            RMS(κ)=0.0339 ± 0.0007,  regret=-0.0099 ± 0.0100,  mean g=0.902
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) ties the oracle
+
+TORUS  ρ=0.25  stationary  (elapsed 0.5s)
+  r̂ formula=2.8329e-03, measured MSE=2.8897e-03, window=2d-sliding target=4
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0593 ± 0.0072,  regret=+0.0000 ± 0.0000,  mean g=0.826
+    - Kalman initial q        RMS(κ)=0.0606 ± 0.0083,  regret=+0.0013 ± 0.0013,  mean g=0.828
+    - v1 g(Ξ)                 RMS(κ)=0.1078 ± 0.0273,  regret=+0.0485 ± 0.0202,  mean g=0.561
+    - Mehra AKF               RMS(κ)=0.0503 ± 0.0009,  regret=-0.0090 ± 0.0063,  mean g=0.856
+    - corrected g(Ξ_ν)        RMS(κ)=0.0515 ± 0.0017,  regret=-0.0078 ± 0.0056,  mean g=0.860
+    - IMM (q, 10q)            RMS(κ)=0.0512 ± 0.0015,  regret=-0.0080 ± 0.0057,  mean g=0.847
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) ties the oracle
+
+TORUS  ρ=1.0  jump_up  (elapsed 0.4s)
+  r̂ formula=7.0822e-04, measured MSE=7.2134e-04, window=2d-sliding target=16
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0505 ± 0.0010,  regret=+0.0000 ± 0.0000,  mean g=0.993
+    - Kalman initial q        RMS(κ)=0.0697 ± 0.0043,  regret=+0.0192 ± 0.0041,  mean g=0.941
+    - v1 g(Ξ)                 RMS(κ)=0.7643 ± 0.1582,  regret=+0.7138 ± 0.1582,  mean g=0.258
+    - Mehra AKF               RMS(κ)=0.0501 ± 0.0010,  regret=-0.0005 ± 0.0001,  mean g=0.994
+    - corrected g(Ξ_ν)        RMS(κ)=0.0506 ± 0.0010,  regret=+0.0001 ± 0.0000,  mean g=0.988
+    - IMM (q, 10q)            RMS(κ)=0.0505 ± 0.0010,  regret=-0.0000 ± 0.0000,  mean g=0.991
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+TORUS  ρ=0.75  jump_up  (elapsed 0.4s)
+  r̂ formula=9.4429e-04, measured MSE=9.3199e-04, window=2d-sliding target=12
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0500 ± 0.0012,  regret=+0.0000 ± 0.0000,  mean g=0.992
+    - Kalman initial q        RMS(κ)=0.0832 ± 0.0066,  regret=+0.0332 ± 0.0069,  mean g=0.927
+    - v1 g(Ξ)                 RMS(κ)=0.9412 ± 0.1675,  regret=+0.8911 ± 0.1674,  mean g=0.221
+    - Mehra AKF               RMS(κ)=0.0493 ± 0.0013,  regret=-0.0008 ± 0.0002,  mean g=0.993
+    - corrected g(Ξ_ν)        RMS(κ)=0.0502 ± 0.0011,  regret=+0.0002 ± 0.0001,  mean g=0.985
+    - IMM (q, 10q)            RMS(κ)=0.0500 ± 0.0012,  regret=-0.0000 ± 0.0000,  mean g=0.989
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+TORUS  ρ=0.5  jump_up  (elapsed 0.4s)
+  r̂ formula=1.4164e-03, measured MSE=1.3330e-03, window=2d-sliding target=8
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0752 ± 0.0056,  regret=+0.0000 ± 0.0000,  mean g=0.987
+    - Kalman initial q        RMS(κ)=0.1184 ± 0.0078,  regret=+0.0432 ± 0.0063,  mean g=0.894
+    - v1 g(Ξ)                 RMS(κ)=0.6632 ± 0.1623,  regret=+0.5880 ± 0.1640,  mean g=0.295
+    - Mehra AKF               RMS(κ)=0.0744 ± 0.0055,  regret=-0.0008 ± 0.0002,  mean g=0.989
+    - corrected g(Ξ_ν)        RMS(κ)=0.0755 ± 0.0055,  regret=+0.0003 ± 0.0001,  mean g=0.977
+    - IMM (q, 10q)            RMS(κ)=0.0753 ± 0.0056,  regret=+0.0000 ± 0.0001,  mean g=0.983
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+TORUS  ρ=0.25  jump_up  (elapsed 0.4s)
+  r̂ formula=2.8329e-03, measured MSE=2.8897e-03, window=2d-sliding target=4
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0924 ± 0.0051,  regret=+0.0000 ± 0.0000,  mean g=0.975
+    - Kalman initial q        RMS(κ)=0.1456 ± 0.0145,  regret=+0.0532 ± 0.0158,  mean g=0.828
+    - v1 g(Ξ)                 RMS(κ)=0.5306 ± 0.0845,  regret=+0.4382 ± 0.0866,  mean g=0.329
+    - Mehra AKF               RMS(κ)=0.0910 ± 0.0053,  regret=-0.0014 ± 0.0005,  mean g=0.977
+    - corrected g(Ξ_ν)        RMS(κ)=0.0927 ± 0.0050,  regret=+0.0003 ± 0.0003,  mean g=0.956
+    - IMM (q, 10q)            RMS(κ)=0.0926 ± 0.0052,  regret=+0.0002 ± 0.0002,  mean g=0.968
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+TORUS  ρ=1.0  ramp  (elapsed 0.4s)
+  r̂ formula=7.0822e-04, measured MSE=7.2134e-04, window=2d-sliding target=16
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0372 ± 0.0017,  regret=+0.0000 ± 0.0000,  mean g=0.988
+    - Kalman initial q        RMS(κ)=0.0517 ± 0.0048,  regret=+0.0145 ± 0.0049,  mean g=0.941
+    - v1 g(Ξ)                 RMS(κ)=0.3593 ± 0.0927,  regret=+0.3222 ± 0.0928,  mean g=0.429
+    - Mehra AKF               RMS(κ)=0.0365 ± 0.0018,  regret=-0.0006 ± 0.0003,  mean g=0.982
+    - corrected g(Ξ_ν)        RMS(κ)=0.0368 ± 0.0018,  regret=-0.0003 ± 0.0003,  mean g=0.978
+    - IMM (q, 10q)            RMS(κ)=0.0366 ± 0.0018,  regret=-0.0006 ± 0.0003,  mean g=0.985
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+TORUS  ρ=0.75  ramp  (elapsed 0.4s)
+  r̂ formula=9.4429e-04, measured MSE=9.3199e-04, window=2d-sliding target=12
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0414 ± 0.0024,  regret=+0.0000 ± 0.0000,  mean g=0.985
+    - Kalman initial q        RMS(κ)=0.0652 ± 0.0082,  regret=+0.0238 ± 0.0089,  mean g=0.927
+    - v1 g(Ξ)                 RMS(κ)=0.4809 ± 0.1349,  regret=+0.4395 ± 0.1360,  mean g=0.375
+    - Mehra AKF               RMS(κ)=0.0401 ± 0.0027,  regret=-0.0012 ± 0.0006,  mean g=0.978
+    - corrected g(Ξ_ν)        RMS(κ)=0.0405 ± 0.0026,  regret=-0.0009 ± 0.0005,  mean g=0.973
+    - IMM (q, 10q)            RMS(κ)=0.0403 ± 0.0026,  regret=-0.0011 ± 0.0005,  mean g=0.982
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+TORUS  ρ=0.5  ramp  (elapsed 0.4s)
+  r̂ formula=1.4164e-03, measured MSE=1.3330e-03, window=2d-sliding target=8
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0513 ± 0.0026,  regret=+0.0000 ± 0.0000,  mean g=0.978
+    - Kalman initial q        RMS(κ)=0.0974 ± 0.0120,  regret=+0.0461 ± 0.0105,  mean g=0.894
+    - v1 g(Ξ)                 RMS(κ)=0.4763 ± 0.1215,  regret=+0.4250 ± 0.1219,  mean g=0.386
+    - Mehra AKF               RMS(κ)=0.0482 ± 0.0021,  regret=-0.0031 ± 0.0012,  mean g=0.968
+    - corrected g(Ξ_ν)        RMS(κ)=0.0493 ± 0.0022,  regret=-0.0020 ± 0.0008,  mean g=0.960
+    - IMM (q, 10q)            RMS(κ)=0.0490 ± 0.0022,  regret=-0.0023 ± 0.0008,  mean g=0.973
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+TORUS  ρ=0.25  ramp  (elapsed 0.4s)
+  r̂ formula=2.8329e-03, measured MSE=2.8897e-03, window=2d-sliding target=4
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0719 ± 0.0016,  regret=+0.0000 ± 0.0000,  mean g=0.958
+    - Kalman initial q        RMS(κ)=0.1084 ± 0.0124,  regret=+0.0365 ± 0.0131,  mean g=0.828
+    - v1 g(Ξ)                 RMS(κ)=0.4890 ± 0.1424,  regret=+0.4171 ± 0.1432,  mean g=0.380
+    - Mehra AKF               RMS(κ)=0.0711 ± 0.0018,  regret=-0.0008 ± 0.0007,  mean g=0.940
+    - corrected g(Ξ_ν)        RMS(κ)=0.0715 ± 0.0017,  regret=-0.0004 ± 0.0004,  mean g=0.925
+    - IMM (q, 10q)            RMS(κ)=0.0714 ± 0.0019,  regret=-0.0005 ± 0.0006,  mean g=0.951
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+TORUS  ρ=1.0  fault  (elapsed 0.5s)
+  r̂ formula=7.0822e-04, measured MSE=7.2134e-04, window=2d-sliding target=16
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0400 ± 0.0069,  regret=+0.0000 ± 0.0000,  mean g=0.940
+    - Kalman initial q        RMS(κ)=0.0394 ± 0.0067,  regret=-0.0005 ± 0.0002,  mean g=0.941
+    - v1 g(Ξ)                 RMS(κ)=0.0673 ± 0.0127,  regret=+0.0273 ± 0.0124,  mean g=0.579
+    - Mehra AKF               RMS(κ)=0.0260 ± 0.0005,  regret=-0.0140 ± 0.0066,  mean g=0.951
+    - corrected g(Ξ_ν)        RMS(κ)=0.0262 ± 0.0006,  regret=-0.0138 ± 0.0064,  mean g=0.952
+    - IMM (q, 10q)            RMS(κ)=0.0262 ± 0.0006,  regret=-0.0138 ± 0.0065,  mean g=0.948
+    Mehra AKF beats the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) ties the oracle
+
+TORUS  ρ=0.75  fault  (elapsed 0.4s)
+  r̂ formula=9.4429e-04, measured MSE=9.3199e-04, window=2d-sliding target=12
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0414 ± 0.0050,  regret=+0.0000 ± 0.0000,  mean g=0.928
+    - Kalman initial q        RMS(κ)=0.0409 ± 0.0048,  regret=-0.0005 ± 0.0004,  mean g=0.927
+    - v1 g(Ξ)                 RMS(κ)=0.0898 ± 0.0273,  regret=+0.0484 ± 0.0285,  mean g=0.571
+    - Mehra AKF               RMS(κ)=0.0296 ± 0.0004,  regret=-0.0119 ± 0.0050,  mean g=0.943
+    - corrected g(Ξ_ν)        RMS(κ)=0.0298 ± 0.0004,  regret=-0.0116 ± 0.0048,  mean g=0.944
+    - IMM (q, 10q)            RMS(κ)=0.0296 ± 0.0004,  regret=-0.0119 ± 0.0049,  mean g=0.934
+    Mehra AKF beats the oracle
+    corrected g(Ξ_ν) beats the oracle
+    IMM (q, 10q) beats the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) ties the oracle
+
+TORUS  ρ=0.5  fault  (elapsed 0.4s)
+  r̂ formula=1.4164e-03, measured MSE=1.3330e-03, window=2d-sliding target=8
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0377 ± 0.0019,  regret=+0.0000 ± 0.0000,  mean g=0.899
+    - Kalman initial q        RMS(κ)=0.0381 ± 0.0021,  regret=+0.0005 ± 0.0005,  mean g=0.894
+    - v1 g(Ξ)                 RMS(κ)=0.0800 ± 0.0148,  regret=+0.0423 ± 0.0139,  mean g=0.575
+    - Mehra AKF               RMS(κ)=0.0349 ± 0.0005,  regret=-0.0028 ± 0.0019,  mean g=0.910
+    - corrected g(Ξ_ν)        RMS(κ)=0.0348 ± 0.0005,  regret=-0.0028 ± 0.0019,  mean g=0.913
+    - IMM (q, 10q)            RMS(κ)=0.0346 ± 0.0005,  regret=-0.0031 ± 0.0020,  mean g=0.902
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+TORUS  ρ=0.25  fault  (elapsed 0.4s)
+  r̂ formula=2.8329e-03, measured MSE=2.8897e-03, window=2d-sliding target=4
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0475 ± 0.0009,  regret=+0.0000 ± 0.0000,  mean g=0.826
+    - Kalman initial q        RMS(κ)=0.0475 ± 0.0009,  regret=-0.0000 ± 0.0000,  mean g=0.828
+    - v1 g(Ξ)                 RMS(κ)=0.1221 ± 0.0603,  regret=+0.0746 ± 0.0595,  mean g=0.555
+    - Mehra AKF               RMS(κ)=0.0477 ± 0.0007,  regret=+0.0002 ± 0.0002,  mean g=0.838
+    - corrected g(Ξ_ν)        RMS(κ)=0.0472 ± 0.0006,  regret=-0.0003 ± 0.0004,  mean g=0.846
+    - IMM (q, 10q)            RMS(κ)=0.0473 ± 0.0005,  regret=-0.0002 ± 0.0005,  mean g=0.838
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) ties the oracle
+
+RING  ρ=1.0  stationary  (elapsed 0.4s)
+  r̂ formula=7.0822e-04, measured MSE=7.2421e-04, window=1d-sliding target=16
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0260 ± 0.0002,  regret=+0.0000 ± 0.0000,  mean g=0.944
+    - Kalman initial q        RMS(κ)=0.0260 ± 0.0002,  regret=-0.0000 ± 0.0000,  mean g=0.945
+    - v1 g(Ξ)                 RMS(κ)=0.0552 ± 0.0002,  regret=+0.0291 ± 0.0001,  mean g=0.582
+    - Mehra AKF               RMS(κ)=0.0261 ± 0.0002,  regret=+0.0000 ± 0.0000,  mean g=0.945
+    - corrected g(Ξ_ν)        RMS(κ)=0.0261 ± 0.0002,  regret=+0.0000 ± 0.0000,  mean g=0.949
+    - IMM (q, 10q)            RMS(κ)=0.0261 ± 0.0002,  regret=+0.0000 ± 0.0000,  mean g=0.947
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=0.75  stationary  (elapsed 0.5s)
+  r̂ formula=9.4429e-04, measured MSE=3.1417e-03, window=1d-sliding target=12
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0491 ± 0.0004,  regret=+0.0000 ± 0.0000,  mean g=0.808
+    - Kalman initial q        RMS(κ)=0.0502 ± 0.0005,  regret=+0.0011 ± 0.0001,  mean g=0.919
+    - v1 g(Ξ)                 RMS(κ)=0.0624 ± 0.0002,  regret=+0.0133 ± 0.0004,  mean g=0.582
+    - Mehra AKF               RMS(κ)=0.0507 ± 0.0005,  regret=+0.0016 ± 0.0002,  mean g=0.937
+    - corrected g(Ξ_ν)        RMS(κ)=0.0508 ± 0.0005,  regret=+0.0017 ± 0.0002,  mean g=0.936
+    - IMM (q, 10q)            RMS(κ)=0.0508 ± 0.0005,  regret=+0.0016 ± 0.0002,  mean g=0.926
+    Mehra AKF loses to the oracle
+    corrected g(Ξ_ν) loses to the oracle
+    IMM (q, 10q) loses to the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=0.5  stationary  (elapsed 0.5s)
+  r̂ formula=1.4164e-03, measured MSE=8.4743e-03, window=1d-sliding target=8
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0796 ± 0.0011,  regret=+0.0000 ± 0.0000,  mean g=0.671
+    - Kalman initial q        RMS(κ)=0.0898 ± 0.0012,  regret=+0.0103 ± 0.0001,  mean g=0.901
+    - v1 g(Ξ)                 RMS(κ)=0.0823 ± 0.0010,  regret=+0.0027 ± 0.0002,  mean g=0.580
+    - Mehra AKF               RMS(κ)=0.0944 ± 0.0011,  regret=+0.0148 ± 0.0001,  mean g=0.954
+    - corrected g(Ξ_ν)        RMS(κ)=0.0940 ± 0.0012,  regret=+0.0144 ± 0.0001,  mean g=0.948
+    - IMM (q, 10q)            RMS(κ)=0.0950 ± 0.0012,  regret=+0.0155 ± 0.0002,  mean g=0.940
+    Mehra AKF loses to the oracle
+    corrected g(Ξ_ν) loses to the oracle
+    IMM (q, 10q) loses to the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) ties the oracle
+
+RING  ρ=0.25  stationary  (elapsed 0.4s)
+  r̂ formula=2.8329e-03, measured MSE=2.2865e-02, window=1d-sliding target=4
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.1043 ± 0.0009,  regret=+0.0000 ± 0.0000,  mean g=0.500
+    - Kalman initial q        RMS(κ)=0.1240 ± 0.0013,  regret=+0.0197 ± 0.0008,  mean g=0.823
+    - v1 g(Ξ)                 RMS(κ)=0.1073 ± 0.0008,  regret=+0.0031 ± 0.0002,  mean g=0.577
+    - Mehra AKF               RMS(κ)=0.1391 ± 0.0016,  regret=+0.0349 ± 0.0012,  mean g=0.947
+    - corrected g(Ξ_ν)        RMS(κ)=0.1368 ± 0.0016,  regret=+0.0326 ± 0.0012,  mean g=0.927
+    - IMM (q, 10q)            RMS(κ)=0.1415 ± 0.0016,  regret=+0.0372 ± 0.0012,  mean g=0.937
+    Mehra AKF loses to the oracle
+    corrected g(Ξ_ν) loses to the oracle
+    IMM (q, 10q) loses to the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=1.0  jump_up  (elapsed 0.5s)
+  r̂ formula=7.0822e-04, measured MSE=7.2421e-04, window=1d-sliding target=16
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0513 ± 0.0048,  regret=+0.0000 ± 0.0000,  mean g=0.994
+    - Kalman initial q        RMS(κ)=0.0603 ± 0.0044,  regret=+0.0090 ± 0.0012,  mean g=0.945
+    - v1 g(Ξ)                 RMS(κ)=0.3981 ± 0.0312,  regret=+0.3468 ± 0.0335,  mean g=0.384
+    - Mehra AKF               RMS(κ)=0.0511 ± 0.0048,  regret=-0.0002 ± 0.0000,  mean g=0.993
+    - corrected g(Ξ_ν)        RMS(κ)=0.0514 ± 0.0048,  regret=+0.0001 ± 0.0000,  mean g=0.988
+    - IMM (q, 10q)            RMS(κ)=0.0513 ± 0.0048,  regret=-0.0000 ± 0.0000,  mean g=0.992
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=0.75  jump_up  (elapsed 0.5s)
+  r̂ formula=9.4429e-04, measured MSE=3.1417e-03, window=1d-sliding target=12
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0952 ± 0.0091,  regret=+0.0000 ± 0.0000,  mean g=0.969
+    - Kalman initial q        RMS(κ)=0.0983 ± 0.0086,  regret=+0.0030 ± 0.0007,  mean g=0.919
+    - v1 g(Ξ)                 RMS(κ)=0.3750 ± 0.0307,  regret=+0.2798 ± 0.0312,  mean g=0.386
+    - Mehra AKF               RMS(κ)=0.0953 ± 0.0092,  regret=+0.0000 ± 0.0002,  mean g=0.990
+    - corrected g(Ξ_ν)        RMS(κ)=0.0951 ± 0.0092,  regret=-0.0001 ± 0.0001,  mean g=0.982
+    - IMM (q, 10q)            RMS(κ)=0.0954 ± 0.0092,  regret=+0.0001 ± 0.0002,  mean g=0.987
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=0.5  jump_up  (elapsed 0.4s)
+  r̂ formula=1.4164e-03, measured MSE=8.4743e-03, window=1d-sliding target=8
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.1577 ± 0.0063,  regret=+0.0000 ± 0.0000,  mean g=0.936
+    - Kalman initial q        RMS(κ)=0.1582 ± 0.0068,  regret=+0.0006 ± 0.0006,  mean g=0.901
+    - v1 g(Ξ)                 RMS(κ)=0.4311 ± 0.0408,  regret=+0.2734 ± 0.0359,  mean g=0.370
+    - Mehra AKF               RMS(κ)=0.1613 ± 0.0065,  regret=+0.0037 ± 0.0005,  mean g=0.990
+    - corrected g(Ξ_ν)        RMS(κ)=0.1601 ± 0.0065,  regret=+0.0024 ± 0.0004,  mean g=0.980
+    - IMM (q, 10q)            RMS(κ)=0.1611 ± 0.0065,  regret=+0.0035 ± 0.0005,  mean g=0.985
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=0.25  jump_up  (elapsed 0.4s)
+  r̂ formula=2.8329e-03, measured MSE=2.2865e-02, window=1d-sliding target=4
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.2353 ± 0.0167,  regret=+0.0000 ± 0.0000,  mean g=0.847
+    - Kalman initial q        RMS(κ)=0.2362 ± 0.0166,  regret=+0.0009 ± 0.0011,  mean g=0.823
+    - v1 g(Ξ)                 RMS(κ)=0.4535 ± 0.0308,  regret=+0.2182 ± 0.0293,  mean g=0.358
+    - Mehra AKF               RMS(κ)=0.2517 ± 0.0187,  regret=+0.0164 ± 0.0024,  mean g=0.986
+    - corrected g(Ξ_ν)        RMS(κ)=0.2468 ± 0.0184,  regret=+0.0115 ± 0.0021,  mean g=0.962
+    - IMM (q, 10q)            RMS(κ)=0.2492 ± 0.0184,  regret=+0.0139 ± 0.0022,  mean g=0.971
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=1.0  ramp  (elapsed 0.4s)
+  r̂ formula=7.0822e-04, measured MSE=7.2421e-04, window=1d-sliding target=16
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0363 ± 0.0016,  regret=+0.0000 ± 0.0000,  mean g=0.989
+    - Kalman initial q        RMS(κ)=0.0393 ± 0.0013,  regret=+0.0030 ± 0.0004,  mean g=0.945
+    - v1 g(Ξ)                 RMS(κ)=0.1995 ± 0.0128,  regret=+0.1631 ± 0.0132,  mean g=0.484
+    - Mehra AKF               RMS(κ)=0.0364 ± 0.0015,  regret=+0.0001 ± 0.0000,  mean g=0.980
+    - corrected g(Ξ_ν)        RMS(κ)=0.0365 ± 0.0015,  regret=+0.0001 ± 0.0000,  mean g=0.977
+    - IMM (q, 10q)            RMS(κ)=0.0364 ± 0.0016,  regret=+0.0000 ± 0.0000,  mean g=0.985
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=0.75  ramp  (elapsed 0.5s)
+  r̂ formula=9.4429e-04, measured MSE=3.1417e-03, window=1d-sliding target=12
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0653 ± 0.0015,  regret=+0.0000 ± 0.0000,  mean g=0.949
+    - Kalman initial q        RMS(κ)=0.0669 ± 0.0014,  regret=+0.0017 ± 0.0002,  mean g=0.919
+    - v1 g(Ξ)                 RMS(κ)=0.1975 ± 0.0121,  regret=+0.1322 ± 0.0122,  mean g=0.484
+    - Mehra AKF               RMS(κ)=0.0651 ± 0.0015,  regret=-0.0001 ± 0.0001,  mean g=0.975
+    - corrected g(Ξ_ν)        RMS(κ)=0.0651 ± 0.0015,  regret=-0.0002 ± 0.0001,  mean g=0.969
+    - IMM (q, 10q)            RMS(κ)=0.0655 ± 0.0015,  regret=+0.0003 ± 0.0001,  mean g=0.980
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=0.5  ramp  (elapsed 0.4s)
+  r̂ formula=1.4164e-03, measured MSE=8.4743e-03, window=1d-sliding target=8
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.1091 ± 0.0059,  regret=+0.0000 ± 0.0000,  mean g=0.898
+    - Kalman initial q        RMS(κ)=0.1102 ± 0.0057,  regret=+0.0011 ± 0.0004,  mean g=0.901
+    - v1 g(Ξ)                 RMS(κ)=0.2126 ± 0.0105,  regret=+0.1035 ± 0.0129,  mean g=0.482
+    - Mehra AKF               RMS(κ)=0.1132 ± 0.0064,  regret=+0.0041 ± 0.0006,  mean g=0.978
+    - corrected g(Ξ_ν)        RMS(κ)=0.1125 ± 0.0064,  regret=+0.0034 ± 0.0005,  mean g=0.969
+    - IMM (q, 10q)            RMS(κ)=0.1139 ± 0.0064,  regret=+0.0048 ± 0.0006,  mean g=0.980
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=0.25  ramp  (elapsed 0.4s)
+  r̂ formula=2.8329e-03, measured MSE=2.2865e-02, window=1d-sliding target=4
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.1700 ± 0.0053,  regret=+0.0000 ± 0.0000,  mean g=0.783
+    - Kalman initial q        RMS(κ)=0.1716 ± 0.0056,  regret=+0.0017 ± 0.0005,  mean g=0.823
+    - v1 g(Ξ)                 RMS(κ)=0.2407 ± 0.0094,  regret=+0.0708 ± 0.0110,  mean g=0.472
+    - Mehra AKF               RMS(κ)=0.1881 ± 0.0079,  regret=+0.0181 ± 0.0028,  mean g=0.971
+    - corrected g(Ξ_ν)        RMS(κ)=0.1846 ± 0.0076,  regret=+0.0146 ± 0.0025,  mean g=0.948
+    - IMM (q, 10q)            RMS(κ)=0.1881 ± 0.0077,  regret=+0.0181 ± 0.0026,  mean g=0.965
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=1.0  fault  (elapsed 0.4s)
+  r̂ formula=7.0822e-04, measured MSE=7.2421e-04, window=1d-sliding target=16
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0268 ± 0.0003,  regret=+0.0000 ± 0.0000,  mean g=0.944
+    - Kalman initial q        RMS(κ)=0.0268 ± 0.0003,  regret=-0.0000 ± 0.0000,  mean g=0.945
+    - v1 g(Ξ)                 RMS(κ)=0.0552 ± 0.0003,  regret=+0.0284 ± 0.0002,  mean g=0.581
+    - Mehra AKF               RMS(κ)=0.0269 ± 0.0003,  regret=+0.0000 ± 0.0000,  mean g=0.947
+    - corrected g(Ξ_ν)        RMS(κ)=0.0269 ± 0.0003,  regret=+0.0000 ± 0.0000,  mean g=0.950
+    - IMM (q, 10q)            RMS(κ)=0.0269 ± 0.0003,  regret=+0.0001 ± 0.0000,  mean g=0.947
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=0.75  fault  (elapsed 0.5s)
+  r̂ formula=9.4429e-04, measured MSE=3.1417e-03, window=1d-sliding target=12
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0497 ± 0.0010,  regret=+0.0000 ± 0.0000,  mean g=0.808
+    - Kalman initial q        RMS(κ)=0.0506 ± 0.0011,  regret=+0.0009 ± 0.0001,  mean g=0.919
+    - v1 g(Ξ)                 RMS(κ)=0.0628 ± 0.0008,  regret=+0.0131 ± 0.0005,  mean g=0.582
+    - Mehra AKF               RMS(κ)=0.0511 ± 0.0012,  regret=+0.0014 ± 0.0001,  mean g=0.940
+    - corrected g(Ξ_ν)        RMS(κ)=0.0512 ± 0.0012,  regret=+0.0015 ± 0.0001,  mean g=0.938
+    - IMM (q, 10q)            RMS(κ)=0.0511 ± 0.0011,  regret=+0.0014 ± 0.0001,  mean g=0.927
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=0.5  fault  (elapsed 0.4s)
+  r̂ formula=1.4164e-03, measured MSE=8.4743e-03, window=1d-sliding target=8
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0789 ± 0.0007,  regret=+0.0000 ± 0.0000,  mean g=0.671
+    - Kalman initial q        RMS(κ)=0.0889 ± 0.0011,  regret=+0.0100 ± 0.0005,  mean g=0.901
+    - v1 g(Ξ)                 RMS(κ)=0.0819 ± 0.0005,  regret=+0.0030 ± 0.0002,  mean g=0.580
+    - Mehra AKF               RMS(κ)=0.0935 ± 0.0012,  regret=+0.0146 ± 0.0008,  mean g=0.957
+    - corrected g(Ξ_ν)        RMS(κ)=0.0931 ± 0.0012,  regret=+0.0142 ± 0.0007,  mean g=0.950
+    - IMM (q, 10q)            RMS(κ)=0.0942 ± 0.0013,  regret=+0.0153 ± 0.0008,  mean g=0.942
+    Mehra AKF loses to the oracle
+    corrected g(Ξ_ν) loses to the oracle
+    IMM (q, 10q) loses to the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+RING  ρ=0.25  fault  (elapsed 0.4s)
+  r̂ formula=2.8329e-03, measured MSE=2.2865e-02, window=1d-sliding target=4
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.1055 ± 0.0010,  regret=+0.0000 ± 0.0000,  mean g=0.500
+    - Kalman initial q        RMS(κ)=0.1252 ± 0.0013,  regret=+0.0198 ± 0.0007,  mean g=0.823
+    - v1 g(Ξ)                 RMS(κ)=0.1082 ± 0.0009,  regret=+0.0027 ± 0.0003,  mean g=0.577
+    - Mehra AKF               RMS(κ)=0.1412 ± 0.0014,  regret=+0.0358 ± 0.0009,  mean g=0.953
+    - corrected g(Ξ_ν)        RMS(κ)=0.1387 ± 0.0014,  regret=+0.0333 ± 0.0009,  mean g=0.932
+    - IMM (q, 10q)            RMS(κ)=0.1434 ± 0.0015,  regret=+0.0380 ± 0.0010,  mean g=0.943
+    Mehra AKF loses to the oracle
+    corrected g(Ξ_ν) loses to the oracle
+    IMM (q, 10q) loses to the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) ties the oracle
+
+EXPANDER  ρ=1.0  stationary  (elapsed 0.4s)
+  r̂ formula=7.0822e-04, measured MSE=7.8512e-04, window=full target=16
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0402 ± 0.0045,  regret=+0.0000 ± 0.0000,  mean g=0.934
+    - Kalman initial q        RMS(κ)=0.0386 ± 0.0037,  regret=-0.0016 ± 0.0009,  mean g=0.939
+    - v1 g(Ξ)                 RMS(κ)=0.1386 ± 0.0118,  regret=+0.0984 ± 0.0131,  mean g=0.557
+    - Mehra AKF               RMS(κ)=0.0267 ± 0.0005,  regret=-0.0135 ± 0.0044,  mean g=0.950
+    - corrected g(Ξ_ν)        RMS(κ)=0.0265 ± 0.0005,  regret=-0.0137 ± 0.0043,  mean g=0.952
+    - IMM (q, 10q)            RMS(κ)=0.0264 ± 0.0005,  regret=-0.0137 ± 0.0043,  mean g=0.947
+    Mehra AKF beats the oracle
+    corrected g(Ξ_ν) beats the oracle
+    IMM (q, 10q) beats the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+EXPANDER  ρ=0.75  stationary  (elapsed 0.4s)
+  r̂ formula=9.4429e-04, measured MSE=8.1399e-04, window=random-subset-repair target=12
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0564 ± 0.0066,  regret=+0.0000 ± 0.0000,  mean g=0.936
+    - Kalman initial q        RMS(κ)=0.0607 ± 0.0077,  regret=+0.0043 ± 0.0013,  mean g=0.927
+    - v1 g(Ξ)                 RMS(κ)=0.1404 ± 0.0196,  regret=+0.0841 ± 0.0244,  mean g=0.551
+    - Mehra AKF               RMS(κ)=0.0305 ± 0.0003,  regret=-0.0259 ± 0.0066,  mean g=0.946
+    - corrected g(Ξ_ν)        RMS(κ)=0.0307 ± 0.0003,  regret=-0.0257 ± 0.0064,  mean g=0.947
+    - IMM (q, 10q)            RMS(κ)=0.0305 ± 0.0003,  regret=-0.0258 ± 0.0064,  mean g=0.938
+    Mehra AKF beats the oracle
+    corrected g(Ξ_ν) beats the oracle
+    IMM (q, 10q) beats the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+EXPANDER  ρ=0.5  stationary  (elapsed 0.4s)
+  r̂ formula=1.4164e-03, measured MSE=1.1362e-03, window=random-subset-repair target=8
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0550 ± 0.0103,  regret=+0.0000 ± 0.0000,  mean g=0.912
+    - Kalman initial q        RMS(κ)=0.0585 ± 0.0126,  regret=+0.0035 ± 0.0024,  mean g=0.895
+    - v1 g(Ξ)                 RMS(κ)=0.1225 ± 0.0171,  regret=+0.0675 ± 0.0148,  mean g=0.557
+    - Mehra AKF               RMS(κ)=0.0359 ± 0.0007,  regret=-0.0191 ± 0.0097,  mean g=0.913
+    - corrected g(Ξ_ν)        RMS(κ)=0.0359 ± 0.0009,  regret=-0.0191 ± 0.0095,  mean g=0.916
+    - IMM (q, 10q)            RMS(κ)=0.0357 ± 0.0009,  regret=-0.0193 ± 0.0095,  mean g=0.908
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) loses to the oracle
+
+EXPANDER  ρ=0.25  stationary  (elapsed 0.4s)
+  r̂ formula=2.8329e-03, measured MSE=2.2406e-03, window=random-subset-repair target=4
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0769 ± 0.0157,  regret=+0.0000 ± 0.0000,  mean g=0.855
+    - Kalman initial q        RMS(κ)=0.0685 ± 0.0110,  regret=-0.0084 ± 0.0050,  mean g=0.829
+    - v1 g(Ξ)                 RMS(κ)=0.1118 ± 0.0178,  regret=+0.0349 ± 0.0165,  mean g=0.561
+    - Mehra AKF               RMS(κ)=0.0490 ± 0.0014,  regret=-0.0279 ± 0.0144,  mean g=0.866
+    - corrected g(Ξ_ν)        RMS(κ)=0.0504 ± 0.0021,  regret=-0.0265 ± 0.0138,  mean g=0.869
+    - IMM (q, 10q)            RMS(κ)=0.0488 ± 0.0020,  regret=-0.0281 ± 0.0137,  mean g=0.848
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q ties the oracle
+    v1 g(Ξ) ties the oracle
+
+EXPANDER  ρ=1.0  jump_up  (elapsed 0.4s)
+  r̂ formula=7.0822e-04, measured MSE=7.8512e-04, window=full target=16
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0513 ± 0.0042,  regret=+0.0000 ± 0.0000,  mean g=0.992
+    - Kalman initial q        RMS(κ)=0.0758 ± 0.0032,  regret=+0.0245 ± 0.0012,  mean g=0.939
+    - v1 g(Ξ)                 RMS(κ)=0.8106 ± 0.1021,  regret=+0.7593 ± 0.1034,  mean g=0.241
+    - Mehra AKF               RMS(κ)=0.0507 ± 0.0042,  regret=-0.0006 ± 0.0000,  mean g=0.994
+    - corrected g(Ξ_ν)        RMS(κ)=0.0513 ± 0.0042,  regret=+0.0000 ± 0.0000,  mean g=0.988
+    - IMM (q, 10q)            RMS(κ)=0.0512 ± 0.0042,  regret=-0.0001 ± 0.0000,  mean g=0.991
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+EXPANDER  ρ=0.75  jump_up  (elapsed 0.4s)
+  r̂ formula=9.4429e-04, measured MSE=8.1399e-04, window=random-subset-repair target=12
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0540 ± 0.0028,  regret=+0.0000 ± 0.0000,  mean g=0.993
+    - Kalman initial q        RMS(κ)=0.0972 ± 0.0041,  regret=+0.0432 ± 0.0024,  mean g=0.927
+    - v1 g(Ξ)                 RMS(κ)=1.0808 ± 0.1471,  regret=+1.0267 ± 0.1453,  mean g=0.175
+    - Mehra AKF               RMS(κ)=0.0533 ± 0.0028,  regret=-0.0008 ± 0.0001,  mean g=0.994
+    - corrected g(Ξ_ν)        RMS(κ)=0.0544 ± 0.0028,  regret=+0.0003 ± 0.0001,  mean g=0.986
+    - IMM (q, 10q)            RMS(κ)=0.0543 ± 0.0028,  regret=+0.0002 ± 0.0000,  mean g=0.989
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+EXPANDER  ρ=0.5  jump_up  (elapsed 0.4s)
+  r̂ formula=1.4164e-03, measured MSE=1.1362e-03, window=random-subset-repair target=8
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0717 ± 0.0064,  regret=+0.0000 ± 0.0000,  mean g=0.989
+    - Kalman initial q        RMS(κ)=0.1241 ± 0.0069,  regret=+0.0525 ± 0.0030,  mean g=0.895
+    - v1 g(Ξ)                 RMS(κ)=0.8503 ± 0.1207,  regret=+0.7787 ± 0.1236,  mean g=0.230
+    - Mehra AKF               RMS(κ)=0.0708 ± 0.0063,  regret=-0.0009 ± 0.0001,  mean g=0.990
+    - corrected g(Ξ_ν)        RMS(κ)=0.0724 ± 0.0064,  regret=+0.0008 ± 0.0001,  mean g=0.978
+    - IMM (q, 10q)            RMS(κ)=0.0721 ± 0.0064,  regret=+0.0004 ± 0.0001,  mean g=0.983
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+EXPANDER  ρ=0.25  jump_up  (elapsed 0.4s)
+  r̂ formula=2.8329e-03, measured MSE=2.2406e-03, window=random-subset-repair target=4
+  Late-window RMS(κ) (s.e.m. across walks):
+    - oracle Kalman           RMS(κ)=0.0961 ± 0.0051,  regret=+0.0000 ± 0.0000,  mean g=0.981
+    - Kalman initial q        RMS(κ)=0.1993 ± 0.0161,  regret=+0.1032 ± 0.0185,  mean g=0.829
+    - v1 g(Ξ)                 RMS(κ)=0.7912 ± 0.1249,  regret=+0.6951 ± 0.1295,  mean g=0.250
+    - Mehra AKF               RMS(κ)=0.0939 ± 0.0054,  regret=-0.0023 ± 0.0006,  mean g=0.982
+    - corrected g(Ξ_ν)        RMS(κ)=0.0977 ± 0.0046,  regret=+0.0016 ± 0.0005,  mean g=0.960
+    - IMM (q, 10q)            RMS(κ)=0.0975 ± 0.0047,  regret=+0.0014 ± 0.0004,  mean g=0.969
+    Mehra AKF ties the oracle
+    corrected g(Ξ_ν) ties the oracle
+    IMM (q, 10q) ties the oracle
+    Kalman initial q loses to the oracle
+    v1 g(Ξ) loses to the oracle
+
+Overlap synthesis (does the adaptive rule still tie the oracle as ρ drops?)
+  Mehra AKF:
+    torus stationary: ρ=1.0:ties (0.027/0.035), ρ=0.75:beats (0.031/0.054), ρ=0.5:ties (0.034/0.044), ρ=0.25:ties (0.050/0.059)
+    torus jump_up: ρ=1.0:ties (0.050/0.051), ρ=0.75:ties (0.049/0.050), ρ=0.5:ties (0.074/0.075), ρ=0.25:ties (0.091/0.092)
+    ring stationary: ρ=1.0:ties (0.026/0.026), ρ=0.75:loses (0.051/0.049), ρ=0.5:loses (0.094/0.080), ρ=0.25:loses (0.139/0.104)
+    ring jump_up: ρ=1.0:ties (0.051/0.051), ρ=0.75:ties (0.095/0.095), ρ=0.5:ties (0.161/0.158), ρ=0.25:ties (0.252/0.235)
+  corrected g(Ξ_ν):
+    torus stationary: ρ=1.0:ties (0.027/0.035), ρ=0.75:beats (0.031/0.054), ρ=0.5:ties (0.034/0.044), ρ=0.25:ties (0.051/0.059)
+    torus jump_up: ρ=1.0:ties (0.051/0.051), ρ=0.75:ties (0.050/0.050), ρ=0.5:ties (0.076/0.075), ρ=0.25:ties (0.093/0.092)
+    ring stationary: ρ=1.0:ties (0.026/0.026), ρ=0.75:loses (0.051/0.049), ρ=0.5:loses (0.094/0.080), ρ=0.25:loses (0.137/0.104)
+    ring jump_up: ρ=1.0:ties (0.051/0.051), ρ=0.75:ties (0.095/0.095), ρ=0.5:ties (0.160/0.158), ρ=0.25:ties (0.247/0.235)
+  IMM (q, 10q):
+    torus stationary: ρ=1.0:ties (0.027/0.035), ρ=0.75:beats (0.031/0.054), ρ=0.5:ties (0.034/0.044), ρ=0.25:ties (0.051/0.059)
+    torus jump_up: ρ=1.0:ties (0.051/0.051), ρ=0.75:ties (0.050/0.050), ρ=0.5:ties (0.075/0.075), ρ=0.25:ties (0.093/0.092)
+    ring stationary: ρ=1.0:ties (0.026/0.026), ρ=0.75:loses (0.051/0.049), ρ=0.5:loses (0.095/0.080), ρ=0.25:loses (0.141/0.104)
+    ring jump_up: ρ=1.0:ties (0.051/0.051), ρ=0.75:ties (0.095/0.095), ρ=0.5:ties (0.161/0.158), ρ=0.25:ties (0.249/0.235)
+  v1 g(Ξ):
+    torus stationary: ρ=1.0:loses (0.102/0.035), ρ=0.75:loses (0.162/0.054), ρ=0.5:ties (0.058/0.044), ρ=0.25:ties (0.108/0.059)
+    torus jump_up: ρ=1.0:loses (0.764/0.051), ρ=0.75:loses (0.941/0.050), ρ=0.5:loses (0.663/0.075), ρ=0.25:loses (0.531/0.092)
+    ring stationary: ρ=1.0:loses (0.055/0.026), ρ=0.75:loses (0.062/0.049), ρ=0.5:ties (0.082/0.080), ρ=0.25:loses (0.107/0.104)
+    ring jump_up: ρ=1.0:loses (0.398/0.051), ρ=0.75:loses (0.375/0.095), ρ=0.5:loses (0.431/0.158), ρ=0.25:loses (0.453/0.235)
+
+EXPERIMENT B — gauge pinning
+----------------------------
+The network recovers only relative veils; one global complex factor is unidentifiable without a pin.
+Theory: absolute error = relative error + gauge error.  With M well-separated references,
+Var(gauge) ≈ (r_ref + r_rel)/M.  Under a Dirichlet pin, per-tile absolute error should grow
+with effective resistance to the nearest reference; a post-hoc global α makes the leftover
+error spatially flat (it only removes the common mode).
+
+Decomposition and MSE vs M (noiseless references):
+  ring M=1:  relative MSE=7.1036e-04,  gauge MSE (post-hoc)=5.4970e-04,  rel+gauge=1.2566e-03,  measured abs (post-hoc)=1.2566e-03
+  ring M=2:  relative MSE=7.9729e-04,  gauge MSE (post-hoc)=3.0492e-04,  rel+gauge=1.0993e-03,  measured abs (post-hoc)=1.0993e-03
+  ring M=4:  relative MSE=8.5010e-04,  gauge MSE (post-hoc)=1.6380e-04,  rel+gauge=1.0111e-03,  measured abs (post-hoc)=1.0111e-03
+  ring M=8:  relative MSE=7.6698e-04,  gauge MSE (post-hoc)=8.5553e-05,  rel+gauge=8.4984e-04,  measured abs (post-hoc)=8.4984e-04
+  torus M=1:  relative MSE=7.6181e-04,  gauge MSE (post-hoc)=1.1969e-03,  rel+gauge=1.9557e-03,  measured abs (post-hoc)=1.9557e-03
+  torus M=2:  relative MSE=6.9416e-04,  gauge MSE (post-hoc)=2.3838e-04,  rel+gauge=9.2996e-04,  measured abs (post-hoc)=9.2996e-04
+  torus M=4:  relative MSE=6.5141e-04,  gauge MSE (post-hoc)=1.5387e-04,  rel+gauge=8.0303e-04,  measured abs (post-hoc)=8.0303e-04
+  torus M=8:  relative MSE=7.6117e-04,  gauge MSE (post-hoc)=5.9843e-05,  rel+gauge=8.1819e-04,  measured abs (post-hoc)=8.1819e-04
+
+Absolute MSE(κ) at noiseless refs (mean ± s.e.m.):
+  ring M=1:  rel=7.1036e-04,  free=9.4718e-02,  post-hoc=1.2566e-03,  Dirichlet=1.2566e-03,  mean-prior=5.0291e-03
+  ring M=2:  rel=7.9729e-04,  free=2.5850e-01,  post-hoc=1.0993e-03,  Dirichlet=1.2130e-03,  mean-prior=5.4041e-03
+  ring M=4:  rel=8.5010e-04,  free=5.3255e-01,  post-hoc=1.0111e-03,  Dirichlet=1.3530e-03,  mean-prior=2.1505e-02
+  ring M=8:  rel=7.6698e-04,  free=4.7819e-01,  post-hoc=8.4984e-04,  Dirichlet=1.1563e-03,  mean-prior=1.7180e-02
+  torus M=1:  rel=7.6181e-04,  free=3.3841e+00,  post-hoc=1.9557e-03,  Dirichlet=1.9557e-03,  mean-prior=1.3855e+00
+  torus M=2:  rel=6.9416e-04,  free=3.2074e+00,  post-hoc=9.2996e-04,  Dirichlet=9.4428e-04,  mean-prior=1.2624e+00
+  torus M=4:  rel=6.5141e-04,  free=3.9048e+00,  post-hoc=8.0303e-04,  Dirichlet=8.1279e-04,  mean-prior=8.8131e-01
+  torus M=8:  rel=7.6117e-04,  free=3.4409e+00,  post-hoc=8.1819e-04,  Dirichlet=7.6235e-04,  mean-prior=1.5322e+00
+
+Reference noise: how the pin degrades when the reference veil is itself noisy.
+  ring σ_ref=0.0:  M=1 post-hoc=1.2566e-03,  M=4 post-hoc=1.0111e-03
+  ring σ_ref=0.05:  M=1 post-hoc=5.9051e-03,  M=4 post-hoc=2.0959e-03
+  ring σ_ref=0.15:  M=1 post-hoc=4.8056e-02,  M=4 post-hoc=1.6622e-02
+  torus σ_ref=0.0:  M=1 post-hoc=1.9557e-03,  M=4 post-hoc=8.0303e-04
+  torus σ_ref=0.05:  M=1 post-hoc=6.8051e-03,  M=4 post-hoc=2.4918e-03
+  torus σ_ref=0.15:  M=1 post-hoc=4.5694e-02,  M=4 post-hoc=1.2782e-02
+
+Effective-resistance law (Dirichlet, noiseless refs, non-reference tiles):
+  ring M=1:  slope=-1.11e-05, intercept=1.3968e-03,  R²=0.039,  n=63
+  ring M=2:  slope=-2.599e-05, intercept=1.3950e-03,  R²=0.048,  n=62
+  ring M=4:  slope=-7.933e-05, intercept=1.6680e-03,  R²=0.075,  n=60
+  ring M=8:  slope=-0.0003021, intercept=1.7747e-03,  R²=0.144,  n=56
+  torus M=1:  slope=0.000888, intercept=1.3025e-03,  R²=0.041,  n=63
+  torus M=2:  slope=-0.0006296, intercept=1.3277e-03,  R²=0.042,  n=62
+  torus M=4:  slope=-0.001348, intercept=1.4514e-03,  R²=0.040,  n=60
+  torus M=8:  slope=-0.0006676, intercept=1.1844e-03,  R²=0.041,  n=56
+
+Faulty reference (one of M refs is offset by a 0.5 step in κ; others exact):
+  M=1 on torus:  LS pin=2.5225e-01 ± 3.7484e-03,  median-log pin=2.5225e-01 ± 3.7484e-03,  relative=7.3470e-04
+  M=2 on torus:  LS pin=9.2677e-02 ± 1.1213e-02,  median-log pin=6.6629e-02 ± 1.9105e-03,  relative=7.7245e-04
+  M=4 on torus:  LS pin=2.0016e-02 ± 2.3228e-03,  median-log pin=4.0681e-01 ± 4.0578e-01,  relative=7.3449e-04
+  M=8 on torus:  LS pin=1.0508e-02 ± 1.4002e-03,  median-log pin=8.1198e-04 ± 5.0580e-05,  relative=7.1782e-04
+
+Stale reference (pin frozen at t=0 while the veil follows the OU):
+  M=1 on torus:  late RMS fresh=0.0370, stale=0.4928, relative=0.0280
+  M=4 on torus:  late RMS fresh=0.0292, stale=0.2112, relative=0.0267
+
+RECOMMENDED GAUGE STRATEGY
+--------------------------
+Mehra AKF remains the recommended on-chip tracker (it still ties the oracle on the torus q×10 case at the overlaps tested). For the gauge: if only relative (gauge-invariant) error matters, leave the global factor free and report aligned error. If a tile needs an absolute veil, pin it. One known-good reference already removes the common-mode error; several well-spread references cut remaining gauge variance roughly as 1/M (here: ring post-hoc gauge MSE fell from about 5.5e-4 at M=1 to 8.6e-5 at M=8). Post-hoc and Dirichlet pins had similar *mean* absolute error; the predicted per-tile MSE ∝ R_eff law was not visible at 20 dB on either graph, so that spatial claim is unconfirmed here. A stale pin becomes a drifting bias and must be refreshed on the OU timescale. A single faulty reference ruins a one-ref pin; a mean/LS combination of several refs degrades more gracefully with M, while a median-log combination was unstable at M=4 in this run and only clearly recovered at M=8. A soft prior that the mean of κ is zero is only a convention, not an absolute measurement.
+
+PLAIN FAILURES AND LIMITS
+-------------------------
+- v1 g(Ξ) remains a negative control: it collapses on a q×10 jump at torus ρ=1.0, torus ρ=0.75, torus ρ=0.5, torus ρ=0.25, ring ρ=1.0, ring ρ=0.75, ring ρ=0.5, ring ρ=0.25.
+- A soft prior that the network-mean veil is zero is not a substitute for a real reference: its absolute MSE stays close to the unpinned error (the true mean of κ is not zero).
+- A single faulty reference ruins an LS/mean pin (absolute MSE=2.522e-01); with one ref there is also no median to fall back on.
+- A stale reference (frozen at t=0) lets absolute RMS grow to 0.493 vs fresh 0.037; references have to be refreshed on the OU timescale.
+- The predicted MSE ∝ R_eff law was not clearly visible on the ring either in this run; treat the slope as inconclusive.
+- On the torus at 20 dB the resistance-vs-distance law is weak: the measurement floor dominates the small R_eff of a 4-regular grid. The ring is the diagnostic graph.
+- Median-log pin was not reliably better at M=4 (MSE=4.068e-01 ± 4.058e-01 vs LS 2.002e-02); it only clearly recovered at M=8 in this run. Do not treat a four-reference median as automatically robust.
+- On the ring the formula floor with K_eff=ρK underestimates the static MSE as overlap drops (at ρ=0.75, formula=9.443e-04, measured=3.142e-03). The first-order term is no longer a pure coboundary, and chip methods that trust the formula can lose the oracle on a stationary ring. The torus and expander stay close to the formula.
+
+BACKEND, AGREEMENT, AND TIMING
+------------------------------
+Requested BACKEND=numpy, resolved=numpy, torch=2.15.0+cpu, cuda=False, device=None.
+Numeric agreement (same observations, torus N=36, ρ=1, 8 draws):
+  MSE(κ) numpy=7.405684e-04, torch-eigh=7.405684e-04, torch-iterative=1.094198e-02.
+  mean MSE of log(τ̂_torch/τ̂_numpy) after gauge align: eigh=3.708e-14 (ok),  iterative=1.002e-02 (NOT CLOSE).
+  This is a statistical / finite-precision check, not a bit-for-bit identity (torch uses complex64).
+Statistical agreement on short independent tracks: 12/12 method-cells within tolerance (PASS).
+Timing bench: N=36, walks=8, steps=40.
+  numpy   cpu       0.081s  speedup vs NumPy CPU: ×1.00
+  torch   cpu       0.079s  speedup vs NumPy CPU: ×1.03
+  This machine has no CUDA device. The torch path was smoke-tested on CPU only; GPU speedups were not measured here. On Colab Pro, set BACKEND='torch' or 'auto' after Runtime → Change runtime type → GPU.
+  No CUDA device was visible on this machine. The GPU path is only smoke-tested on CPU here. A Colab Pro GPU is required to measure a real GPU speedup at SIZE=large.
+
+Total suite wall time: 22.8s.
+

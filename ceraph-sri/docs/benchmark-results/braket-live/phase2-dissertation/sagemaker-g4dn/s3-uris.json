@@ -1,0 +1,16 @@
+{
+  "recorded_utc_prefix": "20261112T072158Z",
+  "bucket": "amazon-braket-sri-results-1",
+  "prefix": "sri-braket/phase2-dissertation/results/20261112T072158Z",
+  "uris": {
+    "telemetry.json": "s3://amazon-braket-sri-results-1/sri-braket/phase2-dissertation/results/20261112T072158Z/telemetry.json",
+    "pasteback.json": "s3://amazon-braket-sri-results-1/sri-braket/phase2-dissertation/results/20261112T072158Z/pasteback.json",
+    "phase2_summary.json": "s3://amazon-braket-sri-results-1/sri-braket/phase2-dissertation/results/20261112T072158Z/phase2_summary.json",
+    "PATENT_ANNEX_PHASE2_ENABLEMENT.md": "s3://amazon-braket-sri-results-1/sri-braket/phase2-dissertation/results/20261112T072158Z/PATENT_ANNEX_PHASE2_ENABLEMENT.md",
+    "PHASE2_DISSERTATION_SRI_BRAKET_AFFIRMED.md": "s3://amazon-braket-sri-results-1/sri-braket/phase2-dissertation/results/20261112T072158Z/PHASE2_DISSERTATION_SRI_BRAKET_AFFIRMED.md",
+    "hist3d_throughput_retention.png": "s3://amazon-braket-sri-results-1/sri-braket/phase2-dissertation/results/20261112T072158Z/hist3d_throughput_retention.png",
+    "hist3d_cancellation_residuals.png": "s3://amazon-braket-sri-results-1/sri-braket/phase2-dissertation/results/20261112T072158Z/hist3d_cancellation_residuals.png",
+    "hist3d_phase2_advantage.png": "s3://amazon-braket-sri-results-1/sri-braket/phase2-dissertation/results/20261112T072158Z/hist3d_phase2_advantage.png",
+    "hist3d_safety_tax_vs_inprocess.png": "s3://amazon-braket-sri-results-1/sri-braket/phase2-dissertation/results/20261112T072158Z/hist3d_safety_tax_vs_inprocess.png"
+  }
+}

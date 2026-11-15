@@ -1,0 +1,58 @@
+[
+  {
+    "nodes": 10240,
+    "median_ms": 0.00554,
+    "min_ms": 0.0055,
+    "effective_gddr7_bandwidth_gbps": 22.2,
+    "gddr7_peak_utilization_pct": 1.39,
+    "pre_variance": 5.8799,
+    "post_variance": 0.0,
+    "variance_reduction_pct": 100.0,
+    "mean_xi": 0.0,
+    "julia_subtle_xi": 1.0,
+    "julia_machine_dharma_abort": true,
+    "jax_triadic_omega_integral": 8.0806
+  },
+  {
+    "nodes": 1048576,
+    "median_ms": 0.01238,
+    "min_ms": 0.01229,
+    "effective_gddr7_bandwidth_gbps": 1016.06,
+    "gddr7_peak_utilization_pct": 63.62,
+    "pre_variance": 6.0062,
+    "post_variance": 0.0,
+    "variance_reduction_pct": 100.0,
+    "mean_xi": 0.0,
+    "julia_subtle_xi": 1.0,
+    "julia_machine_dharma_abort": true,
+    "jax_triadic_omega_integral": 8.0806
+  },
+  {
+    "nodes": 10485760,
+    "median_ms": 0.09213,
+    "min_ms": 0.09011,
+    "effective_gddr7_bandwidth_gbps": 1365.81,
+    "gddr7_peak_utilization_pct": 85.52,
+    "pre_variance": 6.0082,
+    "post_variance": 0.0,
+    "variance_reduction_pct": 100.0,
+    "mean_xi": 0.0,
+    "julia_subtle_xi": 1.0,
+    "julia_machine_dharma_abort": true,
+    "jax_triadic_omega_integral": 8.0806
+  },
+  {
+    "nodes": 50000000,
+    "median_ms": 0.40896,
+    "min_ms": 0.40694,
+    "effective_gddr7_bandwidth_gbps": 1467.14,
+    "gddr7_peak_utilization_pct": 91.87,
+    "pre_variance": 6.011,
+    "post_variance": 0.0,
+    "variance_reduction_pct": 100.0,
+    "mean_xi": 0.0,
+    "julia_subtle_xi": 1.0,
+    "julia_machine_dharma_abort": true,
+    "jax_triadic_omega_integral": 8.0806
+  }
+]

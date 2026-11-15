@@ -1,0 +1,515 @@
+{
+  "experiment": "phase3_vertical_slice_cv_sensing",
+  "spec": "docs/phase3-vertical-slice-spec.md",
+  "preregistered": {
+    "seeds": [
+      201,
+      202,
+      203,
+      204,
+      205
+    ],
+    "shots": 20000,
+    "noise_grid": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "signal_variance": 1.0,
+    "efficiency": 0.8,
+    "coupling": 1.0,
+    "signal_r": 0.0,
+    "reference_r": 0.7,
+    "pass_relative_reduction_vs_single": 0.08,
+    "algebra_rtol": 1e-10
+  },
+  "decision": {
+    "verdict": "pass",
+    "reason": "All gates held; mean relative reduction vs single_mode = 0.1205 >= 0.08.",
+    "gates": {
+      "observable_only": true,
+      "algebra_matches_mmse": true,
+      "sample_mse_within_5sigma": true,
+      "mean_relative_reduction_vs_single": 0.12050825023901864,
+      "pass_threshold": 0.08
+    }
+  },
+  "by_noise_variance": {
+    "0.5": {
+      "mean_sri_mse": 0.5989260140828178,
+      "mean_single_mse": 0.6361088676424538,
+      "mean_relative_reduction_vs_single": 0.05846457944065646,
+      "n_cells": 5
+    },
+    "1.0": {
+      "mean_sri_mse": 0.6115334810216504,
+      "mean_single_mse": 0.6918332606351031,
+      "mean_relative_reduction_vs_single": 0.11608393858809093,
+      "n_cells": 5
+    },
+    "2.0": {
+      "mean_sri_mse": 0.6209954195600748,
+      "mean_single_mse": 0.7637938242359932,
+      "mean_relative_reduction_vs_single": 0.1869762326883085,
+      "n_cells": 5
+    }
+  },
+  "aggregate": {
+    "n_cells": 15,
+    "mean_sri_mse": 0.6104849715548476,
+    "mean_plain_mmse_mse": 0.6104849715548476,
+    "mean_single_mse": 0.6972453175045168,
+    "mean_moving_average_mse": 1.1026388562228093,
+    "mean_median_mse": 1.252740060544287,
+    "mean_oracle_mse": 4.2082067564664035e-33,
+    "mean_relative_reduction_vs_single": 0.12050825023901864,
+    "mean_algebra_max_abs_diff": 4.440892098500626e-16,
+    "wall_seconds_total": 2.7577262300037546,
+    "mean_samples_per_second": 88782694.61884014
+  },
+  "cells": [
+    {
+      "seed": 201,
+      "noise_variance": 0.5,
+      "shots": 20000,
+      "sri_sample_mse": 0.6016997462140975,
+      "plain_mmse_sample_mse": 0.6016997462140975,
+      "analytic_mmse": 0.5998633670942889,
+      "sample_standard_error": 0.006003789470976454,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.6381271594704067,
+      "moving_average_mse": 1.029263160276697,
+      "median_filter_mse": 1.1472443908803556,
+      "oracle_paired_mse": 2.3350618295856e-33,
+      "relative_reduction_vs_single": 0.057084881462404646,
+      "wall_seconds_estimators": 0.00043475399434100837,
+      "samples_per_second": 46003027.59797667,
+      "weights": [
+        0.4473663557325246,
+        -0.22444697902909586
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 202,
+      "noise_variance": 0.5,
+      "shots": 20000,
+      "sri_sample_mse": 0.6033471947934077,
+      "plain_mmse_sample_mse": 0.6033471947934077,
+      "analytic_mmse": 0.5998633670942889,
+      "sample_standard_error": 0.006019027303758846,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.6368398403399961,
+      "moving_average_mse": 1.0594448465576156,
+      "median_filter_mse": 1.1785364373880376,
+      "oracle_paired_mse": 2.4441889061617652e-33,
+      "relative_reduction_vs_single": 0.05259194451262239,
+      "wall_seconds_estimators": 0.00024611099797766656,
+      "samples_per_second": 81264145.70800655,
+      "weights": [
+        0.4473663557325246,
+        -0.22444697902909586
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 203,
+      "noise_variance": 0.5,
+      "shots": 20000,
+      "sri_sample_mse": 0.5905468866366315,
+      "plain_mmse_sample_mse": 0.5905468866366314,
+      "analytic_mmse": 0.5998633670942889,
+      "sample_standard_error": 0.005846864393862221,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.631171421551648,
+      "moving_average_mse": 1.037185199667466,
+      "median_filter_mse": 1.1588059447786299,
+      "oracle_paired_mse": 2.2768528755768374e-33,
+      "relative_reduction_vs_single": 0.06436371091572346,
+      "wall_seconds_estimators": 0.00022318899573292583,
+      "samples_per_second": 89610152.75113544,
+      "weights": [
+        0.4473663557325246,
+        -0.22444697902909586
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 204,
+      "noise_variance": 0.5,
+      "shots": 20000,
+      "sri_sample_mse": 0.5955001317592205,
+      "plain_mmse_sample_mse": 0.5955001317592205,
+      "analytic_mmse": 0.5998633670942889,
+      "sample_standard_error": 0.00592509730736677,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.6329479889196101,
+      "moving_average_mse": 1.0397782950698968,
+      "median_filter_mse": 1.1622834567943736,
+      "oracle_paired_mse": 2.3448952452380263e-33,
+      "relative_reduction_vs_single": 0.05916419329226419,
+      "wall_seconds_estimators": 0.00024137300351867452,
+      "samples_per_second": 82859307.82831992,
+      "weights": [
+        0.4473663557325246,
+        -0.22444697902909586
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 205,
+      "noise_variance": 0.5,
+      "shots": 20000,
+      "sri_sample_mse": 0.6035361110107316,
+      "plain_mmse_sample_mse": 0.6035361110107316,
+      "analytic_mmse": 0.5998633670942889,
+      "sample_standard_error": 0.006015171936634558,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.6414579279306081,
+      "moving_average_mse": 1.0487672177182008,
+      "median_filter_mse": 1.1719651567974727,
+      "oracle_paired_mse": 2.3903219223786066e-33,
+      "relative_reduction_vs_single": 0.05911816702026762,
+      "wall_seconds_estimators": 0.0002195449997088872,
+      "samples_per_second": 91097497.21706095,
+      "weights": [
+        0.4473663557325246,
+        -0.22444697902909586
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 201,
+      "noise_variance": 1.0,
+      "shots": 20000,
+      "sri_sample_mse": 0.6139913197456884,
+      "plain_mmse_sample_mse": 0.6139913197456884,
+      "analytic_mmse": 0.6126759441137769,
+      "sample_standard_error": 0.006131129258565627,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.6922730560005805,
+      "moving_average_mse": 1.0734036143695216,
+      "median_filter_mse": 1.2121839477700065,
+      "oracle_paired_mse": 3.827615707694728e-33,
+      "relative_reduction_vs_single": 0.11307927641607718,
+      "wall_seconds_estimators": 0.00023989799956325442,
+      "samples_per_second": 83368765.21025994,
+      "weights": [
+        0.43304145914126124,
+        -0.28935075345920414
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 202,
+      "noise_variance": 1.0,
+      "shots": 20000,
+      "sri_sample_mse": 0.6176121665366718,
+      "plain_mmse_sample_mse": 0.6176121665366718,
+      "analytic_mmse": 0.6126759441137769,
+      "sample_standard_error": 0.006154129198264711,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.6942300597954258,
+      "moving_average_mse": 1.1042105919369456,
+      "median_filter_mse": 1.2465293118190253,
+      "oracle_paired_mse": 3.877435596000721e-33,
+      "relative_reduction_vs_single": 0.11036383714259157,
+      "wall_seconds_estimators": 0.00022235399956116453,
+      "samples_per_second": 89946661.80717139,
+      "weights": [
+        0.43304145914126124,
+        -0.28935075345920414
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 203,
+      "noise_variance": 1.0,
+      "shots": 20000,
+      "sri_sample_mse": 0.6019093696736723,
+      "plain_mmse_sample_mse": 0.6019093696736723,
+      "analytic_mmse": 0.6126759441137769,
+      "sample_standard_error": 0.0059566667150717425,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.6862591354581489,
+      "moving_average_mse": 1.0817410993880014,
+      "median_filter_mse": 1.2275694912297894,
+      "oracle_paired_mse": 3.935319675095488e-33,
+      "relative_reduction_vs_single": 0.12291241227435823,
+      "wall_seconds_estimators": 0.00021727100101998076,
+      "samples_per_second": 92050940.55861028,
+      "weights": [
+        0.43304145914126124,
+        -0.28935075345920414
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 204,
+      "noise_variance": 1.0,
+      "shots": 20000,
+      "sri_sample_mse": 0.6081830572844247,
+      "plain_mmse_sample_mse": 0.6081830572844247,
+      "analytic_mmse": 0.6126759441137769,
+      "sample_standard_error": 0.006050778741542272,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.6892097379493948,
+      "moving_average_mse": 1.0867696447976538,
+      "median_filter_mse": 1.2343424205347813,
+      "oracle_paired_mse": 3.869038396976773e-33,
+      "relative_reduction_vs_single": 0.11756461959758246,
+      "wall_seconds_estimators": 0.0002233339982922189,
+      "samples_per_second": 89551972.17143457,
+      "weights": [
+        0.43304145914126124,
+        -0.28935075345920414
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 205,
+      "noise_variance": 1.0,
+      "shots": 20000,
+      "sri_sample_mse": 0.6159714918677947,
+      "plain_mmse_sample_mse": 0.6159714918677945,
+      "analytic_mmse": 0.6126759441137769,
+      "sample_standard_error": 0.0061349326697007775,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.6971943139719656,
+      "moving_average_mse": 1.0926583702366173,
+      "median_filter_mse": 1.2345351705322118,
+      "oracle_paired_mse": 3.7595589199226316e-33,
+      "relative_reduction_vs_single": 0.11649954750984526,
+      "wall_seconds_estimators": 0.0002036480000242591,
+      "samples_per_second": 98208673.77837026,
+      "weights": [
+        0.43304145914126124,
+        -0.28935075345920414
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 201,
+      "noise_variance": 2.0,
+      "shots": 20000,
+      "sri_sample_mse": 0.6233358078596165,
+      "plain_mmse_sample_mse": 0.6233358078596165,
+      "analytic_mmse": 0.622330693043332,
+      "sample_standard_error": 0.006229237952653121,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.76230635691487,
+      "moving_average_mse": 1.1616583647046217,
+      "median_filter_mse": 1.34402635122307,
+      "oracle_paired_mse": 6.365609160057946e-33,
+      "relative_reduction_vs_single": 0.1823027550467783,
+      "wall_seconds_estimators": 0.00020395900355651975,
+      "samples_per_second": 98058921.89730048,
+      "weights": [
+        0.4222471216851718,
+        -0.3382581392060427
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 202,
+      "noise_variance": 2.0,
+      "shots": 20000,
+      "sri_sample_mse": 0.6284970430458888,
+      "plain_mmse_sample_mse": 0.6284970430458888,
+      "analytic_mmse": 0.622330693043332,
+      "sample_standard_error": 0.006257594881633292,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.7691128188664548,
+      "moving_average_mse": 1.1942990330644458,
+      "median_filter_mse": 1.3819678733686913,
+      "oracle_paired_mse": 6.586091343108976e-33,
+      "relative_reduction_vs_single": 0.18282854266791493,
+      "wall_seconds_estimators": 0.00020665599731728435,
+      "samples_per_second": 96779189.85962686,
+      "weights": [
+        0.4222471216851718,
+        -0.3382581392060427
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 203,
+      "noise_variance": 2.0,
+      "shots": 20000,
+      "sri_sample_mse": 0.6103896420816661,
+      "plain_mmse_sample_mse": 0.6103896420816661,
+      "analytic_mmse": 0.622330693043332,
+      "sample_standard_error": 0.006038655406032796,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.7572367536317197,
+      "moving_average_mse": 1.1701294069550618,
+      "median_filter_mse": 1.3634981385781801,
+      "oracle_paired_mse": 6.273177521796181e-33,
+      "relative_reduction_vs_single": 0.19392496579936525,
+      "wall_seconds_estimators": 0.00020442699315026402,
+      "samples_per_second": 97834438.06415038,
+      "weights": [
+        0.4222471216851718,
+        -0.3382581392060427
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 204,
+      "noise_variance": 2.0,
+      "shots": 20000,
+      "sri_sample_mse": 0.6174785686690714,
+      "plain_mmse_sample_mse": 0.6174785686690714,
+      "analytic_mmse": 0.622330693043332,
+      "sample_standard_error": 0.0061455191986554275,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.7610865771460501,
+      "moving_average_mse": 1.1796747845572517,
+      "median_filter_mse": 1.3646256537585484,
+      "oracle_paired_mse": 6.466963958618926e-33,
+      "relative_reduction_vs_single": 0.1886881371834006,
+      "wall_seconds_estimators": 0.00020791999850189313,
+      "samples_per_second": 96190843.3248565,
+      "weights": [
+        0.4222471216851718,
+        -0.3382581392060427
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    },
+    {
+      "seed": 205,
+      "noise_variance": 2.0,
+      "shots": 20000,
+      "sri_sample_mse": 0.625276036144131,
+      "plain_mmse_sample_mse": 0.625276036144131,
+      "analytic_mmse": 0.622330693043332,
+      "sample_standard_error": 0.006223372056088559,
+      "mmse_within_5sigma": true,
+      "algebra_max_abs_diff": 4.440892098500626e-16,
+      "algebra_ok": true,
+      "single_mode_mse": 0.7692266146208716,
+      "moving_average_mse": 1.1805992140421406,
+      "median_filter_mse": 1.3629871627111316,
+      "oracle_paired_mse": 6.370970288782841e-33,
+      "relative_reduction_vs_single": 0.18713676274408353,
+      "wall_seconds_estimators": 0.00020219200087012723,
+      "samples_per_second": 98915881.50832178,
+      "weights": [
+        0.4222471216851718,
+        -0.3382581392060427
+      ],
+      "observable_only": true,
+      "notes": "signal/noise used only for scoring and oracle; not passed to SRI/MMSE/single/MA/median"
+    }
+  ],
+  "conjectures": [
+    {
+      "conjecture_id": "C1",
+      "statement": "Yoga\u2013Buddhi with known \u03be equals the MMSE estimator only when the antithesis is physically available; the observable-only Gaussian MMSE from (y_A, y_B) is the correct physical replacement.",
+      "pass_criterion": "Oracle paired projection MSE is ~0 when \u03be is supplied; observable-only MMSE matches analytic Wiener MSE within 5\u03c3 sampling error and never receives s or n at inference.",
+      "status": "open",
+      "artifact_paths": [],
+      "notes": ""
+    },
+    {
+      "conjecture_id": "C2",
+      "statement": "Under the protocol Gaussian model, squeezed-reference MSE ordering matches the closed form across independent seeds.",
+      "pass_criterion": "For default (Vs=Vn=k=1, \u03b7=0.8, r=0.7), sample ordering agrees with analytic ordering on \u22653 seeds; |analytic-sample| \u2264 5\u03c3 SE.",
+      "status": "open",
+      "artifact_paths": [],
+      "notes": ""
+    },
+    {
+      "conjecture_id": "C3",
+      "statement": "An axiomatic stability coefficient \u039e_SNR (or purity/Fisher proxy) remains in (0, 1] on all foundation sweep points; legacy Equation-11 \u039e need not.",
+      "pass_criterion": "Over the Week-2 spike grid, min(\u039e_SNR) > 0 and max(\u039e_SNR) \u2264 1; legacy \u039e is reported without clipping.",
+      "status": "open",
+      "artifact_paths": [],
+      "notes": ""
+    },
+    {
+      "conjecture_id": "C4",
+      "statement": "Circuit-B Branch W (worked-example thresholding) yields a macro marker that does not collapse during the noise spike the way legacy \u039e does; damping corresponds to a CPTP attenuator on covariances.",
+      "pass_criterion": "Branch W keeps \u039e_SNR in (0,1] through spikes; attenuator_channel preserves physical covariances; if neither branch satisfies a stated contraction inequality, status becomes refuted/open with counterexamples.",
+      "status": "open",
+      "artifact_paths": [],
+      "notes": ""
+    },
+    {
+      "conjecture_id": "C5",
+      "statement": "Lemma Z1 (Observable Antithesis, P1): under the Gaussian dual-mode model with known parameters, there exists an observable map \u0108_S(y_A,y_B)=(2w_A-1)y_A+2w_B y_B such that \u03a5\u0302=\u00bd(y_A+\u0108_S) equals the MMSE estimator \u015d. Involution \u0108_S\u00b2=I is required only in the latent (v,\u03be) chart (oracle path), not on raw Y.",
+      "pass_criterion": "Algebraic identity \u03a5\u0302\u2261\u015d in code on a fixed seed grid (relative tolerance 1e-10); sample MSE matches analytic MMSE within the same 5\u03c3 rule as C1; estimator never receives s or n. Status stays open until a runner records the result \u2014 unit tests may verify the algebra without promoting the registry artifact.",
+      "status": "confirmed",
+      "artifact_paths": [
+        "docs/benchmark-results/phase3-vertical-slice/phase3_summary.json"
+      ],
+      "notes": "Phase 3 CPU runner: Lemma Z1 algebra + 5\u03c3 sample MSE + observable-only. P3 practical-advantage verdict=pass (separate from C5)."
+    }
+  ],
+  "limitations": [
+    "Classical Monte Carlo of an ideal Gaussian optical sensing model.",
+    "Wiener weights use known model parameters (parameter oracle), not blind calibration.",
+    "single_mode_wiener sees only y_A; SRI/MMSE also use y_B \u2014 dual-mode resource note applies.",
+    "observable_yoga_buddhi \u2261 estimate_signal by construction; packaging is not an MSE advantage over Wiener.",
+    "Oracle paired projection is non-deployable.",
+    "Does not establish O(1), quantum advantage, Landauer claims, LLM reliability, or customer demand."
+  ],
+  "unsupported_claims": [
+    "constant-time/O(1)",
+    "quantum advantage or hardware QPU execution",
+    "Landauer circumvention",
+    "general AI reliability / hallucination prevention",
+    "customer value / startup traction",
+    "Theorem Zero / A5 composition",
+    "beating Wiener/MMSE (algebraically identical)"
+  ],
+  "provenance": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "platform": "Linux-6.12.113+-x86_64-with-glibc2.39",
+    "script_sha256": "639ebf8b43d5a0f58d60f75e5e64d55320711fadf989d9d802d46116e5ebc6f1",
+    "spec_sha256": "bcef4fd87748e66dce54aa285c69cc394117a04ba92120f11844621381347488"
+  }
+}

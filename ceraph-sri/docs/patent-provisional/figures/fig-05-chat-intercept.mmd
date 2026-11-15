@@ -1,0 +1,11 @@
+flowchart LR
+  U500["500 User query"] --> C502["502 Serving API"]
+  C502 --> C504["504 Model forward pass"]
+  C504 --> C506["506 SRI intercept"]
+  C506 --> C508["508 Optional dual-measure clean"]
+  C508 --> C510["510 Stability rescale"]
+  C510 --> C512["512 Softmax / sample"]
+  C512 --> C514{"514 More tokens?"}
+  C514 -->|Yes| C504
+  C514 -->|No| C516["516 Assemble text"]
+  C516 --> U520["520 Stream to user"]

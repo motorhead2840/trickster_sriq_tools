@@ -1,0 +1,13 @@
+{
+  "test_tier": "1-GPU Single-Card Blackwell Roofline",
+  "timestamp_utc": "2026-11-14T21:49:47Z",
+  "gpu_count": 1,
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "vram_gb": 94.97,
+  "cuda_version": "13.2",
+  "triton_version": "3.9.0",
+  "jax_devices": [
+    "cuda:0"
+  ],
+  "julia_subtle_layer": true
+}

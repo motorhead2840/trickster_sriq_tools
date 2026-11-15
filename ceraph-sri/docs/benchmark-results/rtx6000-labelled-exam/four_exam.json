@@ -1,0 +1,980 @@
+{
+  "suite": "labelled-exam",
+  "machine": "four-board",
+  "model_present": false,
+  "passed": 16,
+  "asked": 17,
+  "misses": [
+    "V1"
+  ],
+  "burn": {
+    "elapsed_s": 300.0,
+    "jobs": 164748,
+    "jobs_per_s": 549.1516376799458,
+    "length": 16777216,
+    "passes": 40,
+    "queued_ms": 29.510108000067703,
+    "together_ms": 8.282783000026939
+  },
+  "boards": [
+    {
+      "device": 0,
+      "finite": true,
+      "mean_power_w": 279.24365,
+      "peak_power_w": 300.458,
+      "peak_temp_c": 48.0,
+      "min_clock_mhz": 2325.0,
+      "max_clock_mhz": 2422.0,
+      "mean_occupancy_pct": 99.9
+    },
+    {
+      "device": 1,
+      "finite": true,
+      "mean_power_w": 283.34055,
+      "peak_power_w": 303.782,
+      "peak_temp_c": 47.0,
+      "min_clock_mhz": 2280.0,
+      "max_clock_mhz": 2422.0,
+      "mean_occupancy_pct": 94.95
+    },
+    {
+      "device": 2,
+      "finite": true,
+      "mean_power_w": 279.0838,
+      "peak_power_w": 304.733,
+      "peak_temp_c": 48.0,
+      "min_clock_mhz": 2332.0,
+      "max_clock_mhz": 2422.0,
+      "mean_occupancy_pct": 94.75
+    },
+    {
+      "device": 3,
+      "finite": true,
+      "mean_power_w": 276.88829999999996,
+      "peak_power_w": 304.319,
+      "peak_temp_c": 47.0,
+      "min_clock_mhz": 2355.0,
+      "max_clock_mhz": 2422.0,
+      "mean_occupancy_pct": 94.95
+    }
+  ],
+  "series": {
+    "name": "Daily minimum temperature, Melbourne",
+    "n": 3650,
+    "first_c": 20.7,
+    "url": "https://raw.githubusercontent.com/jbrownlee/Datasets/master/daily-min-temperatures.csv"
+  },
+  "exam": [
+    {
+      "id": "B1",
+      "label": 128,
+      "python": 128,
+      "julia": 128,
+      "passed": true
+    },
+    {
+      "id": "B2",
+      "label": 256,
+      "python": 256,
+      "julia": 256,
+      "passed": true
+    },
+    {
+      "id": "B3",
+      "label": 512,
+      "python": 512,
+      "julia": 512,
+      "passed": true
+    },
+    {
+      "id": "B4",
+      "label": 1024,
+      "python": 1024,
+      "julia": 1024,
+      "passed": true
+    },
+    {
+      "id": "G1",
+      "label": false,
+      "python": false,
+      "julia": false,
+      "passed": true
+    },
+    {
+      "id": "G2",
+      "label": true,
+      "python": true,
+      "julia": true,
+      "passed": true
+    },
+    {
+      "id": "G3",
+      "label": true,
+      "python": true,
+      "julia": true,
+      "passed": true
+    },
+    {
+      "id": "S1",
+      "passed": true
+    },
+    {
+      "id": "J1",
+      "passed": true
+    },
+    {
+      "id": "R0",
+      "passed": true
+    },
+    {
+      "id": "F0",
+      "passed": true
+    },
+    {
+      "id": "F1",
+      "passed": true
+    },
+    {
+      "id": "F2",
+      "passed": true
+    },
+    {
+      "id": "V1",
+      "passed": false,
+      "remaining": [
+        0.5149548649787903,
+        0.5176690816879272,
+        0.5095068216323853
+      ]
+    },
+    {
+      "id": "D1",
+      "got": 0.0,
+      "passed": true
+    },
+    {
+      "id": "C1",
+      "got": 1.2159347534179688e-05,
+      "passed": true
+    },
+    {
+      "id": "Q1",
+      "together_ms": 8.282783000026939,
+      "queued_ms": 29.510108000067703,
+      "passed": true
+    }
+  ],
+  "synthetic_seed_11": {
+    "offset_0": {
+      "identity": 6.909578800201416,
+      "moving_average": 1.675011157989502,
+      "raw": 0.7735443115234375,
+      "flux": 1.472352147102356,
+      "flux_variance_remaining": 0.11660587787628174
+    },
+    "offset_5": {
+      "identity": 6.909578800201416,
+      "moving_average": 1.675011157989502,
+      "raw": 18.170852661132812,
+      "flux": 1.4723522663116455,
+      "flux_variance_remaining": 0.11660587787628174
+    }
+  },
+  "melbourne": [
+    {
+      "seed": 11,
+      "offset_0": {
+        "identity": 7.23558235168457,
+        "moving_average": 5.8973565101623535,
+        "raw": 135.7728271484375,
+        "flux": 5.818975925445557,
+        "flux_variance_remaining": 0.5149548649787903
+      },
+      "offset_5": {
+        "identity": 7.23558235168457,
+        "moving_average": 5.8973565101623535,
+        "raw": 266.6606750488281,
+        "flux": 5.818975925445557,
+        "flux_variance_remaining": 0.5149548053741455
+      }
+    },
+    {
+      "seed": 22,
+      "offset_0": {
+        "identity": 6.774043083190918,
+        "moving_average": 5.954981327056885,
+        "raw": 134.71810913085938,
+        "flux": 5.874037265777588,
+        "flux_variance_remaining": 0.5176690816879272
+      },
+      "offset_5": {
+        "identity": 6.774043083190918,
+        "moving_average": 5.954981327056885,
+        "raw": 264.7745056152344,
+        "flux": 5.874037265777588,
+        "flux_variance_remaining": 0.5176690816879272
+      }
+    },
+    {
+      "seed": 33,
+      "offset_0": {
+        "identity": 6.7373247146606445,
+        "moving_average": 5.893266677856445,
+        "raw": 135.3837432861328,
+        "flux": 5.819851875305176,
+        "flux_variance_remaining": 0.5095068216323853
+      },
+      "offset_5": {
+        "identity": 6.7373247146606445,
+        "moving_average": 5.893266677856445,
+        "raw": 266.1190185546875,
+        "flux": 5.819851875305176,
+        "flux_variance_remaining": 0.5095068216323853
+      }
+    }
+  ],
+  "certify_boards": [
+    {
+      "device": 0,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "sign_error": 0.0,
+      "jvp_error": 0.0,
+      "triton_error": 4.76837158203125e-07,
+      "block": 256
+    },
+    {
+      "device": 1,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "sign_error": 0.0,
+      "jvp_error": 0.0,
+      "triton_error": 4.76837158203125e-07,
+      "block": 256
+    },
+    {
+      "device": 2,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "sign_error": 0.0,
+      "jvp_error": 0.0,
+      "triton_error": 4.76837158203125e-07,
+      "block": 256
+    },
+    {
+      "device": 3,
+      "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+      "sign_error": 0.0,
+      "jvp_error": 0.0,
+      "triton_error": 4.76837158203125e-07,
+      "block": 256
+    }
+  ],
+  "latency": [
+    {
+      "length": 256,
+      "block": 256,
+      "triton_ms": 0.017823999747633934,
+      "moving_avg_ms": 0.009600000455975533
+    },
+    {
+      "length": 8192,
+      "block": 256,
+      "triton_ms": 0.012608000077307224,
+      "moving_avg_ms": 0.009535999968647957
+    },
+    {
+      "length": 10000,
+      "block": 256,
+      "triton_ms": 0.012543999589979649,
+      "moving_avg_ms": 0.0098879998549819
+    },
+    {
+      "length": 65536,
+      "block": 256,
+      "triton_ms": 0.012191999703645706,
+      "moving_avg_ms": 0.009216000325977802
+    },
+    {
+      "length": 262144,
+      "block": 256,
+      "triton_ms": 0.012223999947309494,
+      "moving_avg_ms": 0.00940799992531538
+    },
+    {
+      "length": 1048576,
+      "block": 256,
+      "triton_ms": 0.012703999876976013,
+      "moving_avg_ms": 0.01500799972563982
+    }
+  ],
+  "roofline": [
+    {
+      "nodes": 10240,
+      "median_ms": 0.014592000283300877,
+      "GBps_12byte": 8.421052468085831,
+      "GBps_16byte": 11.228069957447778,
+      "percent_of_1597_16byte": 0.7030726335283518
+    },
+    {
+      "nodes": 1048576,
+      "median_ms": 0.013088000006973743,
+      "GBps_12byte": 961.4083124461633,
+      "GBps_16byte": 1281.8777499282178,
+      "percent_of_1597_16byte": 80.2678616110343
+    },
+    {
+      "nodes": 10485760,
+      "median_ms": 0.12726399302482605,
+      "GBps_12byte": 988.7252239166648,
+      "GBps_16byte": 1318.3002985555531,
+      "percent_of_1597_16byte": 82.54854718569524
+    },
+    {
+      "nodes": 50000000,
+      "median_ms": 0.5491520166397095,
+      "GBps_12byte": 1092.5936385910627,
+      "GBps_16byte": 1456.791518121417,
+      "percent_of_1597_16byte": 91.22050833571804
+    }
+  ],
+  "burn_samples": [
+    {
+      "elapsed_s": 0.0,
+      "jobs": 4,
+      "mean_power_w": 95.15725,
+      "peak_temp_c": 35.0,
+      "boards": [
+        {
+          "power_w": 102.744,
+          "temp_c": 35.0,
+          "clock_mhz": 2340.0,
+          "occupancy_pct": 98.0
+        },
+        {
+          "power_w": 92.919,
+          "temp_c": 32.0,
+          "clock_mhz": 2295.0,
+          "occupancy_pct": 0.0
+        },
+        {
+          "power_w": 91.604,
+          "temp_c": 34.0,
+          "clock_mhz": 2340.0,
+          "occupancy_pct": 0.0
+        },
+        {
+          "power_w": 93.362,
+          "temp_c": 33.0,
+          "clock_mhz": 2362.0,
+          "occupancy_pct": 0.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 15.0,
+      "jobs": 8328,
+      "mean_power_w": 302.66425,
+      "peak_temp_c": 43.0,
+      "boards": [
+        {
+          "power_w": 300.458,
+          "temp_c": 43.0,
+          "clock_mhz": 2325.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 301.147,
+          "temp_c": 41.0,
+          "clock_mhz": 2280.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 304.733,
+          "temp_c": 42.0,
+          "clock_mhz": 2332.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 304.319,
+          "temp_c": 42.0,
+          "clock_mhz": 2355.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 30.0,
+      "jobs": 16560,
+      "mean_power_w": 296.708,
+      "peak_temp_c": 45.0,
+      "boards": [
+        {
+          "power_w": 295.072,
+          "temp_c": 45.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 303.782,
+          "temp_c": 44.0,
+          "clock_mhz": 2280.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 295.085,
+          "temp_c": 45.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 292.893,
+          "temp_c": 44.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 45.0,
+      "jobs": 24792,
+      "mean_power_w": 288.79875,
+      "peak_temp_c": 46.0,
+      "boards": [
+        {
+          "power_w": 287.125,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 296.357,
+          "temp_c": 45.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 285.97,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "power_w": 285.743,
+          "temp_c": 45.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 60.0,
+      "jobs": 33024,
+      "mean_power_w": 287.2475,
+      "peak_temp_c": 47.0,
+      "boards": [
+        {
+          "power_w": 287.841,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 290.646,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 286.703,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 283.8,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 75.0,
+      "jobs": 41260,
+      "mean_power_w": 287.80725,
+      "peak_temp_c": 47.0,
+      "boards": [
+        {
+          "power_w": 288.372,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 291.349,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 287.131,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "power_w": 284.377,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 90.0,
+      "jobs": 49496,
+      "mean_power_w": 288.13075000000003,
+      "peak_temp_c": 47.0,
+      "boards": [
+        {
+          "power_w": 288.677,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 291.746,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "power_w": 287.487,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 284.613,
+          "temp_c": 46.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 105.0,
+      "jobs": 57732,
+      "mean_power_w": 286.93925,
+      "peak_temp_c": 47.0,
+      "boards": [
+        {
+          "power_w": 283.35,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 291.865,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 287.667,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 284.875,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 120.0,
+      "jobs": 65968,
+      "mean_power_w": 288.3215,
+      "peak_temp_c": 48.0,
+      "boards": [
+        {
+          "power_w": 288.499,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 291.966,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 287.736,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "power_w": 285.085,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 135.0,
+      "jobs": 74204,
+      "mean_power_w": 288.56625,
+      "peak_temp_c": 48.0,
+      "boards": [
+        {
+          "power_w": 289.193,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 292.143,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 287.793,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 285.136,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 150.0,
+      "jobs": 82440,
+      "mean_power_w": 287.008,
+      "peak_temp_c": 48.0,
+      "boards": [
+        {
+          "power_w": 282.862,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 292.158,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 287.842,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "power_w": 285.17,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 165.0,
+      "jobs": 90676,
+      "mean_power_w": 288.27450000000005,
+      "peak_temp_c": 48.0,
+      "boards": [
+        {
+          "power_w": 287.874,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 292.151,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 287.93,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 285.143,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 180.1,
+      "jobs": 98912,
+      "mean_power_w": 288.73475,
+      "peak_temp_c": 48.0,
+      "boards": [
+        {
+          "power_w": 289.393,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 292.267,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 287.915,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 285.364,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 195.1,
+      "jobs": 107148,
+      "mean_power_w": 288.731,
+      "peak_temp_c": 48.0,
+      "boards": [
+        {
+          "power_w": 289.366,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 292.199,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 287.93,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 99.0
+        },
+        {
+          "power_w": 285.429,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 210.1,
+      "jobs": 115384,
+      "mean_power_w": 287.23225,
+      "peak_temp_c": 48.0,
+      "boards": [
+        {
+          "power_w": 283.321,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 292.273,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 287.966,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 285.369,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 225.1,
+      "jobs": 123620,
+      "mean_power_w": 288.58425,
+      "peak_temp_c": 48.0,
+      "boards": [
+        {
+          "power_w": 288.502,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 292.376,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 288.011,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 285.448,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 240.1,
+      "jobs": 131856,
+      "mean_power_w": 288.807,
+      "peak_temp_c": 48.0,
+      "boards": [
+        {
+          "power_w": 289.512,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 292.321,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 288.075,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 285.32,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 255.1,
+      "jobs": 140092,
+      "mean_power_w": 288.87725,
+      "peak_temp_c": 48.0,
+      "boards": [
+        {
+          "power_w": 289.553,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 292.365,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 288.107,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 285.484,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 270.1,
+      "jobs": 148328,
+      "mean_power_w": 287.47074999999995,
+      "peak_temp_c": 48.0,
+      "boards": [
+        {
+          "power_w": 283.971,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 292.426,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 287.992,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 285.494,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    },
+    {
+      "elapsed_s": 285.1,
+      "jobs": 156564,
+      "mean_power_w": 288.721,
+      "peak_temp_c": 48.0,
+      "boards": [
+        {
+          "power_w": 289.188,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 292.355,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 287.999,
+          "temp_c": 48.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        },
+        {
+          "power_w": 285.342,
+          "temp_c": 47.0,
+          "clock_mhz": 2422.0,
+          "occupancy_pct": 100.0
+        }
+      ]
+    }
+  ]
+}

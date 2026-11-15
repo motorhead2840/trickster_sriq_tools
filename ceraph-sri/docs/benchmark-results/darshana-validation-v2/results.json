@@ -1,0 +1,58 @@
+{
+  "experiment": "sri_darshana_validation_v2",
+  "source_notebook": "sri_darshana_validation_v2_1.ipynb",
+  "source_attachment_name": "sri_darshana_validation_v2(1).ipynb",
+  "results_source": "saved per-test output cells; not re-executed during integration",
+  "environment_reported": {
+    "numpy": "2.4.6",
+    "scipy": "1.16.3",
+    "qutip": "5.3.1"
+  },
+  "summary": {
+    "tests_defined": 32,
+    "passed": 23,
+    "failed": 8,
+    "not_run": 1,
+    "failed_test_ids": ["T6", "T13", "T20", "T21", "T24", "T26", "T29", "T31"],
+    "not_run_test_ids": ["T7"]
+  },
+  "tests": [
+    {"id": "T1", "status": "pass", "checks": "7/7"},
+    {"id": "T2", "status": "pass", "checks": "6/6"},
+    {"id": "T3", "status": "pass", "checks": "10/10"},
+    {"id": "T4", "status": "pass", "checks": "3/3"},
+    {"id": "T5", "status": "pass", "checks": "8/8"},
+    {"id": "T6", "status": "fail", "checks": "6/7"},
+    {"id": "T7", "status": "not_run", "checks": null},
+    {"id": "T8", "status": "pass", "checks": "5/5"},
+    {"id": "T9", "status": "pass", "checks": "4/4"},
+    {"id": "T10", "status": "pass", "checks": "4/4"},
+    {"id": "T11", "status": "pass", "checks": "10/10"},
+    {"id": "T12", "status": "pass", "checks": "3/3"},
+    {"id": "T13", "status": "fail", "checks": "2/3"},
+    {"id": "T14", "status": "pass", "checks": "6/6"},
+    {"id": "T15", "status": "pass", "checks": "4/4"},
+    {"id": "T16", "status": "pass", "checks": "5/5"},
+    {"id": "T17", "status": "pass", "checks": "3/3"},
+    {"id": "T18", "status": "pass", "checks": "3/3"},
+    {"id": "T19", "status": "pass", "checks": "5/5"},
+    {"id": "T20", "status": "fail", "checks": "3/4"},
+    {"id": "T21", "status": "fail", "checks": "3/4"},
+    {"id": "T22", "status": "pass", "checks": "4/4"},
+    {"id": "T23", "status": "pass", "checks": "2/2"},
+    {"id": "T24", "status": "fail", "checks": "2/3"},
+    {"id": "T25", "status": "pass", "checks": "4/4"},
+    {"id": "T26", "status": "fail", "checks": "3/4"},
+    {"id": "T27", "status": "pass", "checks": "3/3"},
+    {"id": "T28", "status": "pass", "checks": "5/5"},
+    {"id": "T29", "status": "fail", "checks": "3/4"},
+    {"id": "T30", "status": "pass", "checks": "2/2"},
+    {"id": "T31", "status": "fail", "checks": "2/3"},
+    {"id": "T32", "status": "pass", "checks": "3/3"}
+  ],
+  "integrity_notes": [
+    "The final v2 verdict in the notebook claims 24 of 32 passed; the individual saved output cells instead show 23 pass, 8 fail, and T7 not run.",
+    "Notebook cell 2 has a saved SyntaxError, so the archived notebook is not a clean reproducible rerun.",
+    "Post-hoc diagnostics do not change the recorded pre-registered test statuses."
+  ]
+}

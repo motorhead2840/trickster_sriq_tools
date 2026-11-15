@@ -1,0 +1,59 @@
+[
+  {
+    "seed": 108,
+    "shots": 20000,
+    "oracle_paired_mse": 3.864490391186748e-33,
+    "mmse_two_mode_sample_mse": 0.6148440388801731,
+    "mmse_two_mode_analytic_mse": 0.6126759441137769,
+    "mmse_sample_standard_error": 0.006138735464077485,
+    "mmse_within_5sigma": true,
+    "single_mode_mse": 0.6978561014330157,
+    "moving_average_mse": 1.089700906050545,
+    "median_filter_mse": 1.2317281846096921,
+    "analytic_coherent_two_mode_mse": 0.6435643564356436,
+    "analytic_squeezed_signal_mse": 0.5127067844620878,
+    "analytic_squeezed_reference_mse": 0.6126759441137769,
+    "weights": [
+      0.43304145914126124,
+      -0.28935075345920414
+    ]
+  },
+  {
+    "seed": 109,
+    "shots": 20000,
+    "oracle_paired_mse": 3.724147159326469e-33,
+    "mmse_two_mode_sample_mse": 0.610509030237706,
+    "mmse_two_mode_analytic_mse": 0.6126759441137769,
+    "mmse_sample_standard_error": 0.0061536542944413,
+    "mmse_within_5sigma": true,
+    "single_mode_mse": 0.6918188254553377,
+    "moving_average_mse": 1.0893874216321877,
+    "median_filter_mse": 1.2384547871763345,
+    "analytic_coherent_two_mode_mse": 0.6435643564356436,
+    "analytic_squeezed_signal_mse": 0.5127067844620878,
+    "analytic_squeezed_reference_mse": 0.6126759441137769,
+    "weights": [
+      0.43304145914126124,
+      -0.28935075345920414
+    ]
+  },
+  {
+    "seed": 110,
+    "shots": 20000,
+    "oracle_paired_mse": 3.89786805010744e-33,
+    "mmse_two_mode_sample_mse": 0.6158215208877831,
+    "mmse_two_mode_analytic_mse": 0.6126759441137769,
+    "mmse_sample_standard_error": 0.006125303311382179,
+    "mmse_within_5sigma": true,
+    "single_mode_mse": 0.6936226803035137,
+    "moving_average_mse": 1.0853447267287948,
+    "median_filter_mse": 1.2355070625085445,
+    "analytic_coherent_two_mode_mse": 0.6435643564356436,
+    "analytic_squeezed_signal_mse": 0.5127067844620878,
+    "analytic_squeezed_reference_mse": 0.6126759441137769,
+    "weights": [
+      0.43304145914126124,
+      -0.28935075345920414
+    ]
+  }
+]

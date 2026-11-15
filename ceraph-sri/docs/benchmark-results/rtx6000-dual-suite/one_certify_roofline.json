@@ -1,0 +1,101 @@
+{
+  "cell": "one_certify_roofline",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "density": 0.7927381992340088,
+  "julia_block": 256,
+  "grid": 64,
+  "stability_index": 3.603260642304207e-05,
+  "julia_would_launch": false,
+  "sign_xor_error": 0.0,
+  "jvp_error": 0.0,
+  "quality": [
+    {
+      "offset": 0.0,
+      "identity": 6.268320489942471,
+      "moving_average": 1.6400813703065016,
+      "raw": 0.7586819391836561,
+      "flux": 1.4269689946367832,
+      "flux_variance_remaining": 0.12470137405088885
+    },
+    {
+      "offset": 5.0,
+      "identity": 6.499803753546321,
+      "moving_average": 1.6451365899162083,
+      "raw": 18.17986938672331,
+      "flux": 1.448460008627465,
+      "flux_variance_remaining": 0.12304992723521699
+    }
+  ],
+  "latency": [
+    {
+      "length": 256,
+      "block": 256,
+      "triton_ms": 0.014944000169634819,
+      "moving_avg_ms": 0.010208000428974628
+    },
+    {
+      "length": 8192,
+      "block": 256,
+      "triton_ms": 0.013024000450968742,
+      "moving_avg_ms": 0.009600000455975533
+    },
+    {
+      "length": 10000,
+      "block": 256,
+      "triton_ms": 0.01369599997997284,
+      "moving_avg_ms": 0.009631999768316746
+    },
+    {
+      "length": 65536,
+      "block": 256,
+      "triton_ms": 0.012543999589979649,
+      "moving_avg_ms": 0.009440000168979168
+    },
+    {
+      "length": 262144,
+      "block": 256,
+      "triton_ms": 0.012575999833643436,
+      "moving_avg_ms": 0.009568000212311745
+    },
+    {
+      "length": 1048576,
+      "block": 256,
+      "triton_ms": 0.012864000163972378,
+      "moving_avg_ms": 0.01539199985563755
+    }
+  ],
+  "roofline": [
+    {
+      "nodes": 10240,
+      "median_ms": 0.012703999876976013,
+      "bandwidth_GBps": 9.672544174272272,
+      "percent_of_1597": 0.6056696414697728,
+      "pre_variance": 1.0033010244369507,
+      "post_variance": 0.43864065408706665
+    },
+    {
+      "nodes": 1048576,
+      "median_ms": 0.012608000077307224,
+      "bandwidth_GBps": 998.0101461648642,
+      "percent_of_1597": 62.492808150586356,
+      "pre_variance": 1.0004287958145142,
+      "post_variance": 0.43290892243385315
+    },
+    {
+      "nodes": 10485760,
+      "median_ms": 0.12374400347471237,
+      "bandwidth_GBps": 1016.8502429753191,
+      "percent_of_1597": 63.672526172530944,
+      "pre_variance": 1.0001780986785889,
+      "post_variance": 0.4323708117008209
+    },
+    {
+      "nodes": 50000000,
+      "median_ms": 0.5456960201263428,
+      "bandwidth_GBps": 1099.5132415682351,
+      "percent_of_1597": 68.84866885211241,
+      "pre_variance": 1.0000618696212769,
+      "post_variance": 0.43242940306663513
+    }
+  ]
+}

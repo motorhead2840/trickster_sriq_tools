@@ -1,0 +1,12 @@
+flowchart LR
+  U600["600 User query"] --> D602{"602 Proven in evidence?"}
+  D602 -->|Yes| D604["604 Enabled core"]
+  D604 --> D606["606 Dual-measure clean"]
+  D604 --> D608["608 Pre-Softmax gate"]
+  D604 --> D610["610 Combined middleware"]
+  D610 --> U620["620 Stabilized answer"]
+  D602 -->|No| D612["612 Future only"]
+  D612 --> D614["614 Hardware conjugation"]
+  D612 --> D616["616 Landauer circumvention"]
+  D612 --> D618["618 Pending later lemma"]
+  D618 --> U622["622 Serve via enabled core"]

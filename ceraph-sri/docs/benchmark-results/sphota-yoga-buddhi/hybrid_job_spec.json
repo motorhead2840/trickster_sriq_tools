@@ -1,0 +1,47 @@
+{
+  "plan": {
+    "job_name": "sphota-yoga-buddhi",
+    "device_arn": "arn:aws:braket:::device/quantum-simulator/amazon/sv1",
+    "shots": 1024,
+    "task": "sphota_yoga_buddhi",
+    "parameters": {
+      "seed": 108,
+      "n_samples": 4096,
+      "encoding": "classical_hybrid_container",
+      "note": "Yoga\u2013Buddhi / Lemma Z1 validation in Hybrid-shaped compute. Not a photonic QPU MMSE claim."
+    },
+    "cost_cap_usd": 25.0,
+    "s3_bucket": null,
+    "s3_prefix": "sri-braket/sphota-yoga-buddhi",
+    "region": "us-east-1",
+    "submit": false
+  },
+  "estimate_usd": 0.075,
+  "dry_run": {
+    "status": "dry_run_ok",
+    "submit_requested": false,
+    "estimated_cost_usd": 0.075,
+    "within_cost_cap": true,
+    "plan": {
+      "job_name": "sphota-yoga-buddhi",
+      "device_arn": "arn:aws:braket:::device/quantum-simulator/amazon/sv1",
+      "shots": 1024,
+      "task": "sphota_yoga_buddhi",
+      "parameters": {
+        "seed": 108,
+        "n_samples": 4096,
+        "encoding": "classical_hybrid_container",
+        "note": "Yoga\u2013Buddhi / Lemma Z1 validation in Hybrid-shaped compute. Not a photonic QPU MMSE claim."
+      },
+      "cost_cap_usd": 25.0,
+      "region": "us-east-1",
+      "submit": false,
+      "s3_bucket": null,
+      "s3_prefix": "sri-braket/sphota-yoga-buddhi"
+    }
+  },
+  "credentials_available": false,
+  "submit_requested": false,
+  "submit_executed": false,
+  "note": "Package local Sphota numerics as Hybrid Job payload. Live AwsQuantumJob.create requires BRAKET_SUBMIT=1 and credentials."
+}

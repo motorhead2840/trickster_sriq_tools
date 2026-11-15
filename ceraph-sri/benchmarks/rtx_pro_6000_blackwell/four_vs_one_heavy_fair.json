@@ -1,0 +1,18 @@
+{
+  "n": 16777216,
+  "passes": 40,
+  "queued_ms": 29.27183961868286,
+  "together_wall_ms": 11.787933999812594,
+  "together_event_ms": 8.237631797790527,
+  "per_board_event_ms": [
+    7.487936019897461,
+    8.237631797790527,
+    7.917215824127197,
+    7.498591899871826
+  ],
+  "speedup_vs_wall": 2.4832035553599323,
+  "speedup_vs_event": 3.553428987507558,
+  "finite": true,
+  "heavy_met": true,
+  "note": "Compiled on all four boards before the clock. queued_ms is four jobs on board 0. together_event_ms is the slowest board CUDA event. together_wall_ms includes the host thread join."
+}

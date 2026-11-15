@@ -1,0 +1,52 @@
+{
+  "round": "R7_inventor_disclosure_pack",
+  "pass": true,
+  "supported_claim_sketches": [
+    {
+      "title": "Observable Yoga\u2013Buddhi / Lemma Z1",
+      "summary": "Method of constructing an observable antithesis from dual-mode homodyne outcomes (y_A, y_B) and Wiener weights such that \u03a5_obs = \u00bd(y_A + \u0108_S) equals the MMSE estimator without receiving s or n.",
+      "evidence_rounds": [
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ],
+      "status": "supported_by_gpu_c5"
+    },
+    {
+      "title": "Sphota multi-backend crystallization",
+      "summary": "System and method for compiling Yoga\u2013Buddhi algebra across NumPy/JAX (and optional Julia) with tile-shaped reference ops for later cuTile port.",
+      "evidence_rounds": [
+        "R1",
+        "prior_c5_pasteback"
+      ],
+      "status": "supported_scaffold"
+    },
+    {
+      "title": "Pre-Softmax Witness gate (software)",
+      "summary": "Method of measuring logit stability (\u039e_SNR) and applying damping before tokenization \u2014 SREE Mentor intercept at host/software layer.",
+      "evidence_rounds": [
+        "R6"
+      ],
+      "status": "supported_smoke_not_tmem"
+    }
+  ],
+  "do_not_claim_yet": [
+    "Landauer circumvention / Helmholtz F=U_min as measured fact",
+    "IEEE-754 MSB XOR in TMEM as O(0) hardware primitive",
+    "Photonic QPU MMSE from Braket SV1 toys",
+    "NVIDIA DeepSeek TFLOPS or cuTile CUPTI geomean as Ceraph results",
+    "Full Theorem Zero multi-layer composition (needs Lemma Z2)"
+  ],
+  "devices": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "platform": "Linux-6.12.113+-x86_64-with-glibc2.39",
+    "jax_default_backend": "cpu",
+    "jax_devices": [
+      "cpu:0"
+    ]
+  },
+  "prior_c5_artifact": "docs/benchmark-results/braket-live/sphota-yoga-buddhi-elaborate/sagemaker-g4dn/pasteback.json",
+  "counsel_note": "Draft provisional around supported sketches + code enablement. Yellow-paper hardware/thermo sentences belong in continuation or after dedicated reduction-to-practice \u2014 not as enabled claims today."
+}

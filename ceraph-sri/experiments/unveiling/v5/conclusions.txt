@@ -1,0 +1,147 @@
+WHAT THIS RUN ACTUALLY SHOWED
+==============================
+SIZE=small, seed=11, programmer-declared Ξ_crit=0.9.
+In this notebook Ξ_crit is a declared lower bound on the target fidelity F=<t|ρ|t>,
+i.e. on how sharply the tile is focused on the selected pointer. It is not the
+v1–v4 consistency statistic, though it plays the same role as a context-level floor.
+Time unit 1/Γ0 with Γ0=1.0. Official backend: numpy.
+Exp 1 (memory) wall 0.7s;  Exp 2 (selection) 3.3s;  Exp 3 (adaptive) 0.0s;  Exp 4 (array) 1.5s.
+
+EXPERIMENT 1 — Markovian T1/T2 vs a pseudomode memory register
+--------------------------------------------------------------
+The same effective amplitude-damping rate Γ is realised either as a memoryless
+Lindblad jump on the tile, or as a Lorentzian bath (J(ω) with width κ/2) via an
+auxiliary damped bosonic mode truncated at n_max, with g = sqrt(Γ κ / 4).
+The tile+register obey a Lindblad equation; the tile alone need not.
+Probe pair: the damping attractor vs the most-excited computational state.
+
+  d=2, n_max=2:
+    Markov T1/T2:  N_BLP=0.0000e+00, monotone=True, D_final=0.0025, purity_final=0.9975
+    κ=0.5    g=0.354:  N_BLP=6.9118e-04, monotone=False, n_up=3, D_final=0.0007
+    κ=1      g=0.500:  N_BLP=1.5460e-02, monotone=False, n_up=23, D_final=0.0155
+    κ=2      g=0.707:  N_BLP=1.7855e-03, monotone=False, n_up=26, D_final=0.0018
+    κ=4      g=1.000:  N_BLP=0.0000e+00, monotone=True, n_up=0, D_final=0.0003
+    κ=8      g=1.414:  N_BLP=0.0000e+00, monotone=True, n_up=0, D_final=0.0013
+    κ=16     g=2.000:  N_BLP=0.0000e+00, monotone=True, n_up=0, D_final=0.0019
+  d=8, n_max=2:
+    Markov T1/T2:  N_BLP=0.0000e+00, monotone=True, D_final=0.0025, purity_final=0.9975
+    κ=0.5    g=0.354:  N_BLP=7.5170e-02, monotone=False, n_up=46, D_final=0.8711
+    κ=1      g=0.500:  N_BLP=5.5302e-02, monotone=False, n_up=43, D_final=0.8576
+    κ=2      g=0.707:  N_BLP=3.0053e-02, monotone=False, n_up=45, D_final=0.8572
+    κ=4      g=1.000:  N_BLP=1.1875e-02, monotone=False, n_up=40, D_final=0.8571
+    κ=8      g=1.414:  N_BLP=2.6620e-03, monotone=False, n_up=19, D_final=0.8571
+    κ=16     g=2.000:  N_BLP=9.7814e-05, monotone=False, n_up=7, D_final=0.8571
+  Reading: a clearly positive N_BLP at small κ, shrinking toward the Markov value
+  as κ grows, is the signature that the register is acting as ta's memory.
+
+EXPERIMENT 2 — engineered selection and the Ξ_crit threshold
+------------------------------------------------------------
+Jump operators L_j = sqrt(γ_sel) |t><j| for j≠t, competing with a depolarizing
+veil of rate Γ.  Markov theory: F_ss = (r + 1/d)/(r + 1),  r=γ_sel/Γ,
+threshold r* = (Ξ_crit - 1/d)/(1 - Ξ_crit).
+
+  d   r*_theory  r*_empirical  F_ss(r=2) th/num   max |F-theory|
+  2   4.0000     4.0000        0.8333/0.8333     2.06e-05
+  3   5.6667     5.6875        0.7778/0.7778     2.74e-05
+  4   6.5000     6.5000        0.7500/0.7500     3.09e-05
+  8   7.7500     7.7500        0.7083/0.7083     3.60e-05
+
+  Time to F>0.99 (NaN = not reached in the simulated window) and contrast:
+    d=2: r=0.5: F=0.667 C=0.333 t099=nan; r=1: F=0.750 C=0.500 t099=nan; r=2: F=0.833 C=0.667 t099=nan; r=4: F=0.900 C=0.800 t099=nan; r=5.5: F=0.923 C=0.846 t099=nan; r=6.5: F=0.933 C=0.867 t099=nan; r=7.75: F=0.943 C=0.886 t099=nan; r=8: F=0.944 C=0.889 t099=nan; r=12: F=0.962 C=0.923 t099=nan; r=16: F=0.971 C=0.941 t099=nan
+    d=3: r=0.5: F=0.556 C=0.333 t099=nan; r=1: F=0.667 C=0.500 t099=nan; r=2: F=0.778 C=0.667 t099=nan; r=4: F=0.867 C=0.800 t099=nan; r=5.5: F=0.897 C=0.846 t099=nan; r=6.5: F=0.911 C=0.867 t099=nan; r=7.75: F=0.924 C=0.886 t099=nan; r=8: F=0.926 C=0.889 t099=nan; r=12: F=0.949 C=0.923 t099=nan; r=16: F=0.961 C=0.941 t099=nan
+    d=4: r=0.5: F=0.500 C=0.333 t099=nan; r=1: F=0.625 C=0.500 t099=nan; r=2: F=0.750 C=0.667 t099=nan; r=4: F=0.850 C=0.800 t099=nan; r=5.5: F=0.885 C=0.846 t099=nan; r=6.5: F=0.900 C=0.867 t099=nan; r=7.75: F=0.914 C=0.886 t099=nan; r=8: F=0.917 C=0.889 t099=nan; r=12: F=0.942 C=0.923 t099=nan; r=16: F=0.956 C=0.941 t099=nan
+    d=8: r=0.5: F=0.417 C=0.333 t099=nan; r=1: F=0.562 C=0.500 t099=nan; r=2: F=0.708 C=0.667 t099=nan; r=4: F=0.825 C=0.800 t099=nan; r=5.5: F=0.865 C=0.846 t099=nan; r=6.5: F=0.883 C=0.867 t099=nan; r=7.75: F=0.900 C=0.886 t099=nan; r=8: F=0.903 C=0.889 t099=nan; r=12: F=0.933 C=0.923 t099=nan; r=16: F=0.949 C=0.941 t099=nan
+
+  Memory vs memoryless veil, same Γ_eff, same γ_sel (r ≈ 2 r* or at least 2):
+    d=2  Markov T1/T2 F=0.8889  holds Ξ=False
+      κ=0.5    F=0.9937  ΔF=+0.1048  (helps)  holds Ξ=True
+      κ=1      F=0.9881  ΔF=+0.0992  (helps)  holds Ξ=True
+      κ=2      F=0.9788  ΔF=+0.0899  (helps)  holds Ξ=True
+      κ=4      F=0.9649  ΔF=+0.0760  (helps)  holds Ξ=True
+      κ=8      F=0.9475  ΔF=+0.0586  (helps)  holds Ξ=True
+      κ=16     F=0.9295  ΔF=+0.0406  (helps)  holds Ξ=True
+    d=8  Markov T1/T2 F=0.9394  holds Ξ=True
+      κ=0.5    F=0.9982  ΔF=+0.0588  (helps)  holds Ξ=True
+      κ=1      F=0.9965  ΔF=+0.0571  (helps)  holds Ξ=True
+      κ=2      F=0.9934  ΔF=+0.0541  (helps)  holds Ξ=True
+      κ=4      F=0.9886  ΔF=+0.0492  (helps)  holds Ξ=True
+      κ=8      F=0.9819  ΔF=+0.0425  (helps)  holds Ξ=True
+      κ=16     F=0.9742  ΔF=+0.0348  (helps)  holds Ξ=True
+
+EXPERIMENT 3 — drifting Γ, holding F ≥ Ξ_crit
+---------------------------------------------
+Controllers: fixed γ_sel (tuned to the initial Γ), an oracle that sets
+γ_sel = 1.15 r* Γ(t), and a Mehra-style rule that sees only a weak noisy
+readout of F (σ_m=0.04) and never the true Γ or the true state.
+Cost is the time-average of γ_sel, a rate proxy, not a physical energy.
+
+  d=2 stationary (r*=4.000):
+    fixed     late F=0.9107±0.0000  viol=0.000  cost=4.600  rec_t=0.00  regret_F=+0.0000±0.0000  regret_cost=+0.000
+    oracle    late F=0.9107±0.0000  viol=0.000  cost=4.600  rec_t=0.00
+    mehra     late F=0.9019±0.0026  viol=0.413  cost=5.022  rec_t=3.43  regret_F=-0.0088±0.0026  regret_cost=+0.422
+  d=2 jump_up (r*=4.000):
+    fixed     late F=0.6575±0.0000  viol=1.000  cost=4.600  rec_t=nan  regret_F=-0.2532±0.0000  regret_cost=-20.959
+    oracle    late F=0.9107±0.0000  viol=0.000  cost=25.559  rec_t=0.00
+    mehra     late F=0.8920±0.0021  viol=0.898  cost=18.602  rec_t=3.90  regret_F=-0.0188±0.0021  regret_cost=-6.956
+  d=2 ramp (r*=4.000):
+    fixed     late F=0.6996±0.0000  viol=0.951  cost=4.600  rec_t=nan  regret_F=-0.2111±0.0000  regret_cost=-10.479
+    oracle    late F=0.9107±0.0000  viol=0.000  cost=15.079  rec_t=0.00
+    mehra     late F=0.8760±0.0023  viol=0.969  cost=11.404  rec_t=nan  regret_F=-0.0347±0.0023  regret_cost=-3.676
+  d=8 stationary (r*=7.750):
+    fixed     late F=0.9117±0.0000  viol=0.000  cost=8.913  rec_t=0.00  regret_F=+0.0000±0.0000  regret_cost=+0.000
+    oracle    late F=0.9117±0.0000  viol=0.000  cost=8.913  rec_t=0.00
+    mehra     late F=0.8976±0.0021  viol=0.466  cost=10.646  rec_t=3.75  regret_F=-0.0142±0.0021  regret_cost=+1.734
+  d=8 jump_up (r*=7.750):
+    fixed     late F=0.5373±0.0000  viol=1.000  cost=8.913  rec_t=nan  regret_F=-0.3744±0.0000  regret_cost=-40.608
+    oracle    late F=0.9117±0.0000  viol=0.000  cost=49.520  rec_t=0.00
+    mehra     late F=0.8920±0.0017  viol=0.951  cost=38.184  rec_t=3.80  regret_F=-0.0197±0.0017  regret_cost=-11.336
+  d=8 ramp (r*=7.750):
+    fixed     late F=0.6137±0.0000  viol=0.963  cost=8.913  rec_t=nan  regret_F=-0.2980±0.0000  regret_cost=-20.304
+    oracle    late F=0.9117±0.0000  viol=0.000  cost=29.216  rec_t=0.00
+    mehra     late F=0.8765±0.0026  viol=0.981  cost=23.576  rec_t=nan  regret_F=-0.0352±0.0026  regret_cost=-5.640
+
+EXPERIMENT 4 — a small coupled array (full density matrix)
+---------------------------------------------------------
+Full density matrix on 2–3 (or 4, SIZE=large) qubits. The symmetric product initial state cannot distinguish ring from all-to-all; the mismatch series (tile 0 starts off-target) is the wiring test. This is not a large-N unveiling test and does not claim a general wiring law.
+Each tile selects |1> at r=4.600 against a local depolarizing veil;
+neighbours couple only by XX+YY hopping on the declared graph.
+
+  N=2 ring (identical init): J=0: F=0.911 agree=1.000; J=0.5: F=0.911 agree=1.000; J=1.5: F=0.911 agree=1.000
+  N=2 all-to-all (identical init): J=0: F=0.911 agree=1.000; J=0.5: F=0.911 agree=1.000; J=1.5: F=0.911 agree=1.000
+  N=3 ring (identical init): J=0: F=0.911 agree=1.000; J=0.5: F=0.911 agree=1.000; J=1.5: F=0.911 agree=1.000
+  N=3 all-to-all (identical init): J=0: F=0.911 agree=1.000; J=0.5: F=0.911 agree=1.000; J=1.5: F=0.911 agree=1.000
+  Mismatch (tile 0 starts off-target in |0>, others in |1>):
+    N=2 ring: J=0: F0=0.911 Fmean=0.911 agree=1.000; J=0.5: F0=0.911 Fmean=0.911 agree=1.000; J=1.5: F0=0.911 Fmean=0.911 agree=1.000
+    N=2 all-to-all: J=0: F0=0.911 Fmean=0.911 agree=1.000; J=0.5: F0=0.911 Fmean=0.911 agree=1.000; J=1.5: F0=0.911 Fmean=0.911 agree=1.000
+    N=3 ring: J=0: F0=0.911 Fmean=0.911 agree=1.000; J=0.5: F0=0.911 Fmean=0.911 agree=1.000; J=1.5: F0=0.911 Fmean=0.911 agree=1.000
+    N=3 all-to-all: J=0: F0=0.911 Fmean=0.911 agree=1.000; J=0.5: F0=0.911 Fmean=0.911 agree=1.000; J=1.5: F0=0.911 Fmean=0.911 agree=1.000
+
+RECOMMENDATION
+--------------
+A programmer-declared Ξ_crit=0.9 is a usable on-tile setpoint for the selected pointer. In the Markov depolarizing model the predicted threshold r* = (Ξ_crit − 1/d)/(1 − Ξ_crit) rises slowly with d (selecting 1 of 8 needs a slightly higher rate ratio than 1 of 2). Against a T1/T2-type veil of the same Γ_eff, a pseudomode memory register helps at d=2 (slow κ ΔF=+0.105); helps at d=8 (slow κ ΔF=+0.059). If only a memoryless veil is present, a fixed γ_sel = 1.15 r* Γ0 holds Ξ_crit until Γ drifts; an oracle that tracks Γ(t) is the reference, and a Mehra-style rule that sees only a weak readout of F is the on-tile option — see the tables for whether it actually recovers. On a 2–3 tile array this run is too small to claim a wiring law; treat Experiment 4 as a smoke test.
+
+PLAIN FAILURES AND LIMITS
+-------------------------
+- At d=2 the slow-κ pseudomode did not show a clear BLP backflow above the Markov baseline (N_slow=6.912e-04, N_Markov=0.000e+00). Memory is not automatically visible at this n_max / grid.
+- F>0.99 was not reached at any r on the grid (max r=16). That is expected from the closed form F_ss=(r+1/d)/(r+1): d=2: F_ss(r=16)=0.971, need r>49.0; d=3: F_ss(r=16)=0.961, need r>65.7; d=4: F_ss(r=16)=0.956, need r>74.0; d=8: F_ss(r=16)=0.949, need r>86.5. The grid never entered the F_ss>0.99 region, so this is not a finite-time integration failure.
+- On a stationary veil Mehra chatters around Ξ_crit at d=2 (late F=0.902, viol=0.41) because the innovation setpoint is exactly Ξ_crit and the readout is noisy; the oracle's 1.15 margin avoids this.
+- On a stationary veil Mehra chatters around Ξ_crit at d=8 (late F=0.898, viol=0.47) because the innovation setpoint is exactly Ξ_crit and the readout is noisy; the oracle's 1.15 margin avoids this.
+- Mehra did not hold a sustained F≥Ξ_crit through the Γ ramp at d=2 (late F=0.876, viol=0.97, rec_t=nan); it beat a fixed rate on late F but still undershot the oracle.
+- Mehra did not hold a sustained F≥Ξ_crit through the Γ ramp at d=8 (late F=0.876, viol=0.98, rec_t=nan); it beat a fixed rate on late F but still undershot the oracle.
+- N=2 mismatch: even with tile 0 off-target, ring vs all-to-all and J=0 vs J=1.5 changed F0 by less than 0.01; wiring did not matter at this size and coupling.
+- N=3 mismatch: even with tile 0 off-target, ring vs all-to-all and J=0 vs J=1.5 changed F0 by less than 0.01; wiring did not matter at this size and coupling.
+
+BACKEND, AGREEMENT, AND TIMING
+------------------------------
+Requested BACKEND=numpy, resolved=numpy, torch=2.15.0+cpu, cuda=False, device=None.
+Numeric agreement (Markov selection, d=3, r=4, 40 steps): max |ΔF|=7.829e-06, rms=3.326e-06  (ok).
+  This is exact-expm (NumPy, complex128) vs RK4 (torch, complex64), not bit-for-bit.
+Timing bench: d=4, n_max=2, batch=16, steps=80.
+  numpy   cpu       0.056s  speedup vs NumPy CPU: ×1.00
+  torch   cpu       0.080s  speedup vs NumPy CPU: ×0.71
+  This machine has no CUDA device. The torch path was smoke-tested on CPU only; GPU speedups were not measured here. On Colab Pro, set BACKEND='torch' or 'auto' after Runtime → Change runtime type → GPU.
+  Honest note: on this machine the torch CPU path was slower than NumPy. That does not predict GPU behaviour at SIZE=large.
+  No CUDA device was visible on this machine. The GPU path is only smoke-tested on CPU here. A Colab Pro GPU is required to measure a real GPU speedup at SIZE=large.
+
+Total suite wall time: 10.6s.
+

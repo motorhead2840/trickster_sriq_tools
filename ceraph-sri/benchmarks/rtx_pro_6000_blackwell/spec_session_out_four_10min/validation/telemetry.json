@@ -1,0 +1,14 @@
+{
+  "offset_0": {
+    "identity": 6.2222,
+    "average": 0.1961,
+    "raw": 0.3889,
+    "flux": 0.2639
+  },
+  "offset_5": {
+    "identity": 6.2222,
+    "average": 0.2006,
+    "raw": 14.9967,
+    "flux": 0.2677
+  }
+}

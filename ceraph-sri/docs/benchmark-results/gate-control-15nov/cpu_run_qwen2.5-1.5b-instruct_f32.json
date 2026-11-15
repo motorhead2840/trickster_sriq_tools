@@ -1,0 +1,3350 @@
+{
+ "schema": "abhaya_gate_control_v1",
+ "date_utc": "2026-11-15T12:02:24.401843+00:00",
+ "model": "Qwen/Qwen2.5-1.5B-Instruct",
+ "gpu": "none (CPU run)",
+ "kernel": "pytorch",
+ "kernel_triton_vs_pytorch_relative_difference": null,
+ "torch": "2.15.0+cpu",
+ "dtype": "torch.float32",
+ "decode": "greedy",
+ "noise_in_part1": "none",
+ "stop_in_part1": "first full stop or line break, all arms",
+ "questions": 40,
+ "totals": {
+  "plain": {
+   "correct": 25,
+   "wrong": 15,
+   "unscored": 0
+  },
+  "plain_repeat": {
+   "correct": 25,
+   "wrong": 15,
+   "unscored": 0
+  },
+  "kernel_only": {
+   "correct": 25,
+   "wrong": 15,
+   "unscored": 0
+  },
+  "true_ref_always": {
+   "correct": 40,
+   "wrong": 0,
+   "unscored": 0
+  },
+  "false_ref_always": {
+   "correct": 1,
+   "wrong": 39,
+   "unscored": 0
+  },
+  "gate_true_ref": {
+   "correct": 30,
+   "wrong": 10,
+   "unscored": 0
+  },
+  "gate_false_ref": {
+   "correct": 19,
+   "wrong": 21,
+   "unscored": 0
+  }
+ },
+ "plain_run_twice": {
+  "texts_identical": 40,
+  "marks_identical": 40
+ },
+ "kernel_only": {
+  "texts_identical_to_plain": 40,
+  "steps": 409,
+  "steps_kernel_rescaled_logits": 0,
+  "steps_chosen_token_changed": 0
+ },
+ "trigger": {
+  "plain_wrong": 15,
+  "fired_on_plain_wrong": 5,
+  "plain_correct": 25,
+  "fired_on_plain_correct": 6,
+  "fisher_one_sided_p": 0.38737242935535154,
+  "fired_at_the_two_answer_words": 5,
+  "plain_wrong_corrected": 5,
+  "plain_wrong_missed": 10,
+  "plain_correct_broken": 0
+ },
+ "condition_at_answer_token": {
+  "plain_wrong": 15,
+  "condition_true_on_wrong": 5,
+  "plain_correct": 25,
+  "condition_true_on_correct": 3,
+  "fisher_one_sided_p": 0.11151089169665021,
+  "mean_collision_wrong": 0.6179,
+  "mean_collision_correct": 0.6743,
+  "auroc_low_collision_marks_wrong": 0.5893333333333334,
+  "auroc_permutation_p": 0.17804109794510276
+ },
+ "false_reference": {
+  "gate_fired": 11,
+  "output_named_false_answer_after_firing": 11,
+  "always_arm_named_false_answer": 39
+ },
+ "paired_sign_tests": {
+  "gate_true_ref_vs_plain": {
+   "better": 5,
+   "worse": 0,
+   "p": 0.03125
+  },
+  "gate_true_ref_vs_true_ref_always": {
+   "better": 0,
+   "worse": 10,
+   "p": 1.0
+  },
+  "kernel_only_vs_plain": {
+   "better": 0,
+   "worse": 0,
+   "p": 1.0
+  }
+ },
+ "tests": {
+  "T1_kernel_improves_answers": false,
+  "T2_trigger_separates_wrong_from_right": false,
+  "T2b_condition_at_answer_token_separates": false,
+  "T3_gate_beats_plain_and_reference_alone": false,
+  "T4_gate_holds_against_false_reference": false
+ },
+ "seconds": 474.2,
+ "rows": [
+  {
+   "question": "Which has the higher thermal conductivity at room temperature, diamond or copper? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "diamond",
+    "copper"
+   ],
+   "key": "diamond",
+   "other": "copper",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is diamond.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "diamond",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is diamond.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "diamond",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is diamond.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "diamond",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is diamond.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "diamond",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is copper.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "copper",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is diamond.",
+     "fired": true,
+     "trigger": {
+      "token_index": 4,
+      "first": " the",
+      "second": " diamond",
+      "collision": 0.4295,
+      "ratio": 1.054,
+      "discarded_text": " Of the two,"
+     },
+     "noise_blocked": 0,
+     "named": "diamond",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is copper.",
+     "fired": true,
+     "trigger": {
+      "token_index": 4,
+      "first": " the",
+      "second": " diamond",
+      "collision": 0.4295,
+      "ratio": 1.054,
+      "discarded_text": " Of the two,"
+     },
+     "noise_blocked": 0,
+     "named": "copper",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " diamond",
+    "second": " copper",
+    "collision": 0.5481,
+    "ratio": 1.905,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the lower boiling point at 1 atm, oxygen or nitrogen? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "oxygen",
+    "nitrogen"
+   ],
+   "key": "nitrogen",
+   "other": "oxygen",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is oxygen.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "oxygen",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is oxygen.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "oxygen",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is oxygen.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "oxygen",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is nitrogen.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "nitrogen",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is oxygen.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "oxygen",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is nitrogen.",
+     "fired": true,
+     "trigger": {
+      "token_index": 7,
+      "first": " oxygen",
+      "second": " nitrogen",
+      "collision": 0.5135,
+      "ratio": 1.403,
+      "discarded_text": " Of the two, the answer is"
+     },
+     "noise_blocked": 0,
+     "named": "nitrogen",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is oxygen.",
+     "fired": true,
+     "trigger": {
+      "token_index": 7,
+      "first": " oxygen",
+      "second": " nitrogen",
+      "collision": 0.5135,
+      "ratio": 1.403,
+      "discarded_text": " Of the two, the answer is"
+     },
+     "noise_blocked": 0,
+     "named": "oxygen",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " oxygen",
+    "second": " nitrogen",
+    "collision": 0.5135,
+    "ratio": 1.403,
+    "condition": true,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the shorter orbital period around the Sun, Venus or Mercury? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "Venus",
+    "Mercury"
+   ],
+   "key": "Mercury",
+   "other": "Venus",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is Venus.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Venus",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is Venus.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Venus",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is Venus.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Venus",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is Mercury.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Mercury",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is Venus.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Venus",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is Venus.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Venus",
+     "mark": "wrong"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is Venus.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Venus",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " Venus",
+    "second": " Mercury",
+    "collision": 0.7,
+    "ratio": 4.442,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the higher average surface temperature, Mercury or Venus? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "Mercury",
+    "Venus"
+   ],
+   "key": "Venus",
+   "other": "Mercury",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is Venus.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Venus",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is Venus.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Venus",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is Venus.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Venus",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is Venus.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Venus",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is Mercury.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Mercury",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is Venus.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Venus",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is Venus.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Venus",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " Venus",
+    "second": " Mercury",
+    "collision": 0.9036,
+    "ratio": 18.74,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the higher density at room temperature, lead or gold? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "lead",
+    "gold"
+   ],
+   "key": "gold",
+   "other": "lead",
+   "arms": {
+    "plain": {
+     "output": "Of the two, gold has a higher density at room temperature.",
+     "steps": 13,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "gold",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, gold has a higher density at room temperature.",
+     "steps": 13,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "gold",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, gold has a higher density at room temperature.",
+     "steps": 13,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "gold",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is gold.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "gold",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is lead.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "lead",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, gold has a higher density at room temperature.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "gold",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, gold has a higher density at room temperature.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "gold",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " gold",
+    "second": " the",
+    "collision": 0.8431,
+    "ratio": 16.521,
+    "condition": false,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the higher melting point, tungsten or iron? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "tungsten",
+    "iron"
+   ],
+   "key": "tungsten",
+   "other": "iron",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is tungsten.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tungsten",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is tungsten.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tungsten",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is tungsten.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tungsten",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is tungsten.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tungsten",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is iron.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "iron",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is tungsten.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "tungsten",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is tungsten.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "tungsten",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " tung",
+    "second": " iron",
+    "collision": 0.9997,
+    "ratio": 10191.031,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the higher speed of sound at room temperature, air or water? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "air",
+    "water"
+   ],
+   "key": "water",
+   "other": "air",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is air.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "air",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is air.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "air",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is air.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "air",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is water.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "water",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is air.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "air",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is air.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "air",
+     "mark": "wrong"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is air.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "air",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " air",
+    "second": " water",
+    "collision": 0.9167,
+    "ratio": 22.223,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the greater standard atomic weight, potassium or argon? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "potassium",
+    "argon"
+   ],
+   "key": "argon",
+   "other": "potassium",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is potassium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "potassium",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is potassium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "potassium",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is potassium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "potassium",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is argon.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "argon",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is potassium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "potassium",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is potassium.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "potassium",
+     "mark": "wrong"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is potassium.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "potassium",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " potassium",
+    "second": " arg",
+    "collision": 0.7805,
+    "ratio": 7.268,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the higher electrical conductivity at room temperature, copper or silver? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "copper",
+    "silver"
+   ],
+   "key": "silver",
+   "other": "copper",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is silver.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "silver",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is silver.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "silver",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is silver.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "silver",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is silver.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "silver",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is copper.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "copper",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is silver.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "silver",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is silver.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "silver",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " silver",
+    "second": " copper",
+    "collision": 0.5847,
+    "ratio": 2.412,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the longer wavelength, red light or blue light? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "red light",
+    "blue light"
+   ],
+   "key": "red light",
+   "other": "blue light",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is blue light.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "blue light",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is blue light.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "blue light",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is blue light.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "blue light",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is red light.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "red light",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is blue light.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "blue light",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is blue light.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "blue light",
+     "mark": "wrong"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is blue light.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "blue light",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " blue",
+    "second": " red",
+    "collision": 0.8588,
+    "ratio": 12.138,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the greater hardness on the Mohs scale, quartz or topaz? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "quartz",
+    "topaz"
+   ],
+   "key": "topaz",
+   "other": "quartz",
+   "arms": {
+    "plain": {
+     "output": "Of the two, topaz is harder.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "topaz",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, topaz is harder.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "topaz",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, topaz is harder.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "topaz",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is topaz.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "topaz",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is quartz.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "quartz",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is topaz.",
+     "fired": true,
+     "trigger": {
+      "token_index": 4,
+      "first": " top",
+      "second": " the",
+      "collision": 0.469,
+      "ratio": 1.515,
+      "discarded_text": " Of the two,"
+     },
+     "noise_blocked": 0,
+     "named": "topaz",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is quartz.",
+     "fired": true,
+     "trigger": {
+      "token_index": 4,
+      "first": " top",
+      "second": " the",
+      "collision": 0.469,
+      "ratio": 1.515,
+      "discarded_text": " Of the two,"
+     },
+     "noise_blocked": 0,
+     "named": "quartz",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " top",
+    "second": " the",
+    "collision": 0.469,
+    "ratio": 1.515,
+    "condition": true,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the lower gas density at the same temperature and pressure, helium or hydrogen? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "helium",
+    "hydrogen"
+   ],
+   "key": "hydrogen",
+   "other": "helium",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is helium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "helium",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is helium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "helium",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is helium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "helium",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is hydrogen.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "hydrogen",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is helium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "helium",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is helium.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "helium",
+     "mark": "wrong"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is helium.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "helium",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " helium",
+    "second": " hydrogen",
+    "collision": 0.9022,
+    "ratio": 18.966,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the higher boiling point at 1 atm, water or ethanol? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "water",
+    "ethanol"
+   ],
+   "key": "water",
+   "other": "ethanol",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is water.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "water",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is water.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "water",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is water.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "water",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is water.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "water",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is ethanol.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "ethanol",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is water.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "water",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is water.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "water",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " water",
+    "second": " ethanol",
+    "collision": 0.5559,
+    "ratio": 2.026,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the larger diameter, Titan or Ganymede? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "Titan",
+    "Ganymede"
+   ],
+   "key": "Ganymede",
+   "other": "Titan",
+   "arms": {
+    "plain": {
+     "output": "Of the two, Titan has the larger diameter.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Titan",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, Titan has the larger diameter.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Titan",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, Titan has the larger diameter.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Titan",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is Ganymede.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Ganymede",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is Titan.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Titan",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, Titan has the larger diameter.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Titan",
+     "mark": "wrong"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, Titan has the larger diameter.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Titan",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " Titan",
+    "second": " the",
+    "collision": 0.5556,
+    "ratio": 3.59,
+    "condition": false,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the lower melting point, tin or lead? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "tin",
+    "lead"
+   ],
+   "key": "tin",
+   "other": "lead",
+   "arms": {
+    "plain": {
+     "output": "Of the two, tin has the lower melting point.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tin",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, tin has the lower melting point.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tin",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, tin has the lower melting point.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tin",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is tin.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tin",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is lead.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "lead",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, tin has the lower melting point.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "tin",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, tin has the lower melting point.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "tin",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " tin",
+    "second": " lead",
+    "collision": 0.7322,
+    "ratio": 10.515,
+    "condition": false,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the greater mass, proton or neutron? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "proton",
+    "neutron"
+   ],
+   "key": "neutron",
+   "other": "proton",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is neutron.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "neutron",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is neutron.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "neutron",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is neutron.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "neutron",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is neutron.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "neutron",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is proton.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "proton",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is neutron.",
+     "fired": true,
+     "trigger": {
+      "token_index": 5,
+      "first": " answer",
+      "second": " neutron",
+      "collision": 0.5042,
+      "ratio": 1.545,
+      "discarded_text": " Of the two, the"
+     },
+     "noise_blocked": 0,
+     "named": "neutron",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is proton.",
+     "fired": true,
+     "trigger": {
+      "token_index": 5,
+      "first": " answer",
+      "second": " neutron",
+      "collision": 0.5042,
+      "ratio": 1.545,
+      "discarded_text": " Of the two, the"
+     },
+     "noise_blocked": 0,
+     "named": "proton",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " neutron",
+    "second": " proton",
+    "collision": 0.6536,
+    "ratio": 6.877,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the higher density at room temperature, gold or osmium? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "gold",
+    "osmium"
+   ],
+   "key": "osmium",
+   "other": "gold",
+   "arms": {
+    "plain": {
+     "output": "Of the two, osmium has the higher density at room temperature.",
+     "steps": 14,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "osmium",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, osmium has the higher density at room temperature.",
+     "steps": 14,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "osmium",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, osmium has the higher density at room temperature.",
+     "steps": 14,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "osmium",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is osmium.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "osmium",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is gold.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "gold",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is osmium.",
+     "fired": true,
+     "trigger": {
+      "token_index": 7,
+      "first": " the",
+      "second": " a",
+      "collision": 0.3789,
+      "ratio": 1.49,
+      "discarded_text": " Of the two, osmium has"
+     },
+     "noise_blocked": 0,
+     "named": "osmium",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is gold.",
+     "fired": true,
+     "trigger": {
+      "token_index": 7,
+      "first": " the",
+      "second": " a",
+      "collision": 0.3789,
+      "ratio": 1.49,
+      "discarded_text": " Of the two, osmium has"
+     },
+     "noise_blocked": 0,
+     "named": "gold",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " os",
+    "second": " the",
+    "collision": 0.651,
+    "ratio": 3.785,
+    "condition": false,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the greater average distance from the Sun, Neptune or Uranus? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "Neptune",
+    "Uranus"
+   ],
+   "key": "Neptune",
+   "other": "Uranus",
+   "arms": {
+    "plain": {
+     "output": "Of the two, Neptune is farther from the Sun.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Neptune",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, Neptune is farther from the Sun.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Neptune",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, Neptune is farther from the Sun.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Neptune",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is Neptune.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Neptune",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is Uranus.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Uranus",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, Neptune is farther from the Sun.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Neptune",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, Neptune is farther from the Sun.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Neptune",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " Neptune",
+    "second": " the",
+    "collision": 0.4616,
+    "ratio": 1.922,
+    "condition": false,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the larger number of protons in its nucleus, carbon or nitrogen? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "carbon",
+    "nitrogen"
+   ],
+   "key": "nitrogen",
+   "other": "carbon",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is carbon.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "carbon",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is carbon.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "carbon",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is carbon.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "carbon",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is nitrogen.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "nitrogen",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is carbon.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "carbon",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is nitrogen.",
+     "fired": true,
+     "trigger": {
+      "token_index": 7,
+      "first": " carbon",
+      "second": " nitrogen",
+      "collision": 0.508,
+      "ratio": 1.303,
+      "discarded_text": " Of the two, the answer is"
+     },
+     "noise_blocked": 0,
+     "named": "nitrogen",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is carbon.",
+     "fired": true,
+     "trigger": {
+      "token_index": 7,
+      "first": " carbon",
+      "second": " nitrogen",
+      "collision": 0.508,
+      "ratio": 1.303,
+      "discarded_text": " Of the two, the answer is"
+     },
+     "noise_blocked": 0,
+     "named": "carbon",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " carbon",
+    "second": " nitrogen",
+    "collision": 0.508,
+    "ratio": 1.303,
+    "condition": true,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the lower density at room temperature, titanium or aluminium? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "titanium",
+    "aluminium"
+   ],
+   "key": "aluminium",
+   "other": "titanium",
+   "arms": {
+    "plain": {
+     "output": "Of the two, titanium has the lower density at room temperature.",
+     "steps": 13,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "titanium",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, titanium has the lower density at room temperature.",
+     "steps": 13,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "titanium",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, titanium has the lower density at room temperature.",
+     "steps": 13,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "titanium",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is aluminium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "aluminium",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is titanium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "titanium",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, titanium has the lower density at room temperature.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "titanium",
+     "mark": "wrong"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, titanium has the lower density at room temperature.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "titanium",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " titanium",
+    "second": " aluminum",
+    "collision": 0.6333,
+    "ratio": 7.068,
+    "condition": false,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the greater mass, Jupiter or Saturn? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "Jupiter",
+    "Saturn"
+   ],
+   "key": "Jupiter",
+   "other": "Saturn",
+   "arms": {
+    "plain": {
+     "output": "Of the two, Saturn has the greater mass.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Saturn",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, Saturn has the greater mass.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Saturn",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, Saturn has the greater mass.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Saturn",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is Jupiter.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Jupiter",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is Saturn.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Saturn",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is Jupiter.",
+     "fired": true,
+     "trigger": {
+      "token_index": 4,
+      "first": " Saturn",
+      "second": " the",
+      "collision": 0.3339,
+      "ratio": 1.019,
+      "discarded_text": " Of the two,"
+     },
+     "noise_blocked": 0,
+     "named": "Jupiter",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is Saturn.",
+     "fired": true,
+     "trigger": {
+      "token_index": 4,
+      "first": " Saturn",
+      "second": " the",
+      "collision": 0.3339,
+      "ratio": 1.019,
+      "discarded_text": " Of the two,"
+     },
+     "noise_blocked": 0,
+     "named": "Saturn",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " Saturn",
+    "second": " the",
+    "collision": 0.3339,
+    "ratio": 1.019,
+    "condition": true,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the lower density at room temperature, lithium or sodium? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "lithium",
+    "sodium"
+   ],
+   "key": "lithium",
+   "other": "sodium",
+   "arms": {
+    "plain": {
+     "output": "Of the two, lithium has the lower density at room temperature.",
+     "steps": 13,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "lithium",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, lithium has the lower density at room temperature.",
+     "steps": 13,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "lithium",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, lithium has the lower density at room temperature.",
+     "steps": 13,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "lithium",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is lithium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "lithium",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is sodium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "sodium",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, lithium has the lower density at room temperature.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "lithium",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, lithium has the lower density at room temperature.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "lithium",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " lithium",
+    "second": " sodium",
+    "collision": 0.6224,
+    "ratio": 4.131,
+    "condition": false,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the longer year, Mars or Earth? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "Mars",
+    "Earth"
+   ],
+   "key": "Mars",
+   "other": "Earth",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is Mars.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Mars",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is Mars.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Mars",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is Mars.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Mars",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is Mars.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Mars",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is Earth.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Earth",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is Mars.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Mars",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is Mars.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Mars",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " Mars",
+    "second": " Earth",
+    "collision": 0.7425,
+    "ratio": 5.626,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the higher photon energy, ultraviolet light or infrared light? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "ultraviolet light",
+    "infrared light"
+   ],
+   "key": "ultraviolet light",
+   "other": "infrared light",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is ultraviolet light.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "ultraviolet light",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is ultraviolet light.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "ultraviolet light",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is ultraviolet light.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "ultraviolet light",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is ultraviolet light.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "ultraviolet light",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is ultraviolet light.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "ultraviolet light",
+     "mark": "correct"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is ultraviolet light.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "ultraviolet light",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is ultraviolet light.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "ultraviolet light",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " ultr",
+    "second": " infrared",
+    "collision": 0.9082,
+    "ratio": 20.32,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the higher melting point, platinum or silver? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "platinum",
+    "silver"
+   ],
+   "key": "platinum",
+   "other": "silver",
+   "arms": {
+    "plain": {
+     "output": "Of the two, platinum has a higher melting point.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "platinum",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, platinum has a higher melting point.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "platinum",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, platinum has a higher melting point.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "platinum",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is platinum.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "platinum",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is silver.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "silver",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is platinum.",
+     "fired": true,
+     "trigger": {
+      "token_index": 4,
+      "first": " platinum",
+      "second": " the",
+      "collision": 0.4498,
+      "ratio": 1.095,
+      "discarded_text": " Of the two,"
+     },
+     "noise_blocked": 0,
+     "named": "platinum",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is silver.",
+     "fired": true,
+     "trigger": {
+      "token_index": 4,
+      "first": " platinum",
+      "second": " the",
+      "collision": 0.4498,
+      "ratio": 1.095,
+      "discarded_text": " Of the two,"
+     },
+     "noise_blocked": 0,
+     "named": "silver",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " platinum",
+    "second": " the",
+    "collision": 0.4498,
+    "ratio": 1.095,
+    "condition": true,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the lower boiling point at 1 atm, methane or propane? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "methane",
+    "propane"
+   ],
+   "key": "methane",
+   "other": "propane",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is propane.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "propane",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is propane.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "propane",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is propane.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "propane",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is methane.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "methane",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is propane.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "propane",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is propane.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "propane",
+     "mark": "wrong"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is propane.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "propane",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " propane",
+    "second": " methane",
+    "collision": 0.6818,
+    "ratio": 4.11,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the greater standard atomic weight, calcium or magnesium? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "calcium",
+    "magnesium"
+   ],
+   "key": "calcium",
+   "other": "magnesium",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is calcium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "calcium",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is calcium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "calcium",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is calcium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "calcium",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is calcium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "calcium",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is magnesium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "magnesium",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is calcium.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "calcium",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is calcium.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "calcium",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " calcium",
+    "second": " magnesium",
+    "collision": 0.8343,
+    "ratio": 10.112,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the higher electronegativity on the Pauling scale, fluorine or chlorine? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "fluorine",
+    "chlorine"
+   ],
+   "key": "fluorine",
+   "other": "chlorine",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is fluorine.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "fluorine",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is fluorine.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "fluorine",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is fluorine.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "fluorine",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is fluorine.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "fluorine",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is chlorine.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "chlorine",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is fluorine.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "fluorine",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is fluorine.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "fluorine",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " fluor",
+    "second": " chlorine",
+    "collision": 0.686,
+    "ratio": 4.376,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the lower melting point, zinc or copper? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "zinc",
+    "copper"
+   ],
+   "key": "zinc",
+   "other": "copper",
+   "arms": {
+    "plain": {
+     "output": "Of the two, zinc has the lower melting point.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "zinc",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, zinc has the lower melting point.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "zinc",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, zinc has the lower melting point.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "zinc",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is zinc.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "zinc",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is copper.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "copper",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, zinc has the lower melting point.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "zinc",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, zinc has the lower melting point.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "zinc",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " zinc",
+    "second": " copper",
+    "collision": 0.4563,
+    "ratio": 1.909,
+    "condition": false,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the larger number of protons in its nucleus, uranium or lead? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "uranium",
+    "lead"
+   ],
+   "key": "uranium",
+   "other": "lead",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is uranium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "uranium",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is uranium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "uranium",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is uranium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "uranium",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is uranium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "uranium",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is lead.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "lead",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is uranium.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "uranium",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is uranium.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "uranium",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " uranium",
+    "second": " lead",
+    "collision": 0.9117,
+    "ratio": 20.851,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the greater standard atomic weight, cobalt or nickel? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "cobalt",
+    "nickel"
+   ],
+   "key": "cobalt",
+   "other": "nickel",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is cobalt.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "cobalt",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is cobalt.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "cobalt",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is cobalt.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "cobalt",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is cobalt.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "cobalt",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is nickel.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "nickel",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is cobalt.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "cobalt",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is cobalt.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "cobalt",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " cob",
+    "second": " nickel",
+    "collision": 0.8045,
+    "ratio": 8.195,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the greater standard atomic weight, tellurium or iodine? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "tellurium",
+    "iodine"
+   ],
+   "key": "tellurium",
+   "other": "iodine",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is tellurium.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tellurium",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is tellurium.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tellurium",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is tellurium.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tellurium",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is tellurium.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tellurium",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is iodine.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "iodine",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is tellurium.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "tellurium",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is tellurium.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "tellurium",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " tell",
+    "second": " iod",
+    "collision": 0.9344,
+    "ratio": 28.901,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the lower boiling point at 1 atm, helium or neon? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "helium",
+    "neon"
+   ],
+   "key": "helium",
+   "other": "neon",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is neon.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "neon",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is neon.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "neon",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is neon.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "neon",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is helium.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "helium",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is neon.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "neon",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is helium.",
+     "fired": true,
+     "trigger": {
+      "token_index": 7,
+      "first": " neon",
+      "second": " helium",
+      "collision": 0.4984,
+      "ratio": 1.103,
+      "discarded_text": " Of the two, the answer is"
+     },
+     "noise_blocked": 0,
+     "named": "helium",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is neon.",
+     "fired": true,
+     "trigger": {
+      "token_index": 7,
+      "first": " neon",
+      "second": " helium",
+      "collision": 0.4984,
+      "ratio": 1.103,
+      "discarded_text": " Of the two, the answer is"
+     },
+     "noise_blocked": 0,
+     "named": "neon",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " neon",
+    "second": " helium",
+    "collision": 0.4984,
+    "ratio": 1.103,
+    "condition": true,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the larger diameter, Callisto or Europa? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "Callisto",
+    "Europa"
+   ],
+   "key": "Callisto",
+   "other": "Europa",
+   "arms": {
+    "plain": {
+     "output": "Of the two, Europa has the larger diameter.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Europa",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, Europa has the larger diameter.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Europa",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, Europa has the larger diameter.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Europa",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is Callisto.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Callisto",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is Europa.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Europa",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is Callisto.",
+     "fired": true,
+     "trigger": {
+      "token_index": 4,
+      "first": " Europa",
+      "second": " Call",
+      "collision": 0.3483,
+      "ratio": 1.014,
+      "discarded_text": " Of the two,"
+     },
+     "noise_blocked": 0,
+     "named": "Callisto",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is Europa.",
+     "fired": true,
+     "trigger": {
+      "token_index": 4,
+      "first": " Europa",
+      "second": " Call",
+      "collision": 0.3483,
+      "ratio": 1.014,
+      "discarded_text": " Of the two,"
+     },
+     "noise_blocked": 0,
+     "named": "Europa",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " Europa",
+    "second": " Call",
+    "collision": 0.3483,
+    "ratio": 1.014,
+    "condition": true,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the lower mean density, Jupiter or Saturn? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "Jupiter",
+    "Saturn"
+   ],
+   "key": "Saturn",
+   "other": "Jupiter",
+   "arms": {
+    "plain": {
+     "output": "Of the two, Saturn has the lower mean density.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Saturn",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, Saturn has the lower mean density.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Saturn",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, Saturn has the lower mean density.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Saturn",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is Saturn.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Saturn",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is Jupiter.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Jupiter",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, Saturn has the lower mean density.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Saturn",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, Saturn has the lower mean density.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Saturn",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " Saturn",
+    "second": " Jupiter",
+    "collision": 0.5596,
+    "ratio": 2.781,
+    "condition": false,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the larger diameter, Europa or Io? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "Europa",
+    "Io"
+   ],
+   "key": "Io",
+   "other": "Europa",
+   "arms": {
+    "plain": {
+     "output": "Of the two, Europa has the larger diameter.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Europa",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, Europa has the larger diameter.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Europa",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, Europa has the larger diameter.",
+     "steps": 10,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Europa",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is Io.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Io",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is Europa.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Europa",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, Europa has the larger diameter.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Europa",
+     "mark": "wrong"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, Europa has the larger diameter.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Europa",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " Europa",
+    "second": " Io",
+    "collision": 0.5474,
+    "ratio": 4.861,
+    "condition": false,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the longer rotation period on its axis, Earth or Venus? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "Earth",
+    "Venus"
+   ],
+   "key": "Venus",
+   "other": "Earth",
+   "arms": {
+    "plain": {
+     "output": "Of the two, Venus has the longer rotation period on its axis.",
+     "steps": 14,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Venus",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, Venus has the longer rotation period on its axis.",
+     "steps": 14,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Venus",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, Venus has the longer rotation period on its axis.",
+     "steps": 14,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Venus",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is Venus.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Venus",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is Earth.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Earth",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is Venus.",
+     "fired": true,
+     "trigger": {
+      "token_index": 4,
+      "first": " Venus",
+      "second": " Earth",
+      "collision": 0.3409,
+      "ratio": 1.274,
+      "discarded_text": " Of the two,"
+     },
+     "noise_blocked": 0,
+     "named": "Venus",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is Earth.",
+     "fired": true,
+     "trigger": {
+      "token_index": 4,
+      "first": " Venus",
+      "second": " Earth",
+      "collision": 0.3409,
+      "ratio": 1.274,
+      "discarded_text": " Of the two,"
+     },
+     "noise_blocked": 0,
+     "named": "Earth",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " Venus",
+    "second": " Earth",
+    "collision": 0.3409,
+    "ratio": 1.274,
+    "condition": true,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the greater distance from Earth, Sirius or Betelgeuse? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "Sirius",
+    "Betelgeuse"
+   ],
+   "key": "Betelgeuse",
+   "other": "Sirius",
+   "arms": {
+    "plain": {
+     "output": "Of the two, Sirius has the greater distance from Earth.",
+     "steps": 12,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Sirius",
+     "mark": "wrong"
+    },
+    "plain_repeat": {
+     "output": "Of the two, Sirius has the greater distance from Earth.",
+     "steps": 12,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Sirius",
+     "mark": "wrong"
+    },
+    "kernel_only": {
+     "output": "Of the two, Sirius has the greater distance from Earth.",
+     "steps": 12,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Sirius",
+     "mark": "wrong"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is Betelgeuse.",
+     "steps": 12,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Betelgeuse",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is Sirius.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Sirius",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, Sirius has the greater distance from Earth.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Sirius",
+     "mark": "wrong"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, Sirius has the greater distance from Earth.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Sirius",
+     "mark": "wrong"
+    }
+   },
+   "plain_answer_token": {
+    "first": " Sirius",
+    "second": " Bet",
+    "collision": 0.4898,
+    "ratio": 3.007,
+    "condition": false,
+    "index": 4
+   }
+  },
+  {
+   "question": "Which has the larger number of neutrons in its nucleus, deuterium or tritium? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "deuterium",
+    "tritium"
+   ],
+   "key": "tritium",
+   "other": "deuterium",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is tritium.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tritium",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is tritium.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tritium",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is tritium.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tritium",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is tritium.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "tritium",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is deuterium.",
+     "steps": 11,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "deuterium",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is tritium.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "tritium",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is tritium.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "tritium",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " tr",
+    "second": " de",
+    "collision": 0.672,
+    "ratio": 3.869,
+    "condition": false,
+    "index": 7
+   }
+  },
+  {
+   "question": "Which has the larger diameter, Mercury or Mars? Reply with one sentence of the form 'Of the two, the answer is ___.'",
+   "options": [
+    "Mercury",
+    "Mars"
+   ],
+   "key": "Mars",
+   "other": "Mercury",
+   "arms": {
+    "plain": {
+     "output": "Of the two, the answer is Mars.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Mars",
+     "mark": "correct"
+    },
+    "plain_repeat": {
+     "output": "Of the two, the answer is Mars.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Mars",
+     "mark": "correct"
+    },
+    "kernel_only": {
+     "output": "Of the two, the answer is Mars.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Mars",
+     "mark": "correct"
+    },
+    "true_ref_always": {
+     "output": "Of the two, the answer is Mars.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Mars",
+     "mark": "correct"
+    },
+    "false_ref_always": {
+     "output": "Of the two, the answer is Mercury.",
+     "steps": 9,
+     "kernel_active_steps": 0,
+     "kernel_changed_token": 0,
+     "named": "Mercury",
+     "mark": "wrong"
+    },
+    "gate_true_ref": {
+     "output": "Of the two, the answer is Mars.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Mars",
+     "mark": "correct"
+    },
+    "gate_false_ref": {
+     "output": "Of the two, the answer is Mars.",
+     "fired": false,
+     "trigger": null,
+     "noise_blocked": 0,
+     "named": "Mars",
+     "mark": "correct"
+    }
+   },
+   "plain_answer_token": {
+    "first": " Mars",
+    "second": " Mercury",
+    "collision": 0.5313,
+    "ratio": 1.715,
+    "condition": false,
+    "index": 7
+   }
+  }
+ ],
+ "notebook_questions": [
+  {
+   "question": "Compare the room-temperature thermal conductivity of pure diamond and copper in one sentence.",
+   "plain_no_gate": "Pure diamond has a higher room-temperature thermal conductivity than copper.\nThis sentence compares the room-temperature thermal conductivity of pure diamond and copper by stating that diamond has a higher thermal conductivity than copper. The sentence is concise and directly compares the two",
+   "true_reference_no_gate": "Pure diamond has a room-temperature thermal conductivity that is roughly 5 times higher than that of copper. \n\nThis answer directly compares the room-temperature thermal conductivity of pure diamond and copper, using the given reference value for diamond and the approximate",
+   "gate_true_reference": {
+    "output": "Pure diamond has a room-temperature thermal conductivity that is roughly 5 times higher than that of copper. \n\nThis answer directly compares the room-temperature thermal conductivity of pure diamond and copper, using the given reference value for diamond and the approximate",
+    "fired": true,
+    "trigger": {
+     "token_index": 17,
+     "first": " room",
+     "second": " thermal",
+     "collision": 0.4632,
+     "ratio": 1.537,
+     "discarded_text": " Pure diamond has a higher room-temperature thermal conductivity than copper.\nThis sentence compares the"
+    },
+    "noise_blocked": 8
+   },
+   "gate_false_reference": {
+    "output": "Pure diamond has a room-temperature thermal conductivity that is roughly 5 times lower than that of copper. \n\nThis comparison is made by stating the specific thermal conductivity values for both materials at room temperature and expressing the difference in a concise manner.",
+    "fired": true,
+    "trigger": {
+     "token_index": 17,
+     "first": " room",
+     "second": " thermal",
+     "collision": 0.4632,
+     "ratio": 1.537,
+     "discarded_text": " Pure diamond has a higher room-temperature thermal conductivity than copper.\nThis sentence compares the"
+    },
+    "noise_blocked": 8
+   }
+  },
+  {
+   "question": "Is the boiling point of liquid nitrogen higher or lower than that of liquid oxygen at 1 atm? State both temperatures.",
+   "plain_no_gate": "Liquid nitrogen has a boiling point of -196°C (-320.8°F), while liquid oxygen has a boiling point of -183°C (-297.0°F). Therefore, liquid nitrogen has a higher",
+   "true_reference_no_gate": "The boiling point of liquid nitrogen is lower than that of liquid oxygen at 1 atm. The boiling point of liquid nitrogen is 77.36 K (-195.79 °C), while the boiling point of liquid",
+   "gate_true_reference": {
+    "output": "The boiling point of liquid nitrogen is lower than that of liquid oxygen at 1 atm. The boiling point of liquid nitrogen is 77.36 K (-195.79 °C), while the boiling point of liquid",
+    "fired": true,
+    "trigger": {
+     "token_index": 4,
+     "first": " boiling",
+     "second": " lower",
+     "collision": 0.3719,
+     "ratio": 1.512,
+     "discarded_text": " Liquid nitrogen has a"
+    },
+    "noise_blocked": 4
+   },
+   "gate_false_reference": {
+    "output": "The boiling point of liquid nitrogen is higher than that of liquid oxygen at 1 atm. The boiling point of liquid nitrogen is 97.36 K (-175.79 °C), while the boiling point of liquid",
+    "fired": true,
+    "trigger": {
+     "token_index": 4,
+     "first": " boiling",
+     "second": " lower",
+     "collision": 0.3719,
+     "ratio": 1.512,
+     "discarded_text": " Liquid nitrogen has a"
+    },
+    "noise_blocked": 4
+   }
+  },
+  {
+   "question": "Which planet has a shorter orbital period around the Sun, Mercury or Venus, and by how many Earth days?",
+   "plain_no_gate": "Mercury has a shorter orbital period around the Sun than Venus. Mercury's orbital period is 88 Earth days, while Venus's is 225 Earth days. The difference is 137 Earth days.\nTherefore, the answer",
+   "true_reference_no_gate": "Mercury has a shorter orbital period around the Sun than Venus. Mercury's orbital period is 137 Earth days shorter than Venus's. Therefore, the answer is Mercury. Mercury has a shorter orbital period around the Sun than Venus, and",
+   "gate_true_reference": {
+    "output": "Mercury has a shorter orbital period around the Sun than Venus. Mercury's orbital period is 88 Earth days, while Venus's is 225 Earth days. The difference is 137 Earth days.",
+    "fired": false,
+    "trigger": null,
+    "noise_blocked": 76
+   },
+   "gate_false_reference": {
+    "output": "Mercury has a shorter orbital period around the Sun than Venus. Mercury's orbital period is 88 Earth days, while Venus's is 225 Earth days. The difference is 137 Earth days.",
+    "fired": false,
+    "trigger": null,
+    "noise_blocked": 76
+   }
+  }
+ ]
+}

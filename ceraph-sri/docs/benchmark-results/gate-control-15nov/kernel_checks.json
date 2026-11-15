@@ -1,0 +1,95 @@
+{
+  "cell0_reproduction_on_random_logits": {
+    "notebook_printed": {
+      "xi": 0.4248,
+      "entropy_before_nats": 6.8623,
+      "entropy_after_nats": -0.0,
+      "top1_same": true
+    },
+    "numpy_rows": [
+      {
+        "seed": 0,
+        "xi": 0.5149,
+        "entropy_before_nats": 5.788,
+        "entropy_after_nats": -0.0,
+        "applied_damping": 0.08842,
+        "logit_multiplier": 11.31,
+        "top1_probability_before": 0.2007,
+        "top1_probability_after": 1.0,
+        "top1_same": true
+      },
+      {
+        "seed": 1,
+        "xi": 0.4508,
+        "entropy_before_nats": 6.5521,
+        "entropy_after_nats": 2.5e-05,
+        "applied_damping": 0.06419,
+        "logit_multiplier": 15.58,
+        "top1_probability_before": 0.0787,
+        "top1_probability_after": 0.999998,
+        "top1_same": true
+      },
+      {
+        "seed": 2,
+        "xi": 0.5751,
+        "entropy_before_nats": 5.0692,
+        "entropy_after_nats": -0.0,
+        "applied_damping": 0.11951,
+        "logit_multiplier": 8.37,
+        "top1_probability_before": 0.3708,
+        "top1_probability_after": 1.0,
+        "top1_same": true
+      },
+      {
+        "seed": 3,
+        "xi": 0.4417,
+        "entropy_before_nats": 6.6614,
+        "entropy_after_nats": 0.000256,
+        "applied_damping": 0.06132,
+        "logit_multiplier": 16.31,
+        "top1_probability_before": 0.0762,
+        "top1_probability_after": 0.999978,
+        "top1_same": true
+      },
+      {
+        "seed": 4,
+        "xi": 0.4384,
+        "entropy_before_nats": 6.7003,
+        "entropy_after_nats": -0.0,
+        "applied_damping": 0.06033,
+        "logit_multiplier": 16.58,
+        "top1_probability_before": 0.1226,
+        "top1_probability_after": 1.0,
+        "top1_same": true
+      }
+    ]
+  },
+  "largest_logit_changed": {
+    "rows_tested": 288,
+    "rows_where_winner_changed": 0
+  },
+  "v8_shift_test_seed_11": {
+    "logged_in_v8_sheets": {
+      "drift_A": 9.5367431640625e-07,
+      "drift_R": 2.757575511932373
+    },
+    "map_A_selected_by_v8": 9.5367431640625e-07,
+    "map_R_rejected_by_v8": 2.757575511932373,
+    "repo_sri_omlang_abhaya_damping": 2.757575511932373,
+    "notebook_gate_kernel_cell0": 555.5492553710938,
+    "notebook_gate_xi_on_this_series": 0.05610454082489014,
+    "notebook_gate_logit_multiplier_on_this_series": 112.10963743023439,
+    "v8_map_A_departure_multiplier": 0.44848501682281494
+  },
+  "stability_score_examples": {
+    "one_token_22_logits_ahead": {
+      "xi": 1.0,
+      "collision": 1.0
+    },
+    "two_tokens_nearly_tied": {
+      "xi": 0.9413710832595825,
+      "collision": 0.5008249282836914
+    },
+    "note": "Neither number uses the identity of the token. A wrong token 22 logits ahead scores as stable."
+  }
+}

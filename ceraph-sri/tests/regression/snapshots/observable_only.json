@@ -1,0 +1,32 @@
+{
+  "aggregate": {
+    "mean_median_filter_mse": 1.2352300114315238,
+    "mean_mmse_sample_mse": 0.6137248633352207,
+    "mean_moving_average_mse": 1.0881443514705091,
+    "mean_single_mode_mse": 0.6944325357306224,
+    "mmse_beats_median": true,
+    "mmse_beats_moving_average": true
+  },
+  "analytic_mse": 0.6126759441137769,
+  "oracle_paired_mse": {
+    "108": 3.864490391186748e-33,
+    "109": 3.724147159326469e-33,
+    "110": 3.89786805010744e-33
+  },
+  "sample_mse": {
+    "108": 0.6148440388801731,
+    "109": 0.610509030237706,
+    "110": 0.6158215208877831
+  },
+  "source": "docs/benchmark-results/cv-observable/observable_only_summary.json",
+  "statuses": {
+    "C1": "confirmed",
+    "C2": "confirmed",
+    "C3": "open",
+    "C4": "open"
+  },
+  "weights": [
+    0.43304145914126124,
+    -0.28935075345920414
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "experiment": "braket_advantage_suite",
+  "phase": "S2",
+  "equal_resource_note": "MMSE uses two optical modes (y_A, y_B). Moving-average/median baselines use y_A only. Prefer single_mode_mse for same-mode comparisons; two-mode MMSE vs coherent two-mode analytic is the physics-aligned contest.",
+  "comparators": [
+    "moving_average_y_a",
+    "median_y_a",
+    "single_mode_wiener",
+    "coherent_two_mode",
+    "squeezed_signal_matched_photons"
+  ],
+  "observable_aggregate": {
+    "mean_mmse_sample_mse": 0.6137248633352207,
+    "mean_moving_average_mse": 1.0881443514705091,
+    "mean_median_filter_mse": 1.2352300114315238,
+    "mean_single_mode_mse": 0.6944325357306224,
+    "mmse_beats_moving_average": true,
+    "mmse_beats_median": true
+  },
+  "campaign_aggregate": {
+    "fraction_sq_ref_beats_coherent": 0.8333333333333334,
+    "default_point_analytic": {
+      "coherent": 0.6435643564356436,
+      "squeezed_reference": 0.6126759441137769,
+      "squeezed_signal": 0.5127067844620878
+    }
+  },
+  "pass_criteria": {
+    "mmse_beats_moving_average": true,
+    "mmse_beats_median": true,
+    "mmse_beats_single_mode": true,
+    "mse_reduction_vs_ma": 0.47441948813528845,
+    "mse_reduction_vs_median": 0.6215051480963031,
+    "mse_reduction_vs_single_mode": 0.08070767239540166,
+    "ordering_sq_sig_best": true,
+    "squeezed_signal_beats_squeezed_ref": true,
+    "fraction_sq_ref_beats_coherent": 0.8333333333333334,
+    "fraction_sq_ref_beats_coherent_ge_lock": true,
+    "lock_margins": {
+      "mmse": 0.6137248633352207,
+      "moving_average": 1.0881443514705091,
+      "median": 1.2352300114315238,
+      "single_mode": 0.6944325357306224,
+      "analytic_coherent": 0.6435643564356436,
+      "analytic_squeezed_reference": 0.6126759441137769,
+      "analytic_squeezed_signal": 0.5127067844620878
+    },
+    "defensible_win": true,
+    "honest_controls": {
+      "squeezed_signal_stronger_when_equal_photons": true,
+      "note": "Squeezed-signal is the stronger matched quantum baseline under equal squeezing photons; report it even when the proposed squeezed-ref wins vs coherent / classical filters."
+    }
+  },
+  "pass": true,
+  "paths": {
+    "observable": "docs/benchmark-results/braket-live/e1_e4_hybrid/campaign/advantage/observable/observable_only_summary.json",
+    "campaign": "docs/benchmark-results/braket-live/e1_e4_hybrid/campaign/advantage/campaign/cv_campaign_summary.json"
+  },
+  "disclaimer": "Classical Monte Carlo of an ideal Gaussian optical model. Not a photonic Braket QPU result and not yellow-paper O(1)/Landauer claims.",
+  "provenance": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "script_sha256": "8937f679917ff6f196519ec004aa81a8969beb14fe9b2e18f1f496c7923162ae"
+  }
+}

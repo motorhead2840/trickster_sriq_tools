@@ -1,0 +1,42 @@
+{
+  "product": "SREE.ai Mentor / SREE.edu",
+  "methodology": "nvidia-transformer-engine-jax-dropless-moe",
+  "container_hint": "ghcr.io/nvidia/jax:maxtext-2026-09-10 or newer",
+  "maxtext_flags": {
+    "te_moe_block": true,
+    "te_gmm_quantization": "te_mxfp8",
+    "ragged_buffer_factor": 2.0,
+    "te_ep_overflow_check_every_n_steps": 20,
+    "sparse_matmul": true,
+    "prefuse_moe_weights": true,
+    "capacity_factor": 1.0,
+    "megablox": false,
+    "attention": "cudnn_flash_te",
+    "model_name": "sree-mentor-moe-smoke",
+    "max_target_length": 2048,
+    "per_device_batch_size": 1,
+    "steps": 5,
+    "notes": "Local / single-node smoke; replace model_name with real Mentor backbone."
+  },
+  "witness_attach": {
+    "gate": "stability_coefficient / \u039e on pre-softmax logits",
+    "projector": "Yoga\u2013Buddhi observable (Lemma Z1) or abstain",
+    "must_run_before": "softmax",
+    "status": "scaffold"
+  },
+  "pairing": {
+    "cutile_yoga_buddhi": "docs/cuda-tile-rust-embodiment.md",
+    "skill": "skills/sri-sree-mentor-te-moe/SKILL.md"
+  },
+  "honesty": {
+    "do_not_claim_nvidia_deepseek_tflops": true,
+    "dropless_does_not_imply_zero_hallucination": true,
+    "perf_status": "not_run"
+  },
+  "pass_criteria": [
+    "smoke_loss_finite",
+    "no_capacity_token_drop_counters",
+    "witness_hook_callable",
+    "perf_delta_vs_own_baseline_only"
+  ]
+}

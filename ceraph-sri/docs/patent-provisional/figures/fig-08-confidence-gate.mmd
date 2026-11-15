@@ -1,0 +1,9 @@
+flowchart LR
+  U800["800 User query"] --> P802["802 AI processing"]
+  P802 --> P804["804 Model scores"]
+  P804 --> P806["806 In-process stability"]
+  P806 --> P808["808 Draft answer"]
+  P808 --> P810["810 Confidence check"]
+  P810 --> P812{"812 Above threshold?"}
+  P812 -->|No| P814["814 No-answer / low confidence"]
+  P812 -->|Yes| P816["816 Present answer"]

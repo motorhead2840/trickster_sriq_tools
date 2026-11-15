@@ -1,0 +1,70 @@
+{
+  "verdict": {
+    "pass_math": true,
+    "pass_cudaq": true,
+    "pass_proxy": true,
+    "pass_breakthrough": true,
+    "cudaq_present": true,
+    "softwall": {
+      "landauer_physical": "NOT_PROVEN",
+      "tmem_msb_xor_o0": "SOFTWARE_PROXY_NOT_TMEM",
+      "software_fma_proxy": "MEASURED_PROXY_TOWARD_O1",
+      "table1_reference": "REFERENCE_ONLY_NOT_REMEASURED",
+      "any_softwall_falsely_greened": false
+    },
+    "note": "pass_breakthrough requires math greens; CUDA-Q greens when cudaq is present. Softwalls stay honest."
+  },
+  "devices": {
+    "jax_default_backend": "cpu",
+    "jax_devices": [
+      "TFRT_CPU_0"
+    ],
+    "cudaq": "CUDA-Q Version 0.16.0 (https://github.com/NVIDIA/cuda-quantum 9ceceba030d737655f8a4fb15fadbc3bdee6f30d)",
+    "cudaq_target": "nvidia",
+    "nvidia_smi": "Tesla T4, 595.91.07"
+  },
+  "round_pass": {
+    "D1": true,
+    "D2": true,
+    "D3": true,
+    "D4": true,
+    "D5": true,
+    "D6": true,
+    "D7": true,
+    "D8": true
+  },
+  "round_track": {
+    "D1": null,
+    "D2": "PROVED_MATH",
+    "D3": "PROVED_MATH",
+    "D4": "PROVED_MATH",
+    "D5": "PROVED_MATH",
+    "D6": "SOFTWARE_PROXY",
+    "D7": "CUDAQ_OK",
+    "D8": "CUDAQ_OK"
+  },
+  "softwall": {
+    "landauer_physical": "NOT_PROVEN",
+    "tmem_msb_xor_o0": "SOFTWARE_PROXY_NOT_TMEM",
+    "software_fma_proxy": "MEASURED_PROXY_TOWARD_O1",
+    "table1_reference": "REFERENCE_ONLY_NOT_REMEASURED",
+    "any_softwall_falsely_greened": false
+  },
+  "documents": {
+    "project_report": "/tmp/cudaq_provisional/PROJECT_REPORT_cudaq_provisional.md",
+    "patent_annex": "/tmp/cudaq_provisional/PATENT_ANNEX_cudaq_dissertation_enablement.md"
+  },
+  "wall_seconds": 2.019265439000037,
+  "provenance": {
+    "recorded_from": "Hari SageMaker/Braket CUDA-Q notebook",
+    "head": "38c51c4",
+    "branch": "cursor/cudaq-provisional-dissertation-fd3c",
+    "gpu": "Tesla T4",
+    "cudaq_version": "0.16.0",
+    "note": "JAX fell back to CPU in conda_braket kernel; CUDA-Q nvidia target executed D7/D8 on T4."
+  },
+  "s3": {
+    "prefix": "s3://amazon-braket-sri-results-1/sri-braket/cudaq-provisional-dissertation/results/20261112T064213Z",
+    "uris_file": "s3-uris.json"
+  }
+}

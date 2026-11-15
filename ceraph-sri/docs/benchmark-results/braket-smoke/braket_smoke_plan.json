@@ -1,0 +1,43 @@
+{
+  "experiment": "braket_smoke_plan",
+  "validation": {
+    "status": "dry_run_ok",
+    "submit_requested": false,
+    "estimated_cost_usd": 0.075,
+    "within_cost_cap": true,
+    "plan": {
+      "job_name": "sri-e1-braket-smoke",
+      "device_arn": "arn:aws:braket:::device/quantum-simulator/amazon/sv1",
+      "shots": 1000,
+      "task": "cv_sensing_analogue",
+      "parameters": {
+        "signal_variance": 1.0,
+        "noise_variance": 1.0,
+        "coupling": 1.0,
+        "efficiency": 0.8,
+        "reference_r": 0.7,
+        "encoding": "gaussian_analogue_via_classical_postprocess",
+        "note": "CV homodyne sensing is simulated classically unless a photonic Braket device is selected; SV1 path validates job plumbing only."
+      },
+      "cost_cap_usd": 5.0,
+      "region": "us-east-1",
+      "submit": false,
+      "s3_bucket": null,
+      "s3_prefix": "sri-braket"
+    }
+  },
+  "local_classical_shadow": {
+    "backend": "classical_gaussian",
+    "sample_mse": 0.6089126826252788,
+    "analytic_mse": 0.6126759441137769,
+    "weights": [
+      0.43304145914126124,
+      -0.28935075345920414
+    ],
+    "shots": 1000.0
+  },
+  "provenance": {
+    "python": "3.12.3",
+    "script_sha256": "5ea894c1f6f623fba43a0d6cd574e6e2c001984ce449db84f8472aa9fcd9f339"
+  }
+}

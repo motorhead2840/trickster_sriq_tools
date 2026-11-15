@@ -1,0 +1,60 @@
+{
+  "conjectures": [
+    {
+      "conjecture_id": "C1",
+      "status": "confirmed",
+      "notes": "Oracle identity verified; MMSE is observable-only Wiener filter.",
+      "artifact_paths": [
+        "docs/benchmark-results/braket-live/e1_e4_hybrid/cv-observable-a100/observable_only_summary.json"
+      ],
+      "statement": "Yoga\u2013Buddhi with known \u03be equals the MMSE estimator only when the antithesis is physically available; the observable-only Gaussian MMSE from (y_A, y_B) is the correct physical replacement.",
+      "pass_criterion": "Oracle paired projection MSE is ~0 when \u03be is supplied; observable-only MMSE matches analytic Wiener MSE within 5\u03c3 sampling error and never receives s or n at inference."
+    },
+    {
+      "conjecture_id": "C2",
+      "status": "confirmed",
+      "notes": "Analytic MSE ordering checked against mse_optimal closed forms.",
+      "artifact_paths": [
+        "docs/benchmark-results/braket-live/e1_e4_hybrid/cv-observable-a100/observable_only_summary.json"
+      ],
+      "statement": "Under the protocol Gaussian model, squeezed-reference MSE ordering matches the closed form across independent seeds.",
+      "pass_criterion": "For default (Vs=Vn=k=1, \u03b7=0.8, r=0.7), sample ordering agrees with analytic ordering on \u22653 seeds; |analytic-sample| \u2264 5\u03c3 SE."
+    },
+    {
+      "conjecture_id": "C3",
+      "status": "confirmed",
+      "notes": "xi_snr range=[0.0102667, 0.931353]; legacy may exit [0,1]",
+      "artifact_paths": [
+        "docs/benchmark-results/braket-live/e1_e4_hybrid/foundation-a100/foundation_axioms_summary.json"
+      ],
+      "statement": "An axiomatic stability coefficient \u039e_SNR (or purity/Fisher proxy) remains in (0, 1] on all foundation sweep points; legacy Equation-11 \u039e need not.",
+      "pass_criterion": "Over the Week-2 spike grid, min(\u039e_SNR) > 0 and max(\u039e_SNR) \u2264 1; legacy \u039e is reported without clipping."
+    },
+    {
+      "conjecture_id": "C4",
+      "status": "confirmed",
+      "notes": "entropy_ok=True; mean_chi_P=50.4281; mean_chi_W=22.4281",
+      "artifact_paths": [
+        "docs/benchmark-results/braket-live/e1_e4_hybrid/foundation-a100/foundation_axioms_summary.json"
+      ],
+      "statement": "Circuit-B Branch W (worked-example thresholding) yields a macro marker that does not collapse during the noise spike the way legacy \u039e does; damping corresponds to a CPTP attenuator on covariances.",
+      "pass_criterion": "Branch W keeps \u039e_SNR in (0,1] through spikes; attenuator_channel preserves physical covariances; if neither branch satisfies a stated contraction inequality, status becomes refuted/open with counterexamples."
+    },
+    {
+      "conjecture_id": "C5",
+      "status": "confirmed",
+      "notes": "Reconciled 2026-11-13: prior Markdown said confirmed (GPU elaborate); machine JSON said open awaiting runner. Phase 3 CPU runner recorded confirmation against written C5 criteria (algebra + 5\u03c3 + observable-only). Artifacts: docs/benchmark-results/phase3-vertical-slice/phase3_summary.json; prior GPU: docs/benchmark-results/braket-live/sphota-yoga-buddhi-elaborate/sagemaker-g4dn/pasteback.json",
+      "artifact_paths": [
+        "docs/benchmark-results/phase3-vertical-slice/phase3_summary.json",
+        "docs/benchmark-results/braket-live/sphota-yoga-buddhi-elaborate/sagemaker-g4dn/pasteback.json"
+      ],
+      "statement": "Lemma Z1 (Observable Antithesis, P1): under the Gaussian dual-mode model with known parameters, there exists an observable map \u0108_S(y_A,y_B)=(2w_A-1)y_A+2w_B y_B such that \u03a5\u0302=\u00bd(y_A+\u0108_S) equals the MMSE estimator \u015d. Involution \u0108_S\u00b2=I is required only in the latent (v,\u03be) chart (oracle path), not on raw Y.",
+      "pass_criterion": "Algebraic identity \u03a5\u0302\u2261\u015d in code on a fixed seed grid (relative tolerance 1e-10); sample MSE matches analytic MMSE within the same 5\u03c3 rule as C1; estimator never receives s or n. Status stays open until a runner records the result \u2014 unit tests may verify the algebra without promoting the registry artifact."
+    }
+  ],
+  "sources": [
+    "docs/benchmark-results/braket-live/e1_e4_hybrid/cv-observable-a100/observable_only_summary.json",
+    "docs/benchmark-results/braket-live/e1_e4_hybrid/foundation-a100/foundation_axioms_summary.json",
+    "docs/architecture-axioms.md"
+  ]
+}

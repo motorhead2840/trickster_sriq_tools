@@ -1,0 +1,66 @@
+{
+  "queued_4_ms": 29.509,
+  "concurrent_4_ms": 7.467,
+  "boards": [
+    {
+      "gpu_id": 0,
+      "jobs_completed": 81433,
+      "drift_error": 0.0,
+      "mean_power_w": 298.2,
+      "peak_power_w": 315.6,
+      "power_limit_w": 600.0,
+      "tdp_headroom_pct": 50.3,
+      "start_temp_c": 33.0,
+      "peak_temp_c": 49.0,
+      "thermal_rise_c": 16.0,
+      "min_clock_mhz": 2325,
+      "max_clock_mhz": 2422,
+      "mean_occupancy_pct": 98.5
+    },
+    {
+      "gpu_id": 1,
+      "jobs_completed": 81433,
+      "drift_error": 0.0,
+      "mean_power_w": 301.3,
+      "peak_power_w": 315.2,
+      "power_limit_w": 600.0,
+      "tdp_headroom_pct": 49.8,
+      "start_temp_c": 32.0,
+      "peak_temp_c": 48.0,
+      "thermal_rise_c": 16.0,
+      "min_clock_mhz": 2280,
+      "max_clock_mhz": 2422,
+      "mean_occupancy_pct": 98.3
+    },
+    {
+      "gpu_id": 2,
+      "jobs_completed": 81433,
+      "drift_error": 0.0,
+      "mean_power_w": 296.5,
+      "peak_power_w": 320.0,
+      "power_limit_w": 600.0,
+      "tdp_headroom_pct": 50.6,
+      "start_temp_c": 33.0,
+      "peak_temp_c": 48.0,
+      "thermal_rise_c": 15.0,
+      "min_clock_mhz": 2332,
+      "max_clock_mhz": 2422,
+      "mean_occupancy_pct": 98.3
+    },
+    {
+      "gpu_id": 3,
+      "jobs_completed": 81433,
+      "drift_error": 0.0,
+      "mean_power_w": 295.7,
+      "peak_power_w": 331.6,
+      "power_limit_w": 600.0,
+      "tdp_headroom_pct": 50.7,
+      "start_temp_c": 33.0,
+      "peak_temp_c": 48.0,
+      "thermal_rise_c": 15.0,
+      "min_clock_mhz": 2347,
+      "max_clock_mhz": 2422,
+      "mean_occupancy_pct": 98.3
+    }
+  ]
+}

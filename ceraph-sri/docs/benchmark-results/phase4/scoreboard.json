@@ -1,0 +1,65 @@
+{
+  "phase": 4,
+  "narrow_claim": "SUPPORTED",
+  "broad_claim": "NOT_MET",
+  "confirmation": {
+    "seed_base": 401,
+    "shots": 8000,
+    "cells": [
+      {
+        "noise_variance": 1.0,
+        "shots": 8000,
+        "sri_mse": 0.612164656565976,
+        "single_mode_mse": 0.6900621197605347,
+        "relative_reduction": 0.11288471133814837
+      },
+      {
+        "noise_variance": 2.0,
+        "shots": 8000,
+        "sri_mse": 0.603497857859271,
+        "single_mode_mse": 0.749453505393532,
+        "relative_reduction": 0.19474943606757944
+      }
+    ],
+    "mean_relative_reduction": 0.1538170737028639,
+    "holds": true
+  },
+  "claims": [
+    {
+      "id": "dual_mode_beats_single_mode",
+      "status": "SUPPORTED",
+      "detail": "Phase 3 locked mean R=0.1205 against threshold 0.08. This run's confirmation mean R=0.1538."
+    },
+    {
+      "id": "blackwell_execution",
+      "status": "SUPPORTED",
+      "detail": "5 measured RTX PRO 6000 kernel records are in the catalog."
+    },
+    {
+      "id": "submillisecond_on_recorded_sizes",
+      "status": "SUPPORTED",
+      "detail": "Smallest recorded kernel time is 0.0062 ms."
+    },
+    {
+      "id": "faster_than_same_host_cpu_at_large_length",
+      "status": "SUPPORTED",
+      "detail": "Peak CPU/GPU ratio on the 14 November Blackwell kernel is 148.8."
+    },
+    {
+      "id": "same_gpu_faster_than_named_baseline",
+      "status": "NOT_MET",
+      "detail": "torch.nn.functional.avg_pool1d kernel 9 median 0.257 ms, Ceraph kernel median 1.178 ms, temperatures 30.0 \u00b0C and 31.0 \u00b0C."
+    },
+    {
+      "id": "thermal_savings_against_a_named_accelerator",
+      "status": "OPEN",
+      "detail": "Board readings exist for one L40S and one RTX PRO 6000. No second accelerator ran the same job."
+    },
+    {
+      "id": "printed_latency_budget",
+      "status": "NOT_EVIDENCE",
+      "detail": "0.2379 ms is stored and excluded. It is not a timed competitor."
+    }
+  ],
+  "sentence": "The deployable dual-mode path remains ahead of single-mode Wiener, and the archived kernels have already been timed on an RTX PRO 6000 Blackwell, including sub-millisecond medians at the small sizes. The same card's average-pool comparison is the open race: the current operator finished first, so the broad speed and thermal claim stays unmet until a later same-GPU row reverses it."
+}

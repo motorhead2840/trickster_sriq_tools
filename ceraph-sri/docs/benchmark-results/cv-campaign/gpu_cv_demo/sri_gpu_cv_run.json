@@ -1,0 +1,49 @@
+{
+  "source_equations": {
+    "mmse": "w = Cov(s,y) Cov(y,y)^{-1}; s_hat = w\u00b7y",
+    "xi_snr": "E(logits)^2 / (E(logits)^2 + Var(logits) + eps)",
+    "legacy_xi": "1 - Var(logits)/(E(logits)+eps)",
+    "circuit_b_branch_W": "lambda_max * sigmoid(alpha * (Var(grad)/sigma_sat^2 - theta_crit))",
+    "circuit_b_branch_P": "lambda_max * sigmoid(alpha * (Var(grad)/(sigma_sat^2*eps) - theta_crit))",
+    "chi_v3": "circuit_a + circuit_b"
+  },
+  "configuration": {
+    "seed": 108,
+    "shots_per_cycle": 2048,
+    "cycles": 25,
+    "spike_start": 10,
+    "spike_end": 20,
+    "baseline_noise_variance": 0.25,
+    "spike_noise_variance": 225.0,
+    "efficiency": 0.8,
+    "coupling": 1.0,
+    "reference_r": 0.7,
+    "branch": "W",
+    "repeats": 3
+  },
+  "runtime": {
+    "timestamp_utc": "2026-11-11T07:50:33.671641+00:00",
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "gpu_devices": [],
+    "backend": "numpy_cv_gaussian"
+  },
+  "measurement": {
+    "timing_scope": "full multi-cycle NumPy CV demo including measurement draws",
+    "repeat_count": 3,
+    "execution_ms_each_repeat": [
+      5.067579999831651,
+      5.213681999975961,
+      5.019556000206649
+    ],
+    "execution_ms_median": 5.067579999831651,
+    "max_mmse_mse": 0.6877166439957652,
+    "min_xi_snr": 7.311683839600577e-07,
+    "max_xi_snr": 0.002451624266589874,
+    "note": "Observable-only MMSE; axiomatic xi_snr used for V3. Classical simulation of CV optics, not quantum hardware."
+  },
+  "provenance": {
+    "script_sha256": "6c36e8475c4535cde5b67ff83a0956fc201e052e3d0b3ff38171edc21abf2751",
+    "telemetry_csv": "sri_gpu_cv_telemetry.csv"
+  }
+}

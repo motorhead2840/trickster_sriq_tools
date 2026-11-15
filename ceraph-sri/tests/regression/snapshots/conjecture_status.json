@@ -1,0 +1,10 @@
+{
+  "source": "docs/benchmark-results/conjecture_status.json",
+  "statuses": {
+    "C1": "confirmed",
+    "C2": "confirmed",
+    "C3": "confirmed",
+    "C4": "confirmed",
+    "C5": "confirmed"
+  }
+}

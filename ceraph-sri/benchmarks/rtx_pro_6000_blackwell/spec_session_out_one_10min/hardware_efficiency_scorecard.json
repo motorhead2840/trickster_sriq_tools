@@ -1,0 +1,28 @@
+{
+  "tier": "1x RTX PRO 6000 Blackwell Server Edition",
+  "soak_duration_sec": 600.0,
+  "total_heavy_jobs": 81634,
+  "cluster_throughput_jobs_per_sec": 136.06,
+  "cluster_mean_power_w": 305.1,
+  "total_energy_joules": 183061.3,
+  "energy_per_heavy_job_mj": 2242.464,
+  "four_jobs_queued_ms": 29.487,
+  "four_jobs_concurrent_ms": 7.271,
+  "per_board_metrics": [
+    {
+      "gpu_id": 0,
+      "jobs_completed": 81634,
+      "drift_error": 0.0,
+      "mean_power_w": 305.1,
+      "peak_power_w": 337.7,
+      "power_limit_w": 600.0,
+      "tdp_headroom_pct": 49.2,
+      "start_temp_c": 34.0,
+      "peak_temp_c": 45.0,
+      "thermal_rise_c": 11.0,
+      "min_clock_mhz": 2317,
+      "max_clock_mhz": 2422,
+      "mean_occupancy_pct": 99.0
+    }
+  ]
+}

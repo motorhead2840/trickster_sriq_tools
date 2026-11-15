@@ -1,0 +1,75 @@
+{
+  "experiment": "foundation_axioms_sweep",
+  "configuration": {
+    "seeds": [
+      108,
+      109,
+      110,
+      111,
+      112
+    ],
+    "dimension": 4096,
+    "cycles": 25,
+    "spike_start": 10,
+    "spike_end": 20,
+    "baseline_noise_std": 0.5,
+    "spike_noise_std": 15.0,
+    "branches": [
+      "P",
+      "W"
+    ]
+  },
+  "aggregate": {
+    "xi_snr_min": 0.010266705723728333,
+    "xi_snr_max": 0.9313530236278,
+    "legacy_xi_min": -148.25956339213943,
+    "legacy_xi_max": 0.8518234176637091,
+    "mean_chi_branch_P": 50.428131005113144,
+    "mean_chi_branch_W": 22.42813100511313,
+    "entropy_nonincreasing_under_cptp": true
+  },
+  "conjectures": [
+    {
+      "conjecture_id": "C1",
+      "statement": "Yoga\u2013Buddhi with known \u03be equals the MMSE estimator only when the antithesis is physically available; the observable-only Gaussian MMSE from (y_A, y_B) is the correct physical replacement.",
+      "pass_criterion": "Oracle paired projection MSE is ~0 when \u03be is supplied; observable-only MMSE matches analytic Wiener MSE within 5\u03c3 sampling error and never receives s or n at inference.",
+      "status": "open",
+      "artifact_paths": [],
+      "notes": ""
+    },
+    {
+      "conjecture_id": "C2",
+      "statement": "Under the protocol Gaussian model, squeezed-reference MSE ordering matches the closed form across independent seeds.",
+      "pass_criterion": "For default (Vs=Vn=k=1, \u03b7=0.8, r=0.7), sample ordering agrees with analytic ordering on \u22653 seeds; |analytic-sample| \u2264 5\u03c3 SE.",
+      "status": "open",
+      "artifact_paths": [],
+      "notes": ""
+    },
+    {
+      "conjecture_id": "C3",
+      "statement": "An axiomatic stability coefficient \u039e_SNR (or purity/Fisher proxy) remains in (0, 1] on all foundation sweep points; legacy Equation-11 \u039e need not.",
+      "pass_criterion": "Over the Week-2 spike grid, min(\u039e_SNR) > 0 and max(\u039e_SNR) \u2264 1; legacy \u039e is reported without clipping.",
+      "status": "confirmed",
+      "artifact_paths": [
+        "docs/benchmark-results/foundation/foundation_axioms_summary.json"
+      ],
+      "notes": "xi_snr range=[0.0102667, 0.931353]; legacy may exit [0,1]"
+    },
+    {
+      "conjecture_id": "C4",
+      "statement": "Circuit-B Branch W (worked-example thresholding) yields a macro marker that does not collapse during the noise spike the way legacy \u039e does; damping corresponds to a CPTP attenuator on covariances.",
+      "pass_criterion": "Branch W keeps \u039e_SNR in (0,1] through spikes; attenuator_channel preserves physical covariances; if neither branch satisfies a stated contraction inequality, status becomes refuted/open with counterexamples.",
+      "status": "confirmed",
+      "artifact_paths": [
+        "docs/benchmark-results/foundation/foundation_axioms_summary.json"
+      ],
+      "notes": "entropy_ok=True; mean_chi_P=50.4281; mean_chi_W=22.4281"
+    }
+  ],
+  "records_count": 250,
+  "provenance": {
+    "python": "3.12.3",
+    "numpy": "2.5.4",
+    "script_sha256": "837108c47c01c5e0401e22ed287a2815e054aca10d54af2d1adf1374f99f4826"
+  }
+}

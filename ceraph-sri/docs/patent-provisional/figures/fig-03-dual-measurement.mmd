@@ -1,0 +1,10 @@
+flowchart LR
+  U300["300 User request"] --> M302["302 Start processing"]
+  M302 --> M304["304 Measure y_A"]
+  M302 --> M306["306 Measure y_B"]
+  M304 --> M308["308 Blend weights"]
+  M306 --> M308
+  M308 --> M310["310 Noise-aware correction"]
+  M310 --> M312["312 Cleaned estimate"]
+  M312 --> M314["314 Use in answer / control"]
+  M314 --> U320["320 Return to user"]

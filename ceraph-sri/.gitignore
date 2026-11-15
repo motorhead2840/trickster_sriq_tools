@@ -1,0 +1,11 @@
+.config/
+sample_data/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+*.pt
+*.bin
+*.safetensors
+.env
+docs/v8-15nov2026/_preview/
+docs/project-report-15nov2026/_preview/

@@ -1,0 +1,61 @@
+{
+  "cell": 3,
+  "machine": "one-board",
+  "idle": {
+    "index": 0,
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "power_w": 85.35,
+    "limit_w": 600.0,
+    "temperature_c": 33.0,
+    "util_pct": 0.0,
+    "sm_mhz": 2392.0
+  },
+  "raw_stack": {
+    "device": 0,
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "density": 0.7927381992340088,
+    "block": 256,
+    "grid": 64,
+    "ladder_block": 256,
+    "schedule_matches": true,
+    "triton_max_abs_error": 7.62939453125e-06,
+    "jax_max_abs_error": 0.0,
+    "jvp_max_abs_error": 0.0,
+    "sign_xor_error": 0.0
+  },
+  "quality": [
+    {
+      "offset": 0.0,
+      "identity_mse": 6.90957890520672,
+      "moving_average_mse": 1.675011171028009,
+      "raw_mse": 0.7735443353494624,
+      "flux_mse": 1.472352151734814,
+      "raw": "SUPPORTED",
+      "flux": "SUPPORTED",
+      "flux_variance_remaining": 0.11660588273684425,
+      "triton_flux_max_abs_error": 2.384185791015625e-07,
+      "block": 1024,
+      "grid": 8,
+      "density": 7.056066455041329,
+      "ladder_block": 1024
+    },
+    {
+      "offset": 5.0,
+      "identity_mse": 6.90957890520672,
+      "moving_average_mse": 1.675011171028009,
+      "raw_mse": 18.17085199652528,
+      "flux_mse": 1.472352151734814,
+      "raw": "NOT_MET",
+      "flux": "SUPPORTED",
+      "flux_variance_remaining": 0.11660588273684425,
+      "triton_flux_max_abs_error": 4.76837158203125e-07,
+      "block": 1024,
+      "grid": 8,
+      "density": 7.056066455041329,
+      "ladder_block": 1024
+    }
+  ],
+  "stack_real": true,
+  "legend": "Blue is offset 0. Gold is offset 5. Flux should stay near the moving average. Raw should rise at offset 5.",
+  "figure": "spec_session_out/omlang_one/validation/figures/quality_mse_3d.png"
+}
